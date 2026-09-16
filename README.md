@@ -22,3 +22,14 @@ Outputs are created in `results/` and `plots/`. The input files may retain their
 ## Reproducibility
 
 The model uses a fixed random seed (`123`). Input fields are parsed as numeric where applicable and malformed/missing values are excluded only for the calculation requiring them.
+
+## Interactive software prototype
+
+The Streamlit app adds live AHSC specific-power prediction, literature chat, and an African critical-minerals explorer.
+
+```powershell
+python -m pip install -r requirements.txt
+streamlit run app.py
+```
+
+The chat works immediately in transparent local-retrieval mode. To enable LangChain/OpenAI synthesis, copy `.env.example` to `.env` and add your `OPENAI_API_KEY`; never commit `.env`.
