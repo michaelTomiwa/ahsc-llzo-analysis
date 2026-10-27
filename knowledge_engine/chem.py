@@ -47,13 +47,19 @@ def is_missing(text: object) -> bool:
     return value in {"", "NR", "NA", "N/A", "NAN", "-", "NONE", "NOT REPORTED"}
 
 
+SYNONYMS = {"ac": "Activated carbon", "activated carbon": "Activated carbon", "lfp": "LiFePO4 (LFP)",
+            "lifepo4": "LiFePO4 (LFP)", "lifepo4 (lfp)": "LiFePO4 (LFP)", "li metal": "Lithium metal",
+            "lithium metal": "Lithium metal", "lithium metal (li)": "Lithium metal", "li foil": "Lithium foil", "lithium foil": "Lithium foil",
+            "zn foil": "Zn foil", "zn-foil": "Zn foil"}
+
+
 def canonical_material(name: object) -> str:
     """Stable display name for a material (drops curation notes and trailing punctuation)."""
     value = normalize_text(name)
     value = re.sub(r"\(\s*electrode material\s*\)", "", value, flags=re.I)
     value = re.sub(r"\s*\(\s*\)", "", value)
-    value = value.strip(" .;,")
-    return re.sub(r"\s+", " ", value)
+    value = re.sub(r"\s+", " ", value.strip(" .;,"))
+    return SYNONYMS.get(value.lower(), value)
 
 
 def _decompose_formula(token: str) -> list[str] | None:
