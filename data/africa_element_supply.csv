@@ -1,0 +1,33 @@
+element,status,african_countries,mineral_or_route,source_name,source_url,note
+Li,major_producer,Zimbabwe; Democratic Republic of the Congo; Namibia; Mali,spodumene / petalite / lepidolite,USGS country profiles and Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Zimbabwe is a major producer; several other African projects are at development stage.
+Co,major_producer,Democratic Republic of the Congo; Zambia; Madagascar; Morocco,copper-cobalt ores,USGS Congo (Kinshasa) country profile,https://www.usgs.gov/centers/national-minerals-information-center/congo-kinshasa,World-leading supply from DRC; apply OECD responsible-sourcing due diligence (artisanal mining risks).
+Mn,major_producer,South Africa; Gabon; Ghana,manganese ore,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,South Africa and Gabon are leading global manganese ore producers.
+C,major_producer,Mozambique; Madagascar; Tanzania (graphite); continent-wide (biomass carbon),natural graphite and agricultural/forestry biomass,USGS Mozambique country profile,https://www.usgs.gov/centers/national-minerals-information-center/mozambique,Biomass-derived activated carbon can be produced locally from agro-waste.
+Cu,major_producer,Democratic Republic of the Congo; Zambia,Central African Copperbelt,USGS Copperbelt mining database,https://www.usgs.gov/data/a-database-artisanal-small-scale-and-large-scale-mining-copperbelt-region-democratic-republic,Copperbelt spans DRC and Zambia.
+Al,major_producer,Guinea; Ghana,bauxite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Guinea is one of the world's largest bauxite producers; local refining capacity is limited.
+Cr,major_producer,South Africa; Zimbabwe,chromite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,South Africa is the leading chromite producer.
+P,major_producer,Morocco; South Africa; Senegal; Togo,phosphate rock,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Morocco holds the largest phosphate rock reserves; relevant to LiFePO4 and phosphide electrodes.
+Ta,major_producer,Democratic Republic of the Congo; Rwanda; Nigeria,coltan,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Conflict-mineral (3TG) due diligence applies; Ta is the main garnet LLZO stabilising dopant.
+Pt,major_producer,South Africa; Zimbabwe,platinum-group metals,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Platinum-group metals; high cost limits battery use.
+Ni,producer,South Africa; Madagascar; Zimbabwe; Cote d'Ivoire,nickel sulfide / laterite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Nickel is produced at several African operations including by-product output.
+Fe,producer,South Africa; Mauritania; Sierra Leone,iron ore,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Iron is abundant and low cost.
+V,producer,South Africa,vanadiferous magnetite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,South Africa is a significant vanadium producer.
+Ti,producer,Mozambique; South Africa; Madagascar; Kenya; Senegal,heavy mineral sands (ilmenite / rutile),USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Relevant to Ti-based MXenes and TiO2.
+Zr,producer,South Africa; Mozambique; Senegal; Kenya,zircon (heavy mineral sands),USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Zirconium is a major LLZO component.
+Sn,producer,Democratic Republic of the Congo; Rwanda; Nigeria,cassiterite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,3TG due diligence applies.
+W,producer,Rwanda; Democratic Republic of the Congo,wolframite,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,3TG due diligence applies.
+Nb,producer,Democratic Republic of the Congo; Rwanda; Nigeria,coltan (by-product with tantalum),USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Most global niobium is produced outside Africa; African supply is mainly from coltan.
+Zn,producer,South Africa; Namibia; Morocco,zinc sulfide ores,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Relevant to zinc-ion hybrid supercapacitors.
+F,producer,South Africa; Kenya; Morocco,fluorspar,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Fluorine source for LiPF6/LiTFSI salts and PVDF.
+La,project_stage,Malawi; South Africa; Namibia; Tanzania,rare-earth deposits,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Rare-earth projects are mainly at development stage; La is a major LLZO component.
+Ce,project_stage,Malawi; South Africa; Namibia; Tanzania,rare-earth deposits,USGS Mineral Commodity Summaries,https://pubs.usgs.gov/publication/mcs2026,Rare-earth projects are mainly at development stage.
+Na,ubiquitous,continent-wide,salt / soda ash,general geochemical abundance,,Earth-abundant.
+K,ubiquitous,continent-wide,potash / salts,general geochemical abundance,,Earth-abundant.
+Mg,ubiquitous,continent-wide,dolomite / magnesite / brines,general geochemical abundance,,Earth-abundant.
+Ca,ubiquitous,continent-wide,limestone,general geochemical abundance,,Earth-abundant.
+Si,ubiquitous,continent-wide,silica sand / rice husk,general geochemical abundance,,Earth-abundant; rice-husk silica is an agro-waste route.
+S,ubiquitous,continent-wide,sulfur / sulfide ores,general geochemical abundance,,Earth-abundant.
+Cl,ubiquitous,continent-wide,salt,general geochemical abundance,,Earth-abundant.
+N,ubiquitous,continent-wide,air / biomass,general geochemical abundance,,Earth-abundant.
+O,ubiquitous,continent-wide,air / oxides,general geochemical abundance,,Earth-abundant.
+H,ubiquitous,continent-wide,water / biomass,general geochemical abundance,,Earth-abundant.
