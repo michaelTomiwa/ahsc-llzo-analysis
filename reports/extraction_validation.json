@@ -1,14 +1,14 @@
 {
   "extractor": "rule-based",
   "records": 472,
-  "gold_facts": 847,
-  "predicted_facts": 782,
-  "true_positives": 710,
-  "false_positives": 72,
+  "gold_facts": 848,
+  "predicted_facts": 784,
+  "true_positives": 711,
+  "false_positives": 73,
   "false_negatives": 137,
-  "precision": 0.9079,
-  "recall": 0.8383,
-  "f1": 0.8717,
+  "precision": 0.9069,
+  "recall": 0.8384,
+  "f1": 0.8713,
   "evidence_grounding_rate": 1.0,
   "per_property": {
     "capacity_retention": {
@@ -54,6 +54,13 @@
       "recall": 0.717
     },
     "specific_energy": {
+      "tp": 1,
+      "fn": 0,
+      "fp": 1,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    "specific_power": {
       "tp": 1,
       "fn": 0,
       "fp": 1,

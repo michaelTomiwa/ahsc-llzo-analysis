@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/michaelTomiwa/ahsc-llzo-analysis/schema.json",
+  "title": "AHSC-LLZO Materials Knowledge Engine schema",
+  "version": "1.0.0",
+  "description": "Ontology (entities + relationships) and the JSON Schema of one fact record in data/thesis_facts.jsonl and data/literature_facts.jsonl. See docs/ONTOLOGY.md.",
+  "entities": {
+    "Material": {"properties": ["name", "formula", "system", "category", "role", "elements", "africa_score"], "description": "A reported material: the study subject (AHSC electrode or LLZO electrolyte) or a cell component."},
+    "MaterialFamily": {"properties": ["name"], "description": "Coarse chemistry class (e.g. MXene, Garnet LLZO, PEO/PEG polymer) assigned by transparent rules in knowledge_engine/chem.py."},
+    "Property": {"properties": ["name", "unit", "category"], "description": "A measurable property, e.g. ionic_conductivity (S/cm) or specific_capacitance (F/g)."},
+    "Value": {"properties": ["number", "unit", "condition", "method", "confidence", "quality_flags"], "description": "One reported measurement; stored as a fact and aggregated on the hasProperty edge."},
+    "Paper": {"properties": ["doi", "title", "authors", "year", "source_type"], "description": "A source: a curated thesis record (record_id) or a DOI-identified paper."},
+    "Element": {"properties": ["symbol", "african_supply_status"]},
+    "Dopant": {"properties": ["element"]},
+    "System": {"properties": ["name"], "enum": ["AHSC", "LLZO"]},
+    "Country": {"properties": ["name"], "description": "African country with supply of an element (data/africa_element_supply.csv)."}
+  },
+  "relationships": [
+    "Material hasProperty Property",
+    "Property hasValue Value",
+    "Material studiedIn Paper",
+    "Paper usesComponent Material",
+    "Material memberOf MaterialFamily",
+    "Material containsElement Element",
+    "Material dopedWith Dopant",
+    "Material inSystem System",
+    "Element suppliedBy Country"
+  ],
+  "properties_vocabulary": {
+    "potential_window": {"unit": "V", "category": "electrochemical", "note": "value = upper voltage limit; lower/width/midpoint in value_details"},
+    "specific_capacitance": {"unit": "F/g", "category": "charge storage", "note": "areal/volumetric units (mF/cm2, F/cm3, C/g) kept as reported"},
+    "specific_capacity": {"unit": "mAh/g", "category": "charge storage"},
+    "specific_energy": {"unit": "Wh/kg", "category": "device performance"},
+    "specific_power": {"unit": "W/kg", "category": "device performance"},
+    "cycling_stability": {"unit": "%", "category": "durability", "note": "retention; cycle count in condition"},
+    "capacity_retention": {"unit": "%", "category": "durability"},
+    "rate_capability": {"unit": "F/g", "category": "charge storage", "note": "capacitance at the current density in condition"},
+    "ionic_conductivity": {"unit": "S/cm", "category": "transport", "note": "temperature in condition"},
+    "sintering_temperature": {"unit": "°C", "category": "processing", "note": "literature extraction only"}
+  },
+  "fact": {
+    "type": "object",
+    "required": ["id", "record_id", "system", "material", "material_family", "property", "value", "unit", "source", "evidence_span", "confidence", "quality_flags", "extraction_method", "africa", "text"],
+    "properties": {
+      "id": {"type": "string", "description": "<record_id>-<property>"},
+      "record_id": {"type": "string", "description": "AHSC-0001 ... or a DOI for mined literature"},
+      "system": {"type": "string", "enum": ["AHSC", "LLZO"]},
+      "material": {"type": "string"},
+      "material_role": {"type": "string", "enum": ["electrode", "electrolyte"]},
+      "material_family": {"type": "string"},
+      "components": {"type": "object", "additionalProperties": {"type": "string"}, "description": "cathode / anode / electrolyte of the reported cell"},
+      "elements": {"type": "array", "items": {"type": "string"}},
+      "cell_elements": {"type": "array", "items": {"type": "string"}},
+      "dopants": {"type": "array", "items": {"type": "string"}},
+      "additives": {"type": "array", "items": {"type": "string"}},
+      "property": {"type": "string"},
+      "property_label": {"type": "string"},
+      "property_category": {"type": "string"},
+      "value": {"type": "number"},
+      "unit": {"type": "string"},
+      "value_details": {"type": "object"},
+      "condition": {"type": ["string", "null"], "description": "temperature, current density, C-rate, cycle count"},
+      "method": {"type": "string"},
+      "source": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {"type": "string", "enum": ["thesis_curated_record", "literature_abstract", "pdf", "api_text", "user_text", "benchmark", "text"]},
+          "record_id": {"type": "string"},
+          "file": {"type": ["string", "null"]},
+          "csv_line": {"type": "integer"},
+          "doi": {"type": ["string", "null"]},
+          "title": {"type": ["string", "null"]},
+          "year": {"type": ["string", "integer", "null"]}
+        }
+      },
+      "evidence_span": {"type": "string", "description": "verbatim text from the source that states the value"},
+      "evidence_text": {"type": "string", "description": "full source text the span is verified against (curated record serialisation)"},
+      "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+      "quality_flags": {"type": "array", "items": {"type": "string"}},
+      "grounded": {"type": "boolean"},
+      "extraction_method": {"type": "string", "description": "manual_curation | rule-based | anthropic:<model> | openai:<model>"},
+      "africa": {
+        "type": "object",
+        "properties": {
+          "score": {"type": ["number", "null"]},
+          "african_supply": {"type": "array", "items": {"type": "string"}},
+          "no_african_supply": {"type": "array", "items": {"type": "string"}},
+          "flags": {"type": "array", "items": {"type": "string"}}
+        }
+      },
+      "text": {"type": "string", "description": "natural-language rendering used for embedding"}
+    }
+  }
+}

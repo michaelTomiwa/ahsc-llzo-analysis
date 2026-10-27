@@ -1,9 +1,9 @@
 {
   "graph": {
-    "nodes": 1314,
-    "edges": 5017,
+    "nodes": 1309,
+    "edges": 5010,
     "node_types": {
-      "Material": 692,
+      "Material": 687,
       "Property": 9,
       "Paper": 518,
       "MaterialFamily": 26,
@@ -13,11 +13,11 @@
       "Dopant": 2
     },
     "edge_types": {
-      "hasProperty": 1125,
-      "memberOf": 466,
-      "inSystem": 466,
+      "hasProperty": 1121,
+      "memberOf": 465,
+      "inSystem": 465,
       "studiedIn": 518,
-      "containsElement": 1652,
+      "containsElement": 1651,
       "usesComponent": 712,
       "suppliedBy": 67,
       "dopedWith": 11
@@ -25,278 +25,278 @@
   },
   "top_materials": [
     {
+      "node": "Lithium metal",
+      "degree_centrality": 0.10245,
+      "degree": 134,
+      "papers": 134
+    },
+    {
+      "node": "LiFePO4 (LFP)",
+      "degree_centrality": 0.09939,
+      "degree": 130,
+      "papers": 130
+    },
+    {
       "node": "Activated carbon",
-      "degree_centrality": 0.02133,
-      "degree": 28,
-      "papers": 17
+      "degree_centrality": 0.04128,
+      "degree": 54,
+      "papers": 44
     },
     {
-      "node": "LLZO-0.6Ta",
-      "degree_centrality": 0.01219,
+      "node": "6 M KOH",
+      "degree_centrality": 0.01835,
+      "degree": 24,
+      "papers": 24
+    },
+    {
+      "node": "1 M H2SO4",
+      "degree_centrality": 0.01529,
+      "degree": 20,
+      "papers": 20
+    },
+    {
+      "node": "1 M KOH",
+      "degree_centrality": 0.01376,
+      "degree": 18,
+      "papers": 18
+    },
+    {
+      "node": "PVA/H2SO4",
+      "degree_centrality": 0.01376,
+      "degree": 18,
+      "papers": 18
+    },
+    {
+      "node": "1 M Na2SO4",
+      "degree_centrality": 0.01223,
       "degree": 16,
-      "papers": 6
+      "papers": 16
     },
     {
-      "node": "LLZO-0.5Ta",
-      "degree_centrality": 0.01219,
-      "degree": 16,
-      "papers": 6
+      "node": "2 M KOH",
+      "degree_centrality": 0.00994,
+      "degree": 13,
+      "papers": 13
     },
     {
-      "node": "AC",
-      "degree_centrality": 0.02513,
-      "degree": 33,
-      "papers": 5
-    },
-    {
-      "node": "lithium foil",
-      "degree_centrality": 0.00838,
-      "degree": 11,
-      "papers": 4
-    },
-    {
-      "node": "Ti3C2Tx",
-      "degree_centrality": 0.00685,
-      "degree": 9,
-      "papers": 3
-    },
-    {
-      "node": "PEO (with DMF and LiTFSI)",
-      "degree_centrality": 0.01142,
-      "degree": 15,
-      "papers": 2
-    },
-    {
-      "node": "PAN (with DMF and LiTFSI)",
-      "degree_centrality": 0.01142,
-      "degree": 15,
-      "papers": 2
-    },
-    {
-      "node": "LLZO-0.25Ga",
-      "degree_centrality": 0.00914,
+      "node": "3 M KOH",
+      "degree_centrality": 0.00917,
       "degree": 12,
-      "papers": 2
+      "papers": 12
     },
     {
-      "node": "LLZO-0.25Ta",
-      "degree_centrality": 0.00914,
+      "node": "LiPF6",
+      "degree_centrality": 0.00917,
       "degree": 12,
-      "papers": 2
+      "papers": 12
     },
     {
-      "node": "rGO",
-      "degree_centrality": 0.00838,
-      "degree": 11,
-      "papers": 2
-    },
-    {
-      "node": "LiMn2O4",
-      "degree_centrality": 0.00838,
-      "degree": 11,
-      "papers": 2
-    },
-    {
-      "node": "Glyme-Functionalized Episulfide Monomer)/SGxS (Crosslinking Episulfide) (with LiTFSI and DME/DOL)",
-      "degree_centrality": 0.00838,
-      "degree": 11,
-      "papers": 2
-    },
-    {
-      "node": "MnO2/CNTs",
-      "degree_centrality": 0.00762,
+      "node": "1 M LiPF6",
+      "degree_centrality": 0.00765,
       "degree": 10,
-      "papers": 2
+      "papers": 10
     },
     {
-      "node": "Ti3C2Tx@MnO2",
-      "degree_centrality": 0.00762,
-      "degree": 10,
-      "papers": 2
+      "node": "1 M LiTFSI",
+      "degree_centrality": 0.00612,
+      "degree": 8,
+      "papers": 8
+    },
+    {
+      "node": "NaClO4",
+      "degree_centrality": 0.00535,
+      "degree": 7,
+      "papers": 7
+    },
+    {
+      "node": "Ionic liquid",
+      "degree_centrality": 0.00535,
+      "degree": 7,
+      "papers": 7
     }
   ],
   "top_families": [
     {
       "node": "MXene",
-      "degree_centrality": 0.07997,
+      "degree_centrality": 0.08028,
       "degree": 105,
       "papers": 111
     },
     {
       "node": "Carbon",
-      "degree_centrality": 0.04417,
-      "degree": 58,
-      "papers": 80
+      "degree_centrality": 0.04358,
+      "degree": 57,
+      "papers": 101
     },
     {
       "node": "Layered double hydroxide",
-      "degree_centrality": 0.0358,
+      "degree_centrality": 0.03593,
       "degree": 47,
       "papers": 48
     },
     {
       "node": "Other polymer electrolyte",
-      "degree_centrality": 0.03503,
+      "degree_centrality": 0.03517,
       "degree": 46,
       "papers": 46
     },
     {
       "node": "PEO/PEG polymer",
-      "degree_centrality": 0.03046,
+      "degree_centrality": 0.03058,
       "degree": 40,
       "papers": 41
     },
     {
       "node": "Transition-metal oxide",
-      "degree_centrality": 0.02285,
+      "degree_centrality": 0.02294,
       "degree": 30,
-      "papers": 31
+      "papers": 32
     },
     {
       "node": "Manganese oxide",
-      "degree_centrality": 0.01676,
+      "degree_centrality": 0.01682,
       "degree": 22,
       "papers": 24
     },
     {
       "node": "Garnet LLZO",
-      "degree_centrality": 0.00762,
+      "degree_centrality": 0.00765,
       "degree": 10,
       "papers": 22
     },
     {
       "node": "Other",
-      "degree_centrality": 0.01599,
+      "degree_centrality": 0.01606,
       "degree": 21,
       "papers": 21
     },
     {
       "node": "Ni/Co oxide-hydroxide",
-      "degree_centrality": 0.01142,
+      "degree_centrality": 0.01147,
       "degree": 15,
       "papers": 16
     },
     {
       "node": "PVDF-based polymer",
-      "degree_centrality": 0.01066,
+      "degree_centrality": 0.0107,
       "degree": 14,
       "papers": 14
     },
     {
       "node": "Conducting polymer",
-      "degree_centrality": 0.00914,
+      "degree_centrality": 0.00917,
       "degree": 12,
       "papers": 12
     },
     {
       "node": "Metal phosphide",
-      "degree_centrality": 0.00838,
+      "degree_centrality": 0.00841,
       "degree": 11,
       "papers": 12
     },
     {
       "node": "PAN polymer",
-      "degree_centrality": 0.00457,
+      "degree_centrality": 0.00459,
       "degree": 6,
       "papers": 7
     },
     {
-      "node": "Polymer-garnet composite",
-      "degree_centrality": 0.00305,
-      "degree": 4,
-      "papers": 4
+      "node": "Lithium metal",
+      "degree_centrality": 0.00076,
+      "degree": 1,
+      "papers": 5
     }
   ],
   "top_elements": [
     {
       "node": "C",
-      "degree_centrality": 0.21325,
-      "degree": 280,
-      "papers": 0
+      "degree_centrality": 0.2133,
+      "degree": 279,
+      "papers": 322
     },
     {
       "node": "O",
-      "degree_centrality": 0.15308,
+      "degree_centrality": 0.15367,
       "degree": 201,
-      "papers": 0
+      "papers": 221
     },
     {
       "node": "N",
-      "degree_centrality": 0.10815,
+      "degree_centrality": 0.10856,
       "degree": 142,
-      "papers": 0
-    },
-    {
-      "node": "S",
-      "degree_centrality": 0.09749,
-      "degree": 128,
-      "papers": 0
+      "papers": 146
     },
     {
       "node": "Li",
-      "degree_centrality": 0.09368,
+      "degree_centrality": 0.09404,
       "degree": 123,
-      "papers": 0
+      "papers": 139
+    },
+    {
+      "node": "S",
+      "degree_centrality": 0.09786,
+      "degree": 128,
+      "papers": 131
     },
     {
       "node": "F",
-      "degree_centrality": 0.08073,
+      "degree_centrality": 0.08104,
       "degree": 106,
-      "papers": 0
+      "papers": 106
     },
     {
       "node": "Ti",
-      "degree_centrality": 0.07692,
+      "degree_centrality": 0.07722,
       "degree": 101,
-      "papers": 0
+      "papers": 101
     },
     {
       "node": "H",
-      "degree_centrality": 0.06855,
+      "degree_centrality": 0.06881,
       "degree": 90,
-      "papers": 0
+      "papers": 92
     },
     {
       "node": "P",
-      "degree_centrality": 0.05788,
+      "degree_centrality": 0.0581,
       "degree": 76,
-      "papers": 0
+      "papers": 75
     },
     {
       "node": "Co",
-      "degree_centrality": 0.05712,
+      "degree_centrality": 0.05734,
       "degree": 75,
-      "papers": 0
+      "papers": 75
     },
     {
       "node": "Ni",
-      "degree_centrality": 0.05407,
+      "degree_centrality": 0.05428,
       "degree": 71,
-      "papers": 0
+      "papers": 69
     },
     {
       "node": "Mn",
-      "degree_centrality": 0.02894,
+      "degree_centrality": 0.02905,
       "degree": 38,
-      "papers": 0
+      "papers": 39
     },
     {
       "node": "Fe",
-      "degree_centrality": 0.02361,
+      "degree_centrality": 0.0237,
       "degree": 31,
-      "papers": 0
+      "papers": 29
     },
     {
-      "node": "Cl",
-      "degree_centrality": 0.01828,
-      "degree": 24,
-      "papers": 0
+      "node": "Zr",
+      "degree_centrality": 0.01529,
+      "degree": 20,
+      "papers": 28
     },
     {
-      "node": "Al",
-      "degree_centrality": 0.01752,
-      "degree": 23,
-      "papers": 0
+      "node": "La",
+      "degree_centrality": 0.01529,
+      "degree": 20,
+      "papers": 28
     }
   ],
   "property_cooccurrence": [
@@ -587,8 +587,8 @@
       "dopant": "Ta",
       "property": "ionic_conductivity",
       "unit": "S/cm",
-      "count": 4,
-      "median": 0.0004325,
+      "count": 5,
+      "median": 0.000423,
       "min": 0.00021,
       "max": 0.000584
     },
@@ -596,8 +596,8 @@
       "dopant": "undoped / not stated",
       "property": "ionic_conductivity",
       "unit": "S/cm",
-      "count": 118,
-      "median": 0.000325,
+      "count": 121,
+      "median": 0.000303,
       "min": 1.24e-07,
       "max": 0.034
     },
@@ -629,13 +629,31 @@
       "max": 4.0
     },
     {
+      "dopant": "Ta",
+      "property": "specific_capacity",
+      "unit": "mAh/g",
+      "count": 16,
+      "median": 150.0,
+      "min": 94.0,
+      "max": 175.6
+    },
+    {
+      "dopant": "Ga",
+      "property": "specific_capacity",
+      "unit": "mAh/g",
+      "count": 2,
+      "median": 149.65,
+      "min": 149.3,
+      "max": 150.0
+    },
+    {
       "dopant": "undoped / not stated",
       "property": "specific_capacity",
       "unit": "mAh/g",
-      "count": 4,
-      "median": 183.55,
-      "min": 147.0,
-      "max": 190.0
+      "count": 72,
+      "median": 141.1,
+      "min": 4.3,
+      "max": 940.0
     },
     {
       "dopant": "undoped / not stated",
