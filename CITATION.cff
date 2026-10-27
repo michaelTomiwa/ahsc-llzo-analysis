@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this knowledge engine or its curated dataset, please cite it as below."
+title: "African Battery Materials Knowledge Engine: evidence-grounded literature mining, knowledge graph and hypothesis generation for AHSC and LLZO"
+type: software
+authors:
+  - name: "ahsc-llzo-analysis contributors"
+repository-code: "https://github.com/michaelTomiwa/ahsc-llzo-analysis"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-27"
+keywords:
+  - materials informatics
+  - knowledge graph
+  - large language models
+  - GraphRAG
+  - hypothesis generation
+  - supercapacitors
+  - LLZO
+  - solid-state batteries
+  - Africa
+abstract: >-
+  An LLM-powered knowledge engine that ingests battery-materials literature, extracts structured
+  material-property-value facts with verbatim evidence grounding, constructs a knowledge graph, and
+  generates testable hypotheses under African supply, energy and application constraints. It is
+  validated on 533 manually curated literature records for asymmetric hybrid supercapacitors (AHSC)
+  and garnet Li7La3Zr2O12 (LLZO) solid electrolytes.

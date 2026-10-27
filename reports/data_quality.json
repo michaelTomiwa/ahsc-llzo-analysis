@@ -1,0 +1,41 @@
+{
+  "facts": 1238,
+  "records": 518,
+  "facts_by_system_property": {
+    "AHSC/capacity_retention": 4,
+    "AHSC/cycling_stability": 266,
+    "AHSC/ionic_conductivity": 8,
+    "AHSC/potential_window": 118,
+    "AHSC/rate_capability": 20,
+    "AHSC/specific_capacitance": 253,
+    "AHSC/specific_capacity": 46,
+    "AHSC/specific_energy": 72,
+    "AHSC/specific_power": 52,
+    "LLZO/capacity_retention": 2,
+    "LLZO/cycling_stability": 79,
+    "LLZO/ionic_conductivity": 130,
+    "LLZO/potential_window": 93,
+    "LLZO/specific_capacity": 93,
+    "LLZO/specific_energy": 2
+  },
+  "mean_confidence": 0.945,
+  "quality_flags": {
+    "unit_assumed": 358,
+    "reinterpreted_column": 20,
+    "implausible_value_check_source": 11,
+    "corrected_from_raw_text": 7,
+    "unusually_high_check_source": 6,
+    "non_standard_retention_metric": 4,
+    "non_gravimetric_unit": 4,
+    "range_reported": 4,
+    "raw_text_disagrees_with_curated_value": 3,
+    "theoretical_value": 1
+  },
+  "facts_with_doi": 0,
+  "grounding": {
+    "facts": 1238,
+    "grounded": 1238,
+    "grounding_rate": 1.0,
+    "meets_95pct_target": true
+  }
+}

@@ -117,6 +117,8 @@ def _property_facts(system: str, row: pd.Series) -> list[dict]:
         if is_missing(raw) or value is None:
             continue
         unit, explicit = detect_unit(raw, default)
+        if unit == "kW/kg":  # curated column is already converted to W/kg
+            unit = "W/kg"
         flags = [] if explicit else ["unit_assumed"]
         if explicit and unit != default:
             flags.append("non_gravimetric_unit")
