@@ -1,0 +1,65 @@
+{
+  "extractor": "rule-based",
+  "records": 472,
+  "gold_facts": 847,
+  "predicted_facts": 782,
+  "true_positives": 710,
+  "false_positives": 72,
+  "false_negatives": 137,
+  "precision": 0.9079,
+  "recall": 0.8383,
+  "f1": 0.8717,
+  "evidence_grounding_rate": 1.0,
+  "per_property": {
+    "capacity_retention": {
+      "tp": 0,
+      "fn": 2,
+      "fp": 0,
+      "precision": null,
+      "recall": 0.0
+    },
+    "cycling_stability": {
+      "tp": 317,
+      "fn": 19,
+      "fp": 43,
+      "precision": 0.881,
+      "recall": 0.943
+    },
+    "ionic_conductivity": {
+      "tp": 126,
+      "fn": 0,
+      "fp": 10,
+      "precision": 0.926,
+      "recall": 1.0
+    },
+    "potential_window": {
+      "tp": 135,
+      "fn": 74,
+      "fp": 4,
+      "precision": 0.971,
+      "recall": 0.646
+    },
+    "specific_capacitance": {
+      "tp": 93,
+      "fn": 27,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.775
+    },
+    "specific_capacity": {
+      "tp": 38,
+      "fn": 15,
+      "fp": 14,
+      "precision": 0.731,
+      "recall": 0.717
+    },
+    "specific_energy": {
+      "tp": 1,
+      "fn": 0,
+      "fp": 1,
+      "precision": 0.5,
+      "recall": 1.0
+    }
+  },
+  "note": "Benchmark sentences are generated from each record's verbatim raw cells; gold = curated thesis values without quality flags."
+}

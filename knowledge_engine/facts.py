@@ -36,6 +36,13 @@ PROPERTY_INFO = {
                         "category": "charge storage"},
 }
 CAPACITY_UNITS = {"mAh/g", "mAh/cm2"}
+# Flags that make a value unsuitable for statistics (an implied-but-standard unit is not one of them).
+SEVERE_FLAGS = {"implausible_value_check_source", "unusually_high_check_source", "theoretical_value",
+                "non_standard_retention_metric", "evidence_not_found_in_source", "raw_text_disagrees_with_curated_value"}
+
+
+def is_reliable(fact: dict) -> bool:
+    return not SEVERE_FLAGS.intersection(fact.get("quality_flags", []))
 
 
 def _num(value) -> float | None:
@@ -183,12 +190,14 @@ def build_facts(ahsc_path: Path = AHSC_CSV, llzo_path: Path = LLZO_CSV) -> list[
                       "title": source_meta.get("title") or None, "year": source_meta.get("year") or None}
             evidence_text = _evidence_text(row)
             family = material_family(material, role)
+            dopants = dopants_in(material) if role == "electrolyte" else []
             for item in _property_facts(system, row):
                 info = PROPERTY_INFO[item["property"]]
                 condition = f" ({item['condition']})" if item["condition"] else ""
                 text = (f"{system} record {record_id}: {material} [{family}] has {info['label'].lower()} of "
                         f"{item['value']:.4g} {item['unit']}{condition}. Cell: "
-                        + "; ".join(f"{k} = {v}" for k, v in components.items()) + ".")
+                        + "; ".join(f"{k} = {v}" for k, v in components.items()) + "."
+                        + (f" Dopants: {', '.join(dopants)}-doped." if dopants else ""))
                 facts.append({
                     "id": f"{record_id}-{item['property']}",
                     "record_id": record_id,
@@ -199,7 +208,7 @@ def build_facts(ahsc_path: Path = AHSC_CSV, llzo_path: Path = LLZO_CSV) -> list[
                     "components": components,
                     "elements": elements,
                     "cell_elements": cell_elements,
-                    "dopants": dopants_in(material) if role == "electrolyte" else [],
+                    "dopants": dopants,
                     "additives": additives_in(material) if role == "electrolyte" else [],
                     "property": item["property"],
                     "property_label": info["label"],
