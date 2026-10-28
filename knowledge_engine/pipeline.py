@@ -11,6 +11,7 @@ import json
 from .config import FACTS_JSONL, GRAPHML_PATH, REPORTS_DIR, ROOT
 from .evidence import grounding_report
 from .facts import build_facts, facts_frame, load_facts, write_jsonl
+from .record_sources import build as build_record_sources, coverage as record_coverage
 
 
 def data_quality_report(facts: list[dict]) -> dict:
@@ -26,6 +27,8 @@ def data_quality_report(facts: list[dict]) -> dict:
         "mean_confidence": round(float(frame.confidence.mean()), 3),
         "quality_flags": dict(sorted(flags.items(), key=lambda kv: -kv[1])),
         "facts_with_doi": int(frame.doi.notna().sum()),
+        "facts_with_review_doi": int(sum(1 for f in facts if f["source"].get("review_doi"))),
+        "record_links": record_coverage(),
         "grounding": {k: v for k, v in grounding_report(facts).items() if k != "failures"},
     }
 
@@ -44,6 +47,7 @@ def run(harvest: bool = False, llm: bool = False) -> dict:
     from .knowledge_graph import build_graph, research_map, to_graphml
 
     REPORTS_DIR.mkdir(exist_ok=True)
+    build_record_sources()
     thesis = build_facts()
     write_jsonl(thesis, FACTS_JSONL)
     if harvest:

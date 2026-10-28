@@ -110,7 +110,7 @@ def rule_extract(text: str, default_material: str = "") -> list[dict]:
     """Regex extractor: high precision for the unit patterns above, no inference."""
     facts = []
     clean = normalize_text(text)
-    for sentence in _SENTENCE_SPLIT.split(clean):
+    for number, sentence in enumerate(_SENTENCE_SPLIT.split(clean)):
         material = _guess_material(sentence, default_material)
         for prop, unit, pattern in RULES:
             for match in pattern.finditer(sentence):
@@ -139,9 +139,11 @@ def rule_extract(text: str, default_material: str = "") -> list[dict]:
                         condition = f"at {match.group(2)} {'A/g' if unit == 'F/g' else 'C'}"
                 facts.append({"material": material, "property": prop_name, "value": value, "unit": unit_name,
                               "condition": condition or "", "method": "", "evidence_span": span,
-                              "confidence": 0.7 if material else 0.5})
-    # De-duplicate overlapping matches (e.g. a range matched twice).
-    unique = {(f["property"], round(f["value"], 12), f["evidence_span"]): f for f in facts}
+                              "confidence": 0.7 if material else 0.5, "_sentence": number})
+    # De-duplicate the same value matched by two patterns in one sentence (keep the first span).
+    unique: dict = {}
+    for fact in facts:
+        unique.setdefault((fact.pop("_sentence"), fact["property"], round(fact["value"], 12)), fact)
     return list(unique.values())
 
 
@@ -152,12 +154,28 @@ def llm_extract(text: str) -> tuple[list[dict], str]:
     return list(result.data.get("facts", [])), result.mode
 
 
+def _source_material(source: dict, prop: str) -> str | None:
+    """Material for a fact when the source is tied to a curated record's cell components."""
+    parts = source.get("components") or {}
+    if not parts:
+        return None
+    if prop == "ionic_conductivity" and parts.get("electrolyte"):
+        return parts["electrolyte"]
+    if source.get("system") == "LLZO" and parts.get("electrolyte"):
+        return parts["electrolyte"]
+    electrode = parts.get("cathode", "")
+    if not electrode or re.search(r"lithium|\bli\b|foil|metal", electrode, re.I):
+        electrode = parts.get("anode") or electrode  # curated rows sometimes list Li metal as the counter electrode
+    return electrode or None
+
+
 def finalize(raw_facts: list[dict], source_text: str, source: dict, extraction_method: str,
              system: str | None = None) -> list[dict]:
     """Attach grounding, chemistry and Africa annotations to raw extracted facts."""
     out = []
     for index, fact in enumerate(raw_facts):
-        material = canonical_material(fact.get("material")) or "unspecified"
+        # A source tied to a known material (e.g. a paper matched to a curated record) overrides guesses.
+        material = _source_material(source, fact["property"]) or canonical_material(fact.get("material")) or "unspecified"
         inferred_system = system or ("LLZO" if fact["property"] == "ionic_conductivity" or "LLZ" in material.upper()
                                      else "AHSC")
         role = "electrolyte" if fact["property"] == "ionic_conductivity" else "electrode"

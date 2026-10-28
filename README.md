@@ -9,10 +9,11 @@ Materials GPT Hackathon · **Track 1: Literature mining → structured knowledge
 
 | | |
 |---|---|
-| Curated literature records | **533** (369 AHSC, 164 LLZO) → **1,238 evidence-grounded facts** in `data/thesis_facts.jsonl` |
+| Curated literature records | **533** (369 AHSC, 164 LLZO) → **1,238 evidence-grounded facts** in `data/thesis_facts.jsonl`, plus mined literature facts in `data/literature_facts.jsonl` |
+| Source linking | 256 of 533 records linked to literature: 22 paper DOIs (16 value-verified), 6 verified papers without DOI, 243 via source-review tables (`data/record_sources.csv`, provenance in `data/provenance/`) |
 | Evidence grounding | **100 %** of curated facts; mined facts must pass verbatim-span verification |
-| Extraction benchmark | rule-based baseline **P = 0.91, R = 0.84, F1 = 0.87** against the curated facts (`reports/extraction_validation.json`) |
-| Knowledge graph | **1,309 nodes / 5,010 edges** across 8 node types (`data/knowledge_graph.graphml`) |
+| Extraction benchmark | rule-based baseline **P = 0.96, R = 0.84, F1 = 0.89** against the curated facts (`reports/extraction_validation.json`) |
+| Knowledge graph | **1,317 nodes / 5,018 edges** across 8 node types (`data/knowledge_graph.graphml`) |
 | Africa layer | element-supply score on every fact, node and hypothesis; ≤ 1000 °C processing constraint |
 | Openness | REST API with OpenAPI docs, JSON schema + ontology, MIT code / CC BY 4.0 data, CITATION.cff, CI |
 
@@ -64,7 +65,7 @@ python -m pip install -r requirements.txt
 python -m knowledge_engine.pipeline         # build facts, graph and reports (~10 s)
 streamlit run app.py                        # the knowledge-engine app
 uvicorn api:app --reload                    # REST API, docs at http://127.0.0.1:8000/docs
-pytest -q                                   # 27 offline tests
+pytest -q                                   # 30 offline tests
 ```
 
 To enable the LLM, copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. `OPENAI_API_KEY` also works as
@@ -108,7 +109,10 @@ python -m knowledge_engine.facts                                   # rebuild the
 python -m knowledge_engine.extraction --validate                   # benchmark (add --llm --limit 40 for Claude)
 python -m knowledge_engine.extraction paper.pdf                    # extract grounded facts from a PDF
 python -m knowledge_engine.literature harvest --per-query 40       # grow the corpus (needs network)
+python -m knowledge_engine.literature provenance                   # add verified source papers to the corpus
 python -m knowledge_engine.literature mine                         # mine abstracts → data/literature_facts.jsonl
+python -m knowledge_engine.record_sources build                    # rebuild data/record_sources.csv from provenance
+python -m knowledge_engine.record_sources resolve                  # Crossref: value-verified DOIs for the rest
 python -m knowledge_engine.knowledge_graph                         # GraphML + reports/research_map.json
 python -m knowledge_engine.graph_rag "What dopants improve LLZO ionic conductivity?"
 python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature below 1000°C"
@@ -126,11 +130,17 @@ python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature 
 
 ## Scientific caveats
 
-- Curated thesis records have no DOIs yet. Facts cite the record (`file`, `csv_line`) until DOIs are added
-  to `data/record_sources.csv`, and the pipeline attaches DOIs automatically once they are.
+- Source links are conservative. A paper DOI is attached to a curated record only when the paper's own text
+  shows the record's material and values (or its exact title names the material), and the verbatim sentence is
+  stored in `data/provenance/doi_search_log.jsonl`. Records compiled from a review table also carry the review's
+  DOI, marked `verified_row` (row checked against the review) or `block_inferred` (same table block, not checked
+  row by row). Remaining records cite the curated file and line. To extend coverage where `api.crossref.org` is
+  reachable, run `python -m knowledge_engine.record_sources resolve`, which accepts only value-verified matches.
 - Grounding for curated facts is checked against each record's raw cell text. The extraction benchmark uses
   sentences generated from those raw cells. It measures value/unit/property extraction, not full-paper reading.
-- Supply statuses are qualitative indicators from USGS sources, not reserve estimates or investment advice.
+- Supply statuses and 2024 production figures were checked against USGS *Mineral Commodity Summaries 2025*
+  (each row of `data/africa_element_supply.csv` records its verification level). They are not reserve estimates or
+  investment advice.
 - Hypotheses are research suggestions to test, not conclusions. Each one lists its evidence and a validation
   experiment, and offline "domain prior" hypotheses are labelled as such.
 

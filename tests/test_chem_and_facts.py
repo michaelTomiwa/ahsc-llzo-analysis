@@ -95,3 +95,33 @@ def test_thesis_medians_match(facts):
 
     llzo_sigma = [f["value"] for f in facts if f["system"] == "LLZO" and f["property"] == "ionic_conductivity"]
     assert 1e-4 < statistics.median(llzo_sigma) < 1e-3
+
+
+def test_record_sources_provenance():
+    from knowledge_engine.record_sources import build, coverage
+
+    table = build()
+    stats = coverage(table)
+    assert stats["records"] == 533
+    assert stats["paper_doi"] >= 20 and stats["source_review_verified_row"] >= 50
+    linked = table[table.doi.ne("")]
+    assert linked.doi.str.startswith("10.").all()
+    # Every value-verified DOI keeps the verbatim sentence it was accepted on.
+    assert linked[linked.match_type.eq("verified_values")].evidence.str.len().gt(20).all()
+
+
+def test_facts_carry_paper_and_review_dois(facts):
+    first = next(f for f in facts if f["record_id"] == "AHSC-0001")
+    assert first["source"]["doi"] == "10.1016/j.jcis.2023.10.067"
+    assert first["source"]["review_doi"] == "10.3390/inorganics13020049"
+    assert first["source"]["review_link"] == "verified_row"
+
+
+def test_africa_supply_table_is_verified():
+    from knowledge_engine.africa import supply_table
+
+    table = supply_table()
+    assert {"verification", "usgs_2024_african_production", "source_url"} <= set(table.columns)
+    cobalt = table[table.element == "Co"].iloc[0]
+    assert "76%" in cobalt.usgs_2024_african_production and cobalt.verification.startswith("verified")
+    assert not table.source_url.str.contains("mcs2026").any()

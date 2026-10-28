@@ -54,11 +54,12 @@ def _num(value) -> float | None:
 
 
 def _load_record_sources() -> dict[str, dict]:
-    """Optional mapping record_id -> DOI/title/year, filled in from the thesis reference list."""
+    """record_id -> paper DOI/title/URL and source review (see knowledge_engine.record_sources)."""
     if not RECORD_SOURCES_CSV.exists():
         return {}
     table = pd.read_csv(RECORD_SOURCES_CSV, dtype=str).fillna("")
-    return {row["record_id"]: row for row in table.to_dict("records") if row.get("doi") or row.get("title")}
+    return {row["record_id"]: row for row in table.to_dict("records")
+            if row.get("doi") or row.get("url") or row.get("source_review_doi")}
 
 
 def _window_bounds(raw: str) -> tuple[float | None, float | None]:
@@ -189,7 +190,12 @@ def build_facts(ahsc_path: Path = AHSC_CSV, llzo_path: Path = LLZO_CSV) -> list[
             source = {"type": "thesis_curated_record", "record_id": record_id,
                       "file": path.relative_to(ROOT).as_posix() if path.is_relative_to(ROOT) else path.name,
                       "csv_line": index + 2, "doi": source_meta.get("doi") or None,
-                      "title": source_meta.get("title") or None, "year": source_meta.get("year") or None}
+                      "title": source_meta.get("title") or None, "year": source_meta.get("year") or None,
+                      "url": source_meta.get("url") or None,
+                      "doi_match": source_meta.get("match_type") or None,
+                      "review_doi": source_meta.get("source_review_doi") or None,
+                      "review_title": source_meta.get("source_review_title") or None,
+                      "review_link": source_meta.get("review_link") or None}
             evidence_text = _evidence_text(row)
             family = material_family(material, role)
             dopants = dopants_in(material) if role == "electrolyte" else []

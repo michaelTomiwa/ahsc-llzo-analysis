@@ -1,534 +1,534 @@
-record_id,doi,title,year,cathode_material,electrolyte
-AHSC-0001,,,,Ni3S2/ Ni2O3@N-CAN,1 M LiOH 0.3 M Zn(AC)2 + 3 M NaOH (Anode)
-AHSC-0002,,,,Activated carbon,1 M LiPF6
-AHSC-0003,,,,Nd5%-Mn2O3 3D-MSs,1 M KOH
-AHSC-0004,,,,ZnxMnO2/Ppy (ZMOP),2 M ZnSO4 + 0.1 M MnSO4
-AHSC-0005,,,,CoVO- PANI@CC,2 M ZnSO4
-AHSC-0006,,,,PMAC700-3,2 M ZnSO4
-AHSC-0007,,,,P-CNT/rGO,2 M ZnSO4
-AHSC-0008,,,,NiCoP- NiCoO2/ NiCo-Pox,6 M KOH
-AHSC-0009,,,,Activated carbon,1 M KOH
-AHSC-0010,,,,SnO2/CuO/FeO/ PVP/rGO,2 M KOH
-AHSC-0011,,,,Ti3C2-ZrO2 NC,PVA-KOH gel
-AHSC-0012,,,,rGO,3 M KOH
-AHSC-0013,,,,NPC,PVA-KOH
-AHSC-0014,,,,CSBC,1 M LiPF6
-AHSC-0015,,,,Zn-MET-800,2 M ZnSO4
-AHSC-0016,,,,,
-AHSC-0017,,,,LiMn2O4,PAM-WiS gel
-AHSC-0018,,,,LiMn2O4,PAAm-chitosan WiSgel
-AHSC-0019,,,,Lithium foil,TA-PAA cobweb-like hydrogel binder
-AHSC-0020,,,,Lithium foil,Li-PAA@PEDOT:PSS hydrogel binder
-AHSC-0021,,,,3D carbon-HKUST-1/S,Conducting polymer hydrogel withMOF domain
-AHSC-0022,,,,Lithium foil,3D meshlike PAM hydrogel binder
-AHSC-0023,,,,Lithium foil,ESVCA hydrogel binder
-AHSC-0024,,,,standardLIB,BN/BCcomposite aerogelseparator
-AHSC-0025,,,,high-loading LIBcathode,Low-water-content hydrogel flm(6.63wt%)
-AHSC-0026,,,,stretchable nanowire network,Crosslinked hydrogel
-AHSC-0027,,,,Fullcell(fexible LIB),Moisture self-absorbing hydrogel flm(4.62%water)
-AHSC-0028,,,,Activated carbon,Na2SO4-SiO2 hydrogel with methanol additive
-AHSC-0029,,,,Na2Fe2(SO4)3,Hierarchical nanocellulose- basedGPE
-AHSC-0030,,,,Na3V2(PO4)3,Salt-concentrated methylated hydrogel
-AHSC-0031,,,,,"Na-ioncompatible electrolyte (e.g.,NaPF6 in EC/DEC)"
-AHSC-0032,,,,Na3V2(PO4)3@C@CNT porousnetwork viahydrogel templating,"Na-ioncompatible electrolyte (e.g.,NaClO4 in EC/DEC)"
-AHSC-0033,,,,,"Solid-state gelor polymer electrolyte (e.g.,PVA/ZnSO4)"
-AHSC-0034,,,,,"Hierarchical structured polymer electrolyte (e.g.,PVA-based withZn salts)"
-AHSC-0035,,,,,Aqueous ZnSO4 with hydrogel interphase
-AHSC-0036,,,,,"Modifed aqueous electrolyte with antifreeze additives (e.g.,Cl- /NO3-coordina-tion)"
-AHSC-0037,,,,,Quasi-solid-state aqueous hybrid electrolyte (Al3+/H+based)
-AHSC-0038,,,,,"Aqueous Al-ion electrolyte (e.g.,AlCl3 or Al(NO3)3)"
-AHSC-0039,,,,,"Aqueous Al-ionelectrolyte (e.g.,Al(NO3)3 orAlCl3)"
-AHSC-0040,,,,,Polyanionhydrogels: APTQ+/AAm
-AHSC-0041,,,,CoFe(CN)6,Zn(OTf)2
-AHSC-0042,,,,α -MnO2,PAAm/ZnSO4/MnSO4
-AHSC-0043,,,,electrode material (Co3O4@Mn-Ni(OH)2/CC),NR
-AHSC-0044,,,,Co3O4/Ni,NR
-AHSC-0045,,,,Co3O4 MBs,2 M KOH
-AHSC-0046,,,,Co3O4,6 M KOH
-AHSC-0047,,,,MnCo2O4,"1 M H2SO4, 3 M KOH, 2.5 M KOH + 0.5 M LiOH"
-AHSC-0048,,,,CoFe2O4/Cr2CTx,NR
-AHSC-0049,,,,MWCNT/LiCo2O4,NR
-AHSC-0050,,,,Nio@Co3O4/C,NR
-AHSC-0051,,,,CoFe2O4,"KOH, K3Fe(CN)6 (additive)"
-AHSC-0052,,,,electrode material (Fe3O4 NPs),1 mol L-1 Na2SO3
-AHSC-0053,,,,NixFeyOz@Rgo,NR
-AHSC-0054,,,,Activated carbon,NR
-AHSC-0055,,,,Activated carbon,NR
-AHSC-0056,,,,NixCo1-xO//3DG,NR
-AHSC-0057,,,,NiCo-P/Ni3V2O8,NR
-AHSC-0058,,,,ZnCo2O4 NSs,6 M KOH
-AHSC-0059,,,,CrCo2O4/AC/PPY,NR
-AHSC-0060,,,,Cu-Mn-Zn Oxide,NR
-AHSC-0061,,,,ZnCr2O4@CC,1 M KOH
-AHSC-0062,,,,electrode material (rGO),"ether-based, K2SO4, KOH"
-AHSC-0063,,,,NiO@srGO/CNT,"2 M KOH, 1 M KOH"
-AHSC-0064,,,,NMGO,NR
-AHSC-0065,,,,4NG,NR
-AHSC-0066,,,,RPC,LiTFSI water-in-salt (WIS)
-AHSC-0067,,,,HAC-WS,"H2SO4, Na2SO4, KOH"
-AHSC-0068,,,,hCNC-5.0,KOH and EMIMBF4 (ionic liquid)
-AHSC-0069,,,,CNT Am-241,NR
-AHSC-0070,,,,VACNT,Ionogel (ionic liquid-based gel)
-AHSC-0071,,,,Fe3O4/CNT,"Na2SO4, K3Fe(CN)6, K4Fe(CN)6"
-AHSC-0072,,,,V2O5/VACNT,1 M Na2SO4
-AHSC-0073,,,,P3MT/VACNT,Ionic liquid in acetonitrile (25/75 v/v)
-AHSC-0074,,,,PC-CNT,"Propylene carbonate (PC), KOH"
-AHSC-0075,,,,SWCNT/TiO2,PVA/H2SO4 gel
-AHSC-0076,,,,CNT-SC,"1 M H2SO4, PVA/H2SO4/Fe3+/Fe2+ gel"
-AHSC-0077,,,,CNT/TiNiW-SC,NR
-AHSC-0078,,,,CNT-NF,NR
-AHSC-0079,,,,G/CNT-SP,NR
-AHSC-0080,,,,MnO2@CNT,"1.0 M KCl (aqueous), 1.0 M LiClO4 in PC (organic)"
-AHSC-0081,,,,Co3O4/CNO,Redox-additive electrolyte (RAE) in 3 M KOH
-AHSC-0082,,,,PEDOTMoO3@CNO,NR
-AHSC-0083,,,,RFM-CNO-C,NR
-AHSC-0084,,,,Nd-AlFeO3,6 M KOH
-AHSC-0085,,,,P-Ni0.5Cu0.5Co2O4,3 M KOH
-AHSC-0086,,,,NiCo2O4-MoS2,2 M KOH
-AHSC-0087,,,,Mn-Co Oxide,PVA-KOH Gel
-AHSC-0088,,,,MnO2@Zn/Ni-MOF,6 M KOH
-AHSC-0089,,,,MACNC/CNT,
-AHSC-0090,,,,PANI/HG-10,1 M H2SO4 (Gel State
-AHSC-0091,,,,rGO-PTs,2 M HCl + PVA Gel
-AHSC-0092,,,,nanocomposite N-doped wood fiber carbon,6 M KOH
-AHSC-0093,,,,Buckwheat-derived porous carbon,6 M KOH
-AHSC-0094,,,,Petroleum coke-activated carbon,3-6 M KOH
-AHSC-0095,,,,ZIF-8-derived porous carbon,6 M KOH
-AHSC-0096,,,,LGNC (4:1),
-AHSC-0097,,,,C-N-30-8h,
-AHSC-0098,,,,As8Mg,
-AHSC-0099,,,,INC,
-AHSC-0100,,,,CS-700m,
-AHSC-0101,,,,PHC-4,
-AHSC-0102,,,,BGNS,
-AHSC-0103,,,,NSC,
-AHSC-0104,,,,NHPCS,
-AHSC-0105,,,,NBEG,
-AHSC-0106,,,,SNC-3,
-AHSC-0107,,,,NCN,
-AHSC-0108,,,,CTK-1.0,
-AHSC-0109,,,,SGCs,
-AHSC-0110,,,,NS-GHNS,
-AHSC-0111,,,,NPCNs,
-AHSC-0112,,,,PAC-6,
-AHSC-0113,,,,SPC-SCNTs,
-AHSC-0114,,,,NHPC-800,
-AHSC-0115,,,,AC-SCNTs,
-AHSC-0116,,,,NS-pHC-1.348,
-AHSC-0117,,,,PN-FPC,
-AHSC-0118,,,,PN-FAPC,
-AHSC-0119,,,,Clay-like Ti3C2 MXene,PVA/H2SO4
-AHSC-0120,,,,Ti3C2Tx Films,PVA/H2SO4
-AHSC-0121,,,,L-S-MXene (Ti3C2Tx),PVA/H2SO4
-AHSC-0122,,,,Ti3C2Tx all-solid-state,PVA/H2SO4
-AHSC-0123,,,,Transparent Ti3C2 MXene film,PVA/H2SO4
-AHSC-0124,,,,State-of-the-art Mxenebased on-chip MSCs,PVA/H2SO4
-AHSC-0125,,,,MXene/BC,PVA/H2SO4
-AHSC-0126,,,,PEDOT-MXene,Na2SO4/PPy
-AHSC-0127,,,,RuO2@MXene,PVA-KOH
-AHSC-0128,,,,EG-MXene,PVA/H2SO
-AHSC-0129,,,,Co-Al (LDH),PVA-KOH
-AHSC-0130,,,,rGO,PVA/H2SO4
-AHSC-0131,,,,MXene-based MSCs,EMIMBF4/PVDF-HFP
-AHSC-0132,,,,(Ti3C2Tx) MXene inks,PVA/H2SO4
-AHSC-0133,,,,3D Printing of Additive-Free 2D Ti3C2Tx(MXene) Ink,PVA/H2SO4
-AHSC-0134,,,,3D-printed MXene-N,PVA/H2SO4
-AHSC-0135,,,,Ti3C2Tx MXene,PVA/Na2SO4
-AHSC-0136,,,,Ti3C2Tx MXene,PVA/H2SO4
-AHSC-0137,,,,"N,S-MXene",PVA/H2SO4
-AHSC-0138,,,,Array of MXene,PVA/H2SO4
-AHSC-0139,,,,Interdigitated Ti3C2Tx MSC,PVA/H2SO4
-AHSC-0140,,,,MXene films,PVA/H2SO4
-AHSC-0141,,,,Few-layered Mxene flakes,PVA/H2SO4
-AHSC-0142,,,,MPC//HPC,1 M Na2SO4
-AHSC-0143,,,,MnO2@R,1 M Na2SO4
-AHSC-0144,,,,MnO2/CNTs,2 M KOH
-AHSC-0145,,,,MnO2/rGO/CNTs,1 M Na2SO4
-AHSC-0146,,,,MnO2@TiC/C,1 M Na2SO4
-AHSC-0147,,,,MnO2/CNTs,1 M Na2SO4
-AHSC-0148,,,,MnO2/CNT//PPy/CNT,1 M Na2SO4
-AHSC-0149,,,,MnO2/HNPC,2 M Ca(NO3)2
-AHSC-0150,,,,MnO2/HC,1 M Na2SO4
-AHSC-0151,,,,MnO2/GO,1 M Na2SO4
-AHSC-0152,,,,alpha-MnO2,1 M KOH
-AHSC-0153,,,,MnO2/CN/PVDF,0.5M Na2SO4
-AHSC-0154,,,,MnO2,0.5 M K2SO4
-AHSC-0155,,,,Hv-Ni3Mn0.7Fe0.3-LDH,0.2 M ZnSO4
-AHSC-0156,,,,NiCo-LDH nanocrystal@ amorphousness core/shell structure (LDH200),1.0 M LiPF6
-AHSC-0157,,,,MgAl-LDH@CNT,Li6PS5Cl
-AHSC-0158,,,,NiFe-NO3 LDH,1M NaClO4
-AHSC-0159,,,,NiFe-Cl LDH,0.5 M Bpy14Cl/PC
-AHSC-0160,,,,Ni5Ti-Cl LDH,0.5 M Bpy14Cl
-AHSC-0161,,,,CoFe/Fe3C@CN-900,0.1 M KOH
-AHSC-0162,,,,Fe/Co LDH (CoL 2:1),0.1 M KOH
-AHSC-0163,,,,ZIF-67@NiCo-LDH,1 M LiPF6
-AHSC-0164,,,,NiFe2O4@NiCo-LDH,1 M LiPF6
-AHSC-0165,,,,Ni-Zn LDH intercalated with DS-,1 M LiPF6
-AHSC-0166,,,,NiS2/FeS2@NC@NiFe LDH/FeO(OH),1 M LiPF6
-AHSC-0167,,,,NiCo-LDH/MXene,1 M LiPF6
-AHSC-0168,,,,Mg2Al1-CO3-LDH,1 M LiPF6
-AHSC-0169,,,,NiCoOOH@CoLa-LDH(NC@CL),1 M KOH + 5 mM ZnO
-AHSC-0170,,,,NiCoMo-P150 LDH,0.5 M Bpy14Cl
-AHSC-0171,,,,NiAl-LDH@G,0.5 M Bpy14Cl
-AHSC-0172,,,,Mo0.3NiCo2-Cl LDH,0.5 M Bpy14Cl
-AHSC-0173,,,,CoFe-Cl-LDH/CNT,1.0 M NaCl
-AHSC-0174,,,,Ni-CAT/NiFe-LDH/CNFs,6 M KOH
-AHSC-0175,,,,ZnCo2O4@NiMn-LDH (2:1),6 M KOH
-AHSC-0176,,,,NiCo-LDH/NCM@NF,1 M KOH
-AHSC-0177,,,,Pt-NiFe-LDH@Co9S8,6.0 M KOH/0.2 M Zn(OAc)2
-AHSC-0178,,,,Co@NiFe-LDH,0.2 MZn(OAC)2 +6 M KOH
-AHSC-0179,,,,Ni2Co-LDH/EG composites,1 M LiPF6
-AHSC-0180,,,,NiAl LDH,1 M LiPF6
-AHSC-0181,,,,L-CoNi-LDH/C,1 M LiTFSI
-AHSC-0182,,,,LDH@PSS (1:1.5),1 M LiTFSI
-AHSC-0183,,,,Vo-LDHs-MXenes,1 M LiTFSI
-AHSC-0184,,,,V2O5/Cys/FeNi-LDH,1 M LiTFSI
-AHSC-0185,,,,NiFe-LDH@S,1 M LiTFSI
-AHSC-0186,,,,NiAl-LDH@S,1 M LiTFSI
-AHSC-0187,,,,ZnAl-LDH@S,1 M LiTFSI
-AHSC-0188,,,,NiCoAl-LDH,1.0 M LiTFSI with 1 wt.% LiNO3
-AHSC-0189,,,,NiCr-Cl LDH/rGO,1 M NaCF3SO3
-AHSC-0190,,,,CoMoLDH@C-PDA-6,1 M NaClO4
-AHSC-0191,,,,Co-Co LDH-derived CoSe2@NHCNS@C,1 M NaClO4
-AHSC-0192,,,,MCN-LDH@CP,3.0 M KOH
-AHSC-0193,,,,ZnCo-LDH,6 M KOH + 0.2 M Zn(AC)2
-AHSC-0194,,,,NiCo LDH/MXene@NF,1 M KOH
-AHSC-0195,,,,CoNi-LDH(v),3 M ZnSO4
-AHSC-0196,,,,ZnAl-LDH@Zn,3 M ZnSO4
-AHSC-0197,,,,CoNi LDH(v),1 M ZnSO4
-AHSC-0198,,,,NiCoS@NiCo-LDH,6 M KOH
-AHSC-0199,,,,Ni3S2/NiS@NiCo-LDH,6 M KOH
-AHSC-0200,,,,NiFe LDH on Cu NWs,6 M KOH and0.2 M zinc acetate
-AHSC-0201,,,,NiCo-LDH,1.0 M LITFSI
-AHSC-0202,,,,NiCo-MOF/LDH,1 M LITFSI
-AHSC-0203,,,,NiCo-LDH,1 M LITFSI
-AHSC-0204,,,,NiCo2S4-NiS2 NH@C,5 mM Li2S6
-AHSC-0205,,,,CuCo-LDH,1 M LiTFSI
-AHSC-0206,,,,PPy@LDH-S,1 M LiTFSI with 1% LiNO3
-AHSC-0207,,,,Ni0.8Ca1.2Al-Cl LDH,1.0 M NaPF6
-AHSC-0208,,,,Co0.6Ca1.4Al-Cl LDH,1.0 M NaPF6
-AHSC-0209,,,,CoSn-LDH@MXene,1 M NaClO4
-AHSC-0210,,,,Ni3Ti-Cl LDH,0.5 M PP14Cl
-AHSC-0211,,,,CoMn-LDH/NPGA,1 M KOH
-AHSC-0212,,,,Na0.5MnO2( +),1 M Na2SO4
-AHSC-0213,,,,Na0.25MnO2( +),1 M Na2SO4
-AHSC-0214,,,,C@Mn3O4( +),1 M Na2SO4
-AHSC-0215,,,,CC( +),1 M Na2SO4
-AHSC-0216,,,,K0.6MnO2( +),1 M KTFSI
-AHSC-0217,,,,Zn-Ti3C2,ZnSO4 gel
-AHSC-0218,,,,Mo1.33CTz@Ti3C2Tz,3 M Zn(CF3SO3)2
-AHSC-0219,,,,Ti3C2Tz,0.1 M ZnSO4
-AHSC-0220,,,,Ti3C2Tz,2 M ZnSO4
-AHSC-0221,,,,Ti3C2Tz hydrogel,ZnSO4
-AHSC-0222,,,,Ti3C2Tz@cotton,ZnSO4/MnSO4
-AHSC-0223,,,,Ti3C2Tx/Bi2S3@N-C,Zn(CF3SO3)2
-AHSC-0224,,,,Mo1.33CTz@RGO,2 M ZnSO4 gel
-AHSC-0225,,,,Ti3C2Tx,ZnSO4/PAM
-AHSC-0226,,,,H-Ti3C2Tx film,2 M Zn(CF3SO3)2
-AHSC-0227,,,,V2CTx,ZnSO4 gel
-AHSC-0228,,,,Ti1.1V0.7CrxNb1.0Ta0.6C3Tz,3 M Zn(CF3SO3)2
-AHSC-0229,,,,Ti3C2Tx,1 M H2SO4
-AHSC-0230,,,,Ti3C2TxV,1 M H2SO4
-AHSC-0231,,,,Ti2C2Tx/WS2/GO,1 M KOH
-AHSC-0232,,,,Ti3C2Tx/Arg-CQD-Ser,1 M KOH
-AHSC-0233,,,,Ti2CTx@C,2 M ZnSO4
-AHSC-0234,,,,Ti3C2Tx/CNT,PVA/KOH gel
-AHSC-0235,,,,Ti3C2Tx/rGO,1 M H2SO4
-AHSC-0236,,,,Ti3C2Tx/rGO,LiCF3SO3/PMMA
-AHSC-0237,,,,Ti3C2Tx/rGO foam,3 M H2SO4
-AHSC-0238,,,,Ti3C2Tx/N-doped CC,
-AHSC-0239,,,,Ti3C2Tx@MnO2,1 M Na2SO4
-AHSC-0240,,,,Ti3C2Tx@MnO2,PVA/H2SO4
-AHSC-0241,,,,Ti3C2Tx/NiCo2S4,KOH gel
-AHSC-0242,,,,Ti3C2Tx@CoNi2S4,6 M KOH
-AHSC-0243,,,,Ti3C2Tx@Co3O4,6 M KOH
-AHSC-0244,,,,Ti3C2Tx@VS2,PVA/KOH gel
-AHSC-0245,,,,Ti3C2Tx/α-Fe2O3,1M LiCl
-AHSC-0246,,,,Ti3C2Tx/PANI,1 M Na2SO4
-AHSC-0247,,,,Ti3C2Tx/CNF/PANI,1 M H2SO4/PVA
-AHSC-0248,,,,Ti3C2Tx/PPY,0.5 M Na2SO4
-AHSC-0249,,,,Ti3C2Tx@SnS2/SnO2V,1 M LiPF6 EC/DEC
-AHSC-0250,,,,Nb4C3Tx nanosheets,1 M H2SO4
-AHSC-0251,,,,V2CTx@C,1 M H2SO4
-AHSC-0252,,,,Nb2CTx/CNT,1 M H2SO4
-AHSC-0253,,,,Nb2C/Ti3C2,PVA/H2SO4 gel
-AHSC-0254,,,,Nb4C3Tx film,1 M H2SO4
-AHSC-0255,,,,Mo2CTx,1 M H2SO4
-AHSC-0256,,,,TiVCTx/poly-oPD,1 M H2SO4
-AHSC-0257,,,,TiVCTx@PANI-MnO2,1 M H2SO4
-AHSC-0258,,,,Ni12P5,6 M KOH
-AHSC-0259,,,,CoP,1 M KOH
-AHSC-0260,,,,NiCoP,2 M KOH
-AHSC-0261,,,,Co2P,6 M KOH
-AHSC-0262,,,,MoP/NPC,1 M KOH
-AHSC-0263,,,,Zn-Ni-P,2 M KOH
-AHSC-0264,,,,Ni-Fe-P,6 M KOH
-AHSC-0265,,,,ZnNiCo-P,6 M KOH
-AHSC-0266,,,,C-doped Co-Mn-Fe-P,1 M KOH
-AHSC-0267,,,,CoP,6 M KOH
-AHSC-0268,,,,Cu3P,1 M KOH
-AHSC-0269,,,,Cu-Co-Ni-P,6 M KOH
-AHSC-0270,,,,Zn-Ni-Co-P,3 M KOH
-AHSC-0271,,,,Ni2P,3 M KOH
-AHSC-0272,,,,NixPy,3 M KOH
-AHSC-0273,,,,NiCoP,6 M KOH
-AHSC-0274,,,,Mn-Ni-Co-P,1 M KOH
-AHSC-0275,,,,MXene/NiPc,3 M KOH
-AHSC-0276,,,,Ti3C2Tx,3 M H2SO4
-AHSC-0277,,,,N-Ti3C2Tx,2 M H2SO4
-AHSC-0278,,,,Nb2C-PCarbons CPs,6 M KOH
-AHSC-0279,,,,Ti2.9Nb0.1C2Tx,1 M H2SO4
-AHSC-0280,,,,1-Co@Ti3C2Tx MXene,1 M KOH
-AHSC-0281,,,,Biomass/MXene/Cs aerogel,3 M H2SO4
-AHSC-0282,,,,SSA@Ti3C2Tx,3 M H2SO4
-AHSC-0283,,,,Mg-10%MFMX@MS,3 M H2SO4
-AHSC-0284,,,,Mo2N MXene,2 M KOH
-AHSC-0285,,,,CoMoO4-Ti3C2TxV,6 M KOH
-AHSC-0286,,,,MNF/Ti3C2Tx,1 M Na2SO4
-AHSC-0287,,,,MXene-WO3@rGOsp,2 M KOH + 0.1 M K4[Fe(CN)6]
-AHSC-0288,,,,d-Ti3CN@NiCeO2,2 M KOH
-AHSC-0289,,,,CuMn2O4/Ti3C2,2 M KOH
-AHSC-0290,,,,MnFe2O4/MXene,2 M KOH
-AHSC-0291,,,,MXene/TiO2-G,EmimTFSI-ACNLiTFSI
-AHSC-0292,,,,d- V4C3TxMoO3,3 M H2SO4
-AHSC-0293,,,,40 wt% g-C3N4/MoO3,1 M H2SO4
-AHSC-0294,,,,(CeO2/MXene)/PANI(40%:60%),2 M KOH
-AHSC-0295,,,,MXene/NiCo2S4,3 M KOH
-AHSC-0296,,,,MXene/CoFe2O4/g- C3N4,3 M KOH
-AHSC-0297,,,,NiCo2O4@MXene,3 M KOH
-AHSC-0298,,,,WS2@MXene/GO,1 M KOH
-AHSC-0299,,,,Ti3C2Tx/NH2-RGO,1 M KOH
-AHSC-0300,,,,CoS/MXene/PANI,1 M H2SO4
-AHSC-0301,,,,MXene/CuS,3 M KOH
-AHSC-0302,,,,CNS/C/MXene,6 M KOH
-AHSC-0303,,,,MXene/FeNi2S4,6 M KOH
-AHSC-0304,,,,Ti3C2Tx (MXene)/WS2V,1 M H2SO4
-AHSC-0305,,,,MXene/PANI,1 M KOH
-AHSC-0306,,,,P-M10,H2SO4
-AHSC-0307,,,,PPy/Mxene/GA,1 M H2SO4
-AHSC-0308,,,,PANI-WO3/MXene,1 M H2SO4
-AHSC-0309,,,,rGO/MXene-PPy,1 M H2SO4
-AHSC-0310,,,,MXene@h-CNT,2 M KOH
-AHSC-0311,,,,MXene/rGO/CNTs,1 M H2SO4
-AHSC-0312,,,,CF-PhNO2/oPD-MX,1 M H2SO4
-AHSC-0313,,,,MoSSe@CNTs,1 M H2SO4
-AHSC-0314,,,,NF@Mxene@NiCo- LDH,3 M KOH
-AHSC-0315,,,,Ni-MOF/MXene,1 M KOH
-AHSC-0316,,,,FeCo-LDH/MXene,3 M KOH
-AHSC-0317,,,,MXene/BCN10 (m-MX/BCN10),KOH
-AHSC-0318,,,,MXene/Ni-Co phosphide,2 M KOH
-AHSC-0319,,,,N-doped hollow carbon nanospheres,NaClO4
-AHSC-0320,,,,Highly ordered and compact porous carbon,ZnSO4
-AHSC-0321,,,,Nanoporous gold MnO2,Li2SO4
-AHSC-0322,,,,MnO2,MgSO4
-AHSC-0323,,,,α-MoO3,LiClO4
-AHSC-0324,,,,Activated carbon,Al2(SO4)3
-AHSC-0325,,,,B/N codoped carbon nanosheets,LiPF6
-AHSC-0326,,,,Nitrogen-doped carbon hollow nanospheres,NaClO4
-AHSC-0327,,,,Nitrogen-doped carbon hollow nanospheres,KPF6
-AHSC-0328,,,,Activated carbon,LiPF6
-AHSC-0329,,,,Activated carbon,NaClO4
-AHSC-0330,,,,Activated carbon,KFSI
-AHSC-0331,,,,Bioderived activated carbon,KPF6
-AHSC-0332,,,,Activated carbon,
-AHSC-0333,,,,VOPO4/graphene,LiCl/PVA
-AHSC-0334,,,,LiFePO4 particles trapped in rGO&C@Li3V2(PO4)3 nanosheets,LiPF6
-AHSC-0335,,,,Ca0.5Ti2(PO4)3@C microspheres,KPF6
-AHSC-0336,,,,Nb2CTx/CNT nanocomposite paper,LiPF6
-AHSC-0337,,,,Ti3C2 MXene,ZnSO4
-AHSC-0338,,,,Activated carbon,LiPF6
-AHSC-0339,,,,Activated carbon,LiPF6
-AHSC-0340,,,,Nitrogen-doped hierarchically porous carbon,LiPF6
-AHSC-0341,,,,Activated carbon,NaClO4
-AHSC-0342,,,,Activated carbon,Ca(PF6)2
-AHSC-0343,,,,Activated carbon,LiPF6
-AHSC-0344,,,,Activated Ketjen black,NaClO4
-AHSC-0345,,,,Phosphorene,LiTFSIþ Zn(CF3SO3)2
-AHSC-0346,,,,Na3V2O2(PO4)2 F@rGO,NaPF6
-AHSC-0347,,,,Activated carbon,LiPF6
-AHSC-0348,,,,Activated carbon,NaClO4
-AHSC-0349,,,,TiN nanofiber,ZnSO4
-AHSC-0350,,,,Activated polyaniline-derived carbon,LiPF6
-AHSC-0351,,,,Activated carbon,NaPF6
-AHSC-0352,,,,Ni quantum dots @graphene/TaC/Ta wires,Na2SO4 þ LiCl
-AHSC-0353,,,,Activated carbon,ZnSO4
-AHSC-0354,,,,Mesoporous hollow carbon spheres,ZnSO4
-AHSC-0355,,,,Activated carbon,NaPF6
-AHSC-0356,,,,Activated carbon,LiPF6
-AHSC-0357,,,,Activated carbon,LiPF6
-AHSC-0358,,,,Carbon,NaClO4
-AHSC-0359,,,,PANI,
-AHSC-0360,,,,High specific surface area PANI,
-AHSC-0361,,,,PANI/rGO/iron oxide,
-AHSC-0362,,,,PANI/activated carbon,
-AHSC-0363,,,,PANI/liquid crystalline CNT,
-AHSC-0364,,,,PEDOT:PSS (spin-coated),
-AHSC-0365,,,,PEDOT/GO,
-AHSC-0366,,,,PEDOT/SiNW/MnOx,
-AHSC-0367,,,,PPy,
-AHSC-0368,,,,PPy/PANI on carbon/graphite,
-AHSC-0369,,,,PPy/rGO,
-LLZO-0001,,,,LiNi0.8Co0.1Mn0.1O2,3D LLZO-PAN
-LLZO-0002,,,,LiFePO4 (LFP),Garnet-type Li6.5La3Zr1.5Ta0.5O12 (LLZO)
-LLZO-0003,,,,Sulfur-based composite material,Liquid organic electrolytes containing (LITFSI)
-LLZO-0004,,,,LiFePO4 (LFP),PolyILs (with LiTFSI and LiFSI salts in ACN solvent)
-LLZO-0005,,,,LiFePO4 (LFP),PVDF-HFP (with LiFSI salt in DMF solvent)
-LLZO-0006,,,,LiFePO4 (LFP),PEO with LiFSI
-LLZO-0007,,,,LiFePO4 (LFP),DL-lactide and 3-caprolactone with LiTFSI
-LLZO-0008,,,,LiFePO4 (LFP),PAN with Zn(OTf)2
-LLZO-0009,,,,LiFePO4 (LFP),PCL with LiFSI
-LLZO-0010,,,,LiFePO4 (LFP),PEO or PAN with LiTFSI
-LLZO-0011,,,,LiFePO4 (LFP),SAPE (Solid state aqueous PE)with LiTFSI
-LLZO-0012,,,,LiFePO4 (LFP),PVDF (with NMP and LiTFSI)
-LLZO-0013,,,,LiFePO4 (LFP),PAN( with LiTFSI)
-LLZO-0014,,,,LiFePO4 (LFP),PVDF-HFP(with DMF and LiTFSI)
-LLZO-0015,,,,LiFePO4 (LFP),PMELiPVFM (with LiTFSI)
-LLZO-0016,,,,LiFePO4 (LFP),3-caprolactone (CL) and DL-lactide (LA) (with LiTFSI)
-LLZO-0017,,,,LiFePO4 (LFP),P(EO-co-PO)- TMPTGE(with LiFSI)
-LLZO-0018,,,,LiFePO4 (LFP),PE/AO@PIS (with DMF and LiTFSI)
-LLZO-0019,,,,LiFePO4 (LFP),PEGMEA (with LiTFSI)
-LLZO-0020,,,,LiFePO4 (LFP),PLiMTFSI (withTFSI)
-LLZO-0021,,,,LiFePO4 (LFP),PEaMI (with LiPhTFSI)
-LLZO-0022,,,,LiFePO4 (LFP),PVDF-HFP (with [Li(G4)][TFSI] and LiTFSI)
-LLZO-0023,,,,LiFePO4 (LFP),PEO (with LiPCSI)
-LLZO-0024,,,,LiFePO4 (LFP),TEG (with LiCTFPB)
-LLZO-0025,,,,LiFePO4 (LFP),PEO (with Poly(lithium 4-styrene sulfonate)
-LLZO-0026,,,,LiFePO4 (LFP),PSiO-PVDFHFP (with DMSO and LiPF6)
-LLZO-0027,,,,LiFePO4 (LFP),PETEA (with EC and DMC and LiPF6)
-LLZO-0028,,,,LiFePO4 (LFP),TMC (with LiM)
-LLZO-0029,,,,LiFePO4 (LFP),PLiSTFSI
-LLZO-0030,,,,LiFePO4 (LFP),PEO (with LEs LiPF6 and LiFSI)
-LLZO-0031,,,,LiFePO4 (LFP),PEGDA and 2-hydroxyethyl methacrylate (with DMF and LiTFSI)
-LLZO-0032,,,,LiFePO4 (LFP),PVDF-HEP (with PEGDME and LiTFSI)
-LLZO-0033,,,,LiFePO4 (LFP),"PEO and PVDF (with Les LiFSI, LiTFSI, and LiClO4)"
-LLZO-0034,,,,LiFePO4 (LFP),PMMA-SiO2 composite
-LLZO-0035,,,,LiFePO4 (LFP),"PVDF-HEP (with TEGDME LiClO4, LiPF6, and LiTFSI)"
-LLZO-0036,,,,LiFePO4 (LFP),PEGM-Block Copolymer (with EC and DEC and LiPF6 and LiNO3)
-LLZO-0037,,,,LiFePO4 (LFP),"PAN, PEO, and PVDF (with EC and EMC and LiPF6 and LiTFSI)"
-LLZO-0038,,,,LiFePO4 (LFP),PVDF-HEP (with EC and DMC and LiPF6)
-LLZO-0039,,,,LiFePO4 (LFP),[P(ANDEVP)] (with LiPF6)
-LLZO-0040,,,,LiFePO4 (LFP),Polymer matrix Ils (with LiDFOB and LiFSI)
-LLZO-0041,,,,LiFePO4 (LFP),"PEO (with SiO2, Al2O3, and LLZTO LiTFSI, LiClO4)"
-LLZO-0042,,,,LiFePO4 (LFP),"PEO-SiO2 (with SiO2, NASICON and LiCl4, LiTFSI)"
-LLZO-0043,,,,LiFePO4 (LFP),"PEO-LLZTO (with LATP, LLTO, and LLZO LiTFSI)"
-LLZO-0044,,,,LiFePO4 (LFP),"PEGDA (with LATP, LLTO, and LLZO LiTFSI)"
-LLZO-0045,,,,LiFePO4 (LFP),PVDF-CPE (with LLTO)
-LLZO-0046,,,,LiFePO4 (LFP),CPE with LATP Nanoparticles (with LiTFSI)
-LLZO-0047,,,,LiFePO4 (LFP),"PEO-LiClO4-TiO2 (with Al2O3, TiO2 and LiClO4)"
-LLZO-0048,,,,LiFePO4 (LFP),"PMMA-based matrices (with PF55, AlCl3)"
-LLZO-0049,,,,LiFePO4 (LFP),"PEO-LAGP (with TiO2, LATP, LAGP and LiTFSI, LiClO4)"
-LLZO-0050,,,,LiFePO4 (LFP),Poly(ethoxylated trimethylolpropane triacrylate) (PA3) (with 2-hydroxy-2-methyl-1-phenyl-1-propanone (HMPP))
-LLZO-0051,,,,LiFePO4 (LFP),PVA and PAN (with Succinonitrile (SN) and LiPFSI)
-LLZO-0052,,,,LiFePO4 (LFP),Polyimide with (LiPFSI)
-LLZO-0053,,,,LiFePO4 (LFP),PCL ( with50 wt% glacial acetic acid and Plasticizer and LiTFSI)
-LLZO-0054,,,,LiFePO4 (LFP),Pectin with LiClO4
-LLZO-0055,,,,LiFePO4 (LFP),Pectin (with Distilled water EC and LiTFS)
-LLZO-0056,,,,LiFePO4 (LFP),Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)
-LLZO-0057,,,,LiFePO4 (LFP),"Cassava starch (with Li2SO4, LiCl, CF3LiSO3 and Li2SO4, LiCl, CF3LiSO3)"
-LLZO-0058,,,,LiFePO4 (LFP),Poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (P3HB-3HV) (with EC and DEC and LiPF6)
-LLZO-0059,,,,LiFePO4 (LFP),DEGDA LiTFSI (with Ethylene carbonate (EC)/Diethyl carbonate (DEC))
-LLZO-0060,,,,LiFePO4 (LFP),"PEGMA (with LiTFSI, LISFI)"
-LLZO-0061,,,,LiFePO4 (LFP),PEGMA (with LiTFSI)
-LLZO-0062,,,,LiFePO4 (LFP),"PEGMEA (with LiTFSI Dimethyl carbonate(DMC)/1, and 2-dimethoxyethane (DME))"
-LLZO-0063,,,,LiFePO4 (LFP),"PEGMEA (with LiTFSI,and LiPF6 EC/DMC/Ethyl methyl carbonate(EMC))"
-LLZO-0064,,,,LiFePO4 (LFP),VEC withLiTFSI
-LLZO-0065,,,,LiFePO4 (LFP),MMA (with LiPF6 and EC/DEC)
-LLZO-0066,,,,LiFePO4 (LFP),PEGDA with LiTFSI
-LLZO-0067,,,,LiFePO4 (LFP),DOL (with LiPF6 and MP)
-LLZO-0068,,,,LiFePO4 (LFP),DOL (with )LiTFSI
-LLZO-0069,,,,LiFePO4 (LFP),"DOL (with LiTFSI, and LiSF6 DME)"
-LLZO-0070,,,,LiFePO4 (LFP),"DOL, with (VC and LiTFSI)"
-LLZO-0071,,,,LiFePO4 (LFP),EGDMA with (/EDT LiTFSI)
-LLZO-0072,,,,LiFePO4 (LFP),PEGMEA/Vinylene carbonate (with LiTFSI and EC/DMC/DEC)
-LLZO-0073,,,,LiFePO4 (LFP),Glyme-Functionalized Episulfide Monomer)/SGxS (Crosslinking Episulfide) (with LiTFSI and DME/DOL)
-LLZO-0074,,,,LiFePO4 (LFP),Glyme-Functionalized Episulfide Monomer)/SGxS (Crosslinking Episulfide) (with LiTFSI and DME/DOL)
-LLZO-0075,,,,LiFePO4 (LFP),"PEG,(with α-CD DMF and LiTFSI)"
-LLZO-0076,,,,LiFePO4 (LFP),LiDMPA (with LiTFSI)
-LLZO-0077,,,,LiFePO4 (LFP),"Hydroxyethyl Methacrylate (HEMA), ε- caprolactone"
-LLZO-0078,,,,LiFePO4 (LFP),ganoboronmodified- (With PEGMA and DMSO LiTFSI)
-LLZO-0079,,,,LiFePO4 (LFP),PEO (with Dry ACN and LiTFSI)
-LLZO-0080,,,,LiFePO4 (LFP),"AMPS (with EC, and DMC LiOH.H2O)"
-LLZO-0081,,,,LiFePO4 (LFP),"ACN (with THF, and MeCN LiTFSI)"
-LLZO-0082,,,,LiFePO4 (LFP),PEO (with DMF and LiTFSI)
-LLZO-0083,,,,LiFePO4 (LFP),PEGMA with (LiTFS)
-LLZO-0084,,,,LiFePO4 (LFP),PLiSSPSI (with SiO2 and NPs LiTFSI)
-LLZO-0085,,,,LiFePO4 (LFP),ODA and PMDA (with DMAC and LiTFSI)
-LLZO-0086,,,,LiFePO4 (LFP),PVDF-HFP with DMF
-LLZO-0087,,,,LiFePO4 (LFP),PCL (with THF and LiTFSI)
-LLZO-0088,,,,LiFePO4 (LFP),PEO (with ACN and LiTFSI)
-LLZO-0089,,,,LiFePO4 (LFP),PVDF-HFP (with DMF and LiTFSI)
-LLZO-0090,,,,LiFePO4 (LFP),PVDF-HFP (with DMF and LATTP)
-LLZO-0091,,,,LiFePO4 (LFP),PA6 (with ACN and LiTFSI)
-LLZO-0092,,,,LiFePO4 (LFP),PEO (with DMF and LiTFSI)
-LLZO-0093,,,,LiFePO4 (LFP),PAN (with DMF and LiTFSI)
-LLZO-0094,,,,LiFePO4 (LFP),Ionene oligomer (with DMF and LiTFSI)
-LLZO-0095,,,,LiFePO4 (LFP),PAN (with DMF and LiCLO4)
-LLZO-0096,,,,LiFePO4 (LFP),PAN (with DMF and LiTFSI)
-LLZO-0097,,,,LiFePO4 (LFP),Triethylene glycol dimethacrylate (with DMF and LiClO4)
-LLZO-0098,,,,LiFePO4 (LFP),LA-PAM-PEO (with ACN and LiTFSI)
-LLZO-0099,,,,LiFePO4 (LFP),Polymer-based nanofiber membranes - LiTFSI
-LLZO-0100,,,,LiFePO4 (LFP),PEG with LiSO3CF3
-LLZO-0101,,,,LiFePO4 (LFP),PVDF-HEP with poly(methylmethacrylate) grafted natural rubber (MG49) - LiBF4
-LLZO-0102,,,,LiFePO4 (LFP),PEO with LiTFSI
-LLZO-0103,,,,LiFePO4 (LFP),Gelatin (with Formicacid: Acetic acid (1:1) and LiClO4
-LLZO-0104,,,,LiFePO4 (LFP),PEO with LiTFSI
-LLZO-0105,,,,LiFePO4 (LFP),PEGMA (with TEPand NaTFSI)
-LLZO-0106,,,,LiFePO4 (LFP),PEO (with Na3Zr2Si2PO12)
-LLZO-0107,,,,LiFePO4 (LFP),MMA (with Py13TFSI and LiTFSI)
-LLZO-0108,,,,LiFePO4 (LFP),"PVDF-HFP (with TEP, and FEC LiTFSI)"
-LLZO-0109,,,,LiFePO4 (LFP),PAN with LiPF6
-LLZO-0110,,,,LiFePO4 (LFP),VC with LiDFOB
-LLZO-0111,,,,LiFePO4 (LFP),ETPTA with NaClO4
-LLZO-0112,,,,LiFePO4 (LFP),PVDF-HEP with LiTFSI
-LLZO-0113,,,,LiFePO4 (LFP),Poly(ε-caprolactoneco- trimethylene carbonate) (P(CL 80 TMC 20)) (with ACN and LiTFSI)
-LLZO-0114,,,,LiFePO4 (LFP),PVDF-HEP(with DMF and LiTFSI)
-LLZO-0115,,,,LiFePO4 (LFP),PEO-TEGDMA with LiTFSI
-LLZO-0116,,,,LiFePO4 (LFP),TGIC-NPEG with LiTFSI
-LLZO-0117,,,,LiFePO4 (LFP),"Poly (DOL-TTE)-LP (with LiTFSI, and LiBF4)"
-LLZO-0118,,,,LiFePO4 (LFP),PGMA (with PEG and LiTFSI)
-LLZO-0119,,,,LiFePO4 (LFP),PEI (with PEGDE and LiTFSI)
-LLZO-0120,,,,LiFePO4 (LFP),"Poly(ethylene glycol dimethacrylate-1,2- ethane dithiol) with(P-(EGDMA-EDT)) and - LiTFSI"
-LLZO-0121,,,,LiFePO4 (LFP),VEC-OFHDODA - LiTFSI
-LLZO-0122,,,,LiFePO4 (LFP),PVEC-NR20
-LLZO-0123,,,,LiFePO4 (LFP),PEGDGEpolyoxypropylenediamine with (D2000) - LiTFSI
-LLZO-0124,,,,LiFePO4 (LFP),POSS with (PEGDA and LITFSI)
-LLZO-0125,,,,LiFePO4 (LFP),SH-PEG-SH-PEGDA
-LLZO-0126,,,,LiFePO4 (LFP),PEO-POSS with THF LiTFSI
-LLZO-0127,,,,LiFePO4 (LFP),CMC (with CA and LiClO4)
-LLZO-0128,,,,LiFePO4 (LFP),SPPG-LiBOB (with PC and LiBOB)
-LLZO-0129,,,,LiFePO4 (LFP),1-vinyl-3- ethylimidazolium bis(trifluoromethanesulfonyl) imide ([VEIm][TFSI])-PIL - LiTFSI
-LLZO-0130,,,,LiFePO4 (LFP),Polystyrene-poly(styreneb- 1-((2-acryloyloxy) ethyl)-3- butylimidazolium bis(tri-fluoromethanesulfonyl) imide) (with EC and LiFSI)
-LLZO-0131,,,,LiFePO4 (LFP),PFMA-b-PEO-b-PFMA (with LiTFSI)
-LLZO-0132,,,,LiFePO4 (LFP),Styrene-PEO (with LiTFSI)
-LLZO-0133,,,,LiFePO4 (LFP),PCL-PPC-PCL (with LiTFSI)
-LLZO-0134,,,,LiFePO4 (LFP),P(HOEA-co-MA)-PEG (with THF and LiTFSI)
-LLZO-0135,,,,LiFePO4 (LFP),Pebax-PEGDE (P-P) with LiTFSI
-LLZO-0136,,,,LiFePO4 (LFP),PVBmPEO-b-PS -with LiTFSI
-LLZO-0137,,,,LiFePO4 (LFP),PEGMA-PEO with CH3OH and LiTFSI
-LLZO-0138,,,,LiFePO4 (LFP),PVBmPEO-b-PS (with TFSI)
-LLZO-0139,,,,LiFePO4 (LFP),PEO-b-vCHO (with LiTFSI)
-LLZO-0140,,,,LiFePO4 (LFP),PVDF-b-PTFE with LiPF6
-LLZO-0141,,,,LiFePO4 (LFP),Styrene-butadiene-Styrene with LPSCl
-LLZO-0142,,,,LiFePO4 (LFP),Poly(lithium 1-[3-(methacryloyloxy)- propylsulfonyl]-1- (trifluoromethylsulfonyl)imide) and poly(ethylene glycol) methyl ether methacrylate with LiTFSI
-LLZO-0143,,,,,PFPEMA-b-PEO
-LLZO-0144,,,,LiNi0.6Co0.2Mn0.2O2 (NCM622),Ceramic SSE: LLZTO pellets (pristine or coated with Li3PO4)
-LLZO-0145,,,,LiNi0.6Co0.2Mn0.2O2 (NCM622),Composite solid electrolyte: PCL + LiTFSI + LLZTO@LPO (only film-forming ability shown)
-LLZO-0146,,,,Ionic liquid,LLZO-0.6Ta
-LLZO-0147,,,,Ionic liquid,LLZO-0.25Ga
-LLZO-0148,,,,Ionic liquid,LLZO-0.5Ta
-LLZO-0149,,,,Ionic liquid,LLZO-0.5Ta
-LLZO-0150,,,,Ionic liquid,LLZO-0.6Ta
-LLZO-0151,,,,Ionic liquid,LLZO-0.25Ta
-LLZO-0152,,,,Ionic liquid,LLZO-0.6Ta
-LLZO-0153,,,,Co-sintering in O2 NCM622,LLZO
-LLZO-0154,,,,LCBO co-sintering,LLZO-0.6Ta
-LLZO-0155,,,,CLEs,LLZO-0.5Ta
-LLZO-0156,,,,CLEs,LLZO-0.5Ta
-LLZO-0157,,,,CLEs,LLZO-0.5Ta
-LLZO-0158,,,,CLEs,LLZO-0.5Ta
-LLZO-0159,,,,CLEs,LLZO-0.25Ga
-LLZO-0160,,,,PEO+LiTFSI,LLZO-0.6Ta
-LLZO-0161,,,,PEO+SN+LiTFSI,LLZO-Ta
-LLZO-0162,,,,PAN+SN+LiTFSI,LLZO-0.6Ta
-LLZO-0163,,,,SN+LiTFSI,LLZO-0.25Ta
-LLZO-0164,,,,TMS+LiTFSI,LLZO-0.5Ta- 2LWO
+record_id,doi,title,year,url,match_type,matched_values,evidence,source_review_doi,source_review_title,source_review_url,review_link,cathode_material,anode_material,electrolyte
+AHSC-0001,10.1016/j.jcis.2023.10.067,Ni3S2/Ni2O3 heterojunction anchored on N-doped carbon nanosheet aerogels for dual-ion hybrid supercapacitors,2023,,verified_values,Ni3S2/Ni2O3@N-CNA; Zn foil; 64.2 Wh/kg,"Based on the novel strategy of the alkaline dual-ion electrolytes, this dual-ion hybrid supercapacitor with the high energy density (64.2 Wh kg-1) opens up a new avenue to develop high-performance Zn-ion hybrid supercapacitors.",10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Ni3S2/ Ni2O3@N-CAN,Zn foil,1 M LiOH 0.3 M Zn(AC)2 + 3 M NaOH (Anode)
+AHSC-0002,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Activated carbon,T-Nb2O5,1 M LiPF6
+AHSC-0003,10.1016/j.electacta.2020.137169,Elevated energy density and cycle stability of α-Mn2O3 3D-microspheres with addition of neodymium dopant for pouch-type hybrid supercapacitors,2020,,verified_values,862.14 F/g; 97.30%; 2000 cycles; 32.26 Wh/kg; 800 W/kg,"The assembled HSC devices delivered excellent electrochemical properties with a high energy density of 32.26 Wh kg−1 at a power density of 800 W kg−1 with only 4.56% loss after 10,000 charge-discharge cycles.",10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Nd5%-Mn2O3 3D-MSs,Activated carbon,1 M KOH
+AHSC-0004,10.1002/bte2.20240035,ZnxMnO2/PPy Nanowires Composite as Cathode Material for Aqueous Zinc-Ion Hybrid Supercapacitors,2024,,verified_values,109 F/g; 20 Wh/kg; 867 W/kg; 86.4%; 5000 cycles,"The ZISCs assembled with ZMOP‐4 cathode and PCNTs anode display superb capacity (109 F g −1, 0.1 A g −1), and excellent power density of 867 W kg −1 corresponding to the energy density of 20 Wh kg −1.",10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,ZnxMnO2/Ppy (ZMOP),PCNTs,2 M ZnSO4 + 0.1 M MnSO4
+AHSC-0005,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,CoVO- PANI@CC,AC@CC,2 M ZnSO4
+AHSC-0006,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,PMAC700-3,Zn foil,2 M ZnSO4
+AHSC-0007,10.1016/j.cclet.2023.108354,Phosphorous-doped carbon nanotube/reduced graphene oxide aerogel cathode enabled by pseudocapacitance for high energy and power zinc-ion hybrid capacitors,2023,,title,P-CNT/rGO cathode; zinc-ion hybrid capacitor; 2023 (review Table 1 year),,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,P-CNT/rGO,Zn foil,2 M ZnSO4
+AHSC-0008,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,NiCoP- NiCoO2/ NiCo-Pox,RGO,6 M KOH
+AHSC-0009,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Activated carbon,NZO@NZS,1 M KOH
+AHSC-0010,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,SnO2/CuO/FeO/ PVP/rGO,Activated carbon,2 M KOH
+AHSC-0011,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Ti3C2-ZrO2 NC,Activated carbon,PVA-KOH gel
+AHSC-0012,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,rGO,Co3O4/ SnO2/rGO (CSO-rGO),3 M KOH
+AHSC-0013,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,NPC,CoFe2O4,PVA-KOH
+AHSC-0014,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,CSBC,Mn2SnO4@C,1 M LiPF6
+AHSC-0015,,,,,,,,10.3390/inorganics13020049,Recent Advances and Challenges in Hybrid Supercapacitors Based on Metal Oxides and Carbons,,verified_row,Zn-MET-800,Zn foil,2 M ZnSO4
+AHSC-0016,,,,,,,,,,,,,,
+AHSC-0017,,,,,,,,,,,,LiMn2O4,prelithiated V2O5,PAM-WiS gel
+AHSC-0018,10.1039/C9TA08699D,Embedded 3D Li+ channels in a water-in-salt electrolyte to develop flexible supercapacitors and lithium-ion batteries,2019,,verified_values,polyacrylamide-chitosan WiSE; 110.7,Our polyacrylamide–chitosan-based WiSE (HiSE) affords high ionic conductivity (51.3 mS cm−1) and operating voltage (2.6 V) and excellent flexibility and self-healing ability.,,,,,LiMn2O4,Activated carbon,PAAm-chitosan WiSgel
+AHSC-0019,10.1016/j.cej.2023.141387,"Novel-designed cobweb-like binder by ""four-in-one"" strategy for high performance SiO anode",2023,,verified_values,TA-PAA; SiO; 901.2 mAh/g; 619.2 mAh/g at 5 A/g,The electrode delivers a brilliant rate performance (619.2 mA h g −1 at 5 A g −1) and long-term cycle performance (901.2 mA h g −1 over 1200 cycles at 2 A g −1).,,,,,Lithium foil,SiO microparticles,TA-PAA cobweb-like hydrogel binder
+AHSC-0020,10.1016/j.jechem.2023.04.037,Rational design of stretchable and conductive hydrogel binder for highly reversible SiP2 anode,2023,,verified_values,Li-PAA@PEDOT:PSS; SiP2/C; 1520 mAh/g at 2000 mA/g; >450 cycles; ICE>93%,"Consequently, after being further composited with carbon matrix, the SiP 2 /C with Li-PAA@PEDOT:PSS hydrogel exhibits high reversibility (ICE> 93%), superior cyclability (>450 cycles), and rate capability (1520 mAh/g at 2000 mA/g) for LIBs.",,,,,Lithium foil,SiP2/C composite,Li-PAA@PEDOT:PSS hydrogel binder
+AHSC-0021,10.1021/acs.nanolett.9b01033,Metal–Organic Frameworks/Conducting Polymer Hydrogel Integrated Three-Dimensional Free-Standing Monoliths as Ultrahigh Loading Li–S Battery Electrodes,2019,,verified_values,3D carbon-HKUST-1; >16 mAh/cm2; 1230.8 mAh/cm3; 82% at 0.2C over 300 cycles,"Our optimal 3D carbon-HKUST-1 electrode architecture achieves a very high areal capacity of >16 mAh cm –2 and volumetric capacity ( C V ) of 1230.8 mAh cm –3 with capacity retention of 82% at 0.2C for over 300 cycles, providing an attractive candidate material for future high-energy density Li–S batteries.",,,,,3D carbon-HKUST-1/S,Lithium metal,Conducting polymer hydrogel withMOF domain
+AHSC-0022,10.1002/admi.201901475,3D Meshlike Polyacrylamide Hydrogel as a Novel Binder System via in situ Polymerization for High-Performance Si-Based Electrode,2019,,verified_values,3D meshlike PAM; Si nanoparticles; ≈1526 mAh/g; 500 cycles,"Herein, PAM/Si/f-CB composite electrode (0.75 mol% of crosslinker) exhibited a superior capacity of ≈1526 mAh g -1 after 500 cycles at 0.2 C, which is much higher than that of Si anode using PVDF binder.",,,,,Lithium foil,Si nanoparticles,3D meshlike PAM hydrogel binder
+AHSC-0023,,,,,,,,,,,,Lithium foil,Si particles,ESVCA hydrogel binder
+AHSC-0024,,,,,,,,,,,,standardLIB,Lithium metal,BN/BCcomposite aerogelseparator
+AHSC-0025,10.1002/smll.202303480,Flexible All-in-one Quasi-Solid-State Batteries Enabled by Low-water-content Hydrogel Films,2023,,verified_values,6.63 wt% water; 81.8% after 500 cycles; 2.5 mAh/cm2; ≈119 mAh/g,"Furthermore, the full cell with high cathode loading (≈21 mg cm−2) exhibits a high areal capacity of 2.5 mAh cm−2 (≈119 mAh g−1).",,,,,high-loading LIBcathode,Lithium foil,Low-water-content hydrogel flm(6.63wt%)
+AHSC-0026,,,,,,,,,,,,stretchable nanowire network,,Crosslinked hydrogel
+AHSC-0027,,,,,,,,,,,,Fullcell(fexible LIB),,Moisture self-absorbing hydrogel flm(4.62%water)
+AHSC-0028,,Research Of Wide Temperature Range Hydrogel Sodium Ion Electrolyte (thesis),2022,https://www.globethesis.com/?t=2492306545466564,verified_values,Na2SO4-SiO2 hydrogel; methanol; NaTi2(PO4)3 / activated carbon; 61.8 mAh/g at -30 °C,The full batteries assembled with Na Ti 2 （PO 4 ） 3 as anode and activated carbon as cathode can maintain a specific capacity of 61.8 m Ah g -1 at-30°C.,,,,,Activated carbon,NaTi2(PO4)3@C,Na2SO4-SiO2 hydrogel with methanol additive
+AHSC-0029,10.1002/smll.202107183,Hierarchical Nanocellulose-Based Gel Polymer Electrolytes for Stable Na Electrodeposition in Sodium Ion Batteries,2022,,verified_values,nanocellulose GPE; Na2Fe2(SO4)3; 69.7 mAh/g after 50 cycles; ±500 µA/cm2,"Paired with an environmentally sustainable and economically attractive Na 2 Fe 2 (SO 4 ) 3 cathode, the battery reaches an energy density of 240 Wh kg −1 , delivering 69.7 mAh g −1 after 50 cycles at a rate of 1C.",,,,,Na2Fe2(SO4)3,metallic Na,Hierarchical nanocellulose- basedGPE
+AHSC-0030,10.1002/ange.202311589,A Bio-Inspired Methylation Approach to Salt-Concentrated Hydrogel Electrolytes for Long-Life Rechargeable Batteries,2023,,verified_values,salt-concentrated methylated hydrogel; Na3V2(PO4)3//NaTi2(PO4)3; 82.8% after 580 cycles,"The assembled Na3V2(PO4)3//NaTi2(PO4)3 cell maintains 82.8 % capacity after 580 cycles, which is the longest cycle life reported to date.",,,,,Na3V2(PO4)3,NaTi2(PO4)3,Salt-concentrated methylated hydrogel
+AHSC-0031,,,,,,,,,,,,,Urchin-like MoS2/MoO2microspherescoatedwithGO hydrogel,"Na-ioncompatible electrolyte (e.g.,NaPF6 in EC/DEC)"
+AHSC-0032,,,,,,,,,,,,Na3V2(PO4)3@C@CNT porousnetwork viahydrogel templating,,"Na-ioncompatible electrolyte (e.g.,NaClO4 in EC/DEC)"
+AHSC-0033,,,,,,,,,,,,,Ultrathin Zn-basedfber electrodes,"Solid-state gelor polymer electrolyte (e.g.,PVA/ZnSO4)"
+AHSC-0034,,,,,,,,,,,,,Zn-based electrodeswithfexiblecurrent collectors,"Hierarchical structured polymer electrolyte (e.g.,PVA-based withZn salts)"
+AHSC-0035,,,,,,,,,,,,,Zn-based electrodeswith biopolymeric hydrogel coating,Aqueous ZnSO4 with hydrogel interphase
+AHSC-0036,,,,,,,,,,,,,"Mg-based electrodes(e.g.,MgfoilorMg alloy)","Modifed aqueous electrolyte with antifreeze additives (e.g.,Cl- /NO3-coordina-tion)"
+AHSC-0037,,,,,,,,,,,,,"Hybrid Al-compatible electrodes(e.g.,MnO2 cathode,Alanode)",Quasi-solid-state aqueous hybrid electrolyte (Al3+/H+based)
+AHSC-0038,,,,,,,,,,,,,"Fiber-shaped Al-compatible electrodes(e.g., MnO2 or conductive polymers)","Aqueous Al-ion electrolyte (e.g.,AlCl3 or Al(NO3)3)"
+AHSC-0039,,,,,,,,,,,,,"Flexible Al-compatible electrodes(e.g., MnO2 cathode, Alanode)","Aqueous Al-ionelectrolyte (e.g.,Al(NO3)3 orAlCl3)"
+AHSC-0040,,,,,,,,,,,,,Copper and zincfoil,Polyanionhydrogels: APTQ+/AAm
+AHSC-0041,10.1002/aenm.201902446,Achieving High-Voltage and High-Capacity Aqueous Rechargeable Zinc Ion Battery by Incorporating Two-Species Redox Reaction,2019,,verified_values,CoFe(CN)6; Zn; 173.4 mAh/g at 0.3 A/g,"The Zn/CoFe(CN)6 battery provides a highly operational voltage plateau of 1.75 V (vs metallic Zn) and a high capacity of 173.4 mAh g−1 at current density of 0.3 A g−1, taking advantage of the two‐species redox reaction of Co(II)/Co(III) and Fe(II)/Fe(III) couples.",,,,,CoFe(CN)6,zinc,Zn(OTf)2
+AHSC-0042,,,,,,,,,,,,α -MnO2,zinc@graphite,PAAm/ZnSO4/MnSO4
+AHSC-0043,10.1016/j.cej.2023.143984,Co3O4@Mn-Ni(OH)2 core–shell heterostructure for hybrid supercapacitor electrode with high utilization,2023,,title,Co3O4@Mn-Ni(OH)2 core-shell; hybrid supercapacitor,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,electrode material (Co3O4@Mn-Ni(OH)2/CC),,
+AHSC-0044,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Co3O4/Ni,N@g-C3N4,
+AHSC-0045,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Co3O4 MBs,Activated carbon,2 M KOH
+AHSC-0046,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Co3O4,rGO,6 M KOH
+AHSC-0047,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,MnCo2O4,Activated carbon,"1 M H2SO4, 3 M KOH, 2.5 M KOH + 0.5 M LiOH"
+AHSC-0048,10.1016/j.est.2024.110775,CoFe2O4 nanoparticles embedded 2D Cr2CTx MXene: A new material for battery like hybrid supercapacitors and oxygen evolution reaction,2024,,title,CoFe2O4/Cr2CTx; hybrid supercapacitor,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,CoFe2O4/Cr2CTx,Activated carbon,
+AHSC-0049,,Formation of MWCNT/LiCo2O4 nanoplates and their application for hybrid supercapacitor,2024,https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8,verified_values,MWCNT/LiCo2O4//AC; 54.84 Wh/kg,The high energy density of 54.84 W h kg−1 at 775 W kg−1 is received from MWCNT/LiCo2O4//AC hybrid supercapacitor.,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,MWCNT/LiCo2O4,Activated carbon,
+AHSC-0050,,,,https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/,verified_values,NiO@Co3O4/C (CNC); AC; 32.6 Wh/kg; 87.1% over 5000 cycles,The hybrid supercapacitor (HSC) constructed with the optimum CNC electrode can provide a high energy density of 32.6 Wh kg–1 at the corresponding power density of 750.0 W kg–1 and an excellent cycling stability of 87.1% over 5000 cycles.,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Nio@Co3O4/C,Activated carbon,
+AHSC-0051,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,CoFe2O4,NPC,"KOH, K3Fe(CN)6 (additive)"
+AHSC-0052,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,electrode material (Fe3O4 NPs),,1 mol L-1 Na2SO3
+AHSC-0053,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,NixFeyOz@Rgo,Activated carbon,
+AHSC-0054,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Activated carbon,Li3VO4,
+AHSC-0055,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Activated carbon,Li3VO4@C,
+AHSC-0056,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,NixCo1-xO//3DG,3DG,
+AHSC-0057,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,NiCo-P/Ni3V2O8,Activated carbon,
+AHSC-0058,,,,,,,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,ZnCo2O4 NSs,Activated carbon,6 M KOH
+AHSC-0059,,A chromium cobaltite based ternary composite as an efficient electrode material for hybrid supercapacitors with theoretical investigation,2024,https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead,verified_values,"CrCo2O4/AC/PPY//MnO2/AC; 97.77 Wh/kg; 76.75% for 10,000 cycles",A HSC with CrCo2O4/AC/PPY as the positive electrode and MnO2/AC as the negative electrode was fabricated that delivered a high energy density of 97.77 W h kg-1 and power of 1.6 kW kg-1.,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,CrCo2O4/AC/PPY,NO2/AC,
+AHSC-0060,10.1016/j.est.2024.115181,Investigations of ternary Cu-Mn-Zn oxide nanocomposites as potential electrode for hybrid supercapacitors by one-pot hydrothermal method,2024,,title,Cu-Mn-Zn oxide; hybrid supercapacitor,,10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,Cu-Mn-Zn Oxide,Activated carbon,
+AHSC-0061,10.1016/j.electacta.2023.143673,Zn-doped Cr2O3 oxides boosted the electrochemical performance of aqueous hybrid supercapacitor,2024,,verified_values,"ZnCr2O4@CC//AC; 1 M KOH; 96.43% after 10,000 cycles; 26.2 Wh/kg","Further, the AHSC shows a superb energy density of 26.2 Whkg −1 at a power density of 800.6 Wk − 1 g.",10.3390/batteries11020060,Battery-Type Transition Metal Oxides in Hybrid Supercapacitors: Synthesis and Applications,https://www.mdpi.com/2313-0105/11/2/60,verified_row,ZnCr2O4@CC,Activated carbon,1 M KOH
+AHSC-0062,,,,,,,,,,,,electrode material (rGO),,"ether-based, K2SO4, KOH"
+AHSC-0063,,,,,,,,,,,,NiO@srGO/CNT,,"2 M KOH, 1 M KOH"
+AHSC-0064,,Nanoengineering of NiO/MnO2/GO Ternary Composite for Use in High-Energy Storage Asymmetric Supercapacitor and Oxygen Evolution Reaction (OER),2023,https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/,verified_values,NMGO//MWCNT; 90 F/g at 1 A/g; 28 Wh/kg; 88% after 6000 cycles,"Moreover, the NMGO//MWCNT asymmetric device, assembled with NMGO and multi-wall carbon nanotubes (MWCNTs) as positive and negative electrodes, respectively, exhibited good energy density (28 Wh·kg−1), excellent power density (750 W·kg−1), and capacitance retention (88%) after 6000 cycles.",,,,,NMGO,MWCNT,
+AHSC-0065,,,,,,,,,,,,4NG,,
+AHSC-0066,,,,,,,,,,,,RPC,,LiTFSI water-in-salt (WIS)
+AHSC-0067,,,,,,,,,,,,HAC-WS,,"H2SO4, Na2SO4, KOH"
+AHSC-0068,,,,,,,,,,,,hCNC-5.0,,KOH and EMIMBF4 (ionic liquid)
+AHSC-0069,,,,,,,,,,,,CNT Am-241,,
+AHSC-0070,,,,,,,,,,,,VACNT,,Ionogel (ionic liquid-based gel)
+AHSC-0071,,,,,,,,,,,,Fe3O4/CNT,,"Na2SO4, K3Fe(CN)6, K4Fe(CN)6"
+AHSC-0072,,,,,,,,,,,,V2O5/VACNT,,1 M Na2SO4
+AHSC-0073,,,,,,,,,,,,P3MT/VACNT,,Ionic liquid in acetonitrile (25/75 v/v)
+AHSC-0074,,,,,,,,,,,,PC-CNT,,"Propylene carbonate (PC), KOH"
+AHSC-0075,10.1016/j.est.2021.102794,Hydrothermal synthesis of single-walled carbon nanotubes/TiO2 for quasi-solid-state composite-type symmetric hybrid supercapacitors,2021,,verified_values,SWCNTs/TiO2; 144 F/g; 95% up to 50k cycles; 20 Wh/kg,An outstanding prolonged cycle life of 95 % upto 50 k cycles is demonstrated.,,,,,SWCNT/TiO2,,PVA/H2SO4 gel
+AHSC-0076,,,,,,,,,,,,CNT-SC,,"1 M H2SO4, PVA/H2SO4/Fe3+/Fe2+ gel"
+AHSC-0077,,,,,,,,,,,,CNT/TiNiW-SC,,
+AHSC-0078,,,,,,,,,,,,CNT-NF,,
+AHSC-0079,,,,,,,,,,,,G/CNT-SP,,
+AHSC-0080,,,,,,,,,,,,MnO2@CNT,,"1.0 M KCl (aqueous), 1.0 M LiClO4 in PC (organic)"
+AHSC-0081,,,,,,,,,,,,Co3O4/CNO,,Redox-additive electrolyte (RAE) in 3 M KOH
+AHSC-0082,,,,,,,,,,,,PEDOTMoO3@CNO,,
+AHSC-0083,,,,,,,,,,,,RFM-CNO-C,,
+AHSC-0084,10.1016/j.est.2024.111958,Development of Nd doped AlFeO3 electrode material for supercapacitor applications,2024,,title,Nd-AlFeO3; 1326 F/g (per citing review),,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,Nd-AlFeO3,,6 M KOH
+AHSC-0085,10.1016/j.matlet.2023.134682,A novel P-doped Ni0.5Cu0.5Co2O4 sphere with a yolk-shell hollow structure for high-energy–density supercapacitor,2023,,title,P-doped Ni0.5Cu0.5Co2O4 hollow sphere (as described by source review),,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,P-Ni0.5Cu0.5Co2O4,,3 M KOH
+AHSC-0086,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,NiCo2O4-MoS2,,2 M KOH
+AHSC-0087,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,Mn-Co Oxide,,PVA-KOH Gel
+AHSC-0088,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,MnO2@Zn/Ni-MOF,,6 M KOH
+AHSC-0089,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,MACNC/CNT,,
+AHSC-0090,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,PANI/HG-10,,1 M H2SO4 (Gel State
+AHSC-0091,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,rGO-PTs,,2 M HCl + PVA Gel
+AHSC-0092,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,nanocomposite N-doped wood fiber carbon,,6 M KOH
+AHSC-0093,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,Buckwheat-derived porous carbon,,6 M KOH
+AHSC-0094,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,Petroleum coke-activated carbon,,3-6 M KOH
+AHSC-0095,,,,,,,,10.3390/coatings16010041,Electrode Materials and Prediction of Cycle Stability and Remaining Useful Life of Supercapacitors (MDPI Coatings),https://www.mdpi.com/2079-6412/16/1/41,verified_row,ZIF-8-derived porous carbon,,6 M KOH
+AHSC-0096,,,,,,,,,,,,LGNC (4:1),,
+AHSC-0097,,,,,,,,,,,,C-N-30-8h,,
+AHSC-0098,,,,,,,,,,,,As8Mg,,
+AHSC-0099,,,,,,,,,,,,INC,,
+AHSC-0100,,,,,,,,,,,,CS-700m,,
+AHSC-0101,,,,,,,,,,,,PHC-4,,
+AHSC-0102,,,,,,,,,,,,BGNS,,
+AHSC-0103,,,,,,,,,,,,NSC,,
+AHSC-0104,,,,,,,,,,,,NHPCS,,
+AHSC-0105,,,,,,,,,,,,NBEG,,
+AHSC-0106,,,,,,,,,,,,SNC-3,,
+AHSC-0107,,,,,,,,,,,,NCN,,
+AHSC-0108,,,,,,,,,,,,CTK-1.0,,
+AHSC-0109,,,,,,,,,,,,SGCs,,
+AHSC-0110,,,,,,,,,,,,NS-GHNS,,
+AHSC-0111,,,,,,,,,,,,NPCNs,,
+AHSC-0112,,,,,,,,,,,,PAC-6,,
+AHSC-0113,,,,,,,,,,,,SPC-SCNTs,,
+AHSC-0114,,,,,,,,,,,,NHPC-800,,
+AHSC-0115,,,,,,,,,,,,AC-SCNTs,,
+AHSC-0116,,,,,,,,,,,,NS-pHC-1.348,,
+AHSC-0117,,,,,,,,,,,,PN-FPC,,
+AHSC-0118,,,,,,,,,,,,PN-FAPC,,
+AHSC-0119,,,,,,,,,,,,Clay-like Ti3C2 MXene,,PVA/H2SO4
+AHSC-0120,,,,,,,,,,,,Ti3C2Tx Films,,PVA/H2SO4
+AHSC-0121,,,,,,,,,,,,L-S-MXene (Ti3C2Tx),,PVA/H2SO4
+AHSC-0122,,,,,,,,,,,,Ti3C2Tx all-solid-state,,PVA/H2SO4
+AHSC-0123,,,,,,,,,,,,Transparent Ti3C2 MXene film,,PVA/H2SO4
+AHSC-0124,,,,,,,,,,,,State-of-the-art Mxenebased on-chip MSCs,,PVA/H2SO4
+AHSC-0125,,,,,,,,,,,,MXene/BC,,PVA/H2SO4
+AHSC-0126,,,,,,,,,,,,PEDOT-MXene,,Na2SO4/PPy
+AHSC-0127,,,,,,,,,,,,RuO2@MXene,,PVA-KOH
+AHSC-0128,,,,,,,,,,,,EG-MXene,,PVA/H2SO
+AHSC-0129,,,,,,,,,,,,Co-Al (LDH),Mxene (Ti3C2Tx),PVA-KOH
+AHSC-0130,,,,,,,,,,,,rGO,Ti3C2Tₓ,PVA/H2SO4
+AHSC-0131,,,,,,,,,,,,MXene-based MSCs,,EMIMBF4/PVDF-HFP
+AHSC-0132,,,,,,,,,,,,(Ti3C2Tx) MXene inks,,PVA/H2SO4
+AHSC-0133,,,,,,,,,,,,3D Printing of Additive-Free 2D Ti3C2Tx(MXene) Ink,,PVA/H2SO4
+AHSC-0134,,,,,,,,,,,,3D-printed MXene-N,,PVA/H2SO4
+AHSC-0135,,,,,,,,,,,,Ti3C2Tx MXene,,PVA/Na2SO4
+AHSC-0136,,,,,,,,,,,,Ti3C2Tx MXene,,PVA/H2SO4
+AHSC-0137,,,,,,,,,,,,"N,S-MXene",,PVA/H2SO4
+AHSC-0138,,,,,,,,,,,,Array of MXene,,PVA/H2SO4
+AHSC-0139,,,,,,,,,,,,Interdigitated Ti3C2Tx MSC,,PVA/H2SO4
+AHSC-0140,,,,,,,,,,,,MXene films,,PVA/H2SO4
+AHSC-0141,,,,,,,,,,,,Few-layered Mxene flakes,,PVA/H2SO4
+AHSC-0142,,,,,,,,,,,,MPC//HPC,,1 M Na2SO4
+AHSC-0143,,,,,,,,,,,,MnO2@R,porous carbon,1 M Na2SO4
+AHSC-0144,,,,,,,,,,,,MnO2/CNTs,Activated carbon,2 M KOH
+AHSC-0145,,,,,,,,,,,,MnO2/rGO/CNTs,Activated carbon,1 M Na2SO4
+AHSC-0146,,,,,,,,,,,,MnO2@TiC/C,Activated carbon,1 M Na2SO4
+AHSC-0147,,,,,,,,,,,,MnO2/CNTs,Activated carbon,1 M Na2SO4
+AHSC-0148,,,,,,,,,,,,MnO2/CNT//PPy/CNT,,1 M Na2SO4
+AHSC-0149,,,,,,,,,,,,MnO2/HNPC,HNPC,2 M Ca(NO3)2
+AHSC-0150,,,,,,,,,,,,MnO2/HC,HC,1 M Na2SO4
+AHSC-0151,,,,,,,,,,,,MnO2/GO,HPC,1 M Na2SO4
+AHSC-0152,,,,,,,,,,,,alpha-MnO2,alpha-MnO2,1 M KOH
+AHSC-0153,,,,,,,,,,,,MnO2/CN/PVDF,MnO2/CN/PVDF,0.5M Na2SO4
+AHSC-0154,,,,,,,,,,,,MnO2,C,0.5 M K2SO4
+AHSC-0155,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,Hv-Ni3Mn0.7Fe0.3-LDH,,0.2 M ZnSO4
+AHSC-0156,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,NiCo-LDH nanocrystal@ amorphousness core/shell structure (LDH200),,1.0 M LiPF6
+AHSC-0157,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,MgAl-LDH@CNT,,Li6PS5Cl
+AHSC-0158,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,NiFe-NO3 LDH,,1M NaClO4
+AHSC-0159,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,NiFe-Cl LDH,,0.5 M Bpy14Cl/PC
+AHSC-0160,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,verified_row,Ni5Ti-Cl LDH,,0.5 M Bpy14Cl
+AHSC-0161,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoFe/Fe3C@CN-900,,0.1 M KOH
+AHSC-0162,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Fe/Co LDH (CoL 2:1),,0.1 M KOH
+AHSC-0163,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,ZIF-67@NiCo-LDH,,1 M LiPF6
+AHSC-0164,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiFe2O4@NiCo-LDH,,1 M LiPF6
+AHSC-0165,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni-Zn LDH intercalated with DS-,,1 M LiPF6
+AHSC-0166,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiS2/FeS2@NC@NiFe LDH/FeO(OH),,1 M LiPF6
+AHSC-0167,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo-LDH/MXene,,1 M LiPF6
+AHSC-0168,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Mg2Al1-CO3-LDH,,1 M LiPF6
+AHSC-0169,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCoOOH@CoLa-LDH(NC@CL),,1 M KOH + 5 mM ZnO
+AHSC-0170,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCoMo-P150 LDH,,0.5 M Bpy14Cl
+AHSC-0171,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiAl-LDH@G,,0.5 M Bpy14Cl
+AHSC-0172,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Mo0.3NiCo2-Cl LDH,,0.5 M Bpy14Cl
+AHSC-0173,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoFe-Cl-LDH/CNT,,1.0 M NaCl
+AHSC-0174,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni-CAT/NiFe-LDH/CNFs,,6 M KOH
+AHSC-0175,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,ZnCo2O4@NiMn-LDH (2:1),,6 M KOH
+AHSC-0176,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo-LDH/NCM@NF,,1 M KOH
+AHSC-0177,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Pt-NiFe-LDH@Co9S8,,6.0 M KOH/0.2 M Zn(OAc)2
+AHSC-0178,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Co@NiFe-LDH,,0.2 MZn(OAC)2 +6 M KOH
+AHSC-0179,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni2Co-LDH/EG composites,,1 M LiPF6
+AHSC-0180,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiAl LDH,,1 M LiPF6
+AHSC-0181,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,L-CoNi-LDH/C,,1 M LiTFSI
+AHSC-0182,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,LDH@PSS (1:1.5),,1 M LiTFSI
+AHSC-0183,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Vo-LDHs-MXenes,,1 M LiTFSI
+AHSC-0184,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,V2O5/Cys/FeNi-LDH,,1 M LiTFSI
+AHSC-0185,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiFe-LDH@S,,1 M LiTFSI
+AHSC-0186,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiAl-LDH@S,,1 M LiTFSI
+AHSC-0187,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,ZnAl-LDH@S,,1 M LiTFSI
+AHSC-0188,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCoAl-LDH,,1.0 M LiTFSI with 1 wt.% LiNO3
+AHSC-0189,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCr-Cl LDH/rGO,,1 M NaCF3SO3
+AHSC-0190,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoMoLDH@C-PDA-6,,1 M NaClO4
+AHSC-0191,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Co-Co LDH-derived CoSe2@NHCNS@C,,1 M NaClO4
+AHSC-0192,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,MCN-LDH@CP,,3.0 M KOH
+AHSC-0193,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,ZnCo-LDH,,6 M KOH + 0.2 M Zn(AC)2
+AHSC-0194,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo LDH/MXene@NF,,1 M KOH
+AHSC-0195,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoNi-LDH(v),,3 M ZnSO4
+AHSC-0196,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,ZnAl-LDH@Zn,,3 M ZnSO4
+AHSC-0197,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoNi LDH(v),,1 M ZnSO4
+AHSC-0198,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCoS@NiCo-LDH,,6 M KOH
+AHSC-0199,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni3S2/NiS@NiCo-LDH,,6 M KOH
+AHSC-0200,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiFe LDH on Cu NWs,,6 M KOH and0.2 M zinc acetate
+AHSC-0201,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo-LDH,,1.0 M LITFSI
+AHSC-0202,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo-MOF/LDH,,1 M LITFSI
+AHSC-0203,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo-LDH,,1 M LITFSI
+AHSC-0204,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,NiCo2S4-NiS2 NH@C,,5 mM Li2S6
+AHSC-0205,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CuCo-LDH,,1 M LiTFSI
+AHSC-0206,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,PPy@LDH-S,,1 M LiTFSI with 1% LiNO3
+AHSC-0207,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni0.8Ca1.2Al-Cl LDH,,1.0 M NaPF6
+AHSC-0208,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Co0.6Ca1.4Al-Cl LDH,,1.0 M NaPF6
+AHSC-0209,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoSn-LDH@MXene,,1 M NaClO4
+AHSC-0210,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,Ni3Ti-Cl LDH,,0.5 M PP14Cl
+AHSC-0211,,,,,,,,10.3390/batteries11050193,"One Stone, Three Birds: Innovations and Challenges of Layered Double Hydroxides in Batteries, Supercapacitors, and Hydrogen Production",https://www.mdpi.com/2313-0105/11/5/193,block_inferred,CoMn-LDH/NPGA,,1 M KOH
+AHSC-0212,,,,,,,,,,,,Na0.5MnO2( +),Fe3O4@C( -),1 M Na2SO4
+AHSC-0213,,,,,,,,,,,,Na0.25MnO2( +),ERPC( -),1 M Na2SO4
+AHSC-0214,,,,,,,,,,,,C@Mn3O4( +),Na-FG-CC( -),1 M Na2SO4
+AHSC-0215,,,,,,,,,,,,CC( +),Na-CC( -),1 M Na2SO4
+AHSC-0216,,,,,,,,,,,,K0.6MnO2( +),KHC( -),1 M KTFSI
+AHSC-0217,,,,,,,,,,,,Zn-Ti3C2,,ZnSO4 gel
+AHSC-0218,,,,,,,,,,,,Mo1.33CTz@Ti3C2Tz,,3 M Zn(CF3SO3)2
+AHSC-0219,,,,,,,,,,,,Ti3C2Tz,,0.1 M ZnSO4
+AHSC-0220,,,,,,,,,,,,Ti3C2Tz,,2 M ZnSO4
+AHSC-0221,,,,,,,,,,,,Ti3C2Tz hydrogel,,ZnSO4
+AHSC-0222,,,,,,,,,,,,Ti3C2Tz@cotton,,ZnSO4/MnSO4
+AHSC-0223,,,,,,,,,,,,Ti3C2Tx/Bi2S3@N-C,,Zn(CF3SO3)2
+AHSC-0224,,,,,,,,,,,,Mo1.33CTz@RGO,,2 M ZnSO4 gel
+AHSC-0225,,,,,,,,,,,,Ti3C2Tx,,ZnSO4/PAM
+AHSC-0226,,,,,,,,,,,,H-Ti3C2Tx film,,2 M Zn(CF3SO3)2
+AHSC-0227,,,,,,,,,,,,V2CTx,,ZnSO4 gel
+AHSC-0228,,,,,,,,,,,,Ti1.1V0.7CrxNb1.0Ta0.6C3Tz,,3 M Zn(CF3SO3)2
+AHSC-0229,,,,,,,,,,,,Ti3C2Tx,,1 M H2SO4
+AHSC-0230,,,,,,,,,,,,Ti3C2TxV,,1 M H2SO4
+AHSC-0231,,,,,,,,,,,,Ti2C2Tx/WS2/GO,,1 M KOH
+AHSC-0232,,,,,,,,,,,,Ti3C2Tx/Arg-CQD-Ser,,1 M KOH
+AHSC-0233,,,,,,,,,,,,Ti2CTx@C,,2 M ZnSO4
+AHSC-0234,,,,,,,,,,,,Ti3C2Tx/CNT,,PVA/KOH gel
+AHSC-0235,,,,,,,,,,,,Ti3C2Tx/rGO,,1 M H2SO4
+AHSC-0236,,,,,,,,,,,,Ti3C2Tx/rGO,,LiCF3SO3/PMMA
+AHSC-0237,,,,,,,,,,,,Ti3C2Tx/rGO foam,,3 M H2SO4
+AHSC-0238,,,,,,,,,,,,Ti3C2Tx/N-doped CC,,
+AHSC-0239,,,,,,,,,,,,Ti3C2Tx@MnO2,,1 M Na2SO4
+AHSC-0240,,,,,,,,,,,,Ti3C2Tx@MnO2,,PVA/H2SO4
+AHSC-0241,,,,,,,,,,,,Ti3C2Tx/NiCo2S4,,KOH gel
+AHSC-0242,,,,,,,,,,,,Ti3C2Tx@CoNi2S4,,6 M KOH
+AHSC-0243,,,,,,,,,,,,Ti3C2Tx@Co3O4,,6 M KOH
+AHSC-0244,,,,,,,,,,,,Ti3C2Tx@VS2,,PVA/KOH gel
+AHSC-0245,,,,,,,,,,,,Ti3C2Tx/α-Fe2O3,,1M LiCl
+AHSC-0246,,,,,,,,,,,,Ti3C2Tx/PANI,,1 M Na2SO4
+AHSC-0247,,,,,,,,,,,,Ti3C2Tx/CNF/PANI,,1 M H2SO4/PVA
+AHSC-0248,,,,,,,,,,,,Ti3C2Tx/PPY,,0.5 M Na2SO4
+AHSC-0249,,,,,,,,,,,,Ti3C2Tx@SnS2/SnO2V,,1 M LiPF6 EC/DEC
+AHSC-0250,,,,,,,,,,,,Nb4C3Tx nanosheets,,1 M H2SO4
+AHSC-0251,,,,,,,,,,,,V2CTx@C,,1 M H2SO4
+AHSC-0252,,,,,,,,,,,,Nb2CTx/CNT,,1 M H2SO4
+AHSC-0253,,,,,,,,,,,,Nb2C/Ti3C2,,PVA/H2SO4 gel
+AHSC-0254,,,,,,,,,,,,Nb4C3Tx film,,1 M H2SO4
+AHSC-0255,,,,,,,,,,,,Mo2CTx,,1 M H2SO4
+AHSC-0256,,,,,,,,,,,,TiVCTx/poly-oPD,,1 M H2SO4
+AHSC-0257,,,,,,,,,,,,TiVCTx@PANI-MnO2,,1 M H2SO4
+AHSC-0258,,,,,,,,,,,,Ni12P5,,6 M KOH
+AHSC-0259,,,,,,,,,,,,CoP,,1 M KOH
+AHSC-0260,,,,,,,,,,,,NiCoP,,2 M KOH
+AHSC-0261,,,,,,,,,,,,Co2P,,6 M KOH
+AHSC-0262,,,,,,,,,,,,MoP/NPC,,1 M KOH
+AHSC-0263,,,,,,,,,,,,Zn-Ni-P,,2 M KOH
+AHSC-0264,,,,,,,,,,,,Ni-Fe-P,,6 M KOH
+AHSC-0265,,,,,,,,,,,,ZnNiCo-P,,6 M KOH
+AHSC-0266,,,,,,,,,,,,C-doped Co-Mn-Fe-P,,1 M KOH
+AHSC-0267,,,,,,,,,,,,CoP,,6 M KOH
+AHSC-0268,,,,,,,,,,,,Cu3P,,1 M KOH
+AHSC-0269,,,,,,,,,,,,Cu-Co-Ni-P,,6 M KOH
+AHSC-0270,,,,,,,,,,,,Zn-Ni-Co-P,,3 M KOH
+AHSC-0271,,,,,,,,,,,,Ni2P,,3 M KOH
+AHSC-0272,,,,,,,,,,,,NixPy,,3 M KOH
+AHSC-0273,,,,,,,,,,,,NiCoP,,6 M KOH
+AHSC-0274,,,,,,,,,,,,Mn-Ni-Co-P,,1 M KOH
+AHSC-0275,,,,,,,,,,,,MXene/NiPc,,3 M KOH
+AHSC-0276,,,,,,,,,,,,Ti3C2Tx,,3 M H2SO4
+AHSC-0277,,,,,,,,,,,,N-Ti3C2Tx,,2 M H2SO4
+AHSC-0278,,,,,,,,,,,,Nb2C-PCarbons CPs,,6 M KOH
+AHSC-0279,,,,,,,,,,,,Ti2.9Nb0.1C2Tx,,1 M H2SO4
+AHSC-0280,,,,,,,,,,,,1-Co@Ti3C2Tx MXene,,1 M KOH
+AHSC-0281,,,,,,,,,,,,Biomass/MXene/Cs aerogel,,3 M H2SO4
+AHSC-0282,,,,,,,,,,,,SSA@Ti3C2Tx,,3 M H2SO4
+AHSC-0283,,,,,,,,,,,,Mg-10%MFMX@MS,,3 M H2SO4
+AHSC-0284,,,,,,,,,,,,Mo2N MXene,,2 M KOH
+AHSC-0285,,,,,,,,,,,,CoMoO4-Ti3C2TxV,,6 M KOH
+AHSC-0286,,,,,,,,,,,,MNF/Ti3C2Tx,,1 M Na2SO4
+AHSC-0287,,,,,,,,,,,,MXene-WO3@rGOsp,,2 M KOH + 0.1 M K4[Fe(CN)6]
+AHSC-0288,,,,,,,,,,,,d-Ti3CN@NiCeO2,,2 M KOH
+AHSC-0289,,,,,,,,,,,,CuMn2O4/Ti3C2,,2 M KOH
+AHSC-0290,,,,,,,,,,,,MnFe2O4/MXene,,2 M KOH
+AHSC-0291,,,,,,,,,,,,MXene/TiO2-G,,EmimTFSI-ACNLiTFSI
+AHSC-0292,,,,,,,,,,,,d- V4C3TxMoO3,,3 M H2SO4
+AHSC-0293,,,,,,,,,,,,40 wt% g-C3N4/MoO3,,1 M H2SO4
+AHSC-0294,,,,,,,,,,,,(CeO2/MXene)/PANI(40%:60%),,2 M KOH
+AHSC-0295,,,,,,,,,,,,MXene/NiCo2S4,,3 M KOH
+AHSC-0296,,,,,,,,,,,,MXene/CoFe2O4/g- C3N4,,3 M KOH
+AHSC-0297,,,,,,,,,,,,NiCo2O4@MXene,,3 M KOH
+AHSC-0298,,,,,,,,,,,,WS2@MXene/GO,,1 M KOH
+AHSC-0299,,,,,,,,,,,,Ti3C2Tx/NH2-RGO,,1 M KOH
+AHSC-0300,,,,,,,,,,,,CoS/MXene/PANI,,1 M H2SO4
+AHSC-0301,,,,,,,,,,,,MXene/CuS,,3 M KOH
+AHSC-0302,,,,,,,,,,,,CNS/C/MXene,,6 M KOH
+AHSC-0303,,,,,,,,,,,,MXene/FeNi2S4,,6 M KOH
+AHSC-0304,,,,,,,,,,,,Ti3C2Tx (MXene)/WS2V,,1 M H2SO4
+AHSC-0305,,,,,,,,,,,,MXene/PANI,,1 M KOH
+AHSC-0306,,,,,,,,,,,,P-M10,,H2SO4
+AHSC-0307,,,,,,,,,,,,PPy/Mxene/GA,,1 M H2SO4
+AHSC-0308,,,,,,,,,,,,PANI-WO3/MXene,,1 M H2SO4
+AHSC-0309,,,,,,,,,,,,rGO/MXene-PPy,,1 M H2SO4
+AHSC-0310,,,,,,,,,,,,MXene@h-CNT,,2 M KOH
+AHSC-0311,,,,,,,,,,,,MXene/rGO/CNTs,,1 M H2SO4
+AHSC-0312,,,,,,,,,,,,CF-PhNO2/oPD-MX,,1 M H2SO4
+AHSC-0313,,,,,,,,,,,,MoSSe@CNTs,,1 M H2SO4
+AHSC-0314,,,,,,,,,,,,NF@Mxene@NiCo- LDH,,3 M KOH
+AHSC-0315,,,,,,,,,,,,Ni-MOF/MXene,,1 M KOH
+AHSC-0316,,,,,,,,,,,,FeCo-LDH/MXene,,3 M KOH
+AHSC-0317,,,,,,,,,,,,MXene/BCN10 (m-MX/BCN10),,KOH
+AHSC-0318,,,,,,,,,,,,MXene/Ni-Co phosphide,,2 M KOH
+AHSC-0319,,,,,,,,,,,,N-doped hollow carbon nanospheres,,NaClO4
+AHSC-0320,,,,,,,,,,,,Highly ordered and compact porous carbon,Zn,ZnSO4
+AHSC-0321,,,,,,,,,,,,Nanoporous gold MnO2,Nanoporous gold MnO2,Li2SO4
+AHSC-0322,,,,,,,,,,,,MnO2,Mg,MgSO4
+AHSC-0323,,,,,,,,,,,,α-MoO3,Li,LiClO4
+AHSC-0324,,,,,,,,,,,,Activated carbon,Polypyrrole @MoO3,Al2(SO4)3
+AHSC-0325,,,,,,,,,,,,B/N codoped carbon nanosheets,SnS2/rGO,LiPF6
+AHSC-0326,,,,,,,,,,,,Nitrogen-doped carbon hollow nanospheres,WS2 nanosheets /nitrogendoped carbon nanosheets,NaClO4
+AHSC-0327,,,,,,,,,,,,Nitrogen-doped carbon hollow nanospheres,WS2 nanosheets /nitrogendoped carbon nanosheets,KPF6
+AHSC-0328,,,,,,,,,,,,Activated carbon,TiS2,LiPF6
+AHSC-0329,,,,,,,,,,,,Activated carbon,TiS2,NaClO4
+AHSC-0330,,,,,,,,,,,,Activated carbon,N-doping carbon-coated FeSe2 clusters,KFSI
+AHSC-0331,,,,,,,,,,,,Bioderived activated carbon,Nitrogen-doped MoSe2/ graphene,KPF6
+AHSC-0332,,,,,,,,,,,,Activated carbon,CoSe2@ vertical-oriented graphene,
+AHSC-0333,,,,,,,,,,,,VOPO4/graphene,Gold-coated PET sheet,LiCl/PVA
+AHSC-0334,,,,,,,,,,,,LiFePO4 particles trapped in rGO&C@Li3V2(PO4)3 nanosheets,Activated carbon,LiPF6
+AHSC-0335,,,,,,,,,,,,Ca0.5Ti2(PO4)3@C microspheres,Activated carbon,KPF6
+AHSC-0336,,,,,,,,,,,,Nb2CTx/CNT nanocomposite paper,Activated carbon,LiPF6
+AHSC-0337,,,,,,,,,,,,Ti3C2 MXene,Zn,ZnSO4
+AHSC-0338,,,,,,,,,,,,Activated carbon,Si nanowires/Cu nanowires,LiPF6
+AHSC-0339,,,,,,,,,,,,Activated carbon,SiOx/graphite,LiPF6
+AHSC-0340,,,,,,,,,,,,Nitrogen-doped hierarchically porous carbon,Si@gelatin-derived carbon,LiPF6
+AHSC-0341,,,,,,,,,,,,Activated carbon,Co2P/Sn@ nitrogen-doped carbon nanobox,NaClO4
+AHSC-0342,,,,,,,,,,,,Activated carbon,Sn,Ca(PF6)2
+AHSC-0343,,,,,,,,,,,,Activated carbon,SnO2 nanorods bundle,LiPF6
+AHSC-0344,,,,,,,,,,,,Activated Ketjen black,SnS2/graphene-CNT aerogel,NaClO4
+AHSC-0345,,,,,,,,,,,,Phosphorene,Zn,LiTFSIþ Zn(CF3SO3)2
+AHSC-0346,,,,,,,,,,,,Na3V2O2(PO4)2 F@rGO,MoP@carbon nanowires,NaPF6
+AHSC-0347,,,,,,,,,,,,Activated carbon,Ni2P@N-doped carbon sheet,LiPF6
+AHSC-0348,,,,,,,,,,,,Activated carbon,Sn4P3,NaClO4
+AHSC-0349,,,,,,,,,,,,TiN nanofiber,Zn,ZnSO4
+AHSC-0350,,,,,,,,,,,,Activated polyaniline-derived carbon,VN nanowires/rGO,LiPF6
+AHSC-0351,,,,,,,,,,,,Activated carbon,Mo2C nanosheets,NaPF6
+AHSC-0352,,,,,,,,,,,,Ni quantum dots @graphene/TaC/Ta wires,Ni quantum dots @graphene/TaC/Ta wires,Na2SO4 þ LiCl
+AHSC-0353,,,,,,,,,,,,Activated carbon,Surface modified Zn,ZnSO4
+AHSC-0354,,,,,,,,,,,,Mesoporous hollow carbon spheres,Mesoporous hollow carbon spheres coated Zn foil,ZnSO4
+AHSC-0355,,,,,,,,,,,,Activated carbon,Porous NaBi,NaPF6
+AHSC-0356,,,,,,,,,,,,Activated carbon,Hard carbon/lithium powder,LiPF6
+AHSC-0357,,,,,,,,,,,,Activated carbon,Graphite,LiPF6
+AHSC-0358,,,,,,,,,,,,Carbon,Activated carbon,NaClO4
+AHSC-0359,,,,,,,,,,,,PANI,,
+AHSC-0360,,,,,,,,,,,,High specific surface area PANI,,
+AHSC-0361,,,,,,,,,,,,PANI/rGO/iron oxide,,
+AHSC-0362,,,,,,,,,,,,PANI/activated carbon,,
+AHSC-0363,,,,,,,,,,,,PANI/liquid crystalline CNT,,
+AHSC-0364,,,,,,,,,,,,PEDOT:PSS (spin-coated),,
+AHSC-0365,,,,,,,,,,,,PEDOT/GO,,
+AHSC-0366,,,,,,,,,,,,PEDOT/SiNW/MnOx,,
+AHSC-0367,,,,,,,,,,,,PPy,,
+AHSC-0368,,,,,,,,,,,,PPy/PANI on carbon/graphite,,
+AHSC-0369,,,,,,,,,,,,PPy/rGO,,
+LLZO-0001,10.1002/inf2.70012,Addressing the interface issues of all-solid-state lithium batteries by ultra-thin composite solid-state electrolyte combined with the integrated preparation technology,2024,,verified_values,3D LLZO-PAN; LiNi0.8Co0.1Mn0.1O2; 2.9 × 10-4 S cm-1; 345.8 Wh/kg,"Consequently, the integrated polymer-ceramic nanofiber-enhanced SSEs simultaneously achieve the balance in ultrathin thickness (16 μm), fast ion transport (2.9 × 10 –4 S cm –1), and superior excellent interface contact (15.6 Ω).",,,,,LiNi0.8Co0.1Mn0.1O2,Lithium metal,3D LLZO-PAN
+LLZO-0002,,,,,,,,,,,,LiFePO4 (LFP),LiMg alloy (20 wt% Mg),Garnet-type Li6.5La3Zr1.5Ta0.5O12 (LLZO)
+LLZO-0003,,,,,,,,,,,,Sulfur-based composite material,lithium metal foil,Liquid organic electrolytes containing (LITFSI)
+LLZO-0004,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PolyILs (with LiTFSI and LiFSI salts in ACN solvent)
+LLZO-0005,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HFP (with LiFSI salt in DMF solvent)
+LLZO-0006,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO with LiFSI
+LLZO-0007,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,DL-lactide and 3-caprolactone with LiTFSI
+LLZO-0008,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN with Zn(OTf)2
+LLZO-0009,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PCL with LiFSI
+LLZO-0010,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO or PAN with LiTFSI
+LLZO-0011,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,SAPE (Solid state aqueous PE)with LiTFSI
+LLZO-0012,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF (with NMP and LiTFSI)
+LLZO-0013,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN( with LiTFSI)
+LLZO-0014,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HFP(with DMF and LiTFSI)
+LLZO-0015,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PMELiPVFM (with LiTFSI)
+LLZO-0016,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,3-caprolactone (CL) and DL-lactide (LA) (with LiTFSI)
+LLZO-0017,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,P(EO-co-PO)- TMPTGE(with LiFSI)
+LLZO-0018,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PE/AO@PIS (with DMF and LiTFSI)
+LLZO-0019,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMEA (with LiTFSI)
+LLZO-0020,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PLiMTFSI (withTFSI)
+LLZO-0021,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEaMI (with LiPhTFSI)
+LLZO-0022,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PVDF-HFP (with [Li(G4)][TFSI] and LiTFSI)
+LLZO-0023,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEO (with LiPCSI)
+LLZO-0024,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,TEG (with LiCTFPB)
+LLZO-0025,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with Poly(lithium 4-styrene sulfonate)
+LLZO-0026,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PSiO-PVDFHFP (with DMSO and LiPF6)
+LLZO-0027,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PETEA (with EC and DMC and LiPF6)
+LLZO-0028,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,TMC (with LiM)
+LLZO-0029,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PLiSTFSI
+LLZO-0030,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with LEs LiPF6 and LiFSI)
+LLZO-0031,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGDA and 2-hydroxyethyl methacrylate (with DMF and LiTFSI)
+LLZO-0032,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP (with PEGDME and LiTFSI)
+LLZO-0033,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO and PVDF (with Les LiFSI, LiTFSI, and LiClO4)"
+LLZO-0034,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PMMA-SiO2 composite
+LLZO-0035,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PVDF-HEP (with TEGDME LiClO4, LiPF6, and LiTFSI)"
+LLZO-0036,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGM-Block Copolymer (with EC and DEC and LiPF6 and LiNO3)
+LLZO-0037,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PAN, PEO, and PVDF (with EC and EMC and LiPF6 and LiTFSI)"
+LLZO-0038,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP (with EC and DMC and LiPF6)
+LLZO-0039,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,[P(ANDEVP)] (with LiPF6)
+LLZO-0040,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Polymer matrix Ils (with LiDFOB and LiFSI)
+LLZO-0041,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO (with SiO2, Al2O3, and LLZTO LiTFSI, LiClO4)"
+LLZO-0042,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO-SiO2 (with SiO2, NASICON and LiCl4, LiTFSI)"
+LLZO-0043,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO-LLZTO (with LATP, LLTO, and LLZO LiTFSI)"
+LLZO-0044,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEGDA (with LATP, LLTO, and LLZO LiTFSI)"
+LLZO-0045,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-CPE (with LLTO)
+LLZO-0046,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,CPE with LATP Nanoparticles (with LiTFSI)
+LLZO-0047,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO-LiClO4-TiO2 (with Al2O3, TiO2 and LiClO4)"
+LLZO-0048,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PMMA-based matrices (with PF55, AlCl3)"
+LLZO-0049,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEO-LAGP (with TiO2, LATP, LAGP and LiTFSI, LiClO4)"
+LLZO-0050,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Poly(ethoxylated trimethylolpropane triacrylate) (PA3) (with 2-hydroxy-2-methyl-1-phenyl-1-propanone (HMPP))
+LLZO-0051,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVA and PAN (with Succinonitrile (SN) and LiPFSI)
+LLZO-0052,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Polyimide with (LiPFSI)
+LLZO-0053,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PCL ( with50 wt% glacial acetic acid and Plasticizer and LiTFSI)
+LLZO-0054,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Pectin with LiClO4
+LLZO-0055,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Pectin (with Distilled water EC and LiTFS)
+LLZO-0056,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)
+LLZO-0057,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"Cassava starch (with Li2SO4, LiCl, CF3LiSO3 and Li2SO4, LiCl, CF3LiSO3)"
+LLZO-0058,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (P3HB-3HV) (with EC and DEC and LiPF6)
+LLZO-0059,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,DEGDA LiTFSI (with Ethylene carbonate (EC)/Diethyl carbonate (DEC))
+LLZO-0060,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEGMA (with LiTFSI, LISFI)"
+LLZO-0061,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMA (with LiTFSI)
+LLZO-0062,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEGMEA (with LiTFSI Dimethyl carbonate(DMC)/1, and 2-dimethoxyethane (DME))"
+LLZO-0063,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEGMEA (with LiTFSI,and LiPF6 EC/DMC/Ethyl methyl carbonate(EMC))"
+LLZO-0064,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,VEC withLiTFSI
+LLZO-0065,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,MMA (with LiPF6 and EC/DEC)
+LLZO-0066,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGDA with LiTFSI
+LLZO-0067,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,DOL (with LiPF6 and MP)
+LLZO-0068,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,DOL (with )LiTFSI
+LLZO-0069,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"DOL (with LiTFSI, and LiSF6 DME)"
+LLZO-0070,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"DOL, with (VC and LiTFSI)"
+LLZO-0071,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,EGDMA with (/EDT LiTFSI)
+LLZO-0072,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMEA/Vinylene carbonate (with LiTFSI and EC/DMC/DEC)
+LLZO-0073,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Glyme-Functionalized Episulfide Monomer)/SGxS (Crosslinking Episulfide) (with LiTFSI and DME/DOL)
+LLZO-0074,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Glyme-Functionalized Episulfide Monomer)/SGxS (Crosslinking Episulfide) (with LiTFSI and DME/DOL)
+LLZO-0075,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PEG,(with α-CD DMF and LiTFSI)"
+LLZO-0076,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,LiDMPA (with LiTFSI)
+LLZO-0077,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"Hydroxyethyl Methacrylate (HEMA), ε- caprolactone"
+LLZO-0078,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,ganoboronmodified- (With PEGMA and DMSO LiTFSI)
+LLZO-0079,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with Dry ACN and LiTFSI)
+LLZO-0080,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"AMPS (with EC, and DMC LiOH.H2O)"
+LLZO-0081,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"ACN (with THF, and MeCN LiTFSI)"
+LLZO-0082,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with DMF and LiTFSI)
+LLZO-0083,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMA with (LiTFS)
+LLZO-0084,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PLiSSPSI (with SiO2 and NPs LiTFSI)
+LLZO-0085,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,ODA and PMDA (with DMAC and LiTFSI)
+LLZO-0086,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HFP with DMF
+LLZO-0087,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PCL (with THF and LiTFSI)
+LLZO-0088,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with ACN and LiTFSI)
+LLZO-0089,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HFP (with DMF and LiTFSI)
+LLZO-0090,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HFP (with DMF and LATTP)
+LLZO-0091,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PA6 (with ACN and LiTFSI)
+LLZO-0092,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with DMF and LiTFSI)
+LLZO-0093,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN (with DMF and LiTFSI)
+LLZO-0094,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Ionene oligomer (with DMF and LiTFSI)
+LLZO-0095,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN (with DMF and LiCLO4)
+LLZO-0096,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN (with DMF and LiTFSI)
+LLZO-0097,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Triethylene glycol dimethacrylate (with DMF and LiClO4)
+LLZO-0098,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,LA-PAM-PEO (with ACN and LiTFSI)
+LLZO-0099,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Polymer-based nanofiber membranes - LiTFSI
+LLZO-0100,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEG with LiSO3CF3
+LLZO-0101,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP with poly(methylmethacrylate) grafted natural rubber (MG49) - LiBF4
+LLZO-0102,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO with LiTFSI
+LLZO-0103,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Gelatin (with Formicacid: Acetic acid (1:1) and LiClO4
+LLZO-0104,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO with LiTFSI
+LLZO-0105,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMA (with TEPand NaTFSI)
+LLZO-0106,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with Na3Zr2Si2PO12)
+LLZO-0107,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,MMA (with Py13TFSI and LiTFSI)
+LLZO-0108,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"PVDF-HFP (with TEP, and FEC LiTFSI)"
+LLZO-0109,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PAN with LiPF6
+LLZO-0110,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,VC with LiDFOB
+LLZO-0111,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,ETPTA with NaClO4
+LLZO-0112,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP with LiTFSI
+LLZO-0113,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Poly(ε-caprolactoneco- trimethylene carbonate) (P(CL 80 TMC 20)) (with ACN and LiTFSI)
+LLZO-0114,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP(with DMF and LiTFSI)
+LLZO-0115,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO-TEGDMA with LiTFSI
+LLZO-0116,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,TGIC-NPEG with LiTFSI
+LLZO-0117,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"Poly (DOL-TTE)-LP (with LiTFSI, and LiBF4)"
+LLZO-0118,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PGMA (with PEG and LiTFSI)
+LLZO-0119,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEI (with PEGDE and LiTFSI)
+LLZO-0120,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"Poly(ethylene glycol dimethacrylate-1,2- ethane dithiol) with(P-(EGDMA-EDT)) and - LiTFSI"
+LLZO-0121,10.1038/s41467-023-37997-6,,2023,,verified_values,P(IL-OFHDODA-VEC); 1.37 mS/cm at 25 °C; 164 mAh/g at 0.5 C; 90% after 200 cycles,Li|P(IL-OFHDODA-VEC)|NCM523 | 1.37@25℃ | 0.5 | 164 | 4.5 | 200@30℃ | 90 | This work,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,VEC-OFHDODA - LiTFSI
+LLZO-0122,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVEC-NR20
+LLZO-0123,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGDGEpolyoxypropylenediamine with (D2000) - LiTFSI
+LLZO-0124,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,POSS with (PEGDA and LITFSI)
+LLZO-0125,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,SH-PEG-SH-PEGDA
+LLZO-0126,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO-POSS with THF LiTFSI
+LLZO-0127,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,CMC (with CA and LiClO4)
+LLZO-0128,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,SPPG-LiBOB (with PC and LiBOB)
+LLZO-0129,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,1-vinyl-3- ethylimidazolium bis(trifluoromethanesulfonyl) imide ([VEIm][TFSI])-PIL - LiTFSI
+LLZO-0130,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Polystyrene-poly(styreneb- 1-((2-acryloyloxy) ethyl)-3- butylimidazolium bis(tri-fluoromethanesulfonyl) imide) (with EC and LiFSI)
+LLZO-0131,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PFMA-b-PEO-b-PFMA (with LiTFSI)
+LLZO-0132,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Styrene-PEO (with LiTFSI)
+LLZO-0133,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PCL-PPC-PCL (with LiTFSI)
+LLZO-0134,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,P(HOEA-co-MA)-PEG (with THF and LiTFSI)
+LLZO-0135,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Pebax-PEGDE (P-P) with LiTFSI
+LLZO-0136,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVBmPEO-b-PS -with LiTFSI
+LLZO-0137,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMA-PEO with CH3OH and LiTFSI
+LLZO-0138,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVBmPEO-b-PS (with TFSI)
+LLZO-0139,,,,https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe,verified_values,PC-b-PEO-b-PC block polymer; 9.1 × 10-3 S cm-1 at 60 °C,Shorter PEO mid-segments (182 EO units) resulted in block polymers showing increased conductivity (9.1 × 10−3 S cm−1 at 60 °C) and yielded soft elastomers (f PC = 0.37) with high oxidative stability (>4 V).,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO-b-vCHO (with LiTFSI)
+LLZO-0140,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-b-PTFE with LiPF6
+LLZO-0141,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Styrene-butadiene-Styrene with LPSCl
+LLZO-0142,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Poly(lithium 1-[3-(methacryloyloxy)- propylsulfonyl]-1- (trifluoromethylsulfonyl)imide) and poly(ethylene glycol) methyl ether methacrylate with LiTFSI
+LLZO-0143,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,,,PFPEMA-b-PEO
+LLZO-0144,,,,,,,,,,,,LiNi0.6Co0.2Mn0.2O2 (NCM622),Lithium metal,Ceramic SSE: LLZTO pellets (pristine or coated with Li3PO4)
+LLZO-0145,,,,,,,,,,,,LiNi0.6Co0.2Mn0.2O2 (NCM622),Lithium metal,Composite solid electrolyte: PCL + LiTFSI + LLZTO@LPO (only film-forming ability shown)
+LLZO-0146,,,,,,,,,,,,Ionic liquid,Fluorinated graphite,LLZO-0.6Ta
+LLZO-0147,,,,,,,,,,,,Ionic liquid,"ITO (90 wt% In2O3, 10 wt% SnO2",LLZO-0.25Ga
+LLZO-0148,,,,,,,,,,,,Ionic liquid,H3BO3+HF,LLZO-0.5Ta
+LLZO-0149,,,,,,,,,,,,Ionic liquid,AgF,LLZO-0.5Ta
+LLZO-0150,,,,,,,,,,,,Ionic liquid,SnF2,LLZO-0.6Ta
+LLZO-0151,,,,,,,,,,,,Ionic liquid,BiOCl,LLZO-0.25Ta
+LLZO-0152,,,,,,,,,,,,Ionic liquid,Polyphosphoric acid,LLZO-0.6Ta
+LLZO-0153,,,,,,,,,,,,Co-sintering in O2 NCM622,Molten lithium,LLZO
+LLZO-0154,,,,,,,,,,,,LCBO co-sintering,Molten lithium,LLZO-0.6Ta
+LLZO-0155,,,,,,,,,,,,CLEs,AgNO3,LLZO-0.5Ta
+LLZO-0156,,,,,,,,,,,,CLEs,Titanium oxide nanoclusters,LLZO-0.5Ta
+LLZO-0157,,,,,,,,,,,,CLEs,H3PO4,LLZO-0.5Ta
+LLZO-0158,,,,,,,,,,,,CLEs,HF,LLZO-0.5Ta
+LLZO-0159,,,,,,,,,,,,CLEs,BiCl3,LLZO-0.25Ga
+LLZO-0160,,,,,,,,,,,,PEO+LiTFSI,Polyphosphoric acid,LLZO-0.6Ta
+LLZO-0161,,,,,,,,,,,,PEO+SN+LiTFSI,OV-ZnO,LLZO-Ta
+LLZO-0162,,,,,,,,,,,,PAN+SN+LiTFSI,PAN+SN+LiTFSI,LLZO-0.6Ta
+LLZO-0163,,,,,,,,,,,,SN+LiTFSI,MgF2,LLZO-0.25Ta
+LLZO-0164,,,,,,,,,,,,TMS+LiTFSI,PPF40,LLZO-0.5Ta- 2LWO
