@@ -123,3 +123,28 @@ def test_llm_layer_parses_structured_output(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test")
     result = llm.complete("hi", schema={"type": "object"})
     assert result.data == {"facts": []} and result.mode == "anthropic:claude-test"
+
+
+def test_model_evaluation_inputs_and_baseline():
+    import numpy as np
+
+    from knowledge_engine.model_evaluation import FamilyMedian, _features, ahsc_table
+
+    table = ahsc_table()
+    assert table.specific_energy.gt(0).sum() >= 50 and table.specific_power.gt(0).sum() >= 40
+    rows = table[table.specific_power.gt(0)]
+    X = _features(rows, ["specific_energy", "potential_window"])
+    assert {"specific_energy", "potential_window"} <= set(X.columns) and X.filter(like="family_").shape[1] > 1
+    y = np.log10(rows.specific_power)
+    predicted = FamilyMedian().fit(X, y).predict(X)
+    assert len(predicted) == len(y) and np.isfinite(predicted).all()
+
+
+def test_model_evaluation_report_is_committed():
+    import json
+
+    from knowledge_engine.model_evaluation import REPORT_PATH
+
+    report = json.loads(REPORT_PATH.read_text())
+    assert {r["target"] for r in report["results"]} == {"specific_energy", "specific_power"}
+    assert report["thesis_model"]["single_split_test_records"] == 7

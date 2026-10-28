@@ -44,6 +44,12 @@ def thesis_data():
     return ahsc, llzo, pd.concat([ahsc, llzo], ignore_index=True), pd.read_csv(MINERALS_CSV)
 
 
+@st.cache_data(show_spinner="Cross-validating AHSC models against baselines (about 2 minutes on first run)...")
+def model_evaluation() -> dict:
+    from knowledge_engine.model_evaluation import REPORT_PATH, write_report
+    return json.loads(REPORT_PATH.read_text()) if REPORT_PATH.exists() else write_report()
+
+
 @st.cache_data(show_spinner="Benchmarking extractor against curated thesis facts...")
 def extraction_benchmark() -> dict:
     path = REPORTS_DIR / "extraction_validation.json"
@@ -124,7 +130,7 @@ AHSC and LLZO literature, builds a knowledge graph, and generates testable hypot
 validated on 533 manually curated records.</p></div>""", unsafe_allow_html=True)
 
 tabs = st.tabs(["Literature Explorer", "Knowledge Graph", "Hypothesis Generator", "Research Map", "Africa Focus",
-                "Data Quality", "Thesis Analytics"])
+                "Data Quality", "Model Evaluation", "Thesis Analytics"])
 
 # ------------------------------------------------------------------ Literature Explorer
 with tabs[0]:
@@ -393,8 +399,100 @@ with tabs[5]:
     st.download_button("Download all facts (JSONL)", "\n".join(json.dumps(f, ensure_ascii=False) for f in E.facts),
                        "thesis_facts.jsonl", "application/json")
 
-# ------------------------------------------------------------------ Thesis Analytics (Track 3 bridge)
+# ------------------------------------------------------------------ Model Evaluation
 with tabs[6]:
+    st.markdown("<div class='kicker'>Held-out performance against simple baselines · AHSC</div>", unsafe_allow_html=True)
+    report = model_evaluation()
+    results = pd.DataFrame(report["results"])
+    thesis = report["thesis_model"]
+    labels = dict(zip(results.target, results.target_label))
+    target = st.radio("Target property", list(labels), format_func=labels.get, horizontal=True, key="eval_target")
+    short = labels[target].split(" (")[0].lower()
+    scoped = results[results.target == target]
+    best = scoped.loc[scoped.r2_mean.idxmax()]
+    baseline = scoped[scoped.model == "Mean baseline"].r2_mean.iloc[0]
+    m = st.columns(4)
+    m[0].metric("Records", int(best.records))
+    m[1].metric("Best held-out R²", f"{best.r2_mean:.2f}", f"{best.r2_mean - baseline:+.2f} vs mean baseline",
+                help=f"{best.model}, {best.feature_set.lower()}")
+    m[2].metric("Mean baseline R²", f"{baseline:.2f}")
+    m[3].metric("Thesis reported R²", "0.277", f"{thesis['cross_validated']['Random forest']['r2_mean']:+.2f} re-tested",
+                delta_color="off", help="Specific power, single 80/20 split with 7 test records")
+
+    st.subheader(f"{labels[target]}: held-out R² by model")
+    bars = alt.Chart(scoped).encode(
+        x=alt.X("model:N", sort=list(scoped.model.unique()), title=None, axis=alt.Axis(labelAngle=0)),
+        xOffset="feature_set:N", color=alt.Color("feature_set:N", title="Inputs"))
+    errors = scoped.assign(lo=scoped.r2_mean - scoped.r2_std, hi=scoped.r2_mean + scoped.r2_std)
+    chart = (bars.mark_bar().encode(y=alt.Y("r2_mean:Q", title="Held-out R² (mean ± sd over repeats)"),
+                                    tooltip=["model", "feature_set", "records", "r2_mean", "r2_std", "mae_log10"])
+             + alt.Chart(errors).mark_errorbar().encode(x=alt.X("model:N", sort=list(scoped.model.unique())),
+                                                        xOffset="feature_set:N",
+                                                        y=alt.Y("lo:Q", title="Held-out R² (mean ± sd over repeats)"), y2="hi:Q")
+             + alt.Chart(pd.DataFrame({"y": [0.277]})).mark_rule(strokeDash=[6, 4], color="#c0392b").encode(y="y:Q")
+             + alt.Chart(pd.DataFrame({"y": [0.0]})).mark_rule(color="#888").encode(y="y:Q"))
+    st.altair_chart(chart.properties(height=380), width="stretch")
+    st.caption("Red dashed line: the thesis R² of 0.277. Grey line: R² = 0, the level of always predicting the average. "
+               "A model is useful only where its bar clears the baselines.")
+    if best.r2_mean - baseline < 0.05:
+        st.warning(f"No model beats the mean baseline for {short} yet: with these inputs, predictions are "
+                   "no better than the dataset average. More records or new inputs (e.g. mass loading, current density, "
+                   "electrolyte) are needed.")
+
+    st.subheader("Re-testing the thesis model")
+    retest = pd.DataFrame([
+        {"evaluation": f"Thesis report (R, single split, {thesis['single_split_test_records']} test records)", "r2": 0.277},
+        {"evaluation": "Same split, Python port", "r2": thesis["single_split_r2"]},
+        {"evaluation": "Repeated 5-fold CV: mean baseline", "r2": thesis["cross_validated"]["Mean baseline"]["r2_mean"]},
+        {"evaluation": "Repeated 5-fold CV: thesis random forest", "r2": thesis["cross_validated"]["Random forest"]["r2_mean"]},
+        {"evaluation": "Repeated 5-fold CV: new model, no energy input",
+         "r2": float(results[(results.target == "specific_power") & results.feature_set.str.startswith("Without")
+                             & (results.model == "Random forest")].r2_mean.iloc[0])},
+    ])
+    st.altair_chart(alt.Chart(retest).mark_bar().encode(
+        y=alt.Y("evaluation:N", sort=None, title=None), x=alt.X("r2:Q", title="R²"),
+        color=alt.condition("datum.r2 > 0", alt.value("#18a692"), alt.value("#c0392b")),
+        tooltip=["evaluation", "r2"]).properties(height=230), width="stretch")
+    st.caption(f"The thesis model used {thesis['records']} complete records and {', '.join(thesis['features'])}. Its 0.277 "
+               "came from one random split and does not hold up under cross-validation.")
+
+    with st.expander("How these values were produced"):
+        st.markdown(f"""
+- **Data:** {report['data']}. Units are cleaned (kW/kg → W/kg) and the energy-density and power-density targets keep only Wh/kg and W/kg values.
+- **Inputs:** {report['model_inputs']}.
+- **Protocol:** {report['protocol']}.
+- **Baselines:** *mean* always predicts the training average; *family median* predicts the median of the material's family.
+- **Energy–power link:** energy = power × discharge time, so each target is also scored *without* the other one. Quote that figure when the link could be questioned.
+- **Rerun:** `python -m knowledge_engine.model_evaluation` writes `reports/model_evaluation.json`.""")
+        st.dataframe(scoped[["model", "feature_set", "records", "r2_mean", "r2_std", "r2_min", "r2_max", "mae_log10"]],
+                     hide_index=True, width="stretch")
+
+    st.subheader(f"Try it: predict {short}")
+
+    @st.cache_resource(show_spinner=False)
+    def predictor(name: str):
+        from knowledge_engine.model_evaluation import fit_predictor
+        return fit_predictor(name)
+
+    from knowledge_engine.model_evaluation import predict as model_predict
+    fitted, columns, train_rows, numeric = predictor(target)
+    inputs = {}
+    cols = st.columns(len(numeric))
+    for col, name in zip(cols, numeric):
+        observed = train_rows[name].dropna()
+        inputs[name] = col.number_input(name.replace("_", " "), value=float(observed.median()) if len(observed) else 0.0,
+                                        min_value=0.0, help="0 = not reported")
+    p1, p2 = st.columns(2)
+    family = p1.selectbox("Material family", sorted(train_rows.family.unique()))
+    known = sorted({e for els in train_rows.elements for e in els})
+    elements = p2.multiselect("Elements", known, default=[e for e in ("Mn", "C", "O") if e in known])
+    estimate = model_predict(fitted, columns, inputs, family, elements)
+    st.metric(f"Estimated {short}", f"{estimate:,.1f} {scoped.unit.iloc[0]}")
+    st.caption("Ridge regression fitted on all records. Treat as a screening estimate, with the held-out R² above as its "
+               "reliability.")
+
+# ------------------------------------------------------------------ Thesis Analytics (Track 3 bridge)
+with tabs[7]:
     ahsc, llzo, combined, _ = thesis_data()
     st.markdown("<div class='kicker'>Original thesis analytics · bridge to Track 3 (prediction)</div>", unsafe_allow_html=True)
     metrics = {"Potential midpoint": "potential_mid_v", "Capacitance / capacity": "capacitance_capacity_value",
@@ -411,24 +509,5 @@ with tabs[6]:
         tooltip=["dataset", "cathode_material", "anode_material", "electrolyte"]).properties(height=360).interactive(),
         width="stretch")
 
-    @st.cache_resource
-    def rf_model():
-        from sklearn.ensemble import RandomForestRegressor
-        target = "specific_power_w_kg"
-        candidates = ["potential_mid_v", "capacitance_capacity_value", "cycling_stability_pct", "ionic_conductivity_s_cm"]
-        rows = ahsc[ahsc[target].notna()]
-        threshold = max(10, int(np.ceil(len(rows) * .5)))
-        features = [c for c in candidates if rows[c].notna().sum() >= threshold]
-        training = ahsc[[target, *features]].dropna()
-        return RandomForestRegressor(n_estimators=500, random_state=123, n_jobs=-1).fit(training[features], training[target]), features, training
-
-    model, features, training = rf_model()
-    st.subheader("Exploratory AHSC specific-power model (Random Forest)")
-    cols, values = st.columns(len(features)), {}
-    for col, feature in zip(cols, features):
-        lo, hi, med = map(float, [training[feature].min(), training[feature].max(), training[feature].median()])
-        values[feature] = col.slider(feature, lo, hi, med)
-    prediction = float(model.predict(pd.DataFrame([values]))[0])
-    st.metric("Estimated specific power", f"{prediction:,.0f} W/kg")
-    st.caption(f"{len(training)} complete training records. Exploratory only: this model belongs to Track 3; the "
-               "knowledge engine (Track 1) supplies its curated, evidence-linked training facts.")
+    st.info("The original thesis random-forest predictor was retired: under repeated cross-validation it scores below a "
+            "mean baseline. See the **Model Evaluation** tab for the re-test and the replacement models.")
