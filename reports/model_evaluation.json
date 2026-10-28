@@ -1,0 +1,328 @@
+{
+  "protocol": "10 \u00d7 repeated 5-fold cross-validation on log10(target); R\u00b2 and MAE are computed on pooled out-of-fold predictions and averaged over repeats",
+  "data": "AHSC facts from data/thesis_facts.jsonl; flagged facts excluded; one unit per property",
+  "model_inputs": "log10 of reported properties (missing = -9) + element one-hots + material-family one-hots",
+  "results": [
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "All inputs",
+      "model": "Mean baseline",
+      "records": 68,
+      "inputs": [
+        "specific_power",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.041,
+      "r2_std": 0.023,
+      "r2_min": -0.093,
+      "r2_max": -0.013,
+      "mae_log10": 0.338
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "All inputs",
+      "model": "Family-median baseline",
+      "records": 68,
+      "inputs": [
+        "specific_power",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.335,
+      "r2_std": 0.248,
+      "r2_min": -1.009,
+      "r2_max": -0.042,
+      "mae_log10": 0.365
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "All inputs",
+      "model": "Ridge regression",
+      "records": 68,
+      "inputs": [
+        "specific_power",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.057,
+      "r2_std": 0.029,
+      "r2_min": -0.11,
+      "r2_max": -0.022,
+      "mae_log10": 0.339
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "All inputs",
+      "model": "Random forest",
+      "records": 68,
+      "inputs": [
+        "specific_power",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.005,
+      "r2_std": 0.086,
+      "r2_min": -0.193,
+      "r2_max": 0.143,
+      "mae_log10": 0.343
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "Without specific power",
+      "model": "Mean baseline",
+      "records": 68,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.041,
+      "r2_std": 0.023,
+      "r2_min": -0.093,
+      "r2_max": -0.013,
+      "mae_log10": 0.338
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "Without specific power",
+      "model": "Family-median baseline",
+      "records": 68,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.335,
+      "r2_std": 0.248,
+      "r2_min": -1.009,
+      "r2_max": -0.042,
+      "mae_log10": 0.365
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "Without specific power",
+      "model": "Ridge regression",
+      "records": 68,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.058,
+      "r2_std": 0.029,
+      "r2_min": -0.112,
+      "r2_max": -0.024,
+      "mae_log10": 0.339
+    },
+    {
+      "target": "specific_energy",
+      "target_label": "Energy density (Wh/kg)",
+      "unit": "Wh/kg",
+      "feature_set": "Without specific power",
+      "model": "Random forest",
+      "records": 68,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.186,
+      "r2_std": 0.037,
+      "r2_min": -0.232,
+      "r2_max": -0.116,
+      "mae_log10": 0.372
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "All inputs",
+      "model": "Mean baseline",
+      "records": 52,
+      "inputs": [
+        "specific_energy",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.052,
+      "r2_std": 0.032,
+      "r2_min": -0.131,
+      "r2_max": -0.015,
+      "mae_log10": 1.347
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "All inputs",
+      "model": "Family-median baseline",
+      "records": 52,
+      "inputs": [
+        "specific_energy",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.267,
+      "r2_std": 0.091,
+      "r2_min": -0.404,
+      "r2_max": -0.079,
+      "mae_log10": 1.293
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "All inputs",
+      "model": "Ridge regression",
+      "records": 52,
+      "inputs": [
+        "specific_energy",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": 0.249,
+      "r2_std": 0.072,
+      "r2_min": 0.113,
+      "r2_max": 0.365,
+      "mae_log10": 1.038
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "All inputs",
+      "model": "Random forest",
+      "records": 52,
+      "inputs": [
+        "specific_energy",
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": 0.465,
+      "r2_std": 0.063,
+      "r2_min": 0.34,
+      "r2_max": 0.545,
+      "mae_log10": 0.84
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "Without specific energy",
+      "model": "Mean baseline",
+      "records": 52,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.052,
+      "r2_std": 0.032,
+      "r2_min": -0.131,
+      "r2_max": -0.015,
+      "mae_log10": 1.347
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "Without specific energy",
+      "model": "Family-median baseline",
+      "records": 52,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": -0.267,
+      "r2_std": 0.091,
+      "r2_min": -0.404,
+      "r2_max": -0.079,
+      "mae_log10": 1.293
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "Without specific energy",
+      "model": "Ridge regression",
+      "records": 52,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": 0.078,
+      "r2_std": 0.061,
+      "r2_min": -0.006,
+      "r2_max": 0.171,
+      "mae_log10": 1.162
+    },
+    {
+      "target": "specific_power",
+      "target_label": "Power density (W/kg)",
+      "unit": "W/kg",
+      "feature_set": "Without specific energy",
+      "model": "Random forest",
+      "records": 52,
+      "inputs": [
+        "potential_window",
+        "specific_capacitance",
+        "cycling_stability"
+      ],
+      "r2_mean": 0.284,
+      "r2_std": 0.048,
+      "r2_min": 0.177,
+      "r2_max": 0.355,
+      "mae_log10": 0.973
+    }
+  ],
+  "thesis_model": {
+    "records": 32,
+    "features": [
+      "capacitance_capacity_value",
+      "cycling_stability_pct"
+    ],
+    "single_split_r2": -0.181,
+    "single_split_test_records": 7,
+    "cross_validated": {
+      "Mean baseline": {
+        "r2_mean": -0.065,
+        "r2_std": 0.064,
+        "r2_min": -0.2,
+        "r2_max": -0.013,
+        "mae_log10": 1.43
+      },
+      "Random forest": {
+        "r2_mean": -0.346,
+        "r2_std": 0.11,
+        "r2_min": -0.55,
+        "r2_max": -0.195,
+        "mae_log10": 1.538
+      }
+    }
+  }
+}

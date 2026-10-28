@@ -42,7 +42,7 @@ flowchart TB
     AFR[Africa re-rank\nsupply · ≤1000 °C · applications]
   end
   subgraph Serve[5. Serve]
-    APP[Streamlit app · 7 tabs]
+    APP[Streamlit app · 8 tabs]
     API[FastAPI /docs]
   end
   CSV --> DIG --> FACTS
@@ -65,7 +65,7 @@ python -m pip install -r requirements.txt
 python -m knowledge_engine.pipeline         # build facts, graph and reports (~10 s)
 streamlit run app.py                        # the knowledge-engine app
 uvicorn api:app --reload                    # REST API, docs at http://127.0.0.1:8000/docs
-pytest -q                                   # 30 offline tests
+pytest -q                                   # 32 offline tests
 ```
 
 To enable the LLM, copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. `OPENAI_API_KEY` also works as
@@ -82,7 +82,8 @@ it, search uses a scikit-learn LSA index.
 | **Research Map** | Centrality, family × property coverage heat-map, gap analysis, property co-occurrence, LLZO dopant summary | Research maps |
 | **Africa Focus** | Element-supply table, best Africa-compatible materials, supply vs performance, composition checker | Africa relevance |
 | **Data Quality** | Grounding rate, extraction precision/recall per property, quality flags, flagged-fact review | Scientific rigour |
-| **Thesis Analytics** | The original performance explorer and RF specific-power model | Bridge to Track 3 |
+| **Model Evaluation** | Held-out R² bar charts for energy and power density against mean and family-median baselines, a re-test of the thesis R² of 0.277, and a predictor | Evaluation |
+| **Thesis Analytics** | The original performance explorer | Bridge to Track 3 |
 
 ## Modules
 
@@ -114,6 +115,7 @@ python -m knowledge_engine.literature mine                         # mine abstra
 python -m knowledge_engine.record_sources build                    # rebuild data/record_sources.csv from provenance
 python -m knowledge_engine.record_sources resolve                  # Crossref: value-verified DOIs for the rest
 python -m knowledge_engine.knowledge_graph                         # GraphML + reports/research_map.json
+python -m knowledge_engine.model_evaluation                        # held-out R² vs baselines → reports/model_evaluation.json (~2 min)
 python -m knowledge_engine.graph_rag "What dopants improve LLZO ionic conductivity?"
 python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature below 1000°C"
 ```
@@ -141,6 +143,10 @@ python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature 
 - Supply statuses and 2024 production figures were checked against USGS *Mineral Commodity Summaries 2025*
   (each row of `data/africa_element_supply.csv` records its verification level). They are not reserve estimates or
   investment advice.
+- Model evaluation: the thesis random forest's R² of 0.277 came from one 80/20 split with 7 test records. Under
+  10 × 5-fold cross-validation it scores −0.35 against −0.07 for a mean baseline. On the cleaned facts, a random forest
+  predicts AHSC power density with R² 0.47 (0.28 without specific energy as an input). No model yet beats the
+  baseline for energy density (`reports/model_evaluation.json`).
 - Hypotheses are research suggestions to test, not conclusions. Each one lists its evidence and a validation
   experiment, and offline "domain prior" hypotheses are labelled as such.
 
