@@ -9,11 +9,11 @@ Materials GPT Hackathon · **Track 1: Literature mining → structured knowledge
 
 | | |
 |---|---|
-| Curated literature records | **533** (369 AHSC, 164 LLZO) → **1,238 evidence-grounded facts** in `data/thesis_facts.jsonl`, plus mined literature facts in `data/literature_facts.jsonl` |
-| Source linking | 256 of 533 records linked to literature: 22 paper DOIs (16 value-verified), 6 verified papers without DOI, 243 via source-review tables (`data/record_sources.csv`, provenance in `data/provenance/`) |
+| Curated literature records | **533** (369 AHSC, 164 LLZO) → **1,238 evidence-grounded facts** in `data/thesis_facts.jsonl`, plus 36 grounded facts mined from 37 source papers and reviews (`data/literature_facts.jsonl`) |
+| Source linking | 265 of 533 records linked to literature: **34 paper DOIs** (24 verified against the paper's own values, 10 by exact title), 10 verified papers without a visible DOI, 57 rows traced to a verified source-review table and 186 more by block inference (`data/record_sources.csv`, provenance in `data/provenance/`) |
 | Evidence grounding | **100 %** of curated facts; mined facts must pass verbatim-span verification |
 | Extraction benchmark | rule-based baseline **P = 0.96, R = 0.84, F1 = 0.89** against the curated facts (`reports/extraction_validation.json`) |
-| Knowledge graph | **1,317 nodes / 5,018 edges** across 8 node types (`data/knowledge_graph.graphml`) |
+| Knowledge graph | **1,319 nodes / 5,022 edges** across 8 node types (`data/knowledge_graph.graphml`) |
 | Africa layer | element-supply score on every fact, node and hypothesis; ≤ 1000 °C processing constraint |
 | Openness | REST API with OpenAPI docs, JSON schema + ontology, MIT code / CC BY 4.0 data, CITATION.cff, CI |
 

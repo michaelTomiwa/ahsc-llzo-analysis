@@ -5062,11 +5062,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:AHSC-0218">
+<node id="Paper:10.1016/j.mtener.2021.100878">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0218</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.mtener.2021.100878</data>
+  <data key="d9">10.1016/j.mtener.2021.100878</data>
+  <data key="d10">Mo1.33CTz–Ti3C2Tz mixed MXene freestanding films for zinc-ion hybrid supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -5174,11 +5174,11 @@
   <data key="d5">["Bi", "C", "S", "Ti"]</data>
   <data key="d6">0.7</data>
 </node>
-<node id="Paper:AHSC-0223">
+<node id="Paper:10.1016/j.jallcom.2021.160881">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0223</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.jallcom.2021.160881</data>
+  <data key="d9">10.1016/j.jallcom.2021.160881</data>
+  <data key="d10">Pizza-like heterostructured Ti3C2Tx/Bi2S3@N-C with ultra-high specific capacitance as a potential electrode material for aqueous zinc-ion hybrid supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -5300,11 +5300,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:AHSC-0228">
+<node id="Paper:10.1016/j.elecom.2022.107264">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0228</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.elecom.2022.107264</data>
+  <data key="d9">10.1016/j.elecom.2022.107264</data>
+  <data key="d10">Ti1.1V0.7CrxNb1.0Ta0.6C3Tz high-entropy MXene freestanding films for charge storage applications</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -5351,11 +5351,11 @@
   <data key="d5">["C", "S", "Ti", "W"]</data>
   <data key="d6">0.9</data>
 </node>
-<node id="Paper:AHSC-0231">
+<node id="Paper:10.1016/j.cej.2022.139523">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0231</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.cej.2022.139523</data>
+  <data key="d9">10.1016/j.cej.2022.139523</data>
+  <data key="d10">WS2-embedded MXene/GO hybrid nanosheets as electrodes for asymmetric supercapacitors and hydrogen evolution reactions</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -5560,7 +5560,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0242</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">High capacity and stability induced by sandwich-like structure and metal-O configuration for CoNi2S4/Ti3C2Tx heterostructure electrode</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -5788,7 +5788,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0253</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">2D/2D Nanoarchitectured Nb2C/Ti3C2 MXene Heterointerface for High-Energy Supercapacitors with Sustainable Life Cycle</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -6144,11 +6144,11 @@
   <data key="d5">["C", "Ti"]</data>
   <data key="d6">0.9</data>
 </node>
-<node id="Paper:AHSC-0275">
+<node id="Paper:10.1016/j.est.2023.106768">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0275</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2023.106768</data>
+  <data key="d9">10.1016/j.est.2023.106768</data>
+  <data key="d10">Rational design of new, efficient, and suitable nickel phthalocyanine reinforced MXene electrodes for supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -6302,11 +6302,11 @@
   <data key="d5">["C", "Mo", "N", "Ti"]</data>
   <data key="d6">0.6</data>
 </node>
-<node id="Paper:AHSC-0284">
+<node id="Paper:10.1016/j.est.2024.114354">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0284</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2024.114354</data>
+  <data key="d9">10.1016/j.est.2024.114354</data>
+  <data key="d10">Novel synthesis and electrochemical performance of 2D molybdenum nitride (MXene) for supercapacitor application</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -6562,14 +6562,6 @@
   <data key="d4">MXene</data>
   <data key="d5">["C", "S", "Ti", "W"]</data>
   <data key="d6">0.9</data>
-</node>
-<node id="Paper:AHSC-0298">
-  <data key="d0">Paper</data>
-  <data key="d1">AHSC-0298</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
-  <data key="d11">thesis_curated_record</data>
-  <data key="d2">AHSC</data>
 </node>
 <node id="Material:Ti3C2Tx/NH2-RGO">
   <data key="d0">Material</data>
@@ -8433,7 +8425,7 @@
   <data key="d0">Paper</data>
   <data key="d1">LLZO-0020</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">Solid-State, Single-Ion Conducting, Polymer Blend Electrolytes with Enhanced Li+ Conduction, Electrochemical Stability, and Limiting Current Density</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8446,11 +8438,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:LLZO-0021">
+<node id="Paper:10.1007/s12274-023-5378-z">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0021</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1007/s12274-023-5378-z</data>
+  <data key="d9">10.1007/s12274-023-5378-z</data>
+  <data key="d10">Novel single-ion conducting polymer electrolytes with high toughness and high resistance against lithium dendrites</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8480,11 +8472,11 @@
   <data key="d5">["C", "H", "I", "Li", "O", "P", "S"]</data>
   <data key="d6">0.8</data>
 </node>
-<node id="Paper:LLZO-0023">
+<node id="Paper:10.1021/acsami.9b20436">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0023</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1021/acsami.9b20436</data>
+  <data key="d9">10.1021/acsami.9b20436</data>
+  <data key="d10">Single Lithium-Ion Conducting Solid Polymer Electrolyte with Superior Electrochemical Stability and Interfacial Compatibility for Solid-State Lithium Metal Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8497,11 +8489,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:LLZO-0024">
+<node id="Paper:10.1002/aenm.202103530">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0024</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/aenm.202103530</data>
+  <data key="d9">10.1002/aenm.202103530</data>
+  <data key="d10">A Single-Ion Conducting Network as Rationally Coordinating Polymer Electrolyte for Solid-State Li Metal Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8531,11 +8523,11 @@
   <data key="d5">["F", "Li", "O", "P", "Si"]</data>
   <data key="d6">0.875</data>
 </node>
-<node id="Paper:LLZO-0026">
+<node id="Paper:10.1002/aenm.202200013">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0026</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/aenm.202200013</data>
+  <data key="d9">10.1002/aenm.202200013</data>
+  <data key="d10">Polysiloxane-Based Single-Ion Conducting Polymer Blend Electrolyte Comprising Small-Molecule Organic Carbonates for High-Energy and High-Power Lithium-Metal Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8586,7 +8578,7 @@
   <data key="d0">Paper</data>
   <data key="d1">LLZO-0029</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">Synthesis of Single Lithium-Ion Conducting Polymer Electrolyte Membrane for Solid-State Lithium Metal Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -9053,11 +9045,11 @@
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
   <data key="d6">0.875</data>
 </node>
-<node id="Paper:LLZO-0056">
+<node id="Paper:10.1002/cssc.201903466">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0056</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/cssc.201903466</data>
+  <data key="d9">10.1002/cssc.201903466</data>
+  <data key="d10">Sustainable Lignin-Derived Cross-Linked Graft Polymers as Electrolyte and Binder Materials for Lithium Metal Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -10876,6 +10868,30 @@
   <data key="d1">https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe</data>
   <data key="d9"></data>
   <data key="d10"></data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">LLZO</data>
+</node>
+<node id="Paper:https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm">
+  <data key="d0">Paper</data>
+  <data key="d1">https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm</data>
+  <data key="d9"></data>
+  <data key="d10">High capacity and stability induced by sandwich-like structure and metal-O configuration for CoNi2S4/Ti3C2Tx heterostructure electrode</data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://pubmed.ncbi.nlm.nih.gov/35476396/">
+  <data key="d0">Paper</data>
+  <data key="d1">https://pubmed.ncbi.nlm.nih.gov/35476396/</data>
+  <data key="d9"></data>
+  <data key="d10">2D/2D Nanoarchitectured Nb2C/Ti3C2 MXene Heterointerface for High-Energy Supercapacitors with Sustainable Life Cycle</data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend">
+  <data key="d0">Paper</data>
+  <data key="d1">https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend</data>
+  <data key="d9"></data>
+  <data key="d10">Solid-State, Single-Ion Conducting, Polymer Blend Electrolytes with Enhanced Li+ Conduction, Electrochemical Stability, and Limiting Current Density</data>
   <data key="d11">literature_abstract</data>
   <data key="d2">LLZO</data>
 </node>
@@ -20936,7 +20952,7 @@
   <data key="d15">[105.0]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["AHSC-0218-specific_capacity"]</data>
-  <data key="d18">["AHSC-0218"]</data>
+  <data key="d18">["10.1016/j.mtener.2021.100878"]</data>
   <data key="d19">["1 A g-1"]</data>
   <data key="d20">1</data>
   <data key="d21">105.0</data>
@@ -20948,21 +20964,21 @@
 <edge source="Material:Mo1.33CTz@Ti3C2Tz" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Mo1.33CTz@Ti3C2Tz" target="Paper:AHSC-0218">
+<edge source="Material:Mo1.33CTz@Ti3C2Tz" target="Paper:10.1016/j.mtener.2021.100878">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Mo1.33CTz@Ti3C2Tz" target="Property:cycling_stability">
   <data key="d14">hasProperty</data>
-  <data key="d15">[90.0]</data>
-  <data key="d16">["%"]</data>
-  <data key="d17">["AHSC-0218-cycling_stability"]</data>
-  <data key="d18">["AHSC-0218"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[90.0, 90.0]</data>
+  <data key="d16">["%", "%"]</data>
+  <data key="d17">["AHSC-0218-cycling_stability", "10.1016/j.mtener.2021.100878-000-cycling_stability"]</data>
+  <data key="d18">["10.1016/j.mtener.2021.100878", "10.1016/j.mtener.2021.100878"]</data>
+  <data key="d19">["", "after 8000 cycles"]</data>
+  <data key="d20">2</data>
   <data key="d21">90.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0218" target="Material:3 M Zn(CF3SO3)2">
+<edge source="Paper:10.1016/j.mtener.2021.100878" target="Material:3 M Zn(CF3SO3)2">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -21094,7 +21110,7 @@
   <data key="d15">[150.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0223-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0223"]</data>
+  <data key="d18">["10.1016/j.jallcom.2021.160881"]</data>
   <data key="d19">["1 A g-1"]</data>
   <data key="d20">1</data>
   <data key="d21">150.0</data>
@@ -21106,7 +21122,7 @@
 <edge source="Material:Ti3C2Tx/Bi2S3@N-C" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Ti3C2Tx/Bi2S3@N-C" target="Paper:AHSC-0223">
+<edge source="Material:Ti3C2Tx/Bi2S3@N-C" target="Paper:10.1016/j.jallcom.2021.160881">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Ti3C2Tx/Bi2S3@N-C" target="Element:Bi">
@@ -21126,13 +21142,13 @@
   <data key="d15">[81.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0223-cycling_stability"]</data>
-  <data key="d18">["AHSC-0223"]</data>
+  <data key="d18">["10.1016/j.jallcom.2021.160881"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">81.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0223" target="Material:Zn(CF3SO3)2">
+<edge source="Paper:10.1016/j.jallcom.2021.160881" target="Material:Zn(CF3SO3)2">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -21305,12 +21321,12 @@
 </edge>
 <edge source="Material:Ti1.1V0.7CrxNb1.0Ta0.6C3Tz" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[77.0]</data>
-  <data key="d16">["mAh/g"]</data>
-  <data key="d17">["AHSC-0228-specific_capacity"]</data>
-  <data key="d18">["AHSC-0228"]</data>
-  <data key="d19">["0.5 A g-1"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[77.0, 77.0]</data>
+  <data key="d16">["mAh/g", "mAh/g"]</data>
+  <data key="d17">["AHSC-0228-specific_capacity", "10.1016/j.elecom.2022.107264-000-specific_capacity"]</data>
+  <data key="d18">["10.1016/j.elecom.2022.107264", "10.1016/j.elecom.2022.107264"]</data>
+  <data key="d19">["0.5 A g-1", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">77.0</data>
   <data key="d22">mAh/g</data>
 </edge>
@@ -21320,21 +21336,21 @@
 <edge source="Material:Ti1.1V0.7CrxNb1.0Ta0.6C3Tz" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Ti1.1V0.7CrxNb1.0Ta0.6C3Tz" target="Paper:AHSC-0228">
+<edge source="Material:Ti1.1V0.7CrxNb1.0Ta0.6C3Tz" target="Paper:10.1016/j.elecom.2022.107264">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Ti1.1V0.7CrxNb1.0Ta0.6C3Tz" target="Property:cycling_stability">
   <data key="d14">hasProperty</data>
-  <data key="d15">[87.0]</data>
-  <data key="d16">["%"]</data>
-  <data key="d17">["AHSC-0228-cycling_stability"]</data>
-  <data key="d18">["AHSC-0228"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[87.0, 87.0]</data>
+  <data key="d16">["%", "%"]</data>
+  <data key="d17">["AHSC-0228-cycling_stability", "10.1016/j.elecom.2022.107264-001-cycling_stability"]</data>
+  <data key="d18">["10.1016/j.elecom.2022.107264", "10.1016/j.elecom.2022.107264"]</data>
+  <data key="d19">["", "after 10000 cycles"]</data>
+  <data key="d20">2</data>
   <data key="d21">87.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0228" target="Material:3 M Zn(CF3SO3)2">
+<edge source="Paper:10.1016/j.elecom.2022.107264" target="Material:3 M Zn(CF3SO3)2">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -21368,12 +21384,12 @@
 </edge>
 <edge source="Material:Ti2C2Tx/WS2/GO" target="Property:specific_capacitance">
   <data key="d14">hasProperty</data>
-  <data key="d15">[1111.0]</data>
-  <data key="d16">["F/g"]</data>
-  <data key="d17">["AHSC-0231-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0231"]</data>
-  <data key="d19">["2 A g-1"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[1111.0, 1111.0]</data>
+  <data key="d16">["F/g", "F/g"]</data>
+  <data key="d17">["AHSC-0231-specific_capacitance", "10.1016/j.cej.2022.139523-000-specific_capacitance"]</data>
+  <data key="d18">["10.1016/j.cej.2022.139523", "10.1016/j.cej.2022.139523"]</data>
+  <data key="d19">["2 A g-1", "at 2 A/g"]</data>
+  <data key="d20">2</data>
   <data key="d21">1111.0</data>
   <data key="d22">F/g</data>
 </edge>
@@ -21383,7 +21399,7 @@
 <edge source="Material:Ti2C2Tx/WS2/GO" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Ti2C2Tx/WS2/GO" target="Paper:AHSC-0231">
+<edge source="Material:Ti2C2Tx/WS2/GO" target="Paper:10.1016/j.cej.2022.139523">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Ti2C2Tx/WS2/GO" target="Element:C">
@@ -21403,13 +21419,13 @@
   <data key="d15">[93.1]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0231-cycling_stability"]</data>
-  <data key="d18">["AHSC-0231"]</data>
+  <data key="d18">["10.1016/j.cej.2022.139523"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">93.1</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0231" target="Material:1 M KOH">
+<edge source="Paper:10.1016/j.cej.2022.139523" target="Material:1 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -21768,12 +21784,12 @@
 </edge>
 <edge source="Material:Ti3C2Tx@CoNi2S4" target="Property:specific_capacitance">
   <data key="d14">hasProperty</data>
-  <data key="d15">[2398.0]</data>
-  <data key="d16">["F/g"]</data>
-  <data key="d17">["AHSC-0242-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0242"]</data>
-  <data key="d19">["1 A g-1"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[2398.0, 2398.0]</data>
+  <data key="d16">["F/g", "F/g"]</data>
+  <data key="d17">["AHSC-0242-specific_capacitance", "https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm-000-specific_capacitance"]</data>
+  <data key="d18">["AHSC-0242", "https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm"]</data>
+  <data key="d19">["1 A g-1", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">2398.0</data>
   <data key="d22">F/g</data>
 </edge>
@@ -21811,6 +21827,20 @@
   <data key="d20">1</data>
   <data key="d21">80.0</data>
   <data key="d22">%</data>
+</edge>
+<edge source="Material:Ti3C2Tx@CoNi2S4" target="Paper:https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm">
+  <data key="d14">studiedIn</data>
+</edge>
+<edge source="Material:Ti3C2Tx@CoNi2S4" target="Property:specific_capacity">
+  <data key="d14">hasProperty</data>
+  <data key="d15">[320.0]</data>
+  <data key="d16">["mAh/g"]</data>
+  <data key="d17">["https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm-001-specific_capacity"]</data>
+  <data key="d18">["https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm"]</data>
+  <data key="d19">[""]</data>
+  <data key="d20">1</data>
+  <data key="d21">320.0</data>
+  <data key="d22">mAh/g</data>
 </edge>
 <edge source="Paper:AHSC-0242" target="Material:6 M KOH">
   <data key="d14">usesComponent</data>
@@ -22261,12 +22291,12 @@
 </edge>
 <edge source="Material:Nb2C/Ti3C2" target="Property:specific_capacitance">
   <data key="d14">hasProperty</data>
-  <data key="d15">[584.0]</data>
-  <data key="d16">["F/g"]</data>
-  <data key="d17">["AHSC-0253-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0253"]</data>
-  <data key="d19">["2 A g-1"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[584.0, 584.0]</data>
+  <data key="d16">["F/g", "F/g"]</data>
+  <data key="d17">["AHSC-0253-specific_capacitance", "https://pubmed.ncbi.nlm.nih.gov/35476396/-000-specific_capacitance"]</data>
+  <data key="d18">["AHSC-0253", "https://pubmed.ncbi.nlm.nih.gov/35476396/"]</data>
+  <data key="d19">["2 A g-1", "at 2 A/g"]</data>
+  <data key="d20">2</data>
   <data key="d21">584.0</data>
   <data key="d22">F/g</data>
 </edge>
@@ -22298,6 +22328,9 @@
   <data key="d20">1</data>
   <data key="d21">98.0</data>
   <data key="d22">%</data>
+</edge>
+<edge source="Material:Nb2C/Ti3C2" target="Paper:https://pubmed.ncbi.nlm.nih.gov/35476396/">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:AHSC-0253" target="Material:PVA/H2SO4 gel">
   <data key="d14">usesComponent</data>
@@ -23143,7 +23176,7 @@
   <data key="d15">[792.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0275-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0275"]</data>
+  <data key="d18">["10.1016/j.est.2023.106768"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">792.0</data>
@@ -23155,7 +23188,7 @@
 <edge source="Material:MXene/NiPc" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:MXene/NiPc" target="Paper:AHSC-0275">
+<edge source="Material:MXene/NiPc" target="Paper:10.1016/j.est.2023.106768">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:MXene/NiPc" target="Element:C">
@@ -23169,13 +23202,13 @@
   <data key="d15">[95.1]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0275-cycling_stability"]</data>
-  <data key="d18">["AHSC-0275"]</data>
+  <data key="d18">["10.1016/j.est.2023.106768"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">95.1</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0275" target="Material:3 M KOH">
+<edge source="Paper:10.1016/j.est.2023.106768" target="Material:3 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -23459,7 +23492,7 @@
   <data key="d15">[1272.45]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0284-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0284"]</data>
+  <data key="d18">["10.1016/j.est.2024.114354"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1272.45</data>
@@ -23471,7 +23504,7 @@
 <edge source="Material:Mo2N MXene" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Mo2N MXene" target="Paper:AHSC-0284">
+<edge source="Material:Mo2N MXene" target="Paper:10.1016/j.est.2024.114354">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Mo2N MXene" target="Element:C">
@@ -23491,13 +23524,13 @@
   <data key="d15">[93.9]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0284-cycling_stability"]</data>
-  <data key="d18">["AHSC-0284"]</data>
+  <data key="d18">["10.1016/j.est.2024.114354"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">93.9</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0284" target="Material:2 M KOH">
+<edge source="Paper:10.1016/j.est.2024.114354" target="Material:2 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -24129,7 +24162,7 @@
   <data key="d15">[1111.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0298-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0298"]</data>
+  <data key="d18">["10.1016/j.cej.2022.139523"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1111.0</data>
@@ -24141,7 +24174,7 @@
 <edge source="Material:WS2@MXene/GO" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:WS2@MXene/GO" target="Paper:AHSC-0298">
+<edge source="Material:WS2@MXene/GO" target="Paper:10.1016/j.cej.2022.139523">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:WS2@MXene/GO" target="Element:C">
@@ -24155,10 +24188,6 @@
 </edge>
 <edge source="Material:WS2@MXene/GO" target="Element:W">
   <data key="d14">containsElement</data>
-</edge>
-<edge source="Paper:AHSC-0298" target="Material:1 M KOH">
-  <data key="d14">usesComponent</data>
-  <data key="d23">electrolyte</data>
 </edge>
 <edge source="Material:Ti3C2Tx/NH2-RGO" target="Property:specific_capacitance">
   <data key="d14">hasProperty</data>
@@ -28034,14 +28063,17 @@
 </edge>
 <edge source="Material:PLiMTFSI (withTFSI)" target="Property:ionic_conductivity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[0.007]</data>
-  <data key="d16">["S/cm"]</data>
-  <data key="d17">["LLZO-0020-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0020"]</data>
-  <data key="d19">["150 \u00b0C"]</data>
-  <data key="d20">1</data>
-  <data key="d21">0.007</data>
+  <data key="d15">[0.007, 0.01]</data>
+  <data key="d16">["S/cm", "S/cm"]</data>
+  <data key="d17">["LLZO-0020-ionic_conductivity", "https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend-000-ionic_conductivity"]</data>
+  <data key="d18">["LLZO-0020", "https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend"]</data>
+  <data key="d19">["150 \u00b0C", "150 \u00b0C"]</data>
+  <data key="d20">2</data>
+  <data key="d21">0.0085</data>
   <data key="d22">S/cm</data>
+</edge>
+<edge source="Material:PLiMTFSI (withTFSI)" target="Paper:https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:LLZO-0020" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
@@ -28056,7 +28088,7 @@
   <data key="d15">[25.0]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0021-potential_window"]</data>
-  <data key="d18">["LLZO-0021"]</data>
+  <data key="d18">["10.1007/s12274-023-5378-z"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">25.0</data>
@@ -28068,7 +28100,7 @@
 <edge source="Material:PEaMI (with LiPhTFSI)" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:PEaMI (with LiPhTFSI)" target="Paper:LLZO-0021">
+<edge source="Material:PEaMI (with LiPhTFSI)" target="Paper:10.1007/s12274-023-5378-z">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:PEaMI (with LiPhTFSI)" target="Property:specific_capacity">
@@ -28076,7 +28108,7 @@
   <data key="d15">[70.0]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["LLZO-0021-specific_capacity"]</data>
-  <data key="d18">["LLZO-0021"]</data>
+  <data key="d18">["10.1007/s12274-023-5378-z"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">70.0</data>
@@ -28087,7 +28119,7 @@
   <data key="d15">[45.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0021-cycling_stability"]</data>
-  <data key="d18">["LLZO-0021"]</data>
+  <data key="d18">["10.1007/s12274-023-5378-z"]</data>
   <data key="d19">["after 100 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">45.0</data>
@@ -28095,20 +28127,20 @@
 </edge>
 <edge source="Material:PEaMI (with LiPhTFSI)" target="Property:ionic_conductivity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[7e-06]</data>
-  <data key="d16">["S/cm"]</data>
-  <data key="d17">["LLZO-0021-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0021"]</data>
-  <data key="d19">["70 \u00b0C"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[7e-06, 7e-06]</data>
+  <data key="d16">["S/cm", "S/cm"]</data>
+  <data key="d17">["LLZO-0021-ionic_conductivity", "10.1007/s12274-023-5378-z-000-ionic_conductivity"]</data>
+  <data key="d18">["10.1007/s12274-023-5378-z", "10.1007/s12274-023-5378-z"]</data>
+  <data key="d19">["70 \u00b0C", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">7e-06</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0021" target="Material:LiFePO4 (LFP)">
+<edge source="Paper:10.1007/s12274-023-5378-z" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0021" target="Material:Lithium metal">
+<edge source="Paper:10.1007/s12274-023-5378-z" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -28191,7 +28223,7 @@
   <data key="d15">[5.53]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0023-potential_window"]</data>
-  <data key="d18">["LLZO-0023"]</data>
+  <data key="d18">["10.1021/acsami.9b20436"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">5.53</data>
@@ -28203,7 +28235,7 @@
 <edge source="Material:PEO (with LiPCSI)" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:PEO (with LiPCSI)" target="Paper:LLZO-0023">
+<edge source="Material:PEO (with LiPCSI)" target="Paper:10.1021/acsami.9b20436">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:PEO (with LiPCSI)" target="Element:C">
@@ -28229,12 +28261,12 @@
 </edge>
 <edge source="Material:PEO (with LiPCSI)" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[141.0]</data>
-  <data key="d16">["mAh/g"]</data>
-  <data key="d17">["LLZO-0023-specific_capacity"]</data>
-  <data key="d18">["LLZO-0023"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[141.0, 141.0]</data>
+  <data key="d16">["mAh/g", "mAh/g"]</data>
+  <data key="d17">["LLZO-0023-specific_capacity", "10.1021/acsami.9b20436-000-specific_capacity"]</data>
+  <data key="d18">["10.1021/acsami.9b20436", "10.1021/acsami.9b20436"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">141.0</data>
   <data key="d22">mAh/g</data>
 </edge>
@@ -28243,7 +28275,7 @@
   <data key="d15">[85.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0023-cycling_stability"]</data>
-  <data key="d18">["LLZO-0023"]</data>
+  <data key="d18">["10.1021/acsami.9b20436"]</data>
   <data key="d19">["after 80 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">85.0</data>
@@ -28254,17 +28286,20 @@
   <data key="d15">[7.33e-05]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["LLZO-0023-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0023"]</data>
+  <data key="d18">["10.1021/acsami.9b20436"]</data>
   <data key="d19">["60 \u00b0C"]</data>
   <data key="d20">1</data>
   <data key="d21">7.33e-05</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0023" target="Material:LiFePO4 (LFP)">
+<edge source="Material:PEO (with LiPCSI)" target="MaterialFamily:Other">
+  <data key="d14">memberOf</data>
+</edge>
+<edge source="Paper:10.1021/acsami.9b20436" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0023" target="Material:Lithium metal">
+<edge source="Paper:10.1021/acsami.9b20436" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -28273,7 +28308,7 @@
   <data key="d15">[4.8]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0024-potential_window"]</data>
-  <data key="d18">["LLZO-0024"]</data>
+  <data key="d18">["10.1002/aenm.202103530"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">4.8</data>
@@ -28285,7 +28320,7 @@
 <edge source="Material:TEG (with LiCTFPB)" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:TEG (with LiCTFPB)" target="Paper:LLZO-0024">
+<edge source="Material:TEG (with LiCTFPB)" target="Paper:10.1002/aenm.202103530">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:TEG (with LiCTFPB)" target="Property:specific_capacity">
@@ -28293,7 +28328,7 @@
   <data key="d15">[162.0]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["LLZO-0024-specific_capacity"]</data>
-  <data key="d18">["LLZO-0024"]</data>
+  <data key="d18">["10.1002/aenm.202103530"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">162.0</data>
@@ -28304,7 +28339,7 @@
   <data key="d15">[89.8]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0024-cycling_stability"]</data>
-  <data key="d18">["LLZO-0024"]</data>
+  <data key="d18">["10.1002/aenm.202103530"]</data>
   <data key="d19">["after 200 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">89.8</data>
@@ -28315,17 +28350,17 @@
   <data key="d15">[3.53e-06]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["LLZO-0024-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0024"]</data>
+  <data key="d18">["10.1002/aenm.202103530"]</data>
   <data key="d19">["25 \u00b0C"]</data>
   <data key="d20">1</data>
   <data key="d21">3.53e-06</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0024" target="Material:LiFePO4 (LFP)">
+<edge source="Paper:10.1002/aenm.202103530" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0024" target="Material:Lithium metal">
+<edge source="Paper:10.1002/aenm.202103530" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -28407,7 +28442,7 @@
   <data key="d15">[4.8]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0026-potential_window"]</data>
-  <data key="d18">["LLZO-0026"]</data>
+  <data key="d18">["10.1002/aenm.202200013"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">4.8</data>
@@ -28419,7 +28454,7 @@
 <edge source="Material:PSiO-PVDFHFP (with DMSO and LiPF6)" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:PSiO-PVDFHFP (with DMSO and LiPF6)" target="Paper:LLZO-0026">
+<edge source="Material:PSiO-PVDFHFP (with DMSO and LiPF6)" target="Paper:10.1002/aenm.202200013">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:PSiO-PVDFHFP (with DMSO and LiPF6)" target="Element:F">
@@ -28442,7 +28477,7 @@
   <data key="d15">[170.0]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["LLZO-0026-specific_capacity"]</data>
-  <data key="d18">["LLZO-0026"]</data>
+  <data key="d18">["10.1002/aenm.202200013"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">170.0</data>
@@ -28453,7 +28488,7 @@
   <data key="d15">[80.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0026-cycling_stability"]</data>
-  <data key="d18">["LLZO-0026"]</data>
+  <data key="d18">["10.1002/aenm.202200013"]</data>
   <data key="d19">["after 150 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">80.0</data>
@@ -28461,20 +28496,20 @@
 </edge>
 <edge source="Material:PSiO-PVDFHFP (with DMSO and LiPF6)" target="Property:ionic_conductivity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[0.0008]</data>
-  <data key="d16">["S/cm"]</data>
-  <data key="d17">["LLZO-0026-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0026"]</data>
-  <data key="d19">["40 \u00b0C"]</data>
-  <data key="d20">1</data>
-  <data key="d21">0.0008</data>
+  <data key="d15">[0.0008, 0.00041, 0.0006, 0.00082]</data>
+  <data key="d16">["S/cm", "S/cm", "S/cm", "S/cm"]</data>
+  <data key="d17">["LLZO-0026-ionic_conductivity", "10.1002/aenm.202200013-000-ionic_conductivity", "10.1002/aenm.202200013-001-ionic_conductivity", "10.1002/aenm.202200013-002-ionic_conductivity"]</data>
+  <data key="d18">["10.1002/aenm.202200013", "10.1002/aenm.202200013", "10.1002/aenm.202200013", "10.1002/aenm.202200013"]</data>
+  <data key="d19">["40 \u00b0C", "", "", ""]</data>
+  <data key="d20">4</data>
+  <data key="d21">0.0007</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0026" target="Material:LiFePO4 (LFP)">
+<edge source="Paper:10.1002/aenm.202200013" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0026" target="Material:Lithium metal">
+<edge source="Paper:10.1002/aenm.202200013" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -30345,7 +30380,7 @@
   <data key="d15">[5.0]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0056-potential_window"]</data>
-  <data key="d18">["LLZO-0056"]</data>
+  <data key="d18">["10.1002/cssc.201903466"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">5.0</data>
@@ -30357,7 +30392,7 @@
 <edge source="Material:Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)" target="Paper:LLZO-0056">
+<edge source="Material:Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)" target="Paper:10.1002/cssc.201903466">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)" target="Element:C">
@@ -30383,7 +30418,7 @@
   <data key="d15">[98.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0056-cycling_stability"]</data>
-  <data key="d18">["LLZO-0056"]</data>
+  <data key="d18">["10.1002/cssc.201903466"]</data>
   <data key="d19">["after 50 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">98.0</data>
@@ -30394,17 +30429,17 @@
   <data key="d15">[0.00333]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["LLZO-0056-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0056"]</data>
+  <data key="d18">["10.1002/cssc.201903466"]</data>
   <data key="d19">["30 \u00b0C"]</data>
   <data key="d20">1</data>
   <data key="d21">0.00333</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0056" target="Material:LiFePO4 (LFP)">
+<edge source="Paper:10.1002/cssc.201903466" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0056" target="Material:Lithium metal">
+<edge source="Paper:10.1002/cssc.201903466" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>

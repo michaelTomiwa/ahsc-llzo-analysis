@@ -31,18 +31,18 @@
     "raw_text_disagrees_with_curated_value": 3,
     "theoretical_value": 1
   },
-  "facts_with_doi": 68,
+  "facts_with_doi": 100,
   "facts_with_review_doi": 573,
   "record_links": {
     "records": 533,
-    "paper_doi": 22,
-    "paper_doi_value_verified": 16,
-    "paper_doi_title_match": 6,
-    "paper_verified_url_only": 6,
+    "paper_doi": 34,
+    "paper_doi_value_verified": 24,
+    "paper_doi_title_match": 10,
+    "paper_verified_url_only": 10,
     "source_review_verified_row": 57,
     "source_review_block_inferred": 186,
-    "any_citation": 256,
-    "records_searched": 63
+    "any_citation": 265,
+    "records_searched": 88
   },
   "grounding": {
     "facts": 1238,

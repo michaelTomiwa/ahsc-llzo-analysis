@@ -10,7 +10,7 @@ The machine-readable definition is [`schema.json`](../schema.json). This page ex
 | **MaterialFamily** | family name | – | 26 coarse classes (MXene, LDH, Garnet LLZO, PEO/PEG polymer, Polymer-garnet composite, …) assigned by ordered regex rules in `knowledge_engine/chem.py`. Electrolyte-only families never apply to electrodes. |
 | **Property** | snake_case name | unit, category | Controlled vocabulary in `schema.json → properties_vocabulary`. |
 | **Value** | fact id | number, unit, condition, method, confidence, quality flags | One reported measurement = one fact in the JSONL. In the graph, values are aggregated on the `hasProperty` edge (values, units, fact ids, sources, n, median). |
-| **Paper** | DOI, or curated record id | title, year, source type | Curated thesis rows are papers identified by `AHSC-0001` … until a DOI is added in `data/record_sources.csv`. |
+| **Paper** | DOI, or curated record id | title, year, source type | A curated row becomes a DOI-identified paper when `data/record_sources.csv` links it (value-verified or exact-title match). Each fact's `source` also carries `review_doi` for the review table the row was compiled from (`review_link` = `verified_row` or `block_inferred`). |
 | **Element** | symbol | African supply status | Parsed from formulas and known abbreviations (LFP, LLZTO, AC, MXene …). |
 | **Dopant** | element symbol | – | Garnet dopants detected from `LLZO-0.5Ta`, `LLZTO`, `Li6.5La3Zr1.5Ta0.5O12`, `Al-doped` … |
 | **System** | AHSC / LLZO | – | |
