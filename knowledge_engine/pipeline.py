@@ -50,10 +50,11 @@ def run(harvest: bool = False, llm: bool = False) -> dict:
     build_record_sources()
     thesis = build_facts()
     write_jsonl(thesis, FACTS_JSONL)
+    from .literature import corpus_from_provenance, harvest as harvest_papers, mine
+    corpus_from_provenance()  # verified source papers (offline, from data/provenance)
     if harvest:
-        from .literature import harvest as harvest_papers, mine
-        harvest_papers()
-        mine(use_llm=llm or None)
+        harvest_papers()  # OpenAlex search (network)
+    mine(use_llm=llm or None)
     facts = load_facts()
     to_graphml(build_graph(facts), GRAPHML_PATH)
     outputs = {

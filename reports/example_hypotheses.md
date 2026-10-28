@@ -40,7 +40,7 @@
 ## 4. Optimise PVDF-based polymer built from African-supplied elements
 - **Proposed material:** PVDF-HFP (with DMF and LATTP)
 - **Change:** Use PVDF-HFP (with DMF and LATTP) as the baseline and tune morphology/loading
-- **Expected effect:** Family median 0.00042 S/cm (max 0.0019, n=13); 2/13 reported values already meet the goal target; aim to exceed the median at Africa supply score 0.833
+- **Expected effect:** Family median 0.00051 S/cm (max 0.0019, n=16); 2/16 reported values already meet the goal target; aim to exceed the median at Africa supply score 0.833
 - **Mechanism:** PVDF-based polymer ranks among the best families for ionic conductivity in the curated literature, and PVDF-HFP (with DMF and LATTP) uses elements with African supply (C, F, P).
 - **Evidence (fact ids):** LLZO-0005-ionic_conductivity, LLZO-0012-ionic_conductivity, LLZO-0014-ionic_conductivity, LLZO-0022-ionic_conductivity, LLZO-0026-ionic_conductivity, LLZO-0035-ionic_conductivity
 - **Max processing temperature:** unknown °C
@@ -154,25 +154,25 @@
 - **Scores:** final 0.803 | relevance 1.0 | novelty 0.65 | feasibility 1.0 | evidence 0.528 | Africa 0.846
 - **Notes:** material is in the corpus but not for this property; Africa supply ['La', 'Li', 'Ta', 'Zr']; flags ['Ta: responsible-sourcing due diligence required']
 
-## 3. Measure potential window for Bio-derived polymer
+## 3. Measure specific capacity for Bio-derived polymer
 - **Proposed material:** Pectin with LiClO4
 - **Change:** No change: characterise an under-reported property
 - **Expected effect:** First data point for this family-property pair in the corpus
-- **Mechanism:** Bio-derived polymer appears in 4 LLZO records but none report potential window, although 60% of LLZO records do. This is a gap in reporting, so the measurement is novel by construction.
-- **Evidence (fact ids):** LLZO-0054-ionic_conductivity, LLZO-0055-ionic_conductivity, LLZO-0057-ionic_conductivity, LLZO-0103-ionic_conductivity
-- **Max processing temperature:** unknown °C
-- **Validation experiment:** Standard potential window measurement (EIS/GCD/CV as appropriate) on 3 replicate cells.
-- **Scores:** final 0.729 | relevance 0.461 | novelty 0.65 | feasibility 0.8 | evidence 0.895 | Africa 0.825
-- **Notes:** material is in the corpus but not for this property; Africa supply ['C', 'Cl', 'F', 'Li', 'S']; flags none
-
-## 4. Measure specific capacity for Bio-derived polymer
-- **Proposed material:** Pectin with LiClO4
-- **Change:** No change: characterise an under-reported property
-- **Expected effect:** First data point for this family-property pair in the corpus
-- **Mechanism:** Bio-derived polymer appears in 4 LLZO records but none report specific capacity, although 60% of LLZO records do. This is a gap in reporting, so the measurement is novel by construction.
+- **Mechanism:** Bio-derived polymer appears in 4 LLZO records but none report specific capacity, although 59% of LLZO records do. This is a gap in reporting, so the measurement is novel by construction.
 - **Evidence (fact ids):** LLZO-0054-ionic_conductivity, LLZO-0055-ionic_conductivity, LLZO-0057-ionic_conductivity, LLZO-0103-ionic_conductivity
 - **Max processing temperature:** unknown °C
 - **Validation experiment:** Standard specific capacity measurement (EIS/GCD/CV as appropriate) on 3 replicate cells.
+- **Scores:** final 0.729 | relevance 0.461 | novelty 0.65 | feasibility 0.8 | evidence 0.895 | Africa 0.825
+- **Notes:** material is in the corpus but not for this property; Africa supply ['C', 'Cl', 'F', 'Li', 'S']; flags none
+
+## 4. Measure potential window for Bio-derived polymer
+- **Proposed material:** Pectin with LiClO4
+- **Change:** No change: characterise an under-reported property
+- **Expected effect:** First data point for this family-property pair in the corpus
+- **Mechanism:** Bio-derived polymer appears in 4 LLZO records but none report potential window, although 58% of LLZO records do. This is a gap in reporting, so the measurement is novel by construction.
+- **Evidence (fact ids):** LLZO-0054-ionic_conductivity, LLZO-0055-ionic_conductivity, LLZO-0057-ionic_conductivity, LLZO-0103-ionic_conductivity
+- **Max processing temperature:** unknown °C
+- **Validation experiment:** Standard potential window measurement (EIS/GCD/CV as appropriate) on 3 replicate cells.
 - **Scores:** final 0.729 | relevance 0.461 | novelty 0.65 | feasibility 0.8 | evidence 0.895 | Africa 0.825
 - **Notes:** material is in the corpus but not for this property; Africa supply ['C', 'Cl', 'F', 'Li', 'S']; flags none
 
@@ -200,7 +200,7 @@
 - **Proposed material:** Ni12P5
 - **Change:** No change: characterise an under-reported property
 - **Expected effect:** First data point for this family-property pair in the corpus
-- **Mechanism:** Metal phosphide appears in 12 AHSC records but none report specific energy, although 21% of AHSC records do. This is a gap in reporting, so the measurement is novel by construction.
+- **Mechanism:** Metal phosphide appears in 12 AHSC records but none report specific energy, although 20% of AHSC records do. This is a gap in reporting, so the measurement is novel by construction.
 - **Evidence (fact ids):** AHSC-0258-specific_capacitance, AHSC-0258-cycling_stability, AHSC-0259-specific_capacitance, AHSC-0259-cycling_stability, AHSC-0261-specific_capacitance
 - **Max processing temperature:** unknown °C
 - **Validation experiment:** Standard specific energy measurement (EIS/GCD/CV as appropriate) on 3 replicate cells.
@@ -211,7 +211,7 @@
 - **Proposed material:** CoVO- PANI@CC
 - **Change:** No change: characterise an under-reported property
 - **Expected effect:** First data point for this family-property pair in the corpus
-- **Mechanism:** Conducting polymer appears in 12 AHSC records but none report specific energy, although 21% of AHSC records do. This is a gap in reporting, so the measurement is novel by construction.
+- **Mechanism:** Conducting polymer appears in 12 AHSC records but none report specific energy, although 20% of AHSC records do. This is a gap in reporting, so the measurement is novel by construction.
 - **Evidence (fact ids):** AHSC-0005-potential_window, AHSC-0005-specific_capacitance, AHSC-0005-cycling_stability, AHSC-0090-specific_capacitance, AHSC-0090-cycling_stability
 - **Max processing temperature:** unknown °C
 - **Validation experiment:** Standard specific energy measurement (EIS/GCD/CV as appropriate) on 3 replicate cells.

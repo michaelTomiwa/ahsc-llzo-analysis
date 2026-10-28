@@ -216,20 +216,20 @@ AHSC-0214,,,,,,,,,,,,C@Mn3O4( +),Na-FG-CC( -),1 M Na2SO4
 AHSC-0215,,,,,,,,,,,,CC( +),Na-CC( -),1 M Na2SO4
 AHSC-0216,,,,,,,,,,,,K0.6MnO2( +),KHC( -),1 M KTFSI
 AHSC-0217,,,,,,,,,,,,Zn-Ti3C2,,ZnSO4 gel
-AHSC-0218,,,,,,,,,,,,Mo1.33CTz@Ti3C2Tz,,3 M Zn(CF3SO3)2
+AHSC-0218,10.1016/j.mtener.2021.100878,Mo1.33CTz–Ti3C2Tz mixed MXene freestanding films for zinc-ion hybrid supercapacitors,2021,,verified_values,"Mo1.33CTz–Ti3C2Tz; Zn-ion hybrid supercapacitor; 90% after 8,000 cycles","Furthermore, the electrodes offer a promising capacity retention of about 90% after 8,000 cycles.",,,,,Mo1.33CTz@Ti3C2Tz,,3 M Zn(CF3SO3)2
 AHSC-0219,,,,,,,,,,,,Ti3C2Tz,,0.1 M ZnSO4
 AHSC-0220,,,,,,,,,,,,Ti3C2Tz,,2 M ZnSO4
 AHSC-0221,,,,,,,,,,,,Ti3C2Tz hydrogel,,ZnSO4
 AHSC-0222,,,,,,,,,,,,Ti3C2Tz@cotton,,ZnSO4/MnSO4
-AHSC-0223,,,,,,,,,,,,Ti3C2Tx/Bi2S3@N-C,,Zn(CF3SO3)2
+AHSC-0223,10.1016/j.jallcom.2021.160881,Pizza-like heterostructured Ti3C2Tx/Bi2S3@N-C with ultra-high specific capacitance as a potential electrode material for aqueous zinc-ion hybrid supercapacitors,2021,,title,Ti3C2Tx/Bi2S3@N-C; zinc-ion hybrid supercapacitor,,,,,,Ti3C2Tx/Bi2S3@N-C,,Zn(CF3SO3)2
 AHSC-0224,,,,,,,,,,,,Mo1.33CTz@RGO,,2 M ZnSO4 gel
 AHSC-0225,,,,,,,,,,,,Ti3C2Tx,,ZnSO4/PAM
 AHSC-0226,,,,,,,,,,,,H-Ti3C2Tx film,,2 M Zn(CF3SO3)2
 AHSC-0227,,,,,,,,,,,,V2CTx,,ZnSO4 gel
-AHSC-0228,,,,,,,,,,,,Ti1.1V0.7CrxNb1.0Ta0.6C3Tz,,3 M Zn(CF3SO3)2
+AHSC-0228,10.1016/j.elecom.2022.107264,Ti1.1V0.7CrxNb1.0Ta0.6C3Tz high-entropy MXene freestanding films for charge storage applications,2022,,verified_values,"Ti1.1V0.7CrxNb1.0Ta0.6C3Tz; 77 mAh/g at 0.5 A/g; 87% after 10,000 cycles; Zn(CF3SO3)2","Herein, high-entropy MXene, Ti 1.1 V 0.7 Cr x Nb 1.0 Ta 0.6 C 3 T z (T z = –F, –O, –OH), freestanding films are prepared and tested as electrodes for Zn-ion hybrid supercapacitors (ZHSC), delivering a capacity up to 77 mAh g −1 (245 mAh cm −3 ) at 0.5 A g −1 with a capacity retention of 87% after 10,000 cycles.",,,,,Ti1.1V0.7CrxNb1.0Ta0.6C3Tz,,3 M Zn(CF3SO3)2
 AHSC-0229,,,,,,,,,,,,Ti3C2Tx,,1 M H2SO4
 AHSC-0230,,,,,,,,,,,,Ti3C2TxV,,1 M H2SO4
-AHSC-0231,,,,,,,,,,,,Ti2C2Tx/WS2/GO,,1 M KOH
+AHSC-0231,10.1016/j.cej.2022.139523,WS2-embedded MXene/GO hybrid nanosheets as electrodes for asymmetric supercapacitors and hydrogen evolution reactions,2023,,verified_values,WS2@MXene/GO; 1111 F/g at 2 A/g,The assembled WS 2 @MXene/GO nanocomposites electrode produced a superior specific capacitance of ∼ 1111F g −1 at 2 A/g applied current.,,,,,Ti2C2Tx/WS2/GO,,1 M KOH
 AHSC-0232,,,,,,,,,,,,Ti3C2Tx/Arg-CQD-Ser,,1 M KOH
 AHSC-0233,,,,,,,,,,,,Ti2CTx@C,,2 M ZnSO4
 AHSC-0234,,,,,,,,,,,,Ti3C2Tx/CNT,,PVA/KOH gel
@@ -240,7 +240,7 @@ AHSC-0238,,,,,,,,,,,,Ti3C2Tx/N-doped CC,,
 AHSC-0239,,,,,,,,,,,,Ti3C2Tx@MnO2,,1 M Na2SO4
 AHSC-0240,,,,,,,,,,,,Ti3C2Tx@MnO2,,PVA/H2SO4
 AHSC-0241,,,,,,,,,,,,Ti3C2Tx/NiCo2S4,,KOH gel
-AHSC-0242,,,,,,,,,,,,Ti3C2Tx@CoNi2S4,,6 M KOH
+AHSC-0242,,High capacity and stability induced by sandwich-like structure and metal-O configuration for CoNi2S4/Ti3C2Tx heterostructure electrode,2023,https://faculty.qust.edu.cn/lizhenjiang/en/lwcg/78710/content/289486.htm,verified_values,"CoNi2S4/Ti3C2Tx; 2398 F/g at 1 A/g; 80% after 40,000 cycles","The CoNi2S4/Ti3C2Tx heterostructure delivered a capacity of 320 mAh g-1 (2398 F g-1) at 1 A g-1 and a capacity retention of 80% at 25 A g-1 after 40, 000 cycles, outperforming most supercapacitor electrode materials reported to date owing to the synergy between the structural configuration and electronic interactions.",,,,,Ti3C2Tx@CoNi2S4,,6 M KOH
 AHSC-0243,,,,,,,,,,,,Ti3C2Tx@Co3O4,,6 M KOH
 AHSC-0244,,,,,,,,,,,,Ti3C2Tx@VS2,,PVA/KOH gel
 AHSC-0245,,,,,,,,,,,,Ti3C2Tx/α-Fe2O3,,1M LiCl
@@ -251,7 +251,7 @@ AHSC-0249,,,,,,,,,,,,Ti3C2Tx@SnS2/SnO2V,,1 M LiPF6 EC/DEC
 AHSC-0250,,,,,,,,,,,,Nb4C3Tx nanosheets,,1 M H2SO4
 AHSC-0251,,,,,,,,,,,,V2CTx@C,,1 M H2SO4
 AHSC-0252,,,,,,,,,,,,Nb2CTx/CNT,,1 M H2SO4
-AHSC-0253,,,,,,,,,,,,Nb2C/Ti3C2,,PVA/H2SO4 gel
+AHSC-0253,,2D/2D Nanoarchitectured Nb2C/Ti3C2 MXene Heterointerface for High-Energy Supercapacitors with Sustainable Life Cycle,2022,https://pubmed.ncbi.nlm.nih.gov/35476396/,verified_values,"Nb2C/Ti3C2; 584 F/g at 2 A/g; 98% after 50,000 cycles","Henceforth, the in situ developed NCTC heterointerface electrode delivered an excellent specific capacitance of 584 F/g at 2 A/g with a commendable energy density of 38.5 W h/kg in MXene supercapacitors owing to the augmented surface- and redox-based charge storage at the interface.",,,,,Nb2C/Ti3C2,,PVA/H2SO4 gel
 AHSC-0254,,,,,,,,,,,,Nb4C3Tx film,,1 M H2SO4
 AHSC-0255,,,,,,,,,,,,Mo2CTx,,1 M H2SO4
 AHSC-0256,,,,,,,,,,,,TiVCTx/poly-oPD,,1 M H2SO4
@@ -273,7 +273,7 @@ AHSC-0271,,,,,,,,,,,,Ni2P,,3 M KOH
 AHSC-0272,,,,,,,,,,,,NixPy,,3 M KOH
 AHSC-0273,,,,,,,,,,,,NiCoP,,6 M KOH
 AHSC-0274,,,,,,,,,,,,Mn-Ni-Co-P,,1 M KOH
-AHSC-0275,,,,,,,,,,,,MXene/NiPc,,3 M KOH
+AHSC-0275,10.1016/j.est.2023.106768,"Rational design of new, efficient, and suitable nickel phthalocyanine reinforced MXene electrodes for supercapacitors",2023,,title,MXene/NiPc; supercapacitor,,,,,,MXene/NiPc,,3 M KOH
 AHSC-0276,,,,,,,,,,,,Ti3C2Tx,,3 M H2SO4
 AHSC-0277,,,,,,,,,,,,N-Ti3C2Tx,,2 M H2SO4
 AHSC-0278,,,,,,,,,,,,Nb2C-PCarbons CPs,,6 M KOH
@@ -282,7 +282,7 @@ AHSC-0280,,,,,,,,,,,,1-Co@Ti3C2Tx MXene,,1 M KOH
 AHSC-0281,,,,,,,,,,,,Biomass/MXene/Cs aerogel,,3 M H2SO4
 AHSC-0282,,,,,,,,,,,,SSA@Ti3C2Tx,,3 M H2SO4
 AHSC-0283,,,,,,,,,,,,Mg-10%MFMX@MS,,3 M H2SO4
-AHSC-0284,,,,,,,,,,,,Mo2N MXene,,2 M KOH
+AHSC-0284,10.1016/j.est.2024.114354,Novel synthesis and electrochemical performance of 2D molybdenum nitride (MXene) for supercapacitor application,2024,,title,Mo2N MXene; supercapacitor,,,,,,Mo2N MXene,,2 M KOH
 AHSC-0285,,,,,,,,,,,,CoMoO4-Ti3C2TxV,,6 M KOH
 AHSC-0286,,,,,,,,,,,,MNF/Ti3C2Tx,,1 M Na2SO4
 AHSC-0287,,,,,,,,,,,,MXene-WO3@rGOsp,,2 M KOH + 0.1 M K4[Fe(CN)6]
@@ -296,7 +296,7 @@ AHSC-0294,,,,,,,,,,,,(CeO2/MXene)/PANI(40%:60%),,2 M KOH
 AHSC-0295,,,,,,,,,,,,MXene/NiCo2S4,,3 M KOH
 AHSC-0296,,,,,,,,,,,,MXene/CoFe2O4/g- C3N4,,3 M KOH
 AHSC-0297,,,,,,,,,,,,NiCo2O4@MXene,,3 M KOH
-AHSC-0298,,,,,,,,,,,,WS2@MXene/GO,,1 M KOH
+AHSC-0298,10.1016/j.cej.2022.139523,WS2-embedded MXene/GO hybrid nanosheets as electrodes for asymmetric supercapacitors and hydrogen evolution reactions,2023,,verified_values,WS2@MXene/GO; 1 M KOH; 1111 F/g,The assembled WS 2 @MXene/GO nanocomposites electrode produced a superior specific capacitance of ∼ 1111F g −1 at 2 A/g applied current.,,,,,WS2@MXene/GO,,1 M KOH
 AHSC-0299,,,,,,,,,,,,Ti3C2Tx/NH2-RGO,,1 M KOH
 AHSC-0300,,,,,,,,,,,,CoS/MXene/PANI,,1 M H2SO4
 AHSC-0301,,,,,,,,,,,,MXene/CuS,,3 M KOH
@@ -387,16 +387,16 @@ LLZO-0016,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Soli
 LLZO-0017,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,P(EO-co-PO)- TMPTGE(with LiFSI)
 LLZO-0018,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PE/AO@PIS (with DMF and LiTFSI)
 LLZO-0019,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGMEA (with LiTFSI)
-LLZO-0020,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PLiMTFSI (withTFSI)
-LLZO-0021,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEaMI (with LiPhTFSI)
+LLZO-0020,,"Solid-State, Single-Ion Conducting, Polymer Blend Electrolytes with Enhanced Li+ Conduction, Electrochemical Stability, and Limiting Current Density",2024,https://pubs.acs.org/cmatex/article/36/4/1855/155856/Solid-State-Single-Ion-Conducting-Polymer-Blend,verified_values,PLiMTFSI / POEM blend; conductivity at 150 °C,High ionic conductivities approaching 1 × 10 –2 S/cm at 150 ° C were realized in this polymer blend electrolyte system as a result of decoupling Li + transport from polymer segmental dynamics.,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PLiMTFSI (withTFSI)
+LLZO-0021,10.1007/s12274-023-5378-z,Novel single-ion conducting polymer electrolytes with high toughness and high resistance against lithium dendrites,2023,,verified_values,LiPhTFSI on poly(ethylene-alt-maleimide); ~7 × 10-6 S/cm at 70 °C; 45% after 100 cycles,"These SIC-PEs exhibit ionic conductivity around ∼ 7 × 10 −6 S·cm −1 at 70 °C, lithium transference number close to unity, and excellent mechanical properties, with fracture toughness over 30 J·cm −3 .",10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEaMI (with LiPhTFSI)
 LLZO-0022,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PVDF-HFP (with [Li(G4)][TFSI] and LiTFSI)
-LLZO-0023,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEO (with LiPCSI)
-LLZO-0024,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,TEG (with LiCTFPB)
+LLZO-0023,10.1021/acsami.9b20436,Single Lithium-Ion Conducting Solid Polymer Electrolyte with Superior Electrochemical Stability and Interfacial Compatibility for Solid-State Lithium Metal Batteries,2020,,verified_values,PEO8–LiPCSI; 141 mAh/g; 85% during 80 cycles,The rechargeable solid-state Li/PEO 8 –LiPCSI/LiFePO 4 cell discharges a capacity of 141 mAh g –1 with retention over 85% during 80 cycles.,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,PEO (with LiPCSI)
+LLZO-0024,10.1002/aenm.202103530,A Single-Ion Conducting Network as Rationally Coordinating Polymer Electrolyte for Solid-State Li Metal Batteries,2022,,verified_values,tetrakis(fluorophenyl)borate salt + tetraethylene glycol (PTF-4EO); 3.53 conductivity mantissa; LiFePO4||Li over 200 cycles,"Herein, an interpenetrating single‐ion network polymer (PTF‐4EO) is fabricated by crosslinking lithium tetrakis(4‐(chloromethyl)‐2,3,5,6‐tetrafluorophenyl)borate salt with tetraethylene glycol.",10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,verified_row,LiFePO4 (LFP),Lithium metal,TEG (with LiCTFPB)
 LLZO-0025,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with Poly(lithium 4-styrene sulfonate)
-LLZO-0026,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PSiO-PVDFHFP (with DMSO and LiPF6)
+LLZO-0026,10.1002/aenm.202200013,Polysiloxane-Based Single-Ion Conducting Polymer Blend Electrolyte Comprising Small-Molecule Organic Carbonates for High-Energy and High-Power Lithium-Metal Batteries,2022,,verified_values,PSiO / PVdF-HFP; DMSO casting; 0.82 mS/cm at 40 °C,"Generally, PSiOM reveals a remarkably high ionic conductivity with, e.g., 0.41 mS cm−1 at 20 °C, 0.60 mS cm−1 at 30 °C, and 0.82 mS cm−1 at 40 °C.",10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PSiO-PVDFHFP (with DMSO and LiPF6)
 LLZO-0027,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PETEA (with EC and DMC and LiPF6)
 LLZO-0028,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,TMC (with LiM)
-LLZO-0029,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PLiSTFSI
+LLZO-0029,,Synthesis of Single Lithium-Ion Conducting Polymer Electrolyte Membrane for Solid-State Lithium Metal Batteries,2019,https://pubs.acs.org/aaemcq/article/2/5/3028/1258758/Synthesis-of-Single-Lithium-Ion-Conducting-Polymer,title,PLiSTFSI; LiFePO4|SLIC-PEM|Li,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PLiSTFSI
 LLZO-0030,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEO (with LEs LiPF6 and LiFSI)
 LLZO-0031,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PEGDA and 2-hydroxyethyl methacrylate (with DMF and LiTFSI)
 LLZO-0032,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PVDF-HEP (with PEGDME and LiTFSI)
@@ -423,7 +423,7 @@ LLZO-0052,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Soli
 LLZO-0053,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,PCL ( with50 wt% glacial acetic acid and Plasticizer and LiTFSI)
 LLZO-0054,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Pectin with LiClO4
 LLZO-0055,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Pectin (with Distilled water EC and LiTFS)
-LLZO-0056,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)
+LLZO-0056,10.1002/cssc.201903466,Sustainable Lignin-Derived Cross-Linked Graft Polymers as Electrolyte and Binder Materials for Lithium Metal Batteries,2020,,title,lignin-derived graft polymer; lithium metal battery electrolyte,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Lignin-derived graft polymer (LGP) (with THF PEGDE and LiTFSI)
 LLZO-0057,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,"Cassava starch (with Li2SO4, LiCl, CF3LiSO3 and Li2SO4, LiCl, CF3LiSO3)"
 LLZO-0058,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,Poly(3-hydroxybutyrate-co-3-hydroxyvalerate) (P3HB-3HV) (with EC and DEC and LiPF6)
 LLZO-0059,,,,,,,,10.3390/batteries10120454,Advanced Polymer Electrolytes in Solid-State Batteries,https://www.mdpi.com/2313-0105/10/12/454,block_inferred,LiFePO4 (LFP),Lithium metal,DEGDA LiTFSI (with Ethylene carbonate (EC)/Diethyl carbonate (DEC))
