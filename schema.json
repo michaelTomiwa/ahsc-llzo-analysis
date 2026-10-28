@@ -71,7 +71,12 @@
           "csv_line": {"type": "integer"},
           "doi": {"type": ["string", "null"]},
           "title": {"type": ["string", "null"]},
-          "year": {"type": ["string", "integer", "null"]}
+          "year": {"type": ["string", "integer", "null"]},
+          "url": {"type": ["string", "null"], "description": "verified paper page when no DOI was visible"},
+          "doi_match": {"type": ["string", "null"], "enum": ["verified_values", "title", null], "description": "how the paper DOI was matched to the curated record"},
+          "review_doi": {"type": ["string", "null"], "description": "DOI of the review table the curated record was compiled from"},
+          "review_title": {"type": ["string", "null"]},
+          "review_link": {"type": ["string", "null"], "enum": ["verified_row", "block_inferred", null]}
         }
       },
       "evidence_span": {"type": "string", "description": "verbatim text from the source that states the value"},

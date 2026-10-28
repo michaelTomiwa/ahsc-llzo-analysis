@@ -6,6 +6,7 @@ chemistries built from African-supplied elements (Mn, Fe, Ti, Zr, graphite, biom
 
     python -m knowledge_engine.literature harvest --per-query 40     # -> data/literature/metadata.json
     python -m knowledge_engine.literature dois dois.txt               # Crossref lookup for thesis DOIs
+    python -m knowledge_engine.literature provenance                  # verified papers found per record
     python -m knowledge_engine.literature mine [--llm]                # -> data/literature_facts.jsonl
 
 Set KE_CONTACT_EMAIL to join the OpenAlex/Crossref "polite pool".
@@ -131,17 +132,53 @@ def lookup_dois(dois: list[str], pause: float = 1.0) -> list[dict]:
     return _merge_save(papers)
 
 
+def corpus_from_provenance() -> list[dict]:
+    """Add every verified paper from data/provenance/doi_search_log.jsonl to the corpus.
+
+    The stored text is the verbatim evidence sentence returned by the web search (not a full
+    abstract), so facts mined from it remain grounded in text that was actually retrieved.
+    """
+    from .record_sources import REVIEW_LOG, SEARCH_LOG, _read_jsonl
+
+    papers = []
+    for entry in _read_jsonl(SEARCH_LOG):
+        if not entry.get("evidence") or not (entry.get("doi") or entry.get("url")):
+            continue
+        papers.append({"id": entry.get("doi") or entry["url"], "doi": entry.get("doi"), "url": entry.get("url"),
+                       "title": entry.get("title") or "", "year": entry.get("year"),
+                       "abstract": entry["evidence"], "text_type": "verbatim evidence excerpt",
+                       "system": entry["record_id"].split("-")[0], "linked_record": entry["record_id"],
+                       "query": "per-record source search (Exa web search)"})
+    for review in _read_jsonl(REVIEW_LOG):
+        papers.append({"id": review["review_doi"], "doi": review["review_doi"], "url": review.get("review_url"),
+                       "title": review["review_title"], "year": review.get("review_year"), "abstract": "",
+                       "text_type": "source review (table compiled into the thesis dataset)",
+                       "system": review["range"][0].split("-")[0], "query": "source review identification"})
+    return _merge_save(papers)
+
+
 def mine(use_llm: bool | None = None) -> list[dict]:
     """Extract grounded facts from every harvested abstract into data/literature_facts.jsonl."""
     from .extraction import extract
 
+    from .config import RECORD_SOURCES_CSV
+
     papers = json.loads(LITERATURE_METADATA.read_text(encoding="utf-8")) if LITERATURE_METADATA.exists() else []
+    records = {}
+    if RECORD_SOURCES_CSV.exists():
+        import pandas as pd
+        records = {r["record_id"]: r for r in pd.read_csv(RECORD_SOURCES_CSV, dtype=str).fillna("").to_dict("records")}
     facts = []
     for paper in papers:
         if not paper.get("abstract"):
             continue
         source = {"id": paper.get("doi") or paper["id"], "type": "literature_abstract", "doi": paper.get("doi"),
-                  "title": paper.get("title"), "year": paper.get("year")}
+                  "title": paper.get("title"), "year": paper.get("year"), "file": paper.get("url")}
+        record = records.get(paper.get("linked_record", ""))
+        if record:  # the paper was matched to a curated record, so its cell components are known
+            source["system"] = paper.get("system")
+            source["components"] = {"cathode": record["cathode_material"], "anode": record.get("anode_material", ""),
+                                    "electrolyte": record["electrolyte"]}
         result = extract(paper["abstract"], source, use_llm=use_llm, system=paper.get("system"))
         facts += [fact for fact in result["facts"] if fact["grounded"]]
     write_jsonl(facts, LITERATURE_FACTS_JSONL)
@@ -155,11 +192,14 @@ def main() -> None:
     h.add_argument("--per-query", type=int, default=40)
     d = sub.add_parser("dois")
     d.add_argument("file", type=Path, help="text file with one DOI per line")
+    sub.add_parser("provenance", help="add verified papers from data/provenance to the corpus")
     m = sub.add_parser("mine")
     m.add_argument("--llm", action="store_true")
     args = parser.parse_args()
     if args.command == "harvest":
         print(f"{len(harvest(args.per_query))} papers in {LITERATURE_METADATA}")
+    elif args.command == "provenance":
+        print(f"{len(corpus_from_provenance())} papers in {LITERATURE_METADATA}")
     elif args.command == "dois":
         print(f"{len(lookup_dois(args.file.read_text().split()))} papers in {LITERATURE_METADATA}")
     else:

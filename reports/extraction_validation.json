@@ -2,13 +2,13 @@
   "extractor": "rule-based",
   "records": 472,
   "gold_facts": 848,
-  "predicted_facts": 784,
+  "predicted_facts": 741,
   "true_positives": 711,
-  "false_positives": 73,
+  "false_positives": 30,
   "false_negatives": 137,
-  "precision": 0.9069,
+  "precision": 0.9595,
   "recall": 0.8384,
-  "f1": 0.8713,
+  "f1": 0.8949,
   "evidence_grounding_rate": 1.0,
   "per_property": {
     "capacity_retention": {
@@ -21,15 +21,15 @@
     "cycling_stability": {
       "tp": 317,
       "fn": 19,
-      "fp": 43,
-      "precision": 0.881,
+      "fp": 2,
+      "precision": 0.994,
       "recall": 0.943
     },
     "ionic_conductivity": {
       "tp": 126,
       "fn": 0,
-      "fp": 10,
-      "precision": 0.926,
+      "fp": 8,
+      "precision": 0.94,
       "recall": 1.0
     },
     "potential_window": {

@@ -3,7 +3,8 @@ message: "If you use this knowledge engine or its curated dataset, please cite i
 title: "African Battery Materials Knowledge Engine: evidence-grounded literature mining, knowledge graph and hypothesis generation for AHSC and LLZO"
 type: software
 authors:
-  - name: "ahsc-llzo-analysis contributors"
+  - alias: "michaelTomiwa"
+    website: "https://github.com/michaelTomiwa"
 repository-code: "https://github.com/michaelTomiwa/ahsc-llzo-analysis"
 license: MIT
 version: "1.0.0"

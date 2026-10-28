@@ -12,9 +12,11 @@ pytest -q                                # offline, no API key needed
 
 ## Ways to contribute
 
-**Add DOIs to curated records.** Fill the `doi`, `title` and `year` columns of `data/record_sources.csv`
-(one row per thesis record, e.g. `AHSC-0001`) and rerun the pipeline. Every fact, citation and hypothesis
-then links to `https://doi.org/<doi>`.
+**Add DOIs to curated records.** Append an entry to `data/provenance/doi_search_log.jsonl` with the record id,
+DOI, title, the values you matched and the verbatim sentence from the paper, then run
+`python -m knowledge_engine.record_sources build`. Only add a DOI when the paper's own text shows the record's
+material and values. With Crossref access, `python -m knowledge_engine.record_sources resolve` does this
+automatically for unmatched records.
 
 **Add papers.** Run `python -m knowledge_engine.literature dois my_dois.txt` or `... harvest`, then
 `... mine`. Only facts whose evidence span is found verbatim in the abstract are stored.

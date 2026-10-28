@@ -148,8 +148,10 @@ def _citation(fact: dict) -> dict:
     source = fact["source"]
     return {"fact_id": fact["id"], "material": fact["material"], "property": fact["property"],
             "value": fact["value"], "unit": fact["unit"], "condition": fact.get("condition"),
-            "evidence_span": fact["evidence_span"], "doi": source.get("doi"),
-            "source": source.get("doi") or f"{source.get('file', '')} line {source.get('csv_line', '')}".strip(),
+            "evidence_span": fact["evidence_span"], "doi": source.get("doi"), "url": source.get("url"),
+            "review_doi": source.get("review_doi"), "review_link": source.get("review_link"),
+            "source": source.get("doi") or source.get("url")
+            or f"{source.get('file', '')} line {source.get('csv_line', '')}".strip(),
             "confidence": fact["confidence"], "quality_flags": fact["quality_flags"]}
 
 

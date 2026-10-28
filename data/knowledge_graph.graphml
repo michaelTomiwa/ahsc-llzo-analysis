@@ -38,11 +38,11 @@
   <data key="d7">Potential window (upper limit)</data>
   <data key="d8">electrochemical</data>
 </node>
-<node id="Paper:AHSC-0001">
+<node id="Paper:10.1016/j.jcis.2023.10.067">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0001</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.jcis.2023.10.067</data>
+  <data key="d9">10.1016/j.jcis.2023.10.067</data>
+  <data key="d10">Ni3S2/Ni2O3 heterojunction anchored on N-doped carbon nanosheet aerogels for dual-ion hybrid supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -77,21 +77,9 @@
   <data key="d1">Ni</data>
   <data key="d13">producer</data>
 </node>
-<node id="Country:South Africa">
+<node id="Country:Zambia">
   <data key="d0">Country</data>
-  <data key="d1">South Africa</data>
-</node>
-<node id="Country:Madagascar">
-  <data key="d0">Country</data>
-  <data key="d1">Madagascar</data>
-</node>
-<node id="Country:Zimbabwe">
-  <data key="d0">Country</data>
-  <data key="d1">Zimbabwe</data>
-</node>
-<node id="Country:Cote d'Ivoire">
-  <data key="d0">Country</data>
-  <data key="d1">Cote d'Ivoire</data>
+  <data key="d1">Zambia</data>
 </node>
 <node id="Element:O">
   <data key="d0">Element</data>
@@ -171,9 +159,17 @@
   <data key="d1">C</data>
   <data key="d13">major_producer</data>
 </node>
+<node id="Country:Madagascar">
+  <data key="d0">Country</data>
+  <data key="d1">Madagascar</data>
+</node>
 <node id="Country:Mozambique">
   <data key="d0">Country</data>
   <data key="d1">Mozambique</data>
+</node>
+<node id="Country:Tanzania">
+  <data key="d0">Country</data>
+  <data key="d1">Tanzania</data>
 </node>
 <node id="Material:Nd5%-Mn2O3 3D-MSs">
   <data key="d0">Material</data>
@@ -184,11 +180,11 @@
   <data key="d5">["Mn", "Nd", "O"]</data>
   <data key="d6">0.5</data>
 </node>
-<node id="Paper:AHSC-0003">
+<node id="Paper:10.1016/j.electacta.2020.137169">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0003</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.electacta.2020.137169</data>
+  <data key="d9">10.1016/j.electacta.2020.137169</data>
+  <data key="d10">Elevated energy density and cycle stability of α-Mn2O3 3D-microspheres with addition of neodymium dopant for pouch-type hybrid supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -210,6 +206,10 @@
   <data key="d1">Mn</data>
   <data key="d13">major_producer</data>
 </node>
+<node id="Country:South Africa">
+  <data key="d0">Country</data>
+  <data key="d1">South Africa</data>
+</node>
 <node id="Country:Gabon">
   <data key="d0">Country</data>
   <data key="d1">Gabon</data>
@@ -217,6 +217,10 @@
 <node id="Country:Ghana">
   <data key="d0">Country</data>
   <data key="d1">Ghana</data>
+</node>
+<node id="Country:Cote d'Ivoire">
+  <data key="d0">Country</data>
+  <data key="d1">Cote d'Ivoire</data>
 </node>
 <node id="Element:Nd">
   <data key="d0">Element</data>
@@ -232,11 +236,11 @@
   <data key="d5">["C", "H", "Mn", "N", "O", "Zn"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0004">
+<node id="Paper:10.1002/bte2.20240035">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0004</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/bte2.20240035</data>
+  <data key="d9">10.1002/bte2.20240035</data>
+  <data key="d10">ZnxMnO2/PPy Nanowires Composite as Cathode Material for Aqueous Zinc-Ion Hybrid Supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -276,10 +280,6 @@
 <node id="Country:Namibia">
   <data key="d0">Country</data>
   <data key="d1">Namibia</data>
-</node>
-<node id="Country:Morocco">
-  <data key="d0">Country</data>
-  <data key="d1">Morocco</data>
 </node>
 <node id="Material:CoVO- PANI@CC">
   <data key="d0">Material</data>
@@ -325,13 +325,9 @@
   <data key="d1">Co</data>
   <data key="d13">major_producer</data>
 </node>
-<node id="Country:Democratic Republic of the Congo">
+<node id="Country:Congo (Kinshasa)">
   <data key="d0">Country</data>
-  <data key="d1">Democratic Republic of the Congo</data>
-</node>
-<node id="Country:Zambia">
-  <data key="d0">Country</data>
-  <data key="d1">Zambia</data>
+  <data key="d1">Congo (Kinshasa)</data>
 </node>
 <node id="Element:V">
   <data key="d0">Element</data>
@@ -368,11 +364,11 @@
   <data key="d5">["C"]</data>
   <data key="d6">1.0</data>
 </node>
-<node id="Paper:AHSC-0007">
+<node id="Paper:10.1016/j.cclet.2023.108354">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0007</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.cclet.2023.108354</data>
+  <data key="d9">10.1016/j.cclet.2023.108354</data>
+  <data key="d10">Phosphorous-doped carbon nanotube/reduced graphene oxide aerogel cathode enabled by pseudocapacitance for high energy and power zinc-ion hybrid capacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -419,6 +415,22 @@
   <data key="d0">Element</data>
   <data key="d1">P</data>
   <data key="d13">major_producer</data>
+</node>
+<node id="Country:Morocco">
+  <data key="d0">Country</data>
+  <data key="d1">Morocco</data>
+</node>
+<node id="Country:Algeria">
+  <data key="d0">Country</data>
+  <data key="d1">Algeria</data>
+</node>
+<node id="Country:Egypt">
+  <data key="d0">Country</data>
+  <data key="d1">Egypt</data>
+</node>
+<node id="Country:Tunisia">
+  <data key="d0">Country</data>
+  <data key="d1">Tunisia</data>
 </node>
 <node id="Country:Senegal">
   <data key="d0">Country</data>
@@ -491,22 +503,10 @@
   <data key="d0">Country</data>
   <data key="d1">Mauritania</data>
 </node>
-<node id="Country:Sierra Leone">
-  <data key="d0">Country</data>
-  <data key="d1">Sierra Leone</data>
-</node>
 <node id="Element:Sn">
   <data key="d0">Element</data>
   <data key="d1">Sn</data>
   <data key="d13">producer</data>
-</node>
-<node id="Country:Rwanda">
-  <data key="d0">Country</data>
-  <data key="d1">Rwanda</data>
-</node>
-<node id="Country:Nigeria">
-  <data key="d0">Country</data>
-  <data key="d1">Nigeria</data>
 </node>
 <node id="Material:Ti3C2-ZrO2 NC">
   <data key="d0">Material</data>
@@ -551,6 +551,10 @@
   <data key="d0">Element</data>
   <data key="d1">Zr</data>
   <data key="d13">producer</data>
+</node>
+<node id="Country:Sierra Leone">
+  <data key="d0">Country</data>
+  <data key="d1">Sierra Leone</data>
 </node>
 <node id="Material:rGO">
   <data key="d0">Material</data>
@@ -718,9 +722,9 @@
   <data key="d1">Li</data>
   <data key="d13">major_producer</data>
 </node>
-<node id="Country:Mali">
+<node id="Country:Zimbabwe">
   <data key="d0">Country</data>
-  <data key="d1">Mali</data>
+  <data key="d1">Zimbabwe</data>
 </node>
 <node id="Property:capacity_retention">
   <data key="d0">Property</data>
@@ -734,11 +738,11 @@
   <data key="d7">Ionic conductivity</data>
   <data key="d8">transport</data>
 </node>
-<node id="Paper:AHSC-0018">
+<node id="Paper:10.1039/C9TA08699D">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0018</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1039/C9TA08699D</data>
+  <data key="d9">10.1039/C9TA08699D</data>
+  <data key="d10">Embedded 3D Li+ channels in a water-in-salt electrolyte to develop flexible supercapacitors and lithium-ion batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -760,11 +764,11 @@
   <data key="d5">["Li"]</data>
   <data key="d6">1.0</data>
 </node>
-<node id="Paper:AHSC-0019">
+<node id="Paper:10.1016/j.cej.2023.141387">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0019</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.cej.2023.141387</data>
+  <data key="d9">10.1016/j.cej.2023.141387</data>
+  <data key="d10">Novel-designed cobweb-like binder by "four-in-one" strategy for high performance SiO anode</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -790,11 +794,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:AHSC-0020">
+<node id="Paper:10.1016/j.jechem.2023.04.037">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0020</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.jechem.2023.04.037</data>
+  <data key="d9">10.1016/j.jechem.2023.04.037</data>
+  <data key="d10">Rational design of stretchable and conductive hydrogel binder for highly reversible SiP2 anode</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -825,11 +829,11 @@
   <data key="d5">["C"]</data>
   <data key="d6">1.0</data>
 </node>
-<node id="Paper:AHSC-0021">
+<node id="Paper:10.1021/acs.nanolett.9b01033">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0021</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1021/acs.nanolett.9b01033</data>
+  <data key="d9">10.1021/acs.nanolett.9b01033</data>
+  <data key="d10">Metal–Organic Frameworks/Conducting Polymer Hydrogel Integrated Three-Dimensional Free-Standing Monoliths as Ultrahigh Loading Li–S Battery Electrodes</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -851,11 +855,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:AHSC-0022">
+<node id="Paper:10.1002/admi.201901475">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0022</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/admi.201901475</data>
+  <data key="d9">10.1002/admi.201901475</data>
+  <data key="d10">3D Meshlike Polyacrylamide Hydrogel as a Novel Binder System via in situ Polymerization for High-Performance Si-Based Electrode</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -938,11 +942,11 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
-<node id="Paper:AHSC-0025">
+<node id="Paper:10.1002/smll.202303480">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0025</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/smll.202303480</data>
+  <data key="d9">10.1002/smll.202303480</data>
+  <data key="d10">Flexible All-in-one Quasi-Solid-State Batteries Enabled by Low-water-content Hydrogel Films</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1011,7 +1015,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0028</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">Research Of Wide Temperature Range Hydrogel Sodium Ion Electrolyte (thesis)</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1042,11 +1046,11 @@
   <data key="d5">["Fe", "Na", "O", "S"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0029">
+<node id="Paper:10.1002/smll.202107183">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0029</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/smll.202107183</data>
+  <data key="d9">10.1002/smll.202107183</data>
+  <data key="d10">Hierarchical Nanocellulose-Based Gel Polymer Electrolytes for Stable Na Electrodeposition in Sodium Ion Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1082,11 +1086,11 @@
   <data key="d5">["Na", "O", "P", "V"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0030">
+<node id="Paper:10.1002/ange.202311589">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0030</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/ange.202311589</data>
+  <data key="d9">10.1002/ange.202311589</data>
+  <data key="d10">A Bio-Inspired Methylation Approach to Salt-Concentrated Hydrogel Electrolytes for Long-Life Rechargeable Batteries</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1115,7 +1119,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other</data>
   <data key="d5">["F", "Na", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:AHSC-0031">
   <data key="d0">Paper</data>
@@ -1137,7 +1141,7 @@
 <node id="Element:F">
   <data key="d0">Element</data>
   <data key="d1">F</data>
-  <data key="d13">producer</data>
+  <data key="d13">project_stage</data>
 </node>
 <node id="Material:Na3V2(PO4)3@C@CNT porousnetwork viahydrogel templating">
   <data key="d0">Material</data>
@@ -1400,11 +1404,11 @@
   <data key="d5">["Co", "Fe"]</data>
   <data key="d6">0.9</data>
 </node>
-<node id="Paper:AHSC-0041">
+<node id="Paper:10.1002/aenm.201902446">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0041</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/aenm.201902446</data>
+  <data key="d9">10.1002/aenm.201902446</data>
+  <data key="d10">Achieving High-Voltage and High-Capacity Aqueous Rechargeable Zinc Ion Battery by Incorporating Two-Species Redox Reaction</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1474,11 +1478,11 @@
   <data key="d5">["Co", "H", "Mn", "Ni", "O"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0043">
+<node id="Paper:10.1016/j.cej.2023.143984">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0043</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.cej.2023.143984</data>
+  <data key="d9">10.1016/j.cej.2023.143984</data>
+  <data key="d10">Co3O4@Mn-Ni(OH)2 core–shell heterostructure for hybrid supercapacitor electrode with high utilization</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1577,11 +1581,11 @@
   <data key="d5">["C", "Co", "Cr", "Fe", "O"]</data>
   <data key="d6">0.95</data>
 </node>
-<node id="Paper:AHSC-0048">
+<node id="Paper:10.1016/j.est.2024.110775">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0048</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2024.110775</data>
+  <data key="d9">10.1016/j.est.2024.110775</data>
+  <data key="d10">CoFe2O4 nanoparticles embedded 2D Cr2CTx MXene: A new material for battery like hybrid supercapacitors and oxygen evolution reaction</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1603,7 +1607,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0049</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">Formation of MWCNT/LiCo2O4 nanoplates and their application for hybrid supercapacitor</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1791,7 +1795,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0059</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">A chromium cobaltite based ternary composite as an efficient electrode material for hybrid supercapacitors with theoretical investigation</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1818,11 +1822,11 @@
   <data key="d5">["Cu", "Mn", "Zn"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0060">
+<node id="Paper:10.1016/j.est.2024.115181">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0060</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2024.115181</data>
+  <data key="d9">10.1016/j.est.2024.115181</data>
+  <data key="d10">Investigations of ternary Cu-Mn-Zn oxide nanocomposites as potential electrode for hybrid supercapacitors by one-pot hydrothermal method</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1835,11 +1839,11 @@
   <data key="d5">["Cr", "O", "Zn"]</data>
   <data key="d6">0.9</data>
 </node>
-<node id="Paper:AHSC-0061">
+<node id="Paper:10.1016/j.electacta.2023.143673">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0061</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.electacta.2023.143673</data>
+  <data key="d9">10.1016/j.electacta.2023.143673</data>
+  <data key="d10">Zn-doped Cr2O3 oxides boosted the electrochemical performance of aqueous hybrid supercapacitor</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1908,7 +1912,7 @@
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0064</data>
   <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d10">Nanoengineering of NiO/MnO2/GO Ternary Composite for Use in High-Energy Storage Asymmetric Supercapacitor and Oxygen Evolution Reaction (OER)</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -1994,6 +1998,10 @@
   <data key="d0">Element</data>
   <data key="d1">W</data>
   <data key="d13">producer</data>
+</node>
+<node id="Country:Rwanda">
+  <data key="d0">Country</data>
+  <data key="d1">Rwanda</data>
 </node>
 <node id="Material:hCNC-5.0">
   <data key="d0">Material</data>
@@ -2177,11 +2185,11 @@
   <data key="d5">["O", "Ti"]</data>
   <data key="d6">0.8</data>
 </node>
-<node id="Paper:AHSC-0075">
+<node id="Paper:10.1016/j.est.2021.102794">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0075</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2021.102794</data>
+  <data key="d9">10.1016/j.est.2021.102794</data>
+  <data key="d10">Hydrothermal synthesis of single-walled carbon nanotubes/TiO2 for quasi-solid-state composite-type symmetric hybrid supercapacitors</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -2366,11 +2374,11 @@
   <data key="d5">["Al", "Fe", "Nd", "O"]</data>
   <data key="d6">0.6</data>
 </node>
-<node id="Paper:AHSC-0084">
+<node id="Paper:10.1016/j.est.2024.111958">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0084</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.est.2024.111958</data>
+  <data key="d9">10.1016/j.est.2024.111958</data>
+  <data key="d10">Development of Nd doped AlFeO3 electrode material for supercapacitor applications</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -2383,11 +2391,11 @@
   <data key="d5">["Co", "Cu", "Ni", "O"]</data>
   <data key="d6">0.933</data>
 </node>
-<node id="Paper:AHSC-0085">
+<node id="Paper:10.1016/j.matlet.2023.134682">
   <data key="d0">Paper</data>
-  <data key="d1">AHSC-0085</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1016/j.matlet.2023.134682</data>
+  <data key="d9">10.1016/j.matlet.2023.134682</data>
+  <data key="d10">A novel P-doped Ni0.5Cu0.5Co2O4 sphere with a yolk-shell hollow structure for high-energy–density supercapacitor</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">AHSC</data>
 </node>
@@ -2987,7 +2995,7 @@
   <data key="d3">electrode</data>
   <data key="d4">Carbon</data>
   <data key="d5">["C", "F", "N", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:AHSC-0117">
   <data key="d0">Paper</data>
@@ -3689,7 +3697,7 @@
   <data key="d3">electrode</data>
   <data key="d4">Manganese oxide</data>
   <data key="d5">["C", "F", "H", "Mn", "O"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:AHSC-0153">
   <data key="d0">Paper</data>
@@ -4025,7 +4033,7 @@
   <data key="d3">electrode</data>
   <data key="d4">Layered double hydroxide</data>
   <data key="d5">["Co", "H", "La", "Ni", "O"]</data>
-  <data key="d6">0.767</data>
+  <data key="d6">0.867</data>
 </node>
 <node id="Paper:AHSC-0169">
   <data key="d0">Paper</data>
@@ -4047,15 +4055,11 @@
 <node id="Element:La">
   <data key="d0">Element</data>
   <data key="d1">La</data>
-  <data key="d13">project_stage</data>
+  <data key="d13">producer</data>
 </node>
-<node id="Country:Malawi">
+<node id="Country:Nigeria">
   <data key="d0">Country</data>
-  <data key="d1">Malawi</data>
-</node>
-<node id="Country:Tanzania">
-  <data key="d0">Country</data>
-  <data key="d1">Tanzania</data>
+  <data key="d1">Nigeria</data>
 </node>
 <node id="Material:NiCoMo-P150 LDH">
   <data key="d0">Material</data>
@@ -5644,7 +5648,7 @@
   <data key="d3">electrode</data>
   <data key="d4">MXene</data>
   <data key="d5">["C", "F", "H", "N", "Ti"]</data>
-  <data key="d6">0.867</data>
+  <data key="d6">0.767</data>
 </node>
 <node id="Paper:AHSC-0247">
   <data key="d0">Paper</data>
@@ -6373,7 +6377,7 @@
   <data key="d3">electrode</data>
   <data key="d4">MXene</data>
   <data key="d5">["C", "Ce", "N", "Ni", "O", "Ti"]</data>
-  <data key="d6">0.775</data>
+  <data key="d6">0.85</data>
 </node>
 <node id="Paper:AHSC-0288">
   <data key="d0">Paper</data>
@@ -6386,7 +6390,7 @@
 <node id="Element:Ce">
   <data key="d0">Element</data>
   <data key="d1">Ce</data>
-  <data key="d13">project_stage</data>
+  <data key="d13">producer</data>
 </node>
 <node id="Material:CuMn2O4/Ti3C2">
   <data key="d0">Material</data>
@@ -6489,7 +6493,7 @@
   <data key="d3">electrode</data>
   <data key="d4">MXene</data>
   <data key="d5">["C", "Ce", "H", "N", "O", "Ti"]</data>
-  <data key="d6">0.767</data>
+  <data key="d6">0.867</data>
 </node>
 <node id="Paper:AHSC-0294">
   <data key="d0">Paper</data>
@@ -6804,7 +6808,7 @@
   <data key="d3">electrode</data>
   <data key="d4">MXene</data>
   <data key="d5">["C", "F"]</data>
-  <data key="d6">0.9</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:AHSC-0312">
   <data key="d0">Paper</data>
@@ -7701,6 +7705,14 @@
   <data key="d1">Ta</data>
   <data key="d13">major_producer</data>
 </node>
+<node id="Country:Ethiopia">
+  <data key="d0">Country</data>
+  <data key="d1">Ethiopia</data>
+</node>
+<node id="Country:Burundi">
+  <data key="d0">Country</data>
+  <data key="d1">Burundi</data>
+</node>
 <node id="Paper:AHSC-0353">
   <data key="d0">Paper</data>
   <data key="d1">AHSC-0353</data>
@@ -8011,13 +8023,13 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Polymer-garnet composite</data>
   <data key="d5">["C", "H", "La", "Li", "N", "O", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
-<node id="Paper:LLZO-0001">
+<node id="Paper:10.1002/inf2.70012">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0001</data>
-  <data key="d9"></data>
-  <data key="d10"></data>
+  <data key="d1">10.1002/inf2.70012</data>
+  <data key="d9">10.1002/inf2.70012</data>
+  <data key="d10">Addressing the interface issues of all-solid-state lithium batteries by ultra-thin composite solid-state electrolyte combined with the integrated preparation technology</data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
 </node>
@@ -8045,7 +8057,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0002">
   <data key="d0">Paper</data>
@@ -8088,7 +8100,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Liquid electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0003">
   <data key="d0">Paper</data>
@@ -8127,7 +8139,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Ionic liquid</data>
   <data key="d5">["C", "F", "I", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.76</data>
+  <data key="d6">0.7</data>
 </node>
 <node id="Paper:LLZO-0004">
   <data key="d0">Paper</data>
@@ -8148,7 +8160,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "I", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.8</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:LLZO-0005">
   <data key="d0">Paper</data>
@@ -8169,7 +8181,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "I", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.76</data>
+  <data key="d6">0.7</data>
 </node>
 <node id="Paper:LLZO-0006">
   <data key="d0">Paper</data>
@@ -8190,7 +8202,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0007">
   <data key="d0">Paper</data>
@@ -8228,7 +8240,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "I", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.7</data>
+  <data key="d6">0.625</data>
 </node>
 <node id="Paper:LLZO-0009">
   <data key="d0">Paper</data>
@@ -8245,7 +8257,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0010">
   <data key="d0">Paper</data>
@@ -8262,7 +8274,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0011">
   <data key="d0">Paper</data>
@@ -8279,7 +8291,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0012">
   <data key="d0">Paper</data>
@@ -8296,7 +8308,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PAN polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0013">
   <data key="d0">Paper</data>
@@ -8313,7 +8325,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0014">
   <data key="d0">Paper</data>
@@ -8330,7 +8342,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0015">
   <data key="d0">Paper</data>
@@ -8347,7 +8359,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0016">
   <data key="d0">Paper</data>
@@ -8364,7 +8376,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "I", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.76</data>
+  <data key="d6">0.7</data>
 </node>
 <node id="Paper:LLZO-0017">
   <data key="d0">Paper</data>
@@ -8381,7 +8393,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "I", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.8</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:LLZO-0018">
   <data key="d0">Paper</data>
@@ -8398,7 +8410,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0019">
   <data key="d0">Paper</data>
@@ -8449,7 +8461,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0022">
   <data key="d0">Paper</data>
@@ -8517,7 +8529,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["F", "Li", "O", "P", "Si"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0026">
   <data key="d0">Paper</data>
@@ -8534,7 +8546,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "Li", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0027">
   <data key="d0">Paper</data>
@@ -8585,7 +8597,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "I", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.8</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:LLZO-0030">
   <data key="d0">Paper</data>
@@ -8602,7 +8614,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0031">
   <data key="d0">Paper</data>
@@ -8619,7 +8631,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0032">
   <data key="d0">Paper</data>
@@ -8636,7 +8648,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "Cl", "F", "H", "I", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.8</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:LLZO-0033">
   <data key="d0">Paper</data>
@@ -8674,7 +8686,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "Cl", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.967</data>
+  <data key="d6">0.917</data>
 </node>
 <node id="Paper:LLZO-0035">
   <data key="d0">Paper</data>
@@ -8691,7 +8703,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["F", "Li", "N", "O", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0036">
   <data key="d0">Paper</data>
@@ -8708,7 +8720,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0037">
   <data key="d0">Paper</data>
@@ -8725,7 +8737,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "P"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0038">
   <data key="d0">Paper</data>
@@ -8742,7 +8754,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "Li", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0039">
   <data key="d0">Paper</data>
@@ -8759,7 +8771,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Ionic liquid</data>
   <data key="d5">["F", "I", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.7</data>
+  <data key="d6">0.625</data>
 </node>
 <node id="Paper:LLZO-0040">
   <data key="d0">Paper</data>
@@ -8793,7 +8805,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Oxide filler (LATP/LLTO)</data>
   <data key="d5">["C", "Cl", "F", "H", "Li", "N", "O", "S", "Si"]</data>
-  <data key="d6">0.967</data>
+  <data key="d6">0.917</data>
 </node>
 <node id="Paper:LLZO-0042">
   <data key="d0">Paper</data>
@@ -8865,7 +8877,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Oxide filler (LATP/LLTO)</data>
   <data key="d5">["Al", "C", "F", "Li", "N", "O", "P", "S", "Ti"]</data>
-  <data key="d6">0.943</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0046">
   <data key="d0">Paper</data>
@@ -8899,7 +8911,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PMMA polymer</data>
   <data key="d5">["Al", "C", "Cl", "F", "H", "O", "P"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0048">
   <data key="d0">Paper</data>
@@ -8916,7 +8928,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Oxide filler (LATP/LLTO)</data>
   <data key="d5">["Al", "C", "Cl", "F", "H", "Li", "N", "O", "P", "S", "Ti"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.912</data>
 </node>
 <node id="Paper:LLZO-0049">
   <data key="d0">Paper</data>
@@ -8950,7 +8962,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PAN polymer</data>
   <data key="d5">["C", "F", "H", "I", "Li", "N", "P", "S"]</data>
-  <data key="d6">0.8</data>
+  <data key="d6">0.75</data>
 </node>
 <node id="Paper:LLZO-0051">
   <data key="d0">Paper</data>
@@ -8967,7 +8979,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "I", "Li", "P", "S"]</data>
-  <data key="d6">0.76</data>
+  <data key="d6">0.7</data>
 </node>
 <node id="Paper:LLZO-0052">
   <data key="d0">Paper</data>
@@ -8984,7 +8996,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0053">
   <data key="d0">Paper</data>
@@ -9039,7 +9051,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0056">
   <data key="d0">Paper</data>
@@ -9056,7 +9068,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Bio-derived polymer</data>
   <data key="d5">["C", "Cl", "F", "Li", "O", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0057">
   <data key="d0">Paper</data>
@@ -9073,7 +9085,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["B", "F", "H", "Li", "P", "V"]</data>
-  <data key="d6">0.72</data>
+  <data key="d6">0.66</data>
 </node>
 <node id="Paper:LLZO-0058">
   <data key="d0">Paper</data>
@@ -9090,7 +9102,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Carbon</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0059">
   <data key="d0">Paper</data>
@@ -9107,7 +9119,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0060">
   <data key="d0">Paper</data>
@@ -9124,7 +9136,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0061">
   <data key="d0">Paper</data>
@@ -9141,7 +9153,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0062">
   <data key="d0">Paper</data>
@@ -9158,7 +9170,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0063">
   <data key="d0">Paper</data>
@@ -9192,7 +9204,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PMMA polymer</data>
   <data key="d5">["F", "Li", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0065">
   <data key="d0">Paper</data>
@@ -9209,7 +9221,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0066">
   <data key="d0">Paper</data>
@@ -9226,7 +9238,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["F", "Li", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0067">
   <data key="d0">Paper</data>
@@ -9243,7 +9255,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0068">
   <data key="d0">Paper</data>
@@ -9260,7 +9272,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0069">
   <data key="d0">Paper</data>
@@ -9277,7 +9289,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S", "V"]</data>
-  <data key="d6">0.92</data>
+  <data key="d6">0.86</data>
 </node>
 <node id="Paper:LLZO-0070">
   <data key="d0">Paper</data>
@@ -9294,7 +9306,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0071">
   <data key="d0">Paper</data>
@@ -9311,7 +9323,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0072">
   <data key="d0">Paper</data>
@@ -9328,7 +9340,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Sulfide solid electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0073">
   <data key="d0">Paper</data>
@@ -9357,7 +9369,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0075">
   <data key="d0">Paper</data>
@@ -9374,7 +9386,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0076">
   <data key="d0">Paper</data>
@@ -9408,7 +9420,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0078">
   <data key="d0">Paper</data>
@@ -9425,7 +9437,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0079">
   <data key="d0">Paper</data>
@@ -9459,7 +9471,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Liquid electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0081">
   <data key="d0">Paper</data>
@@ -9476,7 +9488,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0082">
   <data key="d0">Paper</data>
@@ -9510,7 +9522,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "I", "Li", "N", "O", "P", "S", "Si"]</data>
-  <data key="d6">0.829</data>
+  <data key="d6">0.786</data>
 </node>
 <node id="Paper:LLZO-0084">
   <data key="d0">Paper</data>
@@ -9527,7 +9539,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0085">
   <data key="d0">Paper</data>
@@ -9544,7 +9556,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0086">
   <data key="d0">Paper</data>
@@ -9561,7 +9573,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0087">
   <data key="d0">Paper</data>
@@ -9578,7 +9590,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0088">
   <data key="d0">Paper</data>
@@ -9595,7 +9607,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0089">
   <data key="d0">Paper</data>
@@ -9612,7 +9624,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "P"]</data>
-  <data key="d6">0.933</data>
+  <data key="d6">0.833</data>
 </node>
 <node id="Paper:LLZO-0090">
   <data key="d0">Paper</data>
@@ -9629,7 +9641,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0091">
   <data key="d0">Paper</data>
@@ -9654,7 +9666,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PAN polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0093">
   <data key="d0">Paper</data>
@@ -9671,7 +9683,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0094">
   <data key="d0">Paper</data>
@@ -9730,7 +9742,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0098">
   <data key="d0">Paper</data>
@@ -9747,7 +9759,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0099">
   <data key="d0">Paper</data>
@@ -9781,7 +9793,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0104">
   <data key="d0">Paper</data>
@@ -9832,7 +9844,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PMMA polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0107">
   <data key="d0">Paper</data>
@@ -9849,7 +9861,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0108">
   <data key="d0">Paper</data>
@@ -9866,7 +9878,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PAN polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "P"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0109">
   <data key="d0">Paper</data>
@@ -9917,7 +9929,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0112">
   <data key="d0">Paper</data>
@@ -9934,7 +9946,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0113">
   <data key="d0">Paper</data>
@@ -9951,7 +9963,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0114">
   <data key="d0">Paper</data>
@@ -9968,7 +9980,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0118">
   <data key="d0">Paper</data>
@@ -9985,7 +9997,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0119">
   <data key="d0">Paper</data>
@@ -10002,7 +10014,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0120">
   <data key="d0">Paper</data>
@@ -10019,12 +10031,12 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
-<node id="Paper:LLZO-0121">
+<node id="Paper:10.1038/s41467-023-37997-6">
   <data key="d0">Paper</data>
-  <data key="d1">LLZO-0121</data>
-  <data key="d9"></data>
+  <data key="d1">10.1038/s41467-023-37997-6</data>
+  <data key="d9">10.1038/s41467-023-37997-6</data>
   <data key="d10"></data>
   <data key="d11">thesis_curated_record</data>
   <data key="d2">LLZO</data>
@@ -10053,7 +10065,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0123">
   <data key="d0">Paper</data>
@@ -10070,7 +10082,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0124">
   <data key="d0">Paper</data>
@@ -10104,7 +10116,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0126">
   <data key="d0">Paper</data>
@@ -10155,7 +10167,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Ionic liquid</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0129">
   <data key="d0">Paper</data>
@@ -10172,7 +10184,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0134">
   <data key="d0">Paper</data>
@@ -10189,7 +10201,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0135">
   <data key="d0">Paper</data>
@@ -10206,7 +10218,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "P", "S"]</data>
-  <data key="d6">0.96</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0136">
   <data key="d0">Paper</data>
@@ -10223,7 +10235,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0137">
   <data key="d0">Paper</data>
@@ -10257,7 +10269,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PEO/PEG polymer</data>
   <data key="d5">["C", "F", "H", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0139">
   <data key="d0">Paper</data>
@@ -10274,7 +10286,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">PVDF-based polymer</data>
   <data key="d5">["C", "F", "H", "Li", "P"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0140">
   <data key="d0">Paper</data>
@@ -10308,7 +10320,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Other polymer electrolyte</data>
   <data key="d5">["C", "F", "Li", "N", "O", "S"]</data>
-  <data key="d6">0.95</data>
+  <data key="d6">0.875</data>
 </node>
 <node id="Paper:LLZO-0142">
   <data key="d0">Paper</data>
@@ -10342,7 +10354,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "P", "Ta", "Zr"]</data>
-  <data key="d6">0.86</data>
+  <data key="d6">0.92</data>
 </node>
 <node id="Paper:LLZO-0144">
   <data key="d0">Paper</data>
@@ -10385,7 +10397,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0146">
   <data key="d0">Paper</data>
@@ -10420,7 +10432,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["Ga", "La", "Li", "O", "Zr"]</data>
-  <data key="d6">0.575</data>
+  <data key="d6">0.65</data>
 </node>
 <node id="Paper:LLZO-0147">
   <data key="d0">Paper</data>
@@ -10455,7 +10467,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0148">
   <data key="d0">Paper</data>
@@ -10515,7 +10527,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0151">
   <data key="d0">Paper</data>
@@ -10558,7 +10570,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Zr"]</data>
-  <data key="d6">0.767</data>
+  <data key="d6">0.867</data>
 </node>
 <node id="Paper:LLZO-0153">
   <data key="d0">Paper</data>
@@ -10721,7 +10733,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0161">
   <data key="d0">Paper</data>
@@ -10799,7 +10811,7 @@
   <data key="d3">electrolyte</data>
   <data key="d4">Garnet LLZO</data>
   <data key="d5">["La", "Li", "O", "Ta", "Zr"]</data>
-  <data key="d6">0.825</data>
+  <data key="d6">0.9</data>
 </node>
 <node id="Paper:LLZO-0164">
   <data key="d0">Paper</data>
@@ -10827,12 +10839,52 @@
   <data key="d5">[]</data>
   <data key="d12"></data>
 </node>
+<node id="Paper:https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8">
+  <data key="d0">Paper</data>
+  <data key="d1">https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8</data>
+  <data key="d9"></data>
+  <data key="d10">Formation of MWCNT/LiCo2O4 nanoplates and their application for hybrid supercapacitor</data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/">
+  <data key="d0">Paper</data>
+  <data key="d1">https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/</data>
+  <data key="d9"></data>
+  <data key="d10"></data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead">
+  <data key="d0">Paper</data>
+  <data key="d1">https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead</data>
+  <data key="d9"></data>
+  <data key="d10">A chromium cobaltite based ternary composite as an efficient electrode material for hybrid supercapacitors with theoretical investigation</data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/">
+  <data key="d0">Paper</data>
+  <data key="d1">https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/</data>
+  <data key="d9"></data>
+  <data key="d10">Nanoengineering of NiO/MnO2/GO Ternary Composite for Use in High-Energy Storage Asymmetric Supercapacitor and Oxygen Evolution Reaction (OER)</data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">AHSC</data>
+</node>
+<node id="Paper:https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe">
+  <data key="d0">Paper</data>
+  <data key="d1">https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe</data>
+  <data key="d9"></data>
+  <data key="d10"></data>
+  <data key="d11">literature_abstract</data>
+  <data key="d2">LLZO</data>
+</node>
 <edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="Property:potential_window">
   <data key="d14">hasProperty</data>
   <data key="d15">[1.8]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["AHSC-0001-potential_window"]</data>
-  <data key="d18">["AHSC-0001"]</data>
+  <data key="d18">["10.1016/j.jcis.2023.10.067"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1.8</data>
@@ -10844,7 +10896,7 @@
 <edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="Paper:AHSC-0001">
+<edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="Paper:10.1016/j.jcis.2023.10.067">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="Element:Ni">
@@ -10861,7 +10913,7 @@
   <data key="d15">[236.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0001-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0001"]</data>
+  <data key="d18">["10.1016/j.jcis.2023.10.067"]</data>
   <data key="d19">["1 A/g"]</data>
   <data key="d20">1</data>
   <data key="d21">236.0</data>
@@ -10869,12 +10921,12 @@
 </edge>
 <edge source="Material:Ni3S2/ Ni2O3@N-CAN" target="Property:specific_energy">
   <data key="d14">hasProperty</data>
-  <data key="d15">[64.2]</data>
-  <data key="d16">["Wh/kg"]</data>
-  <data key="d17">["AHSC-0001-specific_energy"]</data>
-  <data key="d18">["AHSC-0001"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[64.2, 64.2]</data>
+  <data key="d16">["Wh/kg", "Wh/kg"]</data>
+  <data key="d17">["AHSC-0001-specific_energy", "10.1016/j.jcis.2023.10.067-000-specific_energy"]</data>
+  <data key="d18">["10.1016/j.jcis.2023.10.067", "10.1016/j.jcis.2023.10.067"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">64.2</data>
   <data key="d22">Wh/kg</data>
 </edge>
@@ -10883,7 +10935,7 @@
   <data key="d15">[700.0]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0001-specific_power"]</data>
-  <data key="d18">["AHSC-0001"]</data>
+  <data key="d18">["10.1016/j.jcis.2023.10.067"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">700.0</data>
@@ -10894,30 +10946,21 @@
   <data key="d15">[75.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0001-cycling_stability"]</data>
-  <data key="d18">["AHSC-0001"]</data>
+  <data key="d18">["10.1016/j.jcis.2023.10.067"]</data>
   <data key="d19">["after 10000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">75.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0001" target="Material:Zn foil">
+<edge source="Paper:10.1016/j.jcis.2023.10.067" target="Material:Zn foil">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0001" target="Material:1 M LiOH 0.3 M Zn(AC)2 + 3 M NaOH (Anode)">
+<edge source="Paper:10.1016/j.jcis.2023.10.067" target="Material:1 M LiOH 0.3 M Zn(AC)2 + 3 M NaOH (Anode)">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Ni" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Ni" target="Country:Madagascar">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Ni" target="Country:Zimbabwe">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Ni" target="Country:Cote d'Ivoire">
+<edge source="Element:Ni" target="Country:Zambia">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:Activated carbon" target="Property:potential_window">
@@ -11080,10 +11123,13 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
+<edge source="Element:C" target="Country:Madagascar">
+  <data key="d14">suppliedBy</data>
+</edge>
 <edge source="Element:C" target="Country:Mozambique">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:C" target="Country:Madagascar">
+<edge source="Element:C" target="Country:Tanzania">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Property:potential_window">
@@ -11091,7 +11137,7 @@
   <data key="d15">[0.55]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["AHSC-0003-potential_window"]</data>
-  <data key="d18">["AHSC-0003"]</data>
+  <data key="d18">["10.1016/j.electacta.2020.137169"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">0.55</data>
@@ -11103,7 +11149,7 @@
 <edge source="Material:Nd5%-Mn2O3 3D-MSs" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Paper:AHSC-0003">
+<edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Paper:10.1016/j.electacta.2020.137169">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Element:Mn">
@@ -11120,7 +11166,7 @@
   <data key="d15">[862.14]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0003-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0003"]</data>
+  <data key="d18">["10.1016/j.electacta.2020.137169"]</data>
   <data key="d19">["0.5 A/g"]</data>
   <data key="d20">1</data>
   <data key="d21">862.14</data>
@@ -11128,23 +11174,23 @@
 </edge>
 <edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Property:specific_energy">
   <data key="d14">hasProperty</data>
-  <data key="d15">[32.26]</data>
-  <data key="d16">["Wh/kg"]</data>
-  <data key="d17">["AHSC-0003-specific_energy"]</data>
-  <data key="d18">["AHSC-0003"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[32.26, 32.26]</data>
+  <data key="d16">["Wh/kg", "Wh/kg"]</data>
+  <data key="d17">["AHSC-0003-specific_energy", "10.1016/j.electacta.2020.137169-000-specific_energy"]</data>
+  <data key="d18">["10.1016/j.electacta.2020.137169", "10.1016/j.electacta.2020.137169"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">32.26</data>
   <data key="d22">Wh/kg</data>
 </edge>
 <edge source="Material:Nd5%-Mn2O3 3D-MSs" target="Property:specific_power">
   <data key="d14">hasProperty</data>
-  <data key="d15">[800.0]</data>
-  <data key="d16">["W/kg"]</data>
-  <data key="d17">["AHSC-0003-specific_power"]</data>
-  <data key="d18">["AHSC-0003"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[800.0, 800.0]</data>
+  <data key="d16">["W/kg", "W/kg"]</data>
+  <data key="d17">["AHSC-0003-specific_power", "10.1016/j.electacta.2020.137169-001-specific_power"]</data>
+  <data key="d18">["10.1016/j.electacta.2020.137169", "10.1016/j.electacta.2020.137169"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">800.0</data>
   <data key="d22">W/kg</data>
 </edge>
@@ -11153,17 +11199,17 @@
   <data key="d15">[97.3]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0003-cycling_stability"]</data>
-  <data key="d18">["AHSC-0003"]</data>
+  <data key="d18">["10.1016/j.electacta.2020.137169"]</data>
   <data key="d19">["after 2000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">97.3</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0003" target="Material:Activated carbon">
+<edge source="Paper:10.1016/j.electacta.2020.137169" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0003" target="Material:1 M KOH">
+<edge source="Paper:10.1016/j.electacta.2020.137169" target="Material:1 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -11176,12 +11222,15 @@
 <edge source="Element:Mn" target="Country:Ghana">
   <data key="d14">suppliedBy</data>
 </edge>
+<edge source="Element:Mn" target="Country:Cote d'Ivoire">
+  <data key="d14">suppliedBy</data>
+</edge>
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Property:potential_window">
   <data key="d14">hasProperty</data>
   <data key="d15">[1.9]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["AHSC-0004-potential_window"]</data>
-  <data key="d18">["AHSC-0004"]</data>
+  <data key="d18">["10.1002/bte2.20240035"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1.9</data>
@@ -11193,7 +11242,7 @@
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Paper:AHSC-0004">
+<edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Paper:10.1002/bte2.20240035">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Element:C">
@@ -11216,34 +11265,34 @@
 </edge>
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Property:specific_capacitance">
   <data key="d14">hasProperty</data>
-  <data key="d15">[109.0]</data>
-  <data key="d16">["F/g"]</data>
-  <data key="d17">["AHSC-0004-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0004"]</data>
-  <data key="d19">["0.1 A/g"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[109.0, 109.0]</data>
+  <data key="d16">["F/g", "F/g"]</data>
+  <data key="d17">["AHSC-0004-specific_capacitance", "10.1002/bte2.20240035-000-specific_capacitance"]</data>
+  <data key="d18">["10.1002/bte2.20240035", "10.1002/bte2.20240035"]</data>
+  <data key="d19">["0.1 A/g", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">109.0</data>
   <data key="d22">F/g</data>
 </edge>
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Property:specific_energy">
   <data key="d14">hasProperty</data>
-  <data key="d15">[20.0]</data>
-  <data key="d16">["Wh/kg"]</data>
-  <data key="d17">["AHSC-0004-specific_energy"]</data>
-  <data key="d18">["AHSC-0004"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[20.0, 20.0]</data>
+  <data key="d16">["Wh/kg", "Wh/kg"]</data>
+  <data key="d17">["AHSC-0004-specific_energy", "10.1002/bte2.20240035-001-specific_energy"]</data>
+  <data key="d18">["10.1002/bte2.20240035", "10.1002/bte2.20240035"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">20.0</data>
   <data key="d22">Wh/kg</data>
 </edge>
 <edge source="Material:ZnxMnO2/Ppy (ZMOP)" target="Property:specific_power">
   <data key="d14">hasProperty</data>
-  <data key="d15">[867.0]</data>
-  <data key="d16">["W/kg"]</data>
-  <data key="d17">["AHSC-0004-specific_power"]</data>
-  <data key="d18">["AHSC-0004"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[867.0, 867.0]</data>
+  <data key="d16">["W/kg", "W/kg"]</data>
+  <data key="d17">["AHSC-0004-specific_power", "10.1002/bte2.20240035-002-specific_power"]</data>
+  <data key="d18">["10.1002/bte2.20240035", "10.1002/bte2.20240035"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">867.0</data>
   <data key="d22">W/kg</data>
 </edge>
@@ -11252,17 +11301,17 @@
   <data key="d15">[86.4]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0004-cycling_stability"]</data>
-  <data key="d18">["AHSC-0004"]</data>
+  <data key="d18">["10.1002/bte2.20240035"]</data>
   <data key="d19">["after 5000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">86.4</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0004" target="Material:PCNTs">
+<edge source="Paper:10.1002/bte2.20240035" target="Material:PCNTs">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0004" target="Material:2 M ZnSO4 + 0.1 M MnSO4">
+<edge source="Paper:10.1002/bte2.20240035" target="Material:2 M ZnSO4 + 0.1 M MnSO4">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -11270,9 +11319,6 @@
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:Zn" target="Country:Namibia">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Zn" target="Country:Morocco">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:CoVO- PANI@CC" target="Property:potential_window">
@@ -11343,16 +11389,7 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Co" target="Country:Democratic Republic of the Congo">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Co" target="Country:Zambia">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Co" target="Country:Madagascar">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Co" target="Country:Morocco">
+<edge source="Element:Co" target="Country:Congo (Kinshasa)">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:V" target="Country:South Africa">
@@ -11435,7 +11472,7 @@
   <data key="d15">[1.8]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["AHSC-0007-potential_window"]</data>
-  <data key="d18">["AHSC-0007"]</data>
+  <data key="d18">["10.1016/j.cclet.2023.108354"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1.8</data>
@@ -11447,7 +11484,7 @@
 <edge source="Material:P-CNT/rGO" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:P-CNT/rGO" target="Paper:AHSC-0007">
+<edge source="Material:P-CNT/rGO" target="Paper:10.1016/j.cclet.2023.108354">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:P-CNT/rGO" target="Element:C">
@@ -11458,7 +11495,7 @@
   <data key="d15">[213.4]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0007-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0007"]</data>
+  <data key="d18">["10.1016/j.cclet.2023.108354"]</data>
   <data key="d19">["0.5 A/g"]</data>
   <data key="d20">1</data>
   <data key="d21">213.4</data>
@@ -11469,7 +11506,7 @@
   <data key="d15">[92.7]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["AHSC-0007-specific_energy"]</data>
-  <data key="d18">["AHSC-0007"]</data>
+  <data key="d18">["10.1016/j.cclet.2023.108354"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">92.7</data>
@@ -11480,7 +11517,7 @@
   <data key="d15">[80000.0]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0007-specific_power"]</data>
-  <data key="d18">["AHSC-0007"]</data>
+  <data key="d18">["10.1016/j.cclet.2023.108354"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">80000.0</data>
@@ -11491,17 +11528,17 @@
   <data key="d15">[94.2]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0007-cycling_stability"]</data>
-  <data key="d18">["AHSC-0007"]</data>
+  <data key="d18">["10.1016/j.cclet.2023.108354"]</data>
   <data key="d19">["after 10000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">94.2</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0007" target="Material:Zn foil">
+<edge source="Paper:10.1016/j.cclet.2023.108354" target="Material:Zn foil">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0007" target="Material:2 M ZnSO4">
+<edge source="Paper:10.1016/j.cclet.2023.108354" target="Material:2 M ZnSO4">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -11592,10 +11629,19 @@
 <edge source="Element:P" target="Country:Morocco">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:P" target="Country:South Africa">
+<edge source="Element:P" target="Country:Algeria">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:P" target="Country:Egypt">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:P" target="Country:Tunisia">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:P" target="Country:Senegal">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:P" target="Country:South Africa">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:P" target="Country:Togo">
@@ -11702,7 +11748,7 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Cu" target="Country:Democratic Republic of the Congo">
+<edge source="Element:Cu" target="Country:Congo (Kinshasa)">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:Cu" target="Country:Zambia">
@@ -11714,16 +11760,7 @@
 <edge source="Element:Fe" target="Country:Mauritania">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Fe" target="Country:Sierra Leone">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Sn" target="Country:Democratic Republic of the Congo">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Sn" target="Country:Rwanda">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Sn" target="Country:Nigeria">
+<edge source="Element:Sn" target="Country:Congo (Kinshasa)">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:Ti3C2-ZrO2 NC" target="Property:potential_window">
@@ -11819,22 +11856,28 @@
 <edge source="Element:Ti" target="Country:Madagascar">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Ti" target="Country:Kenya">
-  <data key="d14">suppliedBy</data>
-</edge>
 <edge source="Element:Ti" target="Country:Senegal">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Zr" target="Country:South Africa">
+<edge source="Element:Ti" target="Country:Kenya">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:Zr" target="Country:Mozambique">
   <data key="d14">suppliedBy</data>
 </edge>
+<edge source="Element:Zr" target="Country:South Africa">
+  <data key="d14">suppliedBy</data>
+</edge>
 <edge source="Element:Zr" target="Country:Senegal">
   <data key="d14">suppliedBy</data>
 </edge>
+<edge source="Element:Zr" target="Country:Madagascar">
+  <data key="d14">suppliedBy</data>
+</edge>
 <edge source="Element:Zr" target="Country:Kenya">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:Zr" target="Country:Sierra Leone">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:rGO" target="Property:potential_window">
@@ -12208,7 +12251,7 @@
   <data key="d15">[60.0, 110.7]</data>
   <data key="d16">["mAh/g", "mAh/g"]</data>
   <data key="d17">["AHSC-0017-specific_capacity", "AHSC-0018-specific_capacity"]</data>
-  <data key="d18">["AHSC-0017", "AHSC-0018"]</data>
+  <data key="d18">["AHSC-0017", "10.1039/C9TA08699D"]</data>
   <data key="d19">["", ""]</data>
   <data key="d20">2</data>
   <data key="d21">85.35</data>
@@ -12237,7 +12280,7 @@
   <data key="d15">[95.0, 90.1]</data>
   <data key="d16">["%", "%"]</data>
   <data key="d17">["AHSC-0017-cycling_stability", "AHSC-0018-cycling_stability"]</data>
-  <data key="d18">["AHSC-0017", "AHSC-0018"]</data>
+  <data key="d18">["AHSC-0017", "10.1039/C9TA08699D"]</data>
   <data key="d19">["", ""]</data>
   <data key="d20">2</data>
   <data key="d21">92.55</data>
@@ -12248,7 +12291,7 @@
   <data key="d15">[50.0, 95.0]</data>
   <data key="d16">["%", "%"]</data>
   <data key="d17">["AHSC-0017-capacity_retention", "AHSC-0018-capacity_retention"]</data>
-  <data key="d18">["AHSC-0017", "AHSC-0018"]</data>
+  <data key="d18">["AHSC-0017", "10.1039/C9TA08699D"]</data>
   <data key="d19">["", ""]</data>
   <data key="d20">2</data>
   <data key="d21">72.5</data>
@@ -12259,13 +12302,13 @@
   <data key="d15">[103.0, 0.0513]</data>
   <data key="d16">["S/cm", "S/cm"]</data>
   <data key="d17">["AHSC-0017-ionic_conductivity", "AHSC-0018-ionic_conductivity"]</data>
-  <data key="d18">["AHSC-0017", "AHSC-0018"]</data>
+  <data key="d18">["AHSC-0017", "10.1039/C9TA08699D"]</data>
   <data key="d19">["", ""]</data>
   <data key="d20">2</data>
   <data key="d21">51.52565</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Material:LiMn2O4" target="Paper:AHSC-0018">
+<edge source="Material:LiMn2O4" target="Paper:10.1039/C9TA08699D">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:AHSC-0017" target="Material:prelithiated V2O5">
@@ -12279,29 +12322,43 @@
 <edge source="Element:Li" target="Country:Zimbabwe">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Li" target="Country:Democratic Republic of the Congo">
-  <data key="d14">suppliedBy</data>
-</edge>
 <edge source="Element:Li" target="Country:Namibia">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Li" target="Country:Mali">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Paper:AHSC-0018" target="Material:Activated carbon">
+<edge source="Paper:10.1039/C9TA08699D" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0018" target="Material:PAAm-chitosan WiSgel">
+<edge source="Paper:10.1039/C9TA08699D" target="Material:PAAm-chitosan WiSgel">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
+</edge>
+<edge source="Material:PAAm-chitosan WiSgel" target="Property:ionic_conductivity">
+  <data key="d14">hasProperty</data>
+  <data key="d15">[0.0513]</data>
+  <data key="d16">["S/cm"]</data>
+  <data key="d17">["10.1039/C9TA08699D-000-ionic_conductivity"]</data>
+  <data key="d18">["10.1039/C9TA08699D"]</data>
+  <data key="d19">[""]</data>
+  <data key="d20">1</data>
+  <data key="d21">0.0513</data>
+  <data key="d22">S/cm</data>
+</edge>
+<edge source="Material:PAAm-chitosan WiSgel" target="MaterialFamily:Bio-derived polymer">
+  <data key="d14">memberOf</data>
+</edge>
+<edge source="Material:PAAm-chitosan WiSgel" target="System:AHSC">
+  <data key="d14">inSystem</data>
+</edge>
+<edge source="Material:PAAm-chitosan WiSgel" target="Paper:10.1039/C9TA08699D">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Lithium foil" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
   <data key="d15">[901.2, 1520.0, 1526.0, 1743.0]</data>
   <data key="d16">["mAh/g", "mAh/g", "mAh/g", "mAh/g"]</data>
   <data key="d17">["AHSC-0019-specific_capacity", "AHSC-0020-specific_capacity", "AHSC-0022-specific_capacity", "AHSC-0023-specific_capacity"]</data>
-  <data key="d18">["AHSC-0019", "AHSC-0020", "AHSC-0022", "AHSC-0023"]</data>
+  <data key="d18">["10.1016/j.cej.2023.141387", "10.1016/j.jechem.2023.04.037", "10.1002/admi.201901475", "AHSC-0023"]</data>
   <data key="d19">["", "", "", ""]</data>
   <data key="d20">4</data>
   <data key="d21">1523.0</data>
@@ -12313,13 +12370,13 @@
 <edge source="Material:Lithium foil" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Lithium foil" target="Paper:AHSC-0019">
+<edge source="Material:Lithium foil" target="Paper:10.1016/j.cej.2023.141387">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Lithium foil" target="Element:Li">
   <data key="d14">containsElement</data>
 </edge>
-<edge source="Material:Lithium foil" target="Paper:AHSC-0020">
+<edge source="Material:Lithium foil" target="Paper:10.1016/j.jechem.2023.04.037">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Lithium foil" target="Property:cycling_stability">
@@ -12327,13 +12384,13 @@
   <data key="d15">[93.8, 74.1]</data>
   <data key="d16">["%", "%"]</data>
   <data key="d17">["AHSC-0020-cycling_stability", "AHSC-0023-cycling_stability"]</data>
-  <data key="d18">["AHSC-0020", "AHSC-0023"]</data>
+  <data key="d18">["10.1016/j.jechem.2023.04.037", "AHSC-0023"]</data>
   <data key="d19">["", ""]</data>
   <data key="d20">2</data>
   <data key="d21">83.94999999999999</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Material:Lithium foil" target="Paper:AHSC-0022">
+<edge source="Material:Lithium foil" target="Paper:10.1002/admi.201901475">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Lithium foil" target="Paper:AHSC-0023">
@@ -12350,28 +12407,54 @@
   <data key="d21">400.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0019" target="Material:SiO microparticles">
+<edge source="Paper:10.1016/j.cej.2023.141387" target="Material:SiO microparticles">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0019" target="Material:TA-PAA cobweb-like hydrogel binder">
+<edge source="Paper:10.1016/j.cej.2023.141387" target="Material:TA-PAA cobweb-like hydrogel binder">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Paper:AHSC-0020" target="Material:SiP2/C composite">
+<edge source="Paper:10.1016/j.jechem.2023.04.037" target="Material:SiP2/C composite">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0020" target="Material:Li-PAA@PEDOT:PSS hydrogel binder">
+<edge source="Paper:10.1016/j.jechem.2023.04.037" target="Material:Li-PAA@PEDOT:PSS hydrogel binder">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="Property:specific_capacity">
+  <data key="d14">hasProperty</data>
+  <data key="d15">[1520.0]</data>
+  <data key="d16">["mAh/g"]</data>
+  <data key="d17">["10.1016/j.jechem.2023.04.037-000-specific_capacity"]</data>
+  <data key="d18">["10.1016/j.jechem.2023.04.037"]</data>
+  <data key="d19">[""]</data>
+  <data key="d20">1</data>
+  <data key="d21">1520.0</data>
+  <data key="d22">mAh/g</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="MaterialFamily:Carbon">
+  <data key="d14">memberOf</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="System:AHSC">
+  <data key="d14">inSystem</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="Paper:10.1016/j.jechem.2023.04.037">
+  <data key="d14">studiedIn</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="Element:P">
+  <data key="d14">containsElement</data>
+</edge>
+<edge source="Material:SiP2/C composite" target="Element:Si">
+  <data key="d14">containsElement</data>
 </edge>
 <edge source="Material:3D carbon-HKUST-1/S" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
   <data key="d15">[16.0]</data>
   <data key="d16">["mAh/cm2"]</data>
   <data key="d17">["AHSC-0021-specific_capacity"]</data>
-  <data key="d18">["AHSC-0021"]</data>
+  <data key="d18">["10.1021/acs.nanolett.9b01033"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">16.0</data>
@@ -12383,7 +12466,7 @@
 <edge source="Material:3D carbon-HKUST-1/S" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:3D carbon-HKUST-1/S" target="Paper:AHSC-0021">
+<edge source="Material:3D carbon-HKUST-1/S" target="Paper:10.1021/acs.nanolett.9b01033">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:3D carbon-HKUST-1/S" target="Element:C">
@@ -12394,27 +12477,50 @@
   <data key="d15">[82.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0021-cycling_stability"]</data>
-  <data key="d18">["AHSC-0021"]</data>
+  <data key="d18">["10.1021/acs.nanolett.9b01033"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">82.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0021" target="Material:Lithium metal">
+<edge source="Paper:10.1021/acs.nanolett.9b01033" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0021" target="Material:Conducting polymer hydrogel withMOF domain">
+<edge source="Paper:10.1021/acs.nanolett.9b01033" target="Material:Conducting polymer hydrogel withMOF domain">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Paper:AHSC-0022" target="Material:Si nanoparticles">
+<edge source="Paper:10.1002/admi.201901475" target="Material:Si nanoparticles">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0022" target="Material:3D meshlike PAM hydrogel binder">
+<edge source="Paper:10.1002/admi.201901475" target="Material:3D meshlike PAM hydrogel binder">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
+</edge>
+<edge source="Material:Si nanoparticles" target="Property:specific_capacity">
+  <data key="d14">hasProperty</data>
+  <data key="d15">[1526.0]</data>
+  <data key="d16">["mAh/g"]</data>
+  <data key="d17">["10.1002/admi.201901475-000-specific_capacity"]</data>
+  <data key="d18">["10.1002/admi.201901475"]</data>
+  <data key="d19">[""]</data>
+  <data key="d20">1</data>
+  <data key="d21">1526.0</data>
+  <data key="d22">mAh/g</data>
+</edge>
+<edge source="Material:Si nanoparticles" target="MaterialFamily:Other">
+  <data key="d14">memberOf</data>
+</edge>
+<edge source="Material:Si nanoparticles" target="System:AHSC">
+  <data key="d14">inSystem</data>
+</edge>
+<edge source="Material:Si nanoparticles" target="Paper:10.1002/admi.201901475">
+  <data key="d14">studiedIn</data>
+</edge>
+<edge source="Material:Si nanoparticles" target="Element:Si">
+  <data key="d14">containsElement</data>
 </edge>
 <edge source="Paper:AHSC-0023" target="Material:Si particles">
   <data key="d14">usesComponent</data>
@@ -12465,12 +12571,12 @@
 </edge>
 <edge source="Material:high-loading LIBcathode" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[119.0]</data>
-  <data key="d16">["mAh/g"]</data>
-  <data key="d17">["AHSC-0025-specific_capacity"]</data>
-  <data key="d18">["AHSC-0025"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[119.0, 119.0]</data>
+  <data key="d16">["mAh/g", "mAh/g"]</data>
+  <data key="d17">["AHSC-0025-specific_capacity", "10.1002/smll.202303480-000-specific_capacity"]</data>
+  <data key="d18">["10.1002/smll.202303480", "10.1002/smll.202303480"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">119.0</data>
   <data key="d22">mAh/g</data>
 </edge>
@@ -12480,7 +12586,7 @@
 <edge source="Material:high-loading LIBcathode" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:high-loading LIBcathode" target="Paper:AHSC-0025">
+<edge source="Material:high-loading LIBcathode" target="Paper:10.1002/smll.202303480">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:high-loading LIBcathode" target="Property:cycling_stability">
@@ -12488,7 +12594,7 @@
   <data key="d15">[81.8]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0025-cycling_stability"]</data>
-  <data key="d18">["AHSC-0025"]</data>
+  <data key="d18">["10.1002/smll.202303480"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">81.8</data>
@@ -12499,17 +12605,17 @@
   <data key="d15">[0.0026]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["AHSC-0025-ionic_conductivity"]</data>
-  <data key="d18">["AHSC-0025"]</data>
+  <data key="d18">["10.1002/smll.202303480"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">0.0026</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:AHSC-0025" target="Material:Lithium foil">
+<edge source="Paper:10.1002/smll.202303480" target="Material:Lithium foil">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0025" target="Material:Low-water-content hydrogel flm(6.63wt%)">
+<edge source="Paper:10.1002/smll.202303480" target="Material:Low-water-content hydrogel flm(6.63wt%)">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -12604,12 +12710,12 @@
 </edge>
 <edge source="Material:Na2Fe2(SO4)3" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[69.7]</data>
-  <data key="d16">["mAh/g"]</data>
-  <data key="d17">["AHSC-0029-specific_capacity"]</data>
-  <data key="d18">["AHSC-0029"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[69.7, 69.7]</data>
+  <data key="d16">["mAh/g", "mAh/g"]</data>
+  <data key="d17">["AHSC-0029-specific_capacity", "10.1002/smll.202107183-000-specific_capacity"]</data>
+  <data key="d18">["10.1002/smll.202107183", "10.1002/smll.202107183"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">69.7</data>
   <data key="d22">mAh/g</data>
 </edge>
@@ -12619,7 +12725,7 @@
 <edge source="Material:Na2Fe2(SO4)3" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Na2Fe2(SO4)3" target="Paper:AHSC-0029">
+<edge source="Material:Na2Fe2(SO4)3" target="Paper:10.1002/smll.202107183">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Na2Fe2(SO4)3" target="Element:Fe">
@@ -12639,28 +12745,39 @@
   <data key="d15">[0.00232]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["AHSC-0029-ionic_conductivity"]</data>
-  <data key="d18">["AHSC-0029"]</data>
+  <data key="d18">["10.1002/smll.202107183"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">0.00232</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:AHSC-0029" target="Material:metallic Na">
+<edge source="Material:Na2Fe2(SO4)3" target="Property:specific_energy">
+  <data key="d14">hasProperty</data>
+  <data key="d15">[240.0]</data>
+  <data key="d16">["Wh/kg"]</data>
+  <data key="d17">["10.1002/smll.202107183-001-specific_energy"]</data>
+  <data key="d18">["10.1002/smll.202107183"]</data>
+  <data key="d19">[""]</data>
+  <data key="d20">1</data>
+  <data key="d21">240.0</data>
+  <data key="d22">Wh/kg</data>
+</edge>
+<edge source="Paper:10.1002/smll.202107183" target="Material:metallic Na">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0029" target="Material:Hierarchical nanocellulose- basedGPE">
+<edge source="Paper:10.1002/smll.202107183" target="Material:Hierarchical nanocellulose- basedGPE">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
 <edge source="Material:Na3V2(PO4)3" target="Property:cycling_stability">
   <data key="d14">hasProperty</data>
-  <data key="d15">[82.8]</data>
-  <data key="d16">["%"]</data>
-  <data key="d17">["AHSC-0030-cycling_stability"]</data>
-  <data key="d18">["AHSC-0030"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[82.8, 82.8]</data>
+  <data key="d16">["%", "%"]</data>
+  <data key="d17">["AHSC-0030-cycling_stability", "10.1002/ange.202311589-000-cycling_stability"]</data>
+  <data key="d18">["10.1002/ange.202311589", "10.1002/ange.202311589"]</data>
+  <data key="d19">["", "after 580 cycles"]</data>
+  <data key="d20">2</data>
   <data key="d21">82.8</data>
   <data key="d22">%</data>
 </edge>
@@ -12670,7 +12787,7 @@
 <edge source="Material:Na3V2(PO4)3" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Na3V2(PO4)3" target="Paper:AHSC-0030">
+<edge source="Material:Na3V2(PO4)3" target="Paper:10.1002/ange.202311589">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Na3V2(PO4)3" target="Element:Na">
@@ -12685,11 +12802,11 @@
 <edge source="Material:Na3V2(PO4)3" target="Element:V">
   <data key="d14">containsElement</data>
 </edge>
-<edge source="Paper:AHSC-0030" target="Material:NaTi2(PO4)3">
+<edge source="Paper:10.1002/ange.202311589" target="Material:NaTi2(PO4)3">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0030" target="Material:Salt-concentrated methylated hydrogel">
+<edge source="Paper:10.1002/ange.202311589" target="Material:Salt-concentrated methylated hydrogel">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -12725,15 +12842,6 @@
 <edge source="Paper:AHSC-0031" target="Material:Urchin-like MoS2/MoO2microspherescoatedwithGO hydrogel">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
-</edge>
-<edge source="Element:F" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:F" target="Country:Kenya">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:F" target="Country:Morocco">
-  <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:Na3V2(PO4)3@C@CNT porousnetwork viahydrogel templating" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
@@ -12938,9 +13046,6 @@
 <edge source="Element:Al" target="Country:Guinea">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Al" target="Country:Ghana">
-  <data key="d14">suppliedBy</data>
-</edge>
 <edge source="Material:Aqueous Al-ion electrolyte (e.g.,AlCl3 or Al(NO3)3)" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
   <data key="d15">[200.0]</data>
@@ -13036,12 +13141,12 @@
 </edge>
 <edge source="Material:CoFe(CN)6" target="Property:specific_capacity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[173.4]</data>
-  <data key="d16">["mAh/g"]</data>
-  <data key="d17">["AHSC-0041-specific_capacity"]</data>
-  <data key="d18">["AHSC-0041"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[173.4, 173.4]</data>
+  <data key="d16">["mAh/g", "mAh/g"]</data>
+  <data key="d17">["AHSC-0041-specific_capacity", "10.1002/aenm.201902446-000-specific_capacity"]</data>
+  <data key="d18">["10.1002/aenm.201902446", "10.1002/aenm.201902446"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">173.4</data>
   <data key="d22">mAh/g</data>
 </edge>
@@ -13051,7 +13156,7 @@
 <edge source="Material:CoFe(CN)6" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:CoFe(CN)6" target="Paper:AHSC-0041">
+<edge source="Material:CoFe(CN)6" target="Paper:10.1002/aenm.201902446">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:CoFe(CN)6" target="Element:Co">
@@ -13065,17 +13170,17 @@
   <data key="d15">[1.0]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["AHSC-0041-ionic_conductivity"]</data>
-  <data key="d18">["AHSC-0041"]</data>
+  <data key="d18">["10.1002/aenm.201902446"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1.0</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:AHSC-0041" target="Material:zinc">
+<edge source="Paper:10.1002/aenm.201902446" target="Material:zinc">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0041" target="Material:Zn(OTf)2">
+<edge source="Paper:10.1002/aenm.201902446" target="Material:Zn(OTf)2">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -13140,7 +13245,7 @@
   <data key="d15">[65.5]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["AHSC-0043-specific_energy"]</data>
-  <data key="d18">["AHSC-0043"]</data>
+  <data key="d18">["10.1016/j.cej.2023.143984"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">65.5</data>
@@ -13152,7 +13257,7 @@
 <edge source="Material:electrode material (Co3O4@Mn-Ni(OH)2/CC)" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:electrode material (Co3O4@Mn-Ni(OH)2/CC)" target="Paper:AHSC-0043">
+<edge source="Material:electrode material (Co3O4@Mn-Ni(OH)2/CC)" target="Paper:10.1016/j.cej.2023.143984">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:electrode material (Co3O4@Mn-Ni(OH)2/CC)" target="Element:Co">
@@ -13175,7 +13280,7 @@
   <data key="d15">[800.0]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0043-specific_power"]</data>
-  <data key="d18">["AHSC-0043"]</data>
+  <data key="d18">["10.1016/j.cej.2023.143984"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">800.0</data>
@@ -13186,7 +13291,7 @@
   <data key="d15">[93.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0043-cycling_stability"]</data>
-  <data key="d18">["AHSC-0043"]</data>
+  <data key="d18">["10.1016/j.cej.2023.143984"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">93.0</data>
@@ -13412,7 +13517,7 @@
   <data key="d15">[125.0]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["AHSC-0048-specific_energy"]</data>
-  <data key="d18">["AHSC-0048"]</data>
+  <data key="d18">["10.1016/j.est.2024.110775"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">125.0</data>
@@ -13424,7 +13529,7 @@
 <edge source="Material:CoFe2O4/Cr2CTx" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:CoFe2O4/Cr2CTx" target="Paper:AHSC-0048">
+<edge source="Material:CoFe2O4/Cr2CTx" target="Paper:10.1016/j.est.2024.110775">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:CoFe2O4/Cr2CTx" target="Element:C">
@@ -13447,7 +13552,7 @@
   <data key="d15">[15264.4]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0048-specific_power"]</data>
-  <data key="d18">["AHSC-0048"]</data>
+  <data key="d18">["10.1016/j.est.2024.110775"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">15264.4</data>
@@ -13458,20 +13563,17 @@
   <data key="d15">[99.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0048-cycling_stability"]</data>
-  <data key="d18">["AHSC-0048"]</data>
+  <data key="d18">["10.1016/j.est.2024.110775"]</data>
   <data key="d19">["after 2500 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">99.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0048" target="Material:Activated carbon">
+<edge source="Paper:10.1016/j.est.2024.110775" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
 <edge source="Element:Cr" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Cr" target="Country:Zimbabwe">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:MWCNT/LiCo2O4" target="Property:specific_energy">
@@ -13505,12 +13607,12 @@
 </edge>
 <edge source="Material:MWCNT/LiCo2O4" target="Property:specific_power">
   <data key="d14">hasProperty</data>
-  <data key="d15">[775.0]</data>
-  <data key="d16">["W/kg"]</data>
-  <data key="d17">["AHSC-0049-specific_power"]</data>
-  <data key="d18">["AHSC-0049"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[775.0, 775.0]</data>
+  <data key="d16">["W/kg", "W/kg"]</data>
+  <data key="d17">["AHSC-0049-specific_power", "https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8-000-specific_power"]</data>
+  <data key="d18">["AHSC-0049", "https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">775.0</data>
   <data key="d22">W/kg</data>
 </edge>
@@ -13525,18 +13627,21 @@
   <data key="d21">94.0</data>
   <data key="d22">%</data>
 </edge>
+<edge source="Material:MWCNT/LiCo2O4" target="Paper:https://scholarworks.dongguk.edu/item/c5984ce8-efbc-4a07-9cb9-ce4f9a0ab6d8">
+  <data key="d14">studiedIn</data>
+</edge>
 <edge source="Paper:AHSC-0049" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
 <edge source="Material:Nio@Co3O4/C" target="Property:specific_energy">
   <data key="d14">hasProperty</data>
-  <data key="d15">[32.6]</data>
-  <data key="d16">["Wh/kg"]</data>
-  <data key="d17">["AHSC-0050-specific_energy"]</data>
-  <data key="d18">["AHSC-0050"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[32.6, 32.6]</data>
+  <data key="d16">["Wh/kg", "Wh/kg"]</data>
+  <data key="d17">["AHSC-0050-specific_energy", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/-000-specific_energy"]</data>
+  <data key="d18">["AHSC-0050", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">32.6</data>
   <data key="d22">Wh/kg</data>
 </edge>
@@ -13557,25 +13662,28 @@
 </edge>
 <edge source="Material:Nio@Co3O4/C" target="Property:specific_power">
   <data key="d14">hasProperty</data>
-  <data key="d15">[750.0]</data>
-  <data key="d16">["W/kg"]</data>
-  <data key="d17">["AHSC-0050-specific_power"]</data>
-  <data key="d18">["AHSC-0050"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[750.0, 750.0]</data>
+  <data key="d16">["W/kg", "W/kg"]</data>
+  <data key="d17">["AHSC-0050-specific_power", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/-001-specific_power"]</data>
+  <data key="d18">["AHSC-0050", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">750.0</data>
   <data key="d22">W/kg</data>
 </edge>
 <edge source="Material:Nio@Co3O4/C" target="Property:cycling_stability">
   <data key="d14">hasProperty</data>
-  <data key="d15">[87.1]</data>
-  <data key="d16">["%"]</data>
-  <data key="d17">["AHSC-0050-cycling_stability"]</data>
-  <data key="d18">["AHSC-0050"]</data>
-  <data key="d19">["after 5000 cycles"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[87.1, 87.1]</data>
+  <data key="d16">["%", "%"]</data>
+  <data key="d17">["AHSC-0050-cycling_stability", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/-002-cycling_stability"]</data>
+  <data key="d18">["AHSC-0050", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/"]</data>
+  <data key="d19">["after 5000 cycles", "after 5000 cycles"]</data>
+  <data key="d20">2</data>
   <data key="d21">87.1</data>
   <data key="d22">%</data>
+</edge>
+<edge source="Material:Nio@Co3O4/C" target="Paper:https://pmc.ncbi.nlm.nih.gov/articles/PMC10034999/">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:AHSC-0050" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
@@ -13913,12 +14021,12 @@
 </edge>
 <edge source="Material:CrCo2O4/AC/PPY" target="Property:specific_power">
   <data key="d14">hasProperty</data>
-  <data key="d15">[1600.0]</data>
-  <data key="d16">["W/kg"]</data>
-  <data key="d17">["AHSC-0059-specific_power"]</data>
-  <data key="d18">["AHSC-0059"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[1600.0, 1600.0]</data>
+  <data key="d16">["W/kg", "W/kg"]</data>
+  <data key="d17">["AHSC-0059-specific_power", "https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead-000-specific_power"]</data>
+  <data key="d18">["AHSC-0059", "https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">1600.0</data>
   <data key="d22">W/kg</data>
 </edge>
@@ -13933,6 +14041,9 @@
   <data key="d21">76.75</data>
   <data key="d22">%</data>
 </edge>
+<edge source="Material:CrCo2O4/AC/PPY" target="Paper:https://discovery.researcher.life/article/a-chromium-cobaltite-based-ternary-composite-as-an-efficient-electrode-material-for-hybrid-supercapacitors-with-theoretical-investigation/446899a206073bcda114b46c32b2aead">
+  <data key="d14">studiedIn</data>
+</edge>
 <edge source="Paper:AHSC-0059" target="Material:NO2/AC">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
@@ -13942,7 +14053,7 @@
   <data key="d15">[44.26]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["AHSC-0060-specific_energy"]</data>
-  <data key="d18">["AHSC-0060"]</data>
+  <data key="d18">["10.1016/j.est.2024.115181"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">44.26</data>
@@ -13954,7 +14065,7 @@
 <edge source="Material:Cu-Mn-Zn Oxide" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Cu-Mn-Zn Oxide" target="Paper:AHSC-0060">
+<edge source="Material:Cu-Mn-Zn Oxide" target="Paper:10.1016/j.est.2024.115181">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Cu-Mn-Zn Oxide" target="Element:Cu">
@@ -13971,7 +14082,7 @@
   <data key="d15">[9432.69]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0060-specific_power"]</data>
-  <data key="d18">["AHSC-0060"]</data>
+  <data key="d18">["10.1016/j.est.2024.115181"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">9432.69</data>
@@ -13982,24 +14093,24 @@
   <data key="d15">[86.65]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0060-cycling_stability"]</data>
-  <data key="d18">["AHSC-0060"]</data>
+  <data key="d18">["10.1016/j.est.2024.115181"]</data>
   <data key="d19">["after 3000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">86.65</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0060" target="Material:Activated carbon">
+<edge source="Paper:10.1016/j.est.2024.115181" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
 <edge source="Material:ZnCr2O4@CC" target="Property:specific_energy">
   <data key="d14">hasProperty</data>
-  <data key="d15">[26.2]</data>
-  <data key="d16">["Wh/kg"]</data>
-  <data key="d17">["AHSC-0061-specific_energy"]</data>
-  <data key="d18">["AHSC-0061"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[26.2, 26.2]</data>
+  <data key="d16">["Wh/kg", "Wh/kg"]</data>
+  <data key="d17">["AHSC-0061-specific_energy", "10.1016/j.electacta.2023.143673-000-specific_energy"]</data>
+  <data key="d18">["10.1016/j.electacta.2023.143673", "10.1016/j.electacta.2023.143673"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">26.2</data>
   <data key="d22">Wh/kg</data>
 </edge>
@@ -14009,7 +14120,7 @@
 <edge source="Material:ZnCr2O4@CC" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:ZnCr2O4@CC" target="Paper:AHSC-0061">
+<edge source="Material:ZnCr2O4@CC" target="Paper:10.1016/j.electacta.2023.143673">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:ZnCr2O4@CC" target="Element:Cr">
@@ -14026,7 +14137,7 @@
   <data key="d15">[800.6]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0061-specific_power"]</data>
-  <data key="d18">["AHSC-0061"]</data>
+  <data key="d18">["10.1016/j.electacta.2023.143673"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">800.6</data>
@@ -14037,17 +14148,17 @@
   <data key="d15">[96.43]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0061-cycling_stability"]</data>
-  <data key="d18">["AHSC-0061"]</data>
+  <data key="d18">["10.1016/j.electacta.2023.143673"]</data>
   <data key="d19">["after 10000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">96.43</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0061" target="Material:Activated carbon">
+<edge source="Paper:10.1016/j.electacta.2023.143673" target="Material:Activated carbon">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
-<edge source="Paper:AHSC-0061" target="Material:1 M KOH">
+<edge source="Paper:10.1016/j.electacta.2023.143673" target="Material:1 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -14199,14 +14310,17 @@
 </edge>
 <edge source="Material:NMGO" target="Property:cycling_stability">
   <data key="d14">hasProperty</data>
-  <data key="d15">[88.0]</data>
-  <data key="d16">["%"]</data>
-  <data key="d17">["AHSC-0064-cycling_stability"]</data>
-  <data key="d18">["AHSC-0064"]</data>
-  <data key="d19">["after 6000 cycles"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[88.0, 88.0]</data>
+  <data key="d16">["%", "%"]</data>
+  <data key="d17">["AHSC-0064-cycling_stability", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/-000-cycling_stability"]</data>
+  <data key="d18">["AHSC-0064", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/"]</data>
+  <data key="d19">["after 6000 cycles", "after 6000 cycles"]</data>
+  <data key="d20">2</data>
   <data key="d21">88.0</data>
   <data key="d22">%</data>
+</edge>
+<edge source="Material:NMGO" target="Paper:https://pmc.ncbi.nlm.nih.gov/articles/PMC9823737/">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:AHSC-0064" target="Material:MWCNT">
   <data key="d14">usesComponent</data>
@@ -14375,9 +14489,6 @@
   <data key="d23">electrolyte</data>
 </edge>
 <edge source="Element:W" target="Country:Rwanda">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:W" target="Country:Democratic Republic of the Congo">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:hCNC-5.0" target="Property:specific_capacitance">
@@ -14779,7 +14890,7 @@
   <data key="d15">[144.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0075-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0075"]</data>
+  <data key="d18">["10.1016/j.est.2021.102794"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">144.0</data>
@@ -14791,7 +14902,7 @@
 <edge source="Material:SWCNT/TiO2" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:SWCNT/TiO2" target="Paper:AHSC-0075">
+<edge source="Material:SWCNT/TiO2" target="Paper:10.1016/j.est.2021.102794">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:SWCNT/TiO2" target="Element:O">
@@ -14805,7 +14916,7 @@
   <data key="d15">[20.0]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["AHSC-0075-specific_energy"]</data>
-  <data key="d18">["AHSC-0075"]</data>
+  <data key="d18">["10.1016/j.est.2021.102794"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">20.0</data>
@@ -14816,7 +14927,7 @@
   <data key="d15">[10.0]</data>
   <data key="d16">["W/kg"]</data>
   <data key="d17">["AHSC-0075-specific_power"]</data>
-  <data key="d18">["AHSC-0075"]</data>
+  <data key="d18">["10.1016/j.est.2021.102794"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">10.0</data>
@@ -14827,13 +14938,13 @@
   <data key="d15">[95.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0075-cycling_stability"]</data>
-  <data key="d18">["AHSC-0075"]</data>
+  <data key="d18">["10.1016/j.est.2021.102794"]</data>
   <data key="d19">["after 50000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">95.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0075" target="Material:PVA/H2SO4 gel">
+<edge source="Paper:10.1016/j.est.2021.102794" target="Material:PVA/H2SO4 gel">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -15245,7 +15356,7 @@
   <data key="d15">[1326.0]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0084-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0084"]</data>
+  <data key="d18">["10.1016/j.est.2024.111958"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1326.0</data>
@@ -15257,7 +15368,7 @@
 <edge source="Material:Nd-AlFeO3" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:Nd-AlFeO3" target="Paper:AHSC-0084">
+<edge source="Material:Nd-AlFeO3" target="Paper:10.1016/j.est.2024.111958">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:Nd-AlFeO3" target="Element:Al">
@@ -15277,13 +15388,13 @@
   <data key="d15">[91.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0084-cycling_stability"]</data>
-  <data key="d18">["AHSC-0084"]</data>
+  <data key="d18">["10.1016/j.est.2024.111958"]</data>
   <data key="d19">["after 5000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">91.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0084" target="Material:6 M KOH">
+<edge source="Paper:10.1016/j.est.2024.111958" target="Material:6 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -15292,7 +15403,7 @@
   <data key="d15">[1570.2]</data>
   <data key="d16">["F/g"]</data>
   <data key="d17">["AHSC-0085-specific_capacitance"]</data>
-  <data key="d18">["AHSC-0085"]</data>
+  <data key="d18">["10.1016/j.matlet.2023.134682"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">1570.2</data>
@@ -15304,7 +15415,7 @@
 <edge source="Material:P-Ni0.5Cu0.5Co2O4" target="System:AHSC">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:P-Ni0.5Cu0.5Co2O4" target="Paper:AHSC-0085">
+<edge source="Material:P-Ni0.5Cu0.5Co2O4" target="Paper:10.1016/j.matlet.2023.134682">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:P-Ni0.5Cu0.5Co2O4" target="Element:Co">
@@ -15324,13 +15435,13 @@
   <data key="d15">[78.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["AHSC-0085-cycling_stability"]</data>
-  <data key="d18">["AHSC-0085"]</data>
+  <data key="d18">["10.1016/j.matlet.2023.134682"]</data>
   <data key="d19">["after 5000 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">78.0</data>
   <data key="d22">%</data>
 </edge>
-<edge source="Paper:AHSC-0085" target="Material:3 M KOH">
+<edge source="Paper:10.1016/j.matlet.2023.134682" target="Material:3 M KOH">
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
@@ -19095,16 +19206,10 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:La" target="Country:Malawi">
+<edge source="Element:La" target="Country:Nigeria">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:La" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:La" target="Country:Namibia">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:La" target="Country:Tanzania">
+<edge source="Element:La" target="Country:Madagascar">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:NiCoMo-P150 LDH" target="Property:specific_capacitance">
@@ -19354,9 +19459,6 @@
   <data key="d23">electrolyte</data>
 </edge>
 <edge source="Element:Pt" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Pt" target="Country:Zimbabwe">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:Co@NiFe-LDH" target="Property:specific_capacitance">
@@ -22066,7 +22168,7 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Nb" target="Country:Democratic Republic of the Congo">
+<edge source="Element:Nb" target="Country:Congo (Kinshasa)">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:Nb" target="Country:Rwanda">
@@ -23584,16 +23686,10 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Ce" target="Country:Malawi">
+<edge source="Element:Ce" target="Country:Nigeria">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Ce" target="Country:South Africa">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Ce" target="Country:Namibia">
-  <data key="d14">suppliedBy</data>
-</edge>
-<edge source="Element:Ce" target="Country:Tanzania">
+<edge source="Element:Ce" target="Country:Madagascar">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Material:CuMn2O4/Ti3C2" target="Property:specific_capacitance">
@@ -25976,13 +26072,22 @@
   <data key="d14">usesComponent</data>
   <data key="d23">electrolyte</data>
 </edge>
-<edge source="Element:Ta" target="Country:Democratic Republic of the Congo">
+<edge source="Element:Ta" target="Country:Congo (Kinshasa)">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:Ta" target="Country:Nigeria">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Element:Ta" target="Country:Rwanda">
   <data key="d14">suppliedBy</data>
 </edge>
-<edge source="Element:Ta" target="Country:Nigeria">
+<edge source="Element:Ta" target="Country:Mozambique">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:Ta" target="Country:Ethiopia">
+  <data key="d14">suppliedBy</data>
+</edge>
+<edge source="Element:Ta" target="Country:Burundi">
   <data key="d14">suppliedBy</data>
 </edge>
 <edge source="Paper:AHSC-0353" target="Material:Surface modified Zn">
@@ -26570,7 +26675,7 @@
   <data key="d15">[4.3]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0001-potential_window"]</data>
-  <data key="d18">["LLZO-0001"]</data>
+  <data key="d18">["10.1002/inf2.70012"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">4.3</data>
@@ -26582,7 +26687,7 @@
 <edge source="Material:3D LLZO-PAN" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:3D LLZO-PAN" target="Paper:LLZO-0001">
+<edge source="Material:3D LLZO-PAN" target="Paper:10.1002/inf2.70012">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:3D LLZO-PAN" target="Element:C">
@@ -26611,7 +26716,7 @@
   <data key="d15">[187.1]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["LLZO-0001-specific_capacity"]</data>
-  <data key="d18">["LLZO-0001"]</data>
+  <data key="d18">["10.1002/inf2.70012"]</data>
   <data key="d19">["0.1 C"]</data>
   <data key="d20">1</data>
   <data key="d21">187.1</data>
@@ -26622,7 +26727,7 @@
   <data key="d15">[345.8]</data>
   <data key="d16">["Wh/kg"]</data>
   <data key="d17">["LLZO-0001-specific_energy"]</data>
-  <data key="d18">["LLZO-0001"]</data>
+  <data key="d18">["10.1002/inf2.70012"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">345.8</data>
@@ -26633,7 +26738,7 @@
   <data key="d15">[89.8]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0001-cycling_stability"]</data>
-  <data key="d18">["LLZO-0001"]</data>
+  <data key="d18">["10.1002/inf2.70012"]</data>
   <data key="d19">["after 100 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">89.8</data>
@@ -26644,7 +26749,7 @@
   <data key="d15">[90.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0001-capacity_retention"]</data>
-  <data key="d18">["LLZO-0001"]</data>
+  <data key="d18">["10.1002/inf2.70012"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">90.0</data>
@@ -26652,20 +26757,20 @@
 </edge>
 <edge source="Material:3D LLZO-PAN" target="Property:ionic_conductivity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[0.00029]</data>
-  <data key="d16">["S/cm"]</data>
-  <data key="d17">["LLZO-0001-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0001"]</data>
-  <data key="d19">[""]</data>
-  <data key="d20">1</data>
+  <data key="d15">[0.00029, 0.00029]</data>
+  <data key="d16">["S/cm", "S/cm"]</data>
+  <data key="d17">["LLZO-0001-ionic_conductivity", "10.1002/inf2.70012-000-ionic_conductivity"]</data>
+  <data key="d18">["10.1002/inf2.70012", "10.1002/inf2.70012"]</data>
+  <data key="d19">["", ""]</data>
+  <data key="d20">2</data>
   <data key="d21">0.00029</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0001" target="Material:LiNi0.8Co0.1Mn0.1O2">
+<edge source="Paper:10.1002/inf2.70012" target="Material:LiNi0.8Co0.1Mn0.1O2">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0001" target="Material:Lithium metal">
+<edge source="Paper:10.1002/inf2.70012" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -33701,7 +33806,7 @@
   <data key="d15">[5.08]</data>
   <data key="d16">["V"]</data>
   <data key="d17">["LLZO-0121-potential_window"]</data>
-  <data key="d18">["LLZO-0121"]</data>
+  <data key="d18">["10.1038/s41467-023-37997-6"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">5.08</data>
@@ -33713,7 +33818,7 @@
 <edge source="Material:VEC-OFHDODA - LiTFSI" target="System:LLZO">
   <data key="d14">inSystem</data>
 </edge>
-<edge source="Material:VEC-OFHDODA - LiTFSI" target="Paper:LLZO-0121">
+<edge source="Material:VEC-OFHDODA - LiTFSI" target="Paper:10.1038/s41467-023-37997-6">
   <data key="d14">studiedIn</data>
 </edge>
 <edge source="Material:VEC-OFHDODA - LiTFSI" target="Element:C">
@@ -33739,7 +33844,7 @@
   <data key="d15">[164.19]</data>
   <data key="d16">["mAh/g"]</data>
   <data key="d17">["LLZO-0121-specific_capacity"]</data>
-  <data key="d18">["LLZO-0121"]</data>
+  <data key="d18">["10.1038/s41467-023-37997-6"]</data>
   <data key="d19">[""]</data>
   <data key="d20">1</data>
   <data key="d21">164.19</data>
@@ -33750,7 +33855,7 @@
   <data key="d15">[90.0]</data>
   <data key="d16">["%"]</data>
   <data key="d17">["LLZO-0121-cycling_stability"]</data>
-  <data key="d18">["LLZO-0121"]</data>
+  <data key="d18">["10.1038/s41467-023-37997-6"]</data>
   <data key="d19">["after 200 cycles"]</data>
   <data key="d20">1</data>
   <data key="d21">90.0</data>
@@ -33761,17 +33866,17 @@
   <data key="d15">[0.00137]</data>
   <data key="d16">["S/cm"]</data>
   <data key="d17">["LLZO-0121-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0121"]</data>
+  <data key="d18">["10.1038/s41467-023-37997-6"]</data>
   <data key="d19">["25 \u00b0C (unit implied)"]</data>
   <data key="d20">1</data>
   <data key="d21">0.00137</data>
   <data key="d22">S/cm</data>
 </edge>
-<edge source="Paper:LLZO-0121" target="Material:LiFePO4 (LFP)">
+<edge source="Paper:10.1038/s41467-023-37997-6" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>
   <data key="d23">cathode</data>
 </edge>
-<edge source="Paper:LLZO-0121" target="Material:Lithium metal">
+<edge source="Paper:10.1038/s41467-023-37997-6" target="Material:Lithium metal">
   <data key="d14">usesComponent</data>
   <data key="d23">anode</data>
 </edge>
@@ -34635,14 +34740,17 @@
 </edge>
 <edge source="Material:PEO-b-vCHO (with LiTFSI)" target="Property:ionic_conductivity">
   <data key="d14">hasProperty</data>
-  <data key="d15">[0.0091]</data>
-  <data key="d16">["S/cm"]</data>
-  <data key="d17">["LLZO-0139-ionic_conductivity"]</data>
-  <data key="d18">["LLZO-0139"]</data>
-  <data key="d19">["60 \u00b0C (unit implied)"]</data>
-  <data key="d20">1</data>
+  <data key="d15">[0.0091, 0.0091]</data>
+  <data key="d16">["S/cm", "S/cm"]</data>
+  <data key="d17">["LLZO-0139-ionic_conductivity", "https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe-000-ionic_conductivity"]</data>
+  <data key="d18">["LLZO-0139", "https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe"]</data>
+  <data key="d19">["60 \u00b0C (unit implied)", "60 \u00b0C"]</data>
+  <data key="d20">2</data>
   <data key="d21">0.0091</data>
   <data key="d22">S/cm</data>
+</edge>
+<edge source="Material:PEO-b-vCHO (with LiTFSI)" target="Paper:https://ora.ox.ac.uk/objects/uuid:d1d72007-bcbe-4846-8f17-4ca3487f05fe">
+  <data key="d14">studiedIn</data>
 </edge>
 <edge source="Paper:LLZO-0139" target="Material:LiFePO4 (LFP)">
   <data key="d14">usesComponent</data>

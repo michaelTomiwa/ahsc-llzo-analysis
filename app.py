@@ -51,7 +51,16 @@ def extraction_benchmark() -> dict:
 
 
 def doi_link(citation: dict) -> str:
-    return f"[{citation['doi']}](https://doi.org/{citation['doi']})" if citation.get("doi") else citation["source"]
+    if citation.get("doi"):
+        link = f"[{citation['doi']}](https://doi.org/{citation['doi']})"
+    elif citation.get("url"):
+        link = f"[paper]({citation['url']})"
+    else:
+        link = citation["source"]
+    if citation.get("review_doi"):
+        qualifier = "" if citation.get("review_link") == "verified_row" else ", probable"
+        link += f" · curated from review [{citation['review_doi']}](https://doi.org/{citation['review_doi']}){qualifier}"
+    return link
 
 
 def show_citations(citations: list[dict], limit: int = 10) -> None:
@@ -256,7 +265,7 @@ with tabs[2]:
                 support = [E.by_id[i] for i in h.get("supporting_fact_ids", []) if i in E.by_id]
                 for fact in support[:5]:
                     st.markdown(f"- `{fact['id']}` {fact['material']}: {fact['value']:.4g} {fact['unit']} — "
-                                f"“{fact['evidence_span']}” ({fact['source'].get('doi') or fact['source']['file']})")
+                                f"“{fact['evidence_span']}” ({fact['source'].get('doi') or fact['source'].get('review_doi') or fact['source']['file']})")
         export = {k: v for k, v in report.items() if k != "context"}
         d1, d2, d3, d4 = st.columns(4)
         d1.download_button("Hypotheses (JSON)", json.dumps(export, indent=2, default=str), "hypotheses.json", "application/json")
@@ -315,7 +324,8 @@ with tabs[4]:
     a1, a2 = st.columns([1, 1.2])
     with a1:
         st.subheader("Element supply table")
-        st.dataframe(supply_table()[["element", "status", "african_countries", "note"]], hide_index=True,
+        st.dataframe(supply_table()[["element", "status", "african_countries", "usgs_2024_african_production",
+                                    "verification", "source_url"]], hide_index=True,
                      width="stretch", height=420)
     with a2:
         st.subheader("Best-performing Africa-compatible materials")
@@ -372,8 +382,12 @@ with tabs[5]:
     flagged = facts_df[facts_df.quality_flags.map(lambda f: bool(set(f) - {"unit_assumed"}))]
     st.dataframe(flagged[["id", "material", "property", "value", "unit", "evidence_span", "quality_flags", "confidence"]],
                  hide_index=True, width="stretch")
-    st.markdown(f"**DOIs linked:** {quality['facts_with_doi']} facts. Add DOIs to `data/record_sources.csv` "
-                "(one row per curated record) and rebuild to attach them to every fact, citation and hypothesis.")
+    links = quality["record_links"]
+    st.markdown(f"**Source links:** {links['paper_doi']} records with a paper DOI ({links['paper_doi_value_verified']} "
+                f"verified against the paper's own values, {links['paper_doi_title_match']} by exact title), "
+                f"{links['paper_verified_url_only']} verified papers without a DOI, {links['source_review_verified_row']} "
+                f"records traced to a verified source-review table and {links['source_review_block_inferred']} more by "
+                f"block inference. Provenance: `data/provenance/`; resolver: `python -m knowledge_engine.record_sources resolve`.")
     with st.expander("Ontology (schema.json)"):
         st.json(json.loads(SCHEMA_PATH.read_text()))
     st.download_button("Download all facts (JSONL)", "\n".join(json.dumps(f, ensure_ascii=False) for f in E.facts),

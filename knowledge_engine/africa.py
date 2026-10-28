@@ -5,8 +5,9 @@ Africa is a structural design principle of the engine, not a separate tab:
 - literature ingestion queries are biased towards Africa-relevant chemistries;
 - hypothesis generation receives these constraints and hypotheses are re-ranked by them.
 
-Supply statuses are qualitative indicators curated from USGS sources (see
-data/africa_element_supply.csv). They are not reserve estimates or investment advice.
+Supply statuses and 2024 production figures come from USGS Mineral Commodity Summaries 2025
+(https://doi.org/10.3133/mcs2025); each row of data/africa_element_supply.csv records how far it
+was verified. They are not reserve estimates or investment advice.
 """
 from __future__ import annotations
 
@@ -69,7 +70,7 @@ def countries_for(element: str) -> list[str]:
     if not row or row["status"] == "ubiquitous":
         return []
     return [country.strip() for country in re.split(r";", row["african_countries"]) if country.strip()
-            and "(" not in country and "continent" not in country]
+            and "continent" not in country]
 
 
 def feasibility_from_temperature(temperature_c: float | None) -> float:
