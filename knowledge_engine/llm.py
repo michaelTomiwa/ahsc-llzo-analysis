@@ -1,6 +1,6 @@
 """LLM provider layer: the reasoning engine behind extraction, GraphRAG and hypotheses.
 
-Provider order: Anthropic Claude (ANTHROPIC_API_KEY) -> OpenAI (OPENAI_API_KEY) -> offline.
+Provider order: Anthropic (ANTHROPIC_API_KEY) -> OpenAI (OPENAI_API_KEY) -> offline.
 Offline mode keeps the app, API and tests working with transparent rule-based fallbacks,
 and every caller reports which mode produced its output.
 """

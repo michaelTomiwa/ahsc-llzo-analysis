@@ -103,7 +103,7 @@ def test_llm_layer_parses_structured_output(monkeypatch):
 
     class Response:
         stop_reason = "end_turn"
-        model = "claude-test"
+        model = "test-model"
         content = [Block()]
 
     class Messages:
@@ -122,22 +122,22 @@ def test_llm_layer_parses_structured_output(monkeypatch):
     monkeypatch.setenv("KE_LLM_PROVIDER", "")
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test")
     result = llm.complete("hi", schema={"type": "object"})
-    assert result.data == {"facts": []} and result.mode == "anthropic:claude-test"
+    assert result.data == {"facts": []} and result.mode == "anthropic:test-model"
 
 
-def test_model_evaluation_inputs_and_baseline():
-    import numpy as np
 
-    from knowledge_engine.model_evaluation import FamilyMedian, _features, ahsc_table
+def test_model_evaluation_follows_thesis_protocol():
+    from knowledge_engine.model_evaluation import CATEGORICAL, TOP_N, _inputs, ahsc_table, fit_predictor, predict
 
     table = ahsc_table()
-    assert table.specific_energy.gt(0).sum() >= 50 and table.specific_power.gt(0).sum() >= 40
-    rows = table[table.specific_power.gt(0)]
-    X = _features(rows, ["specific_energy", "potential_window"])
-    assert {"specific_energy", "potential_window"} <= set(X.columns) and X.filter(like="family_").shape[1] > 1
-    y = np.log10(rows.specific_power)
-    predicted = FamilyMedian().fit(X, y).predict(X)
-    assert len(predicted) == len(y) and np.isfinite(predicted).all()
+    assert len(table) == 369
+    assert table.specific_energy_wh_kg.notna().sum() == 72 and table.specific_power_w_kg.notna().sum() == 52
+    for column in CATEGORICAL:
+        assert table[column].nunique() <= TOP_N + 1  # top 10 names + "Other"
+    assert "specific_energy_wh_kg" not in _inputs("specific_power_w_kg", without_linked=True)
+    pipeline, _, numeric, _ = fit_predictor("specific_power_w_kg", "Ridge regression")
+    estimate = predict(pipeline, numeric, {"specific_energy_wh_kg": 40}, {"anode_material": "AC"})
+    assert 1 < estimate < 1e6
 
 
 def test_model_evaluation_report_is_committed():
@@ -146,5 +146,8 @@ def test_model_evaluation_report_is_committed():
     from knowledge_engine.model_evaluation import REPORT_PATH
 
     report = json.loads(REPORT_PATH.read_text())
-    assert {r["target"] for r in report["results"]} == {"specific_energy", "specific_power"}
-    assert report["thesis_model"]["single_split_test_records"] == 7
+    assert {r["target"] for r in report["results"]} == {"specific_energy_wh_kg", "specific_power_w_kg"}
+    best = {r["target"]: r["r2_mean"] for r in report["results"] if r["model"] != "Mean baseline"
+            and r["r2_mean"] == max(x["r2_mean"] for x in report["results"] if x["target"] == r["target"])}
+    baseline = {r["target"]: r["r2_mean"] for r in report["results"] if r["model"] == "Mean baseline"}
+    assert all(best[t] > baseline[t] + 0.2 for t in best)

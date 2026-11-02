@@ -9,7 +9,7 @@ networkx>=3.2
 requests>=2.31
 pypdf>=4.0
 python-dotenv>=1.0
-# LLM providers (Claude is primary; OpenAI optional)
+# LLM providers (Anthropic is primary; OpenAI optional)
 anthropic>=2.3
 openai>=1.40
 # App + API

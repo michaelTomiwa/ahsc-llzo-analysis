@@ -27,7 +27,7 @@ flowchart TB
   end
   subgraph Extract[2. Extract + ground]
     DIG[Digitiser\nunit / range / outlier checks]
-    LLM[Claude schema-enforced extraction\nregex fallback]
+    LLM[LLM schema-enforced extraction\nregex fallback]
     VER{verify_evidence\nverbatim span?}
   end
   subgraph Know[3. Knowledge]
@@ -82,7 +82,7 @@ it, search uses a scikit-learn LSA index.
 | **Research Map** | Centrality, family × property coverage heat-map, gap analysis, property co-occurrence, LLZO dopant summary | Research maps |
 | **Africa Focus** | Element-supply table, best Africa-compatible materials, supply vs performance, composition checker | Africa relevance |
 | **Data Quality** | Grounding rate, extraction precision/recall per property, quality flags, flagged-fact review | Scientific rigour |
-| **Model Evaluation** | Held-out R² bar charts for energy and power density against mean and family-median baselines, a re-test of the thesis R² of 0.277, and a predictor | Evaluation |
+| **Model Evaluation** | Held-out R² bar charts for energy and power density against a mean baseline, side by side with thesis Table 5.2, and a predictor | Evaluation |
 | **Thesis Analytics** | The original performance explorer | Bridge to Track 3 |
 
 ## Modules
@@ -93,7 +93,7 @@ it, search uses a scikit-learn LSA index.
 | `schema.json` + ontology README | [`schema.json`](schema.json), [`docs/ONTOLOGY.md`](docs/ONTOLOGY.md) |
 | Semantic index (ChromaDB/FAISS) | `knowledge_engine/search.py`: sentence-transformers `all-MiniLM-L6-v2` + persistent ChromaDB, or a TF-IDF + SVD fallback |
 | Corpus expansion (`data/literature/`, `metadata.json`) | `knowledge_engine/literature.py`: OpenAlex search with Africa-relevant queries, Crossref DOI lookup, abstract mining |
-| `extraction.py` + precision/recall | `knowledge_engine/extraction.py`: Claude structured-output extraction, regex fallback, PDF support, `validate()` benchmark |
+| `extraction.py` + precision/recall | `knowledge_engine/extraction.py`: LLM structured-output extraction, regex fallback, PDF support, `validate()` benchmark |
 | `verify_evidence()` + ≥ 95 % grounding report | `knowledge_engine/evidence.py`; `reports/data_quality.json` |
 | `knowledge_graph.py` + GraphML | `knowledge_engine/knowledge_graph.py`: build, centrality, co-occurrence, gap analysis, sparse cells, dopant effects, GraphML export |
 | `graph_rag.py` | `knowledge_engine/graph_rag.py`: entity extraction → neighbourhood + semantic retrieval → cited synthesis |
@@ -107,7 +107,7 @@ it, search uses a scikit-learn LSA index.
 
 ```bash
 python -m knowledge_engine.facts                                   # rebuild thesis_facts.jsonl
-python -m knowledge_engine.extraction --validate                   # benchmark (add --llm --limit 40 for Claude)
+python -m knowledge_engine.extraction --validate                   # benchmark (add --llm --limit 40 for the LLM)
 python -m knowledge_engine.extraction paper.pdf                    # extract grounded facts from a PDF
 python -m knowledge_engine.literature harvest --per-query 40       # grow the corpus (needs network)
 python -m knowledge_engine.literature provenance                   # add verified source papers to the corpus
@@ -143,10 +143,11 @@ python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature 
 - Supply statuses and 2024 production figures were checked against USGS *Mineral Commodity Summaries 2025*
   (each row of `data/africa_element_supply.csv` records its verification level). They are not reserve estimates or
   investment advice.
-- Model evaluation: the thesis random forest's R² of 0.277 came from one 80/20 split with 7 test records. Under
-  10 × 5-fold cross-validation it scores −0.35 against −0.07 for a mean baseline. On the cleaned facts, a random forest
-  predicts AHSC power density with R² 0.47 (0.28 without specific energy as an input). No model yet beats the
-  baseline for energy density (`reports/model_evaluation.json`).
+- Model evaluation follows the thesis protocol (Table 5.2: log targets, top-10 cathode, anode and electrolyte names,
+  Ridge and Random Forest) with the 5-fold split repeated 10 times. Against a mean baseline (R² −0.04 to −0.05),
+  Ridge predicts AHSC energy density with held-out R² 0.44 (thesis 0.352) and a Random Forest predicts power density
+  with 0.46 (thesis 0.277); without the linked energy/power input the scores are 0.43 and 0.40
+  (`reports/model_evaluation.json`).
 - Hypotheses are research suggestions to test, not conclusions. Each one lists its evidence and a validation
   experiment, and offline "domain prior" hypotheses are labelled as such.
 
