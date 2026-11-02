@@ -1,0 +1,5 @@
+# Optional: neural embeddings + persistent vector store for semantic search.
+# Without these, the engine uses a TF-IDF + SVD (LSA) index from scikit-learn.
+-r requirements.txt
+sentence-transformers>=3.0
+chromadb>=0.5

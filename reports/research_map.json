@@ -1,0 +1,677 @@
+{
+  "graph": {
+    "nodes": 1319,
+    "edges": 5022,
+    "node_types": {
+      "Material": 687,
+      "Property": 9,
+      "Paper": 525,
+      "MaterialFamily": 26,
+      "System": 2,
+      "Element": 43,
+      "Country": 25,
+      "Dopant": 2
+    },
+    "edge_types": {
+      "hasProperty": 1126,
+      "memberOf": 469,
+      "inSystem": 468,
+      "studiedIn": 529,
+      "containsElement": 1654,
+      "usesComponent": 711,
+      "suppliedBy": 54,
+      "dopedWith": 11
+    }
+  },
+  "top_materials": [
+    {
+      "node": "Lithium metal",
+      "degree_centrality": 0.10167,
+      "degree": 134,
+      "papers": 134
+    },
+    {
+      "node": "LiFePO4 (LFP)",
+      "degree_centrality": 0.09863,
+      "degree": 130,
+      "papers": 130
+    },
+    {
+      "node": "Activated carbon",
+      "degree_centrality": 0.04097,
+      "degree": 54,
+      "papers": 44
+    },
+    {
+      "node": "6 M KOH",
+      "degree_centrality": 0.01821,
+      "degree": 24,
+      "papers": 24
+    },
+    {
+      "node": "1 M H2SO4",
+      "degree_centrality": 0.01517,
+      "degree": 20,
+      "papers": 20
+    },
+    {
+      "node": "PVA/H2SO4",
+      "degree_centrality": 0.01366,
+      "degree": 18,
+      "papers": 18
+    },
+    {
+      "node": "1 M KOH",
+      "degree_centrality": 0.0129,
+      "degree": 17,
+      "papers": 17
+    },
+    {
+      "node": "1 M Na2SO4",
+      "degree_centrality": 0.01214,
+      "degree": 16,
+      "papers": 16
+    },
+    {
+      "node": "2 M KOH",
+      "degree_centrality": 0.00986,
+      "degree": 13,
+      "papers": 13
+    },
+    {
+      "node": "3 M KOH",
+      "degree_centrality": 0.0091,
+      "degree": 12,
+      "papers": 12
+    },
+    {
+      "node": "LiPF6",
+      "degree_centrality": 0.0091,
+      "degree": 12,
+      "papers": 12
+    },
+    {
+      "node": "1 M LiPF6",
+      "degree_centrality": 0.00759,
+      "degree": 10,
+      "papers": 10
+    },
+    {
+      "node": "1 M LiTFSI",
+      "degree_centrality": 0.00607,
+      "degree": 8,
+      "papers": 8
+    },
+    {
+      "node": "NaClO4",
+      "degree_centrality": 0.00531,
+      "degree": 7,
+      "papers": 7
+    },
+    {
+      "node": "Ionic liquid",
+      "degree_centrality": 0.00531,
+      "degree": 7,
+      "papers": 7
+    }
+  ],
+  "top_families": [
+    {
+      "node": "MXene",
+      "degree_centrality": 0.07967,
+      "degree": 105,
+      "papers": 112
+    },
+    {
+      "node": "Carbon",
+      "degree_centrality": 0.04401,
+      "degree": 58,
+      "papers": 102
+    },
+    {
+      "node": "Layered double hydroxide",
+      "degree_centrality": 0.03566,
+      "degree": 47,
+      "papers": 48
+    },
+    {
+      "node": "Other polymer electrolyte",
+      "degree_centrality": 0.0349,
+      "degree": 46,
+      "papers": 47
+    },
+    {
+      "node": "PEO/PEG polymer",
+      "degree_centrality": 0.03035,
+      "degree": 40,
+      "papers": 42
+    },
+    {
+      "node": "Transition-metal oxide",
+      "degree_centrality": 0.02276,
+      "degree": 30,
+      "papers": 34
+    },
+    {
+      "node": "Other",
+      "degree_centrality": 0.01745,
+      "degree": 23,
+      "papers": 24
+    },
+    {
+      "node": "Manganese oxide",
+      "degree_centrality": 0.01669,
+      "degree": 22,
+      "papers": 24
+    },
+    {
+      "node": "Garnet LLZO",
+      "degree_centrality": 0.00759,
+      "degree": 10,
+      "papers": 22
+    },
+    {
+      "node": "Ni/Co oxide-hydroxide",
+      "degree_centrality": 0.01138,
+      "degree": 15,
+      "papers": 17
+    },
+    {
+      "node": "PVDF-based polymer",
+      "degree_centrality": 0.01062,
+      "degree": 14,
+      "papers": 14
+    },
+    {
+      "node": "Conducting polymer",
+      "degree_centrality": 0.0091,
+      "degree": 12,
+      "papers": 12
+    },
+    {
+      "node": "Metal phosphide",
+      "degree_centrality": 0.00835,
+      "degree": 11,
+      "papers": 12
+    },
+    {
+      "node": "PAN polymer",
+      "degree_centrality": 0.00455,
+      "degree": 6,
+      "papers": 7
+    },
+    {
+      "node": "Bio-derived polymer",
+      "degree_centrality": 0.00379,
+      "degree": 5,
+      "papers": 5
+    }
+  ],
+  "top_elements": [
+    {
+      "node": "C",
+      "degree_centrality": 0.21244,
+      "degree": 280,
+      "papers": 325
+    },
+    {
+      "node": "O",
+      "degree_centrality": 0.1525,
+      "degree": 201,
+      "papers": 225
+    },
+    {
+      "node": "N",
+      "degree_centrality": 0.10774,
+      "degree": 142,
+      "papers": 148
+    },
+    {
+      "node": "Li",
+      "degree_centrality": 0.09181,
+      "degree": 121,
+      "papers": 141
+    },
+    {
+      "node": "S",
+      "degree_centrality": 0.09712,
+      "degree": 128,
+      "papers": 132
+    },
+    {
+      "node": "F",
+      "degree_centrality": 0.07815,
+      "degree": 103,
+      "papers": 107
+    },
+    {
+      "node": "Ti",
+      "degree_centrality": 0.07663,
+      "degree": 101,
+      "papers": 102
+    },
+    {
+      "node": "H",
+      "degree_centrality": 0.06829,
+      "degree": 90,
+      "papers": 94
+    },
+    {
+      "node": "Co",
+      "degree_centrality": 0.05463,
+      "degree": 72,
+      "papers": 79
+    },
+    {
+      "node": "P",
+      "degree_centrality": 0.0607,
+      "degree": 80,
+      "papers": 77
+    },
+    {
+      "node": "Ni",
+      "degree_centrality": 0.05159,
+      "degree": 68,
+      "papers": 70
+    },
+    {
+      "node": "Mn",
+      "degree_centrality": 0.02959,
+      "degree": 39,
+      "papers": 39
+    },
+    {
+      "node": "Fe",
+      "degree_centrality": 0.02276,
+      "degree": 30,
+      "papers": 29
+    },
+    {
+      "node": "Zr",
+      "degree_centrality": 0.01669,
+      "degree": 22,
+      "papers": 28
+    },
+    {
+      "node": "La",
+      "degree_centrality": 0.01366,
+      "degree": 18,
+      "papers": 28
+    }
+  ],
+  "property_cooccurrence": [
+    {
+      "property_a": "cycling_stability",
+      "property_b": "specific_capacitance",
+      "records_with_both": 192,
+      "jaccard": 0.463
+    },
+    {
+      "property_a": "cycling_stability",
+      "property_b": "potential_window",
+      "records_with_both": 136,
+      "jaccard": 0.32
+    },
+    {
+      "property_a": "cycling_stability",
+      "property_b": "specific_capacity",
+      "records_with_both": 86,
+      "jaccard": 0.209
+    },
+    {
+      "property_a": "cycling_stability",
+      "property_b": "ionic_conductivity",
+      "records_with_both": 81,
+      "jaccard": 0.196
+    },
+    {
+      "property_a": "potential_window",
+      "property_b": "specific_capacity",
+      "records_with_both": 79,
+      "jaccard": 0.283
+    },
+    {
+      "property_a": "ionic_conductivity",
+      "property_b": "specific_capacity",
+      "records_with_both": 77,
+      "jaccard": 0.36
+    },
+    {
+      "property_a": "ionic_conductivity",
+      "property_b": "potential_window",
+      "records_with_both": 72,
+      "jaccard": 0.254
+    },
+    {
+      "property_a": "potential_window",
+      "property_b": "specific_capacitance",
+      "records_with_both": 64,
+      "jaccard": 0.158
+    },
+    {
+      "property_a": "cycling_stability",
+      "property_b": "specific_energy",
+      "records_with_both": 53,
+      "jaccard": 0.141
+    },
+    {
+      "property_a": "cycling_stability",
+      "property_b": "specific_power",
+      "records_with_both": 50,
+      "jaccard": 0.14
+    },
+    {
+      "property_a": "specific_energy",
+      "property_b": "specific_power",
+      "records_with_both": 50,
+      "jaccard": 0.575
+    },
+    {
+      "property_a": "specific_capacitance",
+      "property_b": "specific_energy",
+      "records_with_both": 44,
+      "jaccard": 0.15
+    },
+    {
+      "property_a": "potential_window",
+      "property_b": "specific_energy",
+      "records_with_both": 37,
+      "jaccard": 0.146
+    },
+    {
+      "property_a": "specific_capacitance",
+      "property_b": "specific_power",
+      "records_with_both": 32,
+      "jaccard": 0.113
+    },
+    {
+      "property_a": "potential_window",
+      "property_b": "rate_capability",
+      "records_with_both": 20,
+      "jaccard": 0.095
+    }
+  ],
+  "gaps": [
+    {
+      "system": "AHSC",
+      "entity": "Metal phosphide",
+      "missing_property": "potential_window",
+      "entity_records": 12,
+      "property_share_in_system": 0.31,
+      "africa_score": 0.9,
+      "priority": 0.744
+    },
+    {
+      "system": "AHSC",
+      "entity": "Conducting polymer",
+      "missing_property": "specific_energy",
+      "entity_records": 12,
+      "property_share_in_system": 0.2,
+      "africa_score": 0.99,
+      "priority": 0.729
+    },
+    {
+      "system": "AHSC",
+      "entity": "Lithium metal",
+      "missing_property": "specific_capacitance",
+      "entity_records": 4,
+      "property_share_in_system": 0.67,
+      "africa_score": 1.0,
+      "priority": 0.725
+    },
+    {
+      "system": "AHSC",
+      "entity": "Metal phosphide",
+      "missing_property": "specific_energy",
+      "entity_records": 12,
+      "property_share_in_system": 0.2,
+      "africa_score": 0.9,
+      "priority": 0.711
+    },
+    {
+      "system": "LLZO",
+      "entity": "Bio-derived polymer",
+      "missing_property": "specific_capacity",
+      "entity_records": 4,
+      "property_share_in_system": 0.59,
+      "africa_score": 0.97,
+      "priority": 0.695
+    },
+    {
+      "system": "LLZO",
+      "entity": "Bio-derived polymer",
+      "missing_property": "potential_window",
+      "entity_records": 4,
+      "property_share_in_system": 0.58,
+      "africa_score": 0.97,
+      "priority": 0.692
+    },
+    {
+      "system": "LLZO",
+      "entity": "Oxide filler (LATP/LLTO)",
+      "missing_property": "specific_capacity",
+      "entity_records": 4,
+      "property_share_in_system": 0.59,
+      "africa_score": 0.88,
+      "priority": 0.677
+    },
+    {
+      "system": "LLZO",
+      "entity": "Bio-derived polymer",
+      "missing_property": "cycling_stability",
+      "entity_records": 4,
+      "property_share_in_system": 0.49,
+      "africa_score": 0.97,
+      "priority": 0.665
+    },
+    {
+      "system": "AHSC",
+      "entity": "Lithium metal",
+      "missing_property": "potential_window",
+      "entity_records": 4,
+      "property_share_in_system": 0.31,
+      "africa_score": 1.0,
+      "priority": 0.617
+    },
+    {
+      "system": "AHSC",
+      "entity": "Lithium metal",
+      "missing_property": "specific_energy",
+      "entity_records": 4,
+      "property_share_in_system": 0.2,
+      "africa_score": 1.0,
+      "priority": 0.584
+    },
+    {
+      "system": "AHSC",
+      "entity": "Other polymer electrolyte",
+      "missing_property": "cycling_stability",
+      "entity_records": 3,
+      "property_share_in_system": 0.71,
+      "africa_score": 0.9,
+      "priority": 0.511
+    },
+    {
+      "system": "AHSC",
+      "entity": "Other polymer electrolyte",
+      "missing_property": "specific_capacitance",
+      "entity_records": 3,
+      "property_share_in_system": 0.67,
+      "africa_score": 0.9,
+      "priority": 0.499
+    },
+    {
+      "system": "LLZO",
+      "entity": "Sulfide solid electrolyte",
+      "missing_property": "specific_capacity",
+      "entity_records": 3,
+      "property_share_in_system": 0.59,
+      "africa_score": 0.94,
+      "priority": 0.483
+    },
+    {
+      "system": "LLZO",
+      "entity": "Sulfide solid electrolyte",
+      "missing_property": "potential_window",
+      "entity_records": 3,
+      "property_share_in_system": 0.58,
+      "africa_score": 0.94,
+      "priority": 0.48
+    },
+    {
+      "system": "LLZO",
+      "entity": "Ionic liquid",
+      "missing_property": "potential_window",
+      "entity_records": 3,
+      "property_share_in_system": 0.58,
+      "africa_score": 0.79,
+      "priority": 0.45
+    },
+    {
+      "system": "AHSC",
+      "entity": "Other polymer electrolyte",
+      "missing_property": "potential_window",
+      "entity_records": 3,
+      "property_share_in_system": 0.31,
+      "africa_score": 0.9,
+      "priority": 0.391
+    },
+    {
+      "system": "AHSC",
+      "entity": "Other polymer electrolyte",
+      "missing_property": "specific_energy",
+      "entity_records": 3,
+      "property_share_in_system": 0.2,
+      "africa_score": 0.9,
+      "priority": 0.358
+    }
+  ],
+  "dopant_effects": [
+    {
+      "dopant": "Ta",
+      "property": "capacity_retention",
+      "unit": "%",
+      "count": 1,
+      "median": 90.0,
+      "min": 90.0,
+      "max": 90.0
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "capacity_retention",
+      "unit": "%",
+      "count": 1,
+      "median": 90.0,
+      "min": 90.0,
+      "max": 90.0
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "cycling_stability",
+      "unit": "%",
+      "count": 75,
+      "median": 90.0,
+      "min": 2.0,
+      "max": 100.0
+    },
+    {
+      "dopant": "Ta",
+      "property": "cycling_stability",
+      "unit": "%",
+      "count": 4,
+      "median": 89.0,
+      "min": 80.0,
+      "max": 99.0
+    },
+    {
+      "dopant": "Ta",
+      "property": "ionic_conductivity",
+      "unit": "S/cm",
+      "count": 5,
+      "median": 0.000423,
+      "min": 0.00021,
+      "max": 0.000584
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "ionic_conductivity",
+      "unit": "S/cm",
+      "count": 128,
+      "median": 0.000325,
+      "min": 1.24e-07,
+      "max": 0.034
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "potential_window",
+      "unit": "V",
+      "count": 69,
+      "median": 4.86,
+      "min": 2.15,
+      "max": 6.0
+    },
+    {
+      "dopant": "Ta",
+      "property": "potential_window",
+      "unit": "V",
+      "count": 20,
+      "median": 4.25,
+      "min": 3.7,
+      "max": 5.3
+    },
+    {
+      "dopant": "Ga",
+      "property": "potential_window",
+      "unit": "V",
+      "count": 2,
+      "median": 3.9,
+      "min": 3.8,
+      "max": 4.0
+    },
+    {
+      "dopant": "Ta",
+      "property": "specific_capacity",
+      "unit": "mAh/g",
+      "count": 16,
+      "median": 150.0,
+      "min": 94.0,
+      "max": 175.6
+    },
+    {
+      "dopant": "Ga",
+      "property": "specific_capacity",
+      "unit": "mAh/g",
+      "count": 2,
+      "median": 149.65,
+      "min": 149.3,
+      "max": 150.0
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "specific_capacity",
+      "unit": "mAh/g",
+      "count": 73,
+      "median": 141.0,
+      "min": 4.3,
+      "max": 940.0
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "specific_capacity",
+      "unit": "mAh/cm2",
+      "count": 3,
+      "median": 1.43,
+      "min": 1.0,
+      "max": 6.8
+    },
+    {
+      "dopant": "undoped / not stated",
+      "property": "specific_energy",
+      "unit": "Wh/kg",
+      "count": 1,
+      "median": 345.8,
+      "min": 345.8,
+      "max": 345.8
+    }
+  ]
+}
