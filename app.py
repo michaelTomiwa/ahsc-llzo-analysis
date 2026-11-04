@@ -1,11 +1,13 @@
-"""African Battery Materials Knowledge Engine - Streamlit app (Track 1).
+"""African Battery Materials Knowledge Engine - Streamlit app, focused on hybrid supercapacitors (AHSC).
 
-Tabs: Literature Explorer · Knowledge Graph · Hypothesis Generator · Research Map · Africa Focus ·
-Data Quality · Thesis Analytics (the original performance explorer and RF model, kept as a Track 3 bridge).
+Tabs: Materials Copilot · Design Explorer (Pareto slider, SHAP, thesis designs) · Model Evaluation (baseline proof) ·
+Literature Explorer · Knowledge Graph · Hypothesis Generator · Research Map · Africa Focus · Data Quality ·
+Thesis Analytics.
 """
 from __future__ import annotations
 
 import json
+import os
 import tempfile
 from pathlib import Path
 
@@ -13,35 +15,46 @@ import altair as alt
 import numpy as np
 import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as components
 
 from ahsc_llzo_analysis import read_dataset
 from knowledge_engine import llm
 from knowledge_engine.africa import AFRICAN_CONSTRAINTS, africa_profile, supply_table
-from knowledge_engine.config import AHSC_CSV, LLZO_CSV, MINERALS_CSV, REPORTS_DIR, SCHEMA_PATH
+from knowledge_engine.config import AHSC_CSV, MINERALS_CSV, REPORTS_DIR, SCHEMA_PATH
 from knowledge_engine.extraction import extract, pdf_to_text, validate
-from knowledge_engine.facts import facts_frame
+from knowledge_engine.facts import facts_frame, load_facts
 from knowledge_engine.graph_rag import Engine, graph_rag
 from knowledge_engine.hypothesis_engine import EXAMPLE_GOALS, generate_hypotheses
 from knowledge_engine.hypothesis_evaluator import to_design_candidates, to_experiment_plan, to_markdown
-from knowledge_engine.knowledge_graph import (centrality, coverage_matrix, dopant_effects, find_nodes, gap_analysis,
-                                              get_neighborhood, property_cooccurrence, sparse_cells)
+from knowledge_engine.knowledge_graph import (centrality, coverage_matrix, gap_analysis, get_neighborhood,
+                                              property_cooccurrence, sparse_cells)
 from knowledge_engine.pipeline import data_quality_report
+from knowledge_engine.search import SemanticIndex, corpus_documents
 
-COLORS = {"AHSC": "#167cbe", "LLZO": "#18a692"}
+SYSTEM = "AHSC"  # the sprint focus; LLZO stays in the published dataset but not in the app
+COLORS = {"AHSC": "#167cbe"}
+
+# Streamlit Cloud: API keys live in st.secrets; the engine reads them from the environment.
+try:
+    for _key in ("ANTHROPIC_API_KEY", "OPENAI_API_KEY", "KE_ANTHROPIC_MODEL", "KE_OPENAI_MODEL"):
+        if _key in st.secrets and not os.getenv(_key):
+            os.environ[_key] = str(st.secrets[_key])
+except Exception:  # no secrets file: offline mode
+    pass
 NODE_COLORS = {"Material": "#1264C4", "MaterialFamily": "#7B4FD0", "Property": "#D89217", "Element": "#18A692",
                "Dopant": "#D14D72", "Paper": "#8A94A6", "System": "#172038", "Country": "#2E9E4F"}
 
 
 @st.cache_resource(show_spinner="Loading knowledge base, graph and semantic index...")
 def engine() -> Engine:
-    return Engine()
+    facts = [f for f in load_facts() if f["system"] == SYSTEM]
+    docs = [d for d in corpus_documents(facts) if d["metadata"]["system"] != "LLZO"]
+    return Engine(facts=facts, index=SemanticIndex(docs))
 
 
 @st.cache_data
 def thesis_data():
-    ahsc, llzo = read_dataset(AHSC_CSV, "AHSC"), read_dataset(LLZO_CSV, "LLZO")
-    return ahsc, llzo, pd.concat([ahsc, llzo], ignore_index=True), pd.read_csv(MINERALS_CSV)
+    ahsc = read_dataset(AHSC_CSV, "AHSC")
+    return ahsc, pd.read_csv(MINERALS_CSV)
 
 
 @st.cache_data(show_spinner="Cross-validating AHSC models against baselines (about 2 minutes on first run)...")
@@ -96,6 +109,14 @@ def pyvis_html(sub, height: int = 620) -> str:
     return net.generate_html()
 
 
+def show_html(html: str, height: int) -> None:
+    if hasattr(st, "iframe"):
+        st.iframe(html, height=height)
+    else:  # older Streamlit
+        import streamlit.components.v1 as components
+        components.html(html, height=height, scrolling=False)
+
+
 st.set_page_config(page_title="African Battery Materials Knowledge Engine", page_icon="⚡", layout="wide")
 st.markdown("""<style>
 .stApp{background:#f7f8fc;color:#172038}[data-testid="stSidebar"]{background:linear-gradient(180deg,#0b1635,#13285c)}
@@ -121,28 +142,138 @@ with st.sidebar:
     africa_focus = st.toggle("Africa-first mode", value=True,
                              help="Re-ranks retrieval and hypotheses by African element supply, <1000 °C processing "
                                   "and off-grid/EV/grid applications.")
-    system_filter = st.multiselect("Systems", ["AHSC", "LLZO"], default=["AHSC", "LLZO"])
-    st.markdown("---\nSet ANTHROPIC_API_KEY in .env to enable LLM extraction, GraphRAG synthesis and hypothesis agents.")
+    system_filter = [SYSTEM]
+    st.markdown("**Focus:** hybrid supercapacitors (AHSC), 369 curated records")
+    st.markdown("---\nAdd **ANTHROPIC_API_KEY** (or **OPENAI_API_KEY**) as a Streamlit secret or in .env to turn on "
+                "the LLM for the Copilot, extraction, GraphRAG and hypotheses. Everything works offline without it.")
 
 st.markdown("""<div class="hero"><div class="kicker" style="color:#82f0df">Track 1 · Literature → Knowledge → Hypotheses</div>
-<h1>African Battery Materials Knowledge Engine</h1><p>An LLM-powered engine that extracts evidence-grounded facts from
-AHSC and LLZO literature, builds a knowledge graph, and generates testable hypotheses under African constraints —
-validated on 533 manually curated records.</p></div>""", unsafe_allow_html=True)
+<h1>African Battery Materials Knowledge Engine</h1><p>Hybrid supercapacitor (AHSC) design from 369 curated literature
+records: evidence-grounded facts, a knowledge graph, models that beat simple baselines, an energy–power Pareto
+explorer and a Materials Copilot, all under African supply constraints.</p></div>""", unsafe_allow_html=True)
 
-tabs = st.tabs(["Literature Explorer", "Knowledge Graph", "Hypothesis Generator", "Research Map", "Africa Focus",
-                "Data Quality", "Model Evaluation", "Thesis Analytics"])
+TAB_NAMES = ["Materials Copilot", "Design Explorer", "Model Evaluation", "Literature Explorer", "Knowledge Graph",
+             "Hypothesis Generator", "Research Map", "Africa Focus", "Data Quality", "Thesis Analytics"]
+T = dict(zip(TAB_NAMES, st.tabs(TAB_NAMES)))
+
+# ------------------------------------------------------------------ Materials Copilot
+with T["Materials Copilot"]:
+    from knowledge_engine.copilot import recommend
+    st.markdown("<div class='kicker'>Plain-language design requests → evidence-linked recommendations</div>",
+                unsafe_allow_html=True)
+    st.markdown("Ask for what you need, for example *“I need high power density”* or *“above 80 Wh/kg, cobalt-free, "
+                "African materials”*. The Copilot ranks measured devices and the thesis’s predicted designs on the same "
+                "energy–power trade-off as the Design Explorer, filters by your constraints, and explains the result "
+                "with the SHAP drivers.")
+    presets = ["I need high power density", "High energy density above 80 Wh/kg with African materials",
+               "Balanced energy and power with an aqueous electrolyte", "Cobalt-free design for high power"]
+    pick = st.selectbox("Example requests", presets)
+    request_text = st.text_input("Your request", pick)
+    if request_text:
+        with st.spinner("Ranking candidates..."):
+            answer = recommend(request_text)
+        st.markdown(answer["answer"])
+        req = answer["request"]
+        st.caption(f"Mode: {answer['mode']} · energy weight {req['energy_weight']:.1f} · "
+                   f"min energy {req['min_energy'] or '–'} Wh/kg · min power {req['min_power'] or '–'} W/kg · "
+                   f"Africa filter {'on' if req['africa'] else 'off'} · avoid {', '.join(req['avoid']) or 'nothing'} · "
+                   f"aqueous only {'yes' if req['aqueous'] else 'no'}")
+        table = pd.DataFrame(answer["recommendations"])
+        if answer.get("thesis_pick"):
+            table = pd.concat([table, pd.DataFrame([{**answer["thesis_pick"], "rank": "thesis",
+                                                     "kind": "predicted", "source": "Thesis RSM prediction"}])])
+        table["rank"] = table["rank"].astype(str)
+        table = table.astype(object).fillna("")
+        st.dataframe(table[["rank", "anode", "cathode", "electrolyte", "energy_wh_kg", "power_w_kg", "africa_score",
+                            "kind", "source"]], hide_index=True, width="stretch")
+        st.caption("“Measured” values are as reported in the source papers; “predicted” designs come from the thesis "
+                   "RSM desirability optimisation (Table 4.1) and still need experimental validation.")
+
+# ------------------------------------------------------------------ Design Explorer
+with T["Design Explorer"]:
+    from knowledge_engine.design_explorer import (load_shap, measured_devices, nsga2_results, thesis_designs,
+                                                  trade_off_score)
+    st.markdown("<div class='kicker'>Energy–power Pareto front · trade-off slider · SHAP drivers</div>",
+                unsafe_allow_html=True)
+    devices, designs = measured_devices(), thesis_designs()
+    nsga2 = nsga2_results()
+    weight = st.slider("Trade-off: power ← → energy", 0.0, 1.0, 0.5, 0.05,
+                       help="0 = only power density matters, 1 = only energy density; scores use log-scaled values.")
+    pool = pd.concat([devices.assign(kind="Measured device"), designs.assign(kind="Thesis RSM design (predicted)")],
+                     ignore_index=True)
+    pool["score"] = trade_off_score(pool, weight)
+    best = pool.loc[pool.score.idxmax()]
+    k = st.columns(3)
+    k[0].metric("Measured devices", len(devices), help="AHSC records with both energy and power reported, unflagged")
+    k[1].metric("On the measured Pareto front", int((devices.front == 1).sum()))
+    k[2].metric("Thesis RSM designs", len(designs), help="Thesis Table 4.1, predicted")
+    st.success(f"**Best at this trade-off:** {best.anode or 'anode not reported'} // {best.cathode} — "
+               f"{best.energy_wh_kg:.1f} Wh/kg, {best.power_w_kg:,.0f} W/kg ({best.kind.lower()})")
+    groups = {"Measured device": "Measured, dominated", "Thesis RSM design (predicted)": "Thesis RSM design (predicted)"}
+    plot = pool.assign(group=[("Measured, Pareto front" if f == 1 else "Measured, dominated")
+                              if kind == "Measured device" else groups[kind] for kind, f in zip(pool.kind, pool.front)],
+                       design=pool.anode.fillna("") + " // " + pool.cathode.fillna(""))
+    points = alt.Chart(plot).mark_point(filled=True, size=90, opacity=.85).encode(
+        x=alt.X("power_w_kg:Q", scale=alt.Scale(type="log"), title="Power density (W/kg, log)"),
+        y=alt.Y("energy_wh_kg:Q", scale=alt.Scale(type="log"), title="Energy density (Wh/kg, log)"),
+        color=alt.Color("group:N", title=None, scale=alt.Scale(
+            domain=["Measured, Pareto front", "Measured, dominated", "Thesis RSM design (predicted)"],
+            range=["#1264C4", "#B9B4A8", "#D9822B"])),
+        shape=alt.Shape("group:N", title=None, scale=alt.Scale(
+            domain=["Measured, Pareto front", "Measured, dominated", "Thesis RSM design (predicted)"],
+            range=["circle", "circle", "square"])),
+        tooltip=["design", "electrolyte", "energy_wh_kg", "power_w_kg", "front", "kind", "record_id"])
+    front = plot[(plot.kind == "Measured device") & (plot.front == 1)].sort_values("power_w_kg")
+    line = alt.Chart(front).mark_line(color="#1264C4", strokeDash=[4, 3]).encode(x="power_w_kg:Q", y="energy_wh_kg:Q")
+    star = alt.Chart(plot[plot.record_id == best.record_id]).mark_point(shape="diamond", size=520, color="#172038",
+                                                                        filled=False, strokeWidth=2.5).encode(x="power_w_kg:Q",
+                                                                                            y="energy_wh_kg:Q")
+    layers = points + line + star
+    if nsga2 is not None:
+        layers += alt.Chart(nsga2).mark_line(color="#18A692").encode(x="power_w_kg:Q", y="energy_wh_kg:Q")
+    st.altair_chart(layers.properties(height=420).interactive(), width="stretch")
+    st.caption("Pareto ranks use NSGA-II non-dominated sorting (maximise both). Dark diamond: the best design at "
+               "the slider’s trade-off. Orange squares: thesis RSM designs (predicted, Table 4.1). Measured values are as reported in the source papers."
+               + (" Green line: thesis NSGA-II front (data/nsga2_pareto.csv)." if nsga2 is not None else
+                  " Export the thesis NSGA-II front to data/nsga2_pareto.csv to overlay it."))
+    st.subheader("Ranked at this trade-off")
+    st.dataframe(pool.sort_values("score", ascending=False)[["kind", "anode", "cathode", "electrolyte", "energy_wh_kg",
+                                                            "power_w_kg", "front", "africa_score", "record_id"]].head(12),
+                 hide_index=True, width="stretch")
+
+    st.subheader("What drives each prediction (SHAP)")
+    shap = load_shap()
+    if shap:
+        sc = st.columns(len(shap))
+        for col, (target, entry) in zip(sc, shap.items()):
+            data = pd.DataFrame(entry["importance"])
+            col.markdown(f"**{entry['label']}** · {entry['model']}, {entry['records']} records")
+            col.altair_chart(alt.Chart(data).mark_bar(color="#1264C4", cornerRadiusEnd=3).encode(
+                y=alt.Y("label:N", sort="-x", title=None, axis=alt.Axis(labelLimit=240)), x=alt.X("share:Q", axis=alt.Axis(format="%"),
+                                                                    title="Share of mean |SHAP|"),
+                tooltip=["label", "mean_abs_shap", alt.Tooltip("share:Q", format=".0%")]).properties(height=280),
+                width="stretch")
+        st.caption("Material names (anode, cathode, electrolyte) carry much of the signal: performance is largely "
+                   "material-selected. Rerun with `python -m knowledge_engine.design_explorer`.")
+    else:
+        st.info("SHAP values not computed yet: run `python -m knowledge_engine.design_explorer`.")
+
+    with st.expander("Thesis RSM designs (Table 4.1, predicted)"):
+        st.dataframe(designs[["rank", "desirability", "anode", "cathode", "energy_wh_kg", "power_w_kg",
+                              "reaction_time_h", "temperature_c", "electrolyte_conc_m", "mass_loading_mg_cm2",
+                              "africa_score"]], hide_index=True, width="stretch")
 
 # ------------------------------------------------------------------ Literature Explorer
-with tabs[0]:
+with T["Literature Explorer"]:
     st.markdown("<div class='kicker'>Semantic search · GraphRAG · extraction</div>", unsafe_allow_html=True)
     ask_col, search_col = st.columns([1.2, 1])
     with ask_col:
         st.subheader("Ask the knowledge graph")
-        question = st.text_input("Research question", "What dopants improve LLZO ionic conductivity?")
+        question = st.text_input("Research question", "Which AHSC electrode families give the highest specific capacitance?")
         examples = st.columns(3)
-        for col, q in zip(examples, ["Which AHSC electrode families give the highest specific capacitance?",
+        for col, q in zip(examples, ["Which anodes give AHSCs the highest power density?",
                                      "How stable are MnO2-based supercapacitors over long cycling?",
-                                     "Which polymer electrolytes exceed 1 mS/cm?"]):
+                                     "Which electrolytes give the widest AHSC voltage window?"]):
             if col.button(q[:42] + "…", help=q, width="stretch"):
                 question = q
         if question:
@@ -175,8 +306,8 @@ with tabs[0]:
                "Every fact is checked against a verbatim span of the source text.")
     up_col, text_col = st.columns([1, 2])
     upload = up_col.file_uploader("PDF or text", type=["pdf", "txt"])
-    sample = ("Ta-doped Li6.4La3Zr1.4Ta0.6O12 sintered at 1150 °C showed an ionic conductivity of 6.1 × 10−4 S cm−1 "
-              "at 25 °C. The NiCo-LDH electrode delivered 1520 F g−1 at 1 A g−1 and retained 92% after 10,000 cycles.")
+    sample = ("The NiCo-LDH electrode delivered 1520 F g−1 at 1 A g−1 and retained 92% after 10,000 cycles. The "
+              "assembled NiCo-LDH//AC hybrid supercapacitor reached 52.3 Wh kg−1 at a power density of 800 W kg−1.")
     text = text_col.text_area("…or paste an abstract", sample, height=110)
     if st.button("Extract structured facts", type="primary"):
         if upload is not None and upload.name.lower().endswith(".pdf"):
@@ -196,14 +327,14 @@ with tabs[0]:
                                "extracted_facts.jsonl", "application/json")
 
 # ------------------------------------------------------------------ Knowledge Graph
-with tabs[1]:
+with T["Knowledge Graph"]:
     st.markdown("<div class='kicker'>Interactive knowledge graph</div>", unsafe_allow_html=True)
     left, right = st.columns([1, 2.2])
     with left:
         families = sorted({f["material_family"] for f in E.facts if f["system"] in system_filter})
         focus_kind = st.radio("Focus on", ["Material family", "Material", "Element / dopant"], horizontal=True)
         if focus_kind == "Material family":
-            choice = st.selectbox("Family", families, index=families.index("Garnet LLZO") if "Garnet LLZO" in families else 0)
+            choice = st.selectbox("Family", families, index=families.index("MXene") if "MXene" in families else 0)
             seeds = [f"MaterialFamily:{choice}"]
         elif focus_kind == "Material":
             materials = facts_df[facts_df.system.isin(system_filter)].material.value_counts().index.tolist()
@@ -211,7 +342,7 @@ with tabs[1]:
             seeds = [f"Material:{choice}"]
         else:
             elements = sorted(n.split(":", 1)[1] for n in E.graph if n.startswith(("Element:", "Dopant:")))
-            choice = st.selectbox("Element or dopant", elements, index=elements.index("Ta") if "Ta" in elements else 0)
+            choice = st.selectbox("Element or dopant", elements, index=elements.index("Mn") if "Mn" in elements else 0)
             seeds = [n for n in (f"Element:{choice}", f"Dopant:{choice}") if n in E.graph]
         depth = st.slider("Traversal depth", 1, 3, 2)
         max_nodes = st.slider("Max nodes", 30, 250, 90, 10)
@@ -226,14 +357,14 @@ with tabs[1]:
                          hide_index=True, width="stretch", height=240)
     with right:
         try:
-            components.html(pyvis_html(sub), height=640, scrolling=False)
+            show_html(pyvis_html(sub), height=640)
         except ImportError:
             st.info("Install `pyvis` for the interactive network view.")
     st.download_button("Download full graph (GraphML)", (Path("data") / "knowledge_graph.graphml").read_bytes()
                        if (Path("data") / "knowledge_graph.graphml").exists() else b"", "knowledge_graph.graphml")
 
 # ------------------------------------------------------------------ Hypothesis Generator
-with tabs[2]:
+with T["Hypothesis Generator"]:
     st.markdown("<div class='kicker'>Goal + constraints → ranked, testable hypotheses</div>", unsafe_allow_html=True)
     goal_col, constraint_col = st.columns([1.4, 1])
     with goal_col:
@@ -284,7 +415,7 @@ with tabs[2]:
             st.text(report["context"])
 
 # ------------------------------------------------------------------ Research Map
-with tabs[3]:
+with T["Research Map"]:
     st.markdown("<div class='kicker'>Centrality · co-occurrence · gaps</div>", unsafe_allow_html=True)
     scoped = [f for f in E.facts if f["system"] in system_filter]
     c1, c2 = st.columns(2)
@@ -317,12 +448,9 @@ with tabs[3]:
         st.dataframe(property_cooccurrence(scoped).head(15), hide_index=True, width="stretch")
         st.subheader("Thinly evidenced cells (1-2 records)")
         st.dataframe(sparse_cells(scoped).head(15), hide_index=True, width="stretch")
-    if "LLZO" in system_filter:
-        st.subheader("LLZO dopant summary")
-        st.dataframe(dopant_effects(E.facts), hide_index=True, width="stretch")
 
 # ------------------------------------------------------------------ Africa Focus
-with tabs[4]:
+with T["Africa Focus"]:
     st.markdown("<div class='kicker'>Africa as a design principle</div>", unsafe_allow_html=True)
     st.markdown("Every fact, graph node and hypothesis carries an **Africa supply score** (share of its non-trivial "
                 "elements with established African supply, weighted by producer status). Hypotheses are re-ranked by "
@@ -351,17 +479,17 @@ with tabs[4]:
         color=alt.Color("system:N", scale=alt.Scale(domain=list(COLORS), range=list(COLORS.values()))),
         tooltip=["material", "material_family", "value", "africa_score", "id"]).properties(height=320).interactive(),
         width="stretch")
-    _, _, _, minerals = thesis_data()
+    _, minerals = thesis_data()
     st.subheader("Critical-minerals context (USGS)")
     st.dataframe(minerals[["country", "commodity", "role_or_status", "year", "production_or_capacity", "unit", "notes"]],
                  hide_index=True, width="stretch")
     with st.expander("Check a composition"):
-        formula = st.text_input("Formula or material name", "Li6.4La3Zr1.4Ta0.6O12")
+        formula = st.text_input("Formula or material name", "NiCo2S4/rGO")
         from knowledge_engine.chem import elements_in
         st.json(africa_profile(elements_in(formula)))
 
 # ------------------------------------------------------------------ Data Quality
-with tabs[5]:
+with T["Data Quality"]:
     st.markdown("<div class='kicker'>Scientific rigour</div>", unsafe_allow_html=True)
     quality = data_quality_report([f for f in E.facts if f["source"]["type"] == "thesis_curated_record"])
     bench = extraction_benchmark()
@@ -400,10 +528,30 @@ with tabs[5]:
                        "thesis_facts.jsonl", "application/json")
 
 # ------------------------------------------------------------------ Model Evaluation
-with tabs[6]:
+with T["Model Evaluation"]:
     st.markdown("<div class='kicker'>Held-out performance against simple baselines · AHSC</div>", unsafe_allow_html=True)
     report = model_evaluation()
     results = pd.DataFrame(report["results"])
+    st.subheader("Baseline proof")
+    proof = pd.DataFrame([
+        {"target": "Power density", "model": m, "r2": float(results[(results.target == "specific_power_w_kg") &
+                                                                    (results.feature_set == "All inputs") &
+                                                                    (results.model == m)].r2_mean.iloc[0])}
+        for m in ("Mean baseline", "Ridge regression", "Random forest")] + [
+        {"target": "Energy density", "model": m, "r2": float(results[(results.target == "specific_energy_wh_kg") &
+                                                                     (results.feature_set == "All inputs") &
+                                                                     (results.model == m)].r2_mean.iloc[0])}
+        for m in ("Mean baseline", "Ridge regression", "Random forest")])
+    base = alt.Chart().encode(x=alt.X("model:N", sort=["Mean baseline", "Ridge regression", "Random forest"],
+                                      title=None, axis=alt.Axis(labelAngle=0)), y=alt.Y("r2:Q", title="Held-out R²"))
+    bars = base.mark_bar().encode(color=alt.condition("datum.r2 > 0", alt.value("#1264C4"), alt.value("#B9B4A8")),
+                                  tooltip=["target", "model", alt.Tooltip("r2:Q", format=".2f")])
+    values = base.mark_text(dy=-8, fontWeight="bold").encode(text=alt.Text("r2:Q", format=".2f"))
+    st.altair_chart(alt.layer(bars, values, data=proof).properties(width=260, height=240).facet(
+        column=alt.Column("target:N", title=None)))
+    st.caption("Both targets clear the always-predict-the-average baseline by a wide margin under 10 × 5-fold "
+               "cross-validation.")
+
     labels = dict(zip(results.target, results.target_label))
     target = st.radio("Target property", list(labels), format_func=labels.get, horizontal=True, key="eval_target")
     short = labels[target].split(" (")[0].lower()
@@ -483,21 +631,20 @@ with tabs[6]:
                "R² above as its reliability.")
 
 # ------------------------------------------------------------------ Thesis Analytics (Track 3 bridge)
-with tabs[7]:
-    ahsc, llzo, combined, _ = thesis_data()
-    st.markdown("<div class='kicker'>Original thesis analytics · bridge to Track 3 (prediction)</div>", unsafe_allow_html=True)
+with T["Thesis Analytics"]:
+    view, _ = thesis_data()
+    st.markdown("<div class='kicker'>Original thesis analytics · AHSC records as curated</div>", unsafe_allow_html=True)
     metrics = {"Potential midpoint": "potential_mid_v", "Capacitance / capacity": "capacitance_capacity_value",
                "Specific energy": "specific_energy_wh_kg", "Specific power": "specific_power_w_kg",
-               "Cycling stability": "cycling_stability_pct", "Ionic conductivity": "ionic_conductivity_s_cm"}
-    view = combined[combined.dataset.isin(system_filter)]
+               "Cycling stability": "cycling_stability_pct", "Cycles tested": "cycling_stability_cycles"}
     c1, c2 = st.columns(2)
     x_name = c1.selectbox("X axis", list(metrics), index=1)
     y_name = c2.selectbox("Y axis", list(metrics), index=4)
     dots = view.dropna(subset=[metrics[x_name], metrics[y_name]])
     st.altair_chart(alt.Chart(dots).mark_circle(size=70, opacity=.68).encode(
         x=alt.X(f"{metrics[x_name]}:Q", title=x_name), y=alt.Y(f"{metrics[y_name]}:Q", title=y_name),
-        color=alt.Color("dataset:N", scale=alt.Scale(domain=list(COLORS), range=list(COLORS.values()))),
-        tooltip=["dataset", "cathode_material", "anode_material", "electrolyte"]).properties(height=360).interactive(),
+        color=alt.value(COLORS[SYSTEM]),
+        tooltip=["cathode_material", "anode_material", "electrolyte"]).properties(height=360).interactive(),
         width="stretch")
 
     st.info("Energy- and power-density models, with their baselines and a prediction tool, are in the "

@@ -104,7 +104,8 @@ class _ChromaBackend:
 class SemanticIndex:
     def __init__(self, docs: list[dict] | None = None, backend: str | None = None):
         self.docs = docs if docs is not None else corpus_documents()
-        choice = backend or os.getenv("KE_SEARCH_BACKEND", "auto")
+        # Neural embeddings only on request: loading the model is slow and needs a download (KE_SEARCH_BACKEND=chroma).
+        choice = backend or os.getenv("KE_SEARCH_BACKEND", "lsa")
         self.backend = None
         if choice in ("auto", "chroma"):
             try:

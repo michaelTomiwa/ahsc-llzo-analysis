@@ -1,0 +1,11 @@
+rank,desirability,energy_wh_kg,power_w_kg,reaction_time_h,temperature_c,electrolyte_conc_m,mass_loading_mg_cm2,anode,cathode
+1,0.8276,81.67,1342.82,18,60,2,8,Graphene,PANI@NiCu
+2,0.7946,67.24,1764.72,24,30,3,5,Graphene,PANI@NiCu
+3,0.6291,84.32,881.78,20,25,6,10,CNT,WS2/FeCo2O4
+4,0.6222,51.47,3024.96,24,35,3,6,AC,Co3S4/CuS2/NiS2
+5,0.5773,96.06,742.54,14,75,5,4,Graphene,PANI@NiCu
+6,0.5037,94.23,640.37,16,25,5,12,CNT,WS2/FeCo2O4
+7,0.3182,34.60,1347.19,12,40,1,9,Graphene,Ti3C2Tx MXene
+8,0.2941,102.25,425.93,20,25,6,13,AC,RGO-V2O5
+9,0.2851,44.59,686.73,22,70,6,7,Zn foil,CuCo2O4/CuO
+10,0.1936,43.95,492.64,16,70,5,3,AC,MnCo2O4/Ni3S4

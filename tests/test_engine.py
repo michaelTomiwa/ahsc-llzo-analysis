@@ -66,10 +66,12 @@ def test_graph_rag_offline(engine):
 
 
 def test_parse_goal():
-    parsed = parse_goal(EXAMPLE_GOALS[0])
+    parsed = parse_goal("Increase LLZO ionic conductivity above 10⁻³ S/cm at room temperature")
     assert parsed["system"] == "LLZO" and parsed["property"] == "ionic_conductivity"
     assert abs(parsed["target"] - 1e-3) < 1e-12
-    assert parse_goal(EXAMPLE_GOALS[2])["direction"] == "decrease"
+    assert parse_goal("Reduce LLZO sintering temperature below 1000°C")["direction"] == "decrease"
+    for goal in EXAMPLE_GOALS:  # the app's examples are AHSC-only
+        assert parse_goal(goal)["system"] == "AHSC" and parse_goal(goal)["property"]
 
 
 def test_hypotheses_ranked_and_exportable(engine):

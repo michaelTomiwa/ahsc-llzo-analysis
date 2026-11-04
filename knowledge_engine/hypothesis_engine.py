@@ -23,10 +23,10 @@ from .graph_rag import Engine, get_engine
 from .knowledge_graph import dopant_effects, family_property_stats, gap_analysis
 
 EXAMPLE_GOALS = [
-    "Increase LLZO ionic conductivity above 10⁻³ S/cm at room temperature",
-    "Improve AHSC cycling stability above 95% retention after 10,000 cycles",
-    "Reduce LLZO sintering temperature below 1000°C for African manufacturing",
     "Raise AHSC specific energy above 60 Wh/kg using Africa-sourced electrode materials",
+    "Improve AHSC cycling stability above 95% retention after 10,000 cycles",
+    "Increase AHSC specific power above 5,000 W/kg without cobalt",
+    "Increase the specific capacitance of manganese-based AHSC electrodes for off-grid solar storage",
 ]
 
 HYPOTHESIS_SCHEMA = {

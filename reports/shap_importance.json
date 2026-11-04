@@ -1,0 +1,124 @@
+{
+  "specific_energy_wh_kg": {
+    "label": "Energy density (Wh/kg)",
+    "model": "Ridge regression",
+    "records": 72,
+    "importance": [
+      {
+        "feature": "electrolyte",
+        "label": "Electrolyte",
+        "mean_abs_shap": 0.2554,
+        "share": 0.278
+      },
+      {
+        "feature": "capacitance_capacity_value",
+        "label": "Capacitance / capacity",
+        "mean_abs_shap": 0.2318,
+        "share": 0.252
+      },
+      {
+        "feature": "potential_width_v",
+        "label": "Potential window width (V)",
+        "mean_abs_shap": 0.1535,
+        "share": 0.167
+      },
+      {
+        "feature": "anode_material",
+        "label": "Anode material",
+        "mean_abs_shap": 0.1112,
+        "share": 0.121
+      },
+      {
+        "feature": "specific_power_w_kg",
+        "label": "Power density (W/kg)",
+        "mean_abs_shap": 0.0753,
+        "share": 0.082
+      },
+      {
+        "feature": "potential_mid_v",
+        "label": "Potential midpoint (V)",
+        "mean_abs_shap": 0.0339,
+        "share": 0.037
+      },
+      {
+        "feature": "cathode_material",
+        "label": "Cathode material",
+        "mean_abs_shap": 0.0293,
+        "share": 0.032
+      },
+      {
+        "feature": "cycling_stability_pct",
+        "label": "Cycling stability (%)",
+        "mean_abs_shap": 0.0162,
+        "share": 0.018
+      },
+      {
+        "feature": "cycling_stability_cycles",
+        "label": "Cycles tested",
+        "mean_abs_shap": 0.0123,
+        "share": 0.013
+      }
+    ]
+  },
+  "specific_power_w_kg": {
+    "label": "Power density (W/kg)",
+    "model": "Random forest",
+    "records": 52,
+    "importance": [
+      {
+        "feature": "anode_material",
+        "label": "Anode material",
+        "mean_abs_shap": 1.0164,
+        "share": 0.619
+      },
+      {
+        "feature": "specific_energy_wh_kg",
+        "label": "Energy density (Wh/kg)",
+        "mean_abs_shap": 0.2457,
+        "share": 0.15
+      },
+      {
+        "feature": "capacitance_capacity_value",
+        "label": "Capacitance / capacity",
+        "mean_abs_shap": 0.23,
+        "share": 0.14
+      },
+      {
+        "feature": "electrolyte",
+        "label": "Electrolyte",
+        "mean_abs_shap": 0.0538,
+        "share": 0.033
+      },
+      {
+        "feature": "cycling_stability_pct",
+        "label": "Cycling stability (%)",
+        "mean_abs_shap": 0.0375,
+        "share": 0.023
+      },
+      {
+        "feature": "cycling_stability_cycles",
+        "label": "Cycles tested",
+        "mean_abs_shap": 0.0225,
+        "share": 0.014
+      },
+      {
+        "feature": "potential_mid_v",
+        "label": "Potential midpoint (V)",
+        "mean_abs_shap": 0.022,
+        "share": 0.013
+      },
+      {
+        "feature": "potential_width_v",
+        "label": "Potential window width (V)",
+        "mean_abs_shap": 0.0112,
+        "share": 0.007
+      },
+      {
+        "feature": "cathode_material",
+        "label": "Cathode material",
+        "mean_abs_shap": 0.003,
+        "share": 0.002
+      }
+    ]
+  }
+}

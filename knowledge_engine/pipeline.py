@@ -65,6 +65,11 @@ def run(harvest: bool = False, llm: bool = False) -> dict:
     for name, payload in outputs.items():
         (REPORTS_DIR / name).write_text(json.dumps(payload, indent=2, default=str), encoding="utf-8")
     write_example_hypotheses()
+    try:  # SHAP needs the optional `shap` package (requirements-dev.txt); the app reads the committed report
+        from .design_explorer import write_shap
+        write_shap()
+    except ImportError:
+        pass
     return {"facts": len(facts), "thesis_facts": len(thesis), "graph": outputs["research_map.json"]["graph"],
             "extraction": {k: outputs["extraction_validation.json"][k] for k in ("precision", "recall", "f1",
                                                                                  "evidence_grounding_rate")},
