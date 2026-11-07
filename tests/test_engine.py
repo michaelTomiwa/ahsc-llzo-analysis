@@ -153,3 +153,8 @@ def test_model_evaluation_report_is_committed():
             and r["r2_mean"] == max(x["r2_mean"] for x in report["results"] if x["target"] == r["target"])}
     baseline = {r["target"]: r["r2_mean"] for r in report["results"] if r["model"] == "Mean baseline"}
     assert all(best[t] > baseline[t] + 0.2 for t in best)
+
+
+def test_graph_rag_offline_scopes_to_named_material(engine):
+    answer = graph_rag("How stable are MnO2-based supercapacitors over long cycling?", engine)["answer"]
+    assert "Cycling stability for MnO2" in answer

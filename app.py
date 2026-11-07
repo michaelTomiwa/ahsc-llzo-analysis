@@ -271,7 +271,7 @@ with T["Literature Explorer"]:
         st.subheader("Ask the knowledge graph")
         question = st.text_input("Research question", "Which AHSC electrode families give the highest specific capacitance?")
         examples = st.columns(3)
-        for col, q in zip(examples, ["Which anodes give AHSCs the highest power density?",
+        for col, q in zip(examples, ["What specific capacitance do MXene electrodes reach?",
                                      "How stable are MnO2-based supercapacitors over long cycling?",
                                      "Which electrolytes give the widest AHSC voltage window?"]):
             if col.button(q[:42] + "…", help=q, width="stretch"):
