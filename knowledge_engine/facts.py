@@ -18,7 +18,7 @@ import pandas as pd
 from .africa import africa_profile
 from .chem import (additives_in, canonical_material, detect_unit, dopants_in, elements_in, is_missing,
                    material_family, normalize_text, parse_conductivity, parse_rate, parse_temperature)
-from .config import AHSC_CSV, FACTS_JSONL, LLZO_CSV, RECORD_SOURCES_CSV, ROOT
+from .config import AHSC_CSV, DATA_DIR, FACTS_JSONL, LLZO_CSV, RECORD_SOURCES_CSV, ROOT
 
 RAW_FIELDS = ["cathode_material", "anode_material", "electrolyte", "potential_window", "capacitance_capacity",
               "specific_energy", "specific_power", "cycling_stability", "ionic_conductivity", "capacity_retention"]
@@ -38,7 +38,17 @@ PROPERTY_INFO = {
 CAPACITY_UNITS = {"mAh/g", "mAh/cm2"}
 # Flags that make a value unsuitable for statistics (an implied-but-standard unit is not one of them).
 SEVERE_FLAGS = {"implausible_value_check_source", "unusually_high_check_source", "theoretical_value",
-                "non_standard_retention_metric", "evidence_not_found_in_source", "raw_text_disagrees_with_curated_value"}
+                "non_standard_retention_metric", "evidence_not_found_in_source", "raw_text_disagrees_with_curated_value",
+                "source_paper_disagrees"}
+VALUE_CHECKS_CSV = DATA_DIR / "provenance" / "value_checks.csv"
+
+
+def _load_value_checks() -> dict[tuple[str, str], dict]:
+    """Curated values checked against the source paper and found to differ (record_id, property) -> check."""
+    if not VALUE_CHECKS_CSV.exists():
+        return {}
+    checks = pd.read_csv(VALUE_CHECKS_CSV, dtype=str).fillna("")
+    return {(row.record_id, row.property): row._asdict() for row in checks.itertuples(index=False)}
 
 
 def is_reliable(fact: dict) -> bool:
@@ -174,6 +184,7 @@ def _property_facts(system: str, row: pd.Series) -> list[dict]:
 
 def build_facts(ahsc_path: Path = AHSC_CSV, llzo_path: Path = LLZO_CSV) -> list[dict]:
     sources = _load_record_sources()
+    checks = _load_value_checks()
     facts: list[dict] = []
     for system, path in (("AHSC", ahsc_path), ("LLZO", llzo_path)):
         frame = pd.read_csv(path, encoding="utf-8", encoding_errors="replace")
@@ -200,6 +211,11 @@ def build_facts(ahsc_path: Path = AHSC_CSV, llzo_path: Path = LLZO_CSV) -> list[
             family = material_family(material, role)
             dopants = dopants_in(material) if role == "electrolyte" else []
             for item in _property_facts(system, row):
+                check = checks.get((record_id, item["property"]))
+                if check:
+                    item["quality_flags"] = item["quality_flags"] + ["source_paper_disagrees"]
+                    item["value_details"] = {**item["value_details"], "paper_value": float(check["paper_value"]),
+                                             "paper_check": check["note"]}
                 info = PROPERTY_INFO[item["property"]]
                 condition = f" ({item['condition']})" if item["condition"] else ""
                 text = (f"{system} record {record_id}: {material} [{family}] has {info['label'].lower()} of "

@@ -29,7 +29,8 @@
     "non_gravimetric_unit": 4,
     "range_reported": 4,
     "raw_text_disagrees_with_curated_value": 3,
-    "theoretical_value": 1
+    "theoretical_value": 1,
+    "source_paper_disagrees": 1
   },
   "facts_with_doi": 100,
   "facts_with_review_doi": 573,

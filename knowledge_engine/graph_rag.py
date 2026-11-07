@@ -171,6 +171,15 @@ def _offline_answer(question: str, entities: dict, facts: list[dict], analytics:
               "LLZO-xTa/Ga interface records report capacity and voltage but not conductivity.")
     props = entities["properties"] or sorted({f["property"] for f in facts})[:2]
     systems = set(entities["systems"]) or {f["system"] for f in facts}
+    # Materials or families the question names (e.g. "MXene", "MnO2", "LDH") scope the ranking.
+    families = {n.split(":", 1)[1] for n in entities["nodes"] if n.startswith("MaterialFamily:")}
+    tokens = {t for t in re.findall(r"[A-Za-z][A-Za-z0-9@/]*\d[A-Za-z0-9@/]*|[A-Z]{2,}[a-z]*", question)
+              if t.upper() not in SYSTEM_KEYWORDS and t.upper() not in {"AHSC", "AHSCS", "LLZO"}}
+
+    def in_scope(fact: dict) -> bool:
+        return fact["material_family"] in families or any(
+            t.lower() in f"{fact['material']} {fact['material_family']}".lower() for t in tokens)
+
     for prop in props[:3]:
         # Rank across the whole knowledge base (not only retrieved facts) for "best/highest" questions.
         pool = engine.facts if entities["properties"] else facts
@@ -180,8 +189,17 @@ def _offline_answer(question: str, entities: dict, facts: list[dict], analytics:
         unit = statistics.mode(f["unit"] for f in relevant)
         relevant = sorted((f for f in relevant if f["unit"] == unit), key=lambda f: -f["value"])
         values = [f["value"] for f in relevant]
+        scoped = [f for f in relevant if in_scope(f)] if families or tokens else []
+        label = prop.replace('_', ' ').capitalize()
+        if scoped:
+            named = ", ".join(sorted(families | tokens))
+            parts.append(f"**{label} for {named}** - {len(scoped)} values, median "
+                         f"{statistics.median([f['value'] for f in scoped]):.4g} {unit} (all materials: median "
+                         f"{statistics.median(values):.4g} {unit}, n={len(values)}). Highest: " + "; ".join(
+                             f"{f['material']} {f['value']:.4g} {unit} [{f['id']}]" for f in scoped[:3]) + ".")
+            continue
         best = relevant[:3]
-        parts.append(f"**{prop.replace('_', ' ').capitalize()}** - {len(values)} values, median "
+        parts.append(f"**{label}** - {len(values)} values, median "
                      f"{statistics.median(values):.4g} {unit}. Highest: " + "; ".join(
                          f"{f['material']} {f['value']:.4g} {unit} [{f['id']}]" for f in best) + ".")
     if analytics and not analytics.startswith("No aggregate"):

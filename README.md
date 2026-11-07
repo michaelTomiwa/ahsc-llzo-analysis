@@ -6,6 +6,23 @@ validated on 533 curated records from asymmetric hybrid supercapacitor (AHSC) an
 research.**
 
 Materials GPT Hackathon · **Track 1: Literature mining → structured knowledge → knowledge graphs → hypothesis generation**
+· Team **TEMBO AI** · Sprint focus: **hybrid supercapacitors (AHSC)**
+
+**Live app:** _add the Streamlit Community Cloud link here after deploying (see [Deploy](#deploy-to-streamlit-community-cloud))._
+
+## Baseline proof
+
+Held-out R², thesis protocol (Table 5.2), 5-fold cross-validation repeated 10 times on the 369 AHSC records
+(`python -m knowledge_engine.model_evaluation` → `reports/model_evaluation.json`):
+
+| Target | Mean baseline | Ridge regression | Random forest | Thesis Table 5.2 |
+|---|---|---|---|---|
+| Energy density (72 records) | −0.04 | **0.44** (0.43 without power) | 0.25 | Ridge 0.352 |
+| Power density (52 records) | −0.05 | 0.29 | **0.46** (0.40 without energy) | RF 0.277 |
+
+SHAP (`reports/shap_importance.json`): the anode drives 62 % of the power model, and electrolyte, capacitance and
+voltage window drive the energy model, so performance is largely **material-selected**. The thesis's best RSM design,
+**Graphene // PANI@NiCu** (81.67 Wh/kg, 1342.82 W/kg, Table 4.1), is a model prediction still to be validated.
 
 | | |
 |---|---|
@@ -42,7 +59,7 @@ flowchart TB
     AFR[Africa re-rank\nsupply · ≤1000 °C · applications]
   end
   subgraph Serve[5. Serve]
-    APP[Streamlit app · 8 tabs]
+    APP[Streamlit app · 10 tabs]
     API[FastAPI /docs]
   end
   CSV --> DIG --> FACTS
@@ -64,26 +81,41 @@ and every output reports which mode produced it.
 python -m pip install -r requirements.txt
 python -m knowledge_engine.pipeline         # build facts, graph and reports (~10 s)
 streamlit run app.py                        # the knowledge-engine app
+python -m pip install -r requirements-dev.txt  # extras for the API, tests and SHAP
 uvicorn api:app --reload                    # REST API, docs at http://127.0.0.1:8000/docs
-pytest -q                                   # 32 offline tests
+pytest -q                                   # 39 offline tests
 ```
 
 To enable the LLM, copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY`. `OPENAI_API_KEY` also works as
-an alternative. For neural embeddings with ChromaDB, run `pip install -r requirements-semantic.txt`. Without
-it, search uses a scikit-learn LSA index.
+an alternative. Search uses a scikit-learn LSA index; for neural embeddings with ChromaDB, run
+`pip install -r requirements-semantic.txt` and set `KE_SEARCH_BACKEND=chroma`.
+
+## Deploy to Streamlit Community Cloud
+
+1. Sign in at https://share.streamlit.io with the GitHub account that owns (or can read) the repo.
+2. **Create app** → **Deploy a public app from GitHub** → choose the repository, branch `main`, main file `app.py`.
+3. **Advanced settings** → Python 3.12. Optional: paste `ANTHROPIC_API_KEY = "..."` into **Secrets**
+   (template: `.streamlit/secrets.toml.example`). Without a key the app runs fully offline.
+4. **Deploy**. The first build installs `requirements.txt` (a few minutes); later pushes to `main` redeploy
+   automatically. The app loads in about 10 seconds because facts, graph, evaluation and SHAP reports are committed.
 
 ## The app
 
 | Tab | Function | Track 1 requirement |
 |---|---|---|
+| **Materials Copilot** | Plain-language request (“I need high power density”, “above 80 Wh/kg, cobalt-free, African materials”) → ranked measured devices and thesis designs, with constraints and SHAP drivers; LLM-written answer when a key is set | Hypothesis generation |
+| **Design Explorer** | Energy–power Pareto front (NSGA-II non-dominated sorting) of 47 measured devices plus the thesis RSM designs, a trade-off slider, SHAP feature importance; overlays the thesis NSGA-II front if exported to `data/nsga2_pareto.csv` | Research maps |
 | **Literature Explorer** | GraphRAG Q&A with fact-level citations, semantic search with an Africa filter, PDF/abstract extraction | Literature mining |
 | **Knowledge Graph** | Interactive PyVis graph around a family, material, element or dopant; GraphML download | Knowledge graph |
 | **Hypothesis Generator** | Goal + constraints → ranked hypotheses; JSON, Markdown, Track 2 and Track 4 exports | Hypothesis generation |
-| **Research Map** | Centrality, family × property coverage heat-map, gap analysis, property co-occurrence, LLZO dopant summary | Research maps |
+| **Research Map** | Centrality, family × property coverage heat-map, gap analysis, property co-occurrence | Research maps |
 | **Africa Focus** | Element-supply table, best Africa-compatible materials, supply vs performance, composition checker | Africa relevance |
 | **Data Quality** | Grounding rate, extraction precision/recall per property, quality flags, flagged-fact review | Scientific rigour |
-| **Model Evaluation** | Held-out R² bar charts for energy and power density against a mean baseline, side by side with thesis Table 5.2, and a predictor | Evaluation |
+| **Model Evaluation** | Baseline proof chart, held-out R² for energy and power density against a mean baseline, side by side with thesis Table 5.2, and a predictor | Evaluation |
 | **Thesis Analytics** | The original performance explorer | Bridge to Track 3 |
+
+The app shows AHSC only (the sprint focus). The LLZO records stay in the published dataset, the API and the
+pipeline.
 
 ## Modules
 
@@ -100,6 +132,7 @@ it, search uses a scikit-learn LSA index.
 | `hypothesis_engine.py` | `knowledge_engine/hypothesis_engine.py`: goal parsing, KG context, LLM generation, offline generator |
 | `hypothesis_evaluator.py` | `knowledge_engine/hypothesis_evaluator.py`: relevance, novelty, feasibility, evidence, Africa re-rank, exports |
 | Africa constraints | `knowledge_engine/africa.py`, `data/africa_element_supply.csv` |
+| Baseline proof, SHAP, Pareto, Copilot | `knowledge_engine/model_evaluation.py`, `knowledge_engine/design_explorer.py`, `knowledge_engine/copilot.py`, `data/rsm_top_designs.csv` (thesis Table 4.1) |
 | `api.py` with `/docs` | [`api.py`](api.py): `/extract`, `/ask`, `/hypotheses`, `/graph/{material}`, `/facts`, `/search`, `/research-map`, `/africa/constraints`, `/schema` |
 | `PIPELINE.md`, LICENSE, CONTRIBUTING, CITATION | [`PIPELINE.md`](PIPELINE.md), [`LICENSE`](LICENSE), [`CONTRIBUTING.md`](CONTRIBUTING.md), [`CITATION.cff`](CITATION.cff) |
 
@@ -116,6 +149,8 @@ python -m knowledge_engine.record_sources build                    # rebuild dat
 python -m knowledge_engine.record_sources resolve                  # Crossref: value-verified DOIs for the rest
 python -m knowledge_engine.knowledge_graph                         # GraphML + reports/research_map.json
 python -m knowledge_engine.model_evaluation                        # held-out R² vs baselines → reports/model_evaluation.json (~2 min)
+python -m knowledge_engine.design_explorer                         # SHAP report + measured Pareto front (needs shap)
+python -m knowledge_engine.copilot "I need high power density"     # Materials Copilot from the command line
 python -m knowledge_engine.graph_rag "What dopants improve LLZO ionic conductivity?"
 python -m knowledge_engine.hypothesis_engine "Reduce LLZO sintering temperature below 1000°C"
 ```

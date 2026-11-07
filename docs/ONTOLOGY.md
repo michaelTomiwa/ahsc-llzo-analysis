@@ -67,6 +67,7 @@ dropped from the knowledge base.
 | `raw_text_disagrees_with_curated_value` | Curated and re-parsed values differ by > 5 % | **no** |
 | `theoretical_value` | Theoretical rather than measured | **no** |
 | `non_standard_retention_metric` | Mechanical/OCV retention, not cycling | **no** |
+| `source_paper_disagrees` | Checked against the source paper and the paper reports a different value (`data/provenance/value_checks.csv`) | **no** |
 
 ## Africa layer
 

@@ -1,0 +1,2 @@
+record_id,property,curated_value,paper_value,unit,doi,note
+LLZO-0024,ionic_conductivity,3.53e-6,3.53e-4,S/cm,10.1002/aenm.202103530,"Paper reports 3.53 × 10⁻⁴ S/cm at room temperature; the curated record has 3.53 × 10⁻⁶ (exponent slip in curation). Kept as curated, flagged and excluded from statistics until the source CSV is corrected."

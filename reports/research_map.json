@@ -596,8 +596,8 @@
       "dopant": "undoped / not stated",
       "property": "ionic_conductivity",
       "unit": "S/cm",
-      "count": 128,
-      "median": 0.000325,
+      "count": 127,
+      "median": 0.00034,
       "min": 1.24e-07,
       "max": 0.034
     },
