@@ -158,3 +158,27 @@ def test_model_evaluation_report_is_committed():
 def test_graph_rag_offline_scopes_to_named_material(engine):
     answer = graph_rag("How stable are MnO2-based supercapacitors over long cycling?", engine)["answer"]
     assert "Cycling stability for MnO2" in answer
+
+
+def test_hypotheses_cover_two_properties_and_named_material(engine):
+    from knowledge_engine.hypothesis_engine import parse_goal
+
+    parsed = parse_goal("Improve the capacitance and cycling stability of manganese-based AHSC electrodes, cobalt-free")
+    assert parsed["properties"] == ["specific_capacitance", "cycling_stability"]
+    assert parsed["material"]["elements"] == ["Mn"] and parsed["avoid"] == ["Co"]
+    report = generate_hypotheses("Improve both specific capacitance and cycling stability of AHSC electrodes",
+                                 n=5, engine=engine)
+    assert any(h.get("target_properties") == ["specific_capacitance", "cycling_stability"] for h in report["hypotheses"])
+    manganese = generate_hypotheses("Increase the specific capacitance of manganese-based AHSC electrodes",
+                                    n=5, engine=engine)
+    for h in manganese["hypotheses"]:
+        if h["origin"].startswith("graph"):
+            assert "Mn" in h["elements"], h["title"]
+
+
+def test_gap_hypotheses_match_goal_property_and_electrodes(engine):
+    report = generate_hypotheses("Increase AHSC specific power above 5,000 W/kg without cobalt", n=6, engine=engine)
+    for h in report["hypotheses"]:
+        assert h["target_property"] == "specific_power", h["title"]
+        assert "electrolyte" not in h["title"].lower() and "Lithium metal" not in h["title"]
+        assert "Co" not in h["elements"]

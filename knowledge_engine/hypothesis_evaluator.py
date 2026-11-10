@@ -42,7 +42,9 @@ def heuristic_relevance(hypothesis: dict, goal: str, goal_info: dict) -> float:
                                                          "mechanistic_reasoning", "proposed_material"))
     goal_tokens = _tokens(goal)
     overlap = len(goal_tokens & _tokens(text)) / max(len(goal_tokens), 1)
-    property_match = 1.0 if goal_info.get("property") and goal_info["property"] == hypothesis.get("target_property") else 0.0
+    wanted = [p for p in (goal_info.get("properties") or [goal_info.get("property")]) if p]
+    covered = set(hypothesis.get("target_properties") or [hypothesis.get("target_property")]) & set(wanted)
+    property_match = len(covered) / len(wanted) if wanted else 0.0
     if goal_info.get("property") == "sintering_temperature" and "sinter" in text.lower():
         property_match = 1.0
     return round(min(1.0, 0.35 + 0.4 * property_match + 0.5 * overlap), 3)
@@ -121,7 +123,7 @@ def rank_hypotheses(hypotheses: list[dict], goal: str, goal_info: dict, engine, 
     # Drop duplicate proposals, keeping the best-scoring one.
     unique: dict[str, dict] = {}
     for h in sorted(scored, key=lambda h: -h["scores"]["final"]):
-        unique.setdefault(h["proposed_material"].lower() + h.get("target_property", ""), h)
+        unique.setdefault(h["proposed_material"].lower() + "+".join(h.get("target_properties") or [h.get("target_property", "")]), h)
     ranked = list(unique.values())
     for rank, h in enumerate(ranked, start=1):
         h["rank"] = rank

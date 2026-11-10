@@ -14,6 +14,9 @@ from __future__ import annotations
 
 import json
 import re
+import statistics
+
+import pandas as pd
 
 from . import llm
 from .africa import AFRICAN_CONSTRAINTS, africa_profile, supply_table
@@ -27,6 +30,7 @@ EXAMPLE_GOALS = [
     "Improve AHSC cycling stability above 95% retention after 10,000 cycles",
     "Increase AHSC specific power above 5,000 W/kg without cobalt",
     "Increase the specific capacitance of manganese-based AHSC electrodes for off-grid solar storage",
+    "Improve both the specific capacitance and cycling stability of AHSC electrodes",
 ]
 
 HYPOTHESIS_SCHEMA = {
@@ -157,13 +161,33 @@ PROPERTY_PATTERNS = {
 }
 
 
+ELEMENT_WORDS = {"manganese": "Mn", "nickel": "Ni", "cobalt": "Co", "iron": "Fe", "zinc": "Zn", "copper": "Cu",
+                 "titanium": "Ti", "vanadium": "V", "molybdenum": "Mo", "tungsten": "W", "niobium": "Nb",
+                 "zirconium": "Zr", "tantalum": "Ta", "aluminium": "Al", "aluminum": "Al", "lithium": "Li"}
+MATERIAL_WORDS = {"mxene": "mxene", "ldh": "ldh", "layered double hydroxide": "ldh", "graphene": "graphene",
+                  "biomass": "biomass", "activated carbon": "activated carbon", "pani": "pani", "polyaniline": "pani",
+                  "mof": "mof", "sulfide": "sulfide", "sulphide": "sulfide", "phosphide": "phosphide"}
+
+
 def parse_goal(goal: str) -> dict:
-    """Pull system, target property, numeric target and direction out of a free-text goal."""
+    """Pull system, target properties (in the order named), numeric target, direction and any named material
+    (element words such as "manganese", formulas such as "MnO2", material words such as "MXene")."""
     text = normalize_text(goal).replace(",", "")
     lowered = text.lower()
-    system = "LLZO" if re.search(r"llzo|garnet|solid.state|electrolyte", lowered) else \
-        "AHSC" if re.search(r"ahsc|supercap|capacitor", lowered) else None
-    prop = next((p for p, pattern in PROPERTY_PATTERNS.items() if re.search(pattern, lowered)), None)
+    system = "LLZO" if re.search(r"llzo|garnet|solid.state", lowered) else \
+        "AHSC" if re.search(r"ahsc|supercap|capacitor", lowered) else \
+        "LLZO" if re.search(r"electrolyte", lowered) else None
+    found = sorted(((m.start(), p) for p, pattern in PROPERTY_PATTERNS.items()
+                    for m in [re.search(pattern, lowered)] if m), key=lambda pair: pair[0])
+    properties = [p for _, p in found]
+    if "specific_capacitance" in properties and "specific_capacity" in properties:
+        properties.remove("specific_capacity")
+    prop = properties[0] if properties else None
+    avoid = sorted({symbol for word, symbol in ELEMENT_WORDS.items()
+                    if re.search(rf"\b(?:no|without|avoid\w*|free of)\s+{word}|\b{word}[- ]free", lowered)})
+    elements = sorted({symbol for word, symbol in ELEMENT_WORDS.items() if re.search(rf"\b{word}", lowered)} - set(avoid))
+    terms = sorted({term for word, term in MATERIAL_WORDS.items() if re.search(rf"\b{word}", lowered)}
+                   | {t.lower() for t in re.findall(r"\b[A-Z][a-z]?\d?[A-Z][A-Za-z0-9]*\d[A-Za-z0-9]*\b", text)})
     target = None
     scientific = re.search(r"(?:(\d+(?:\.\d+)?)\s*[x×*]\s*)?10\s*\^?\s*(-\d+)", text)
     if scientific:
@@ -172,13 +196,43 @@ def parse_goal(goal: str) -> dict:
         number = re.search(r"(\d+(?:\.\d+)?)\s*(%|°c|s/cm|wh/kg|w/kg|f/g|mah/g|v\b)", lowered)
         target = float(number.group(1)) if number else None
     direction = "decrease" if re.search(r"reduce|lower|below|decrease|minimi", lowered) else "increase"
-    return {"system": system, "property": prop, "target": target, "direction": direction}
+    return {"system": system, "property": prop, "properties": properties, "target": target, "direction": direction,
+            "material": {"elements": elements, "terms": terms}, "avoid": avoid}
+
+
+def material_filter(goal_info: dict):
+    """Predicate for facts/materials that satisfy the goal's named material, or None if no material is named."""
+    wanted = goal_info.get("material") or {}
+    elements, terms = set(wanted.get("elements", [])), wanted.get("terms", [])
+    if not elements and not terms:
+        return None
+
+    def matches(material: str, element_list) -> bool:
+        name = str(material).lower()
+        return bool(elements & set(element_list or [])) or any(term in name for term in terms)
+    return matches
+
+
+def material_label(goal_info: dict) -> str:
+    wanted = goal_info.get("material") or {}
+    names = [name for name, symbol in ELEMENT_WORDS.items() if symbol in wanted.get("elements", [])][:1]
+    return ", ".join(names + wanted.get("terms", [])) or ""
 
 
 def build_context(goal_info: dict, engine: Engine, africa_focus: bool = True, max_facts: int = 25) -> tuple[str, list[str]]:
     """Text context for the LLM plus the list of fact ids it may cite."""
-    system, prop = goal_info["system"], goal_info["property"]
+    system = goal_info["system"]
     lines, cited = [], []
+    props = (goal_info.get("properties") or [goal_info["property"]])[:2]
+    for prop in props:
+        _context_for_property(prop, system, engine, africa_focus, max_facts // len(props), lines, cited)
+    if goal_info.get("material", {}).get("elements") or goal_info.get("material", {}).get("terms"):
+        lines.append(f"## Named material constraint: {material_label(goal_info)}")
+    _context_tail(system, engine, africa_focus, lines)
+    return "\n".join(lines), cited
+
+
+def _context_for_property(prop, system, engine, africa_focus, max_facts, lines, cited):
     stats_prop = prop if prop not in (None, "sintering_temperature") else ("ionic_conductivity" if system == "LLZO" else None)
     if stats_prop:
         stats = family_property_stats(engine.facts, stats_prop, system)
@@ -200,6 +254,9 @@ def build_context(goal_info: dict, engine: Engine, africa_focus: bool = True, ma
             lines.append(f"- [{fact['id']}] {fact['material']} ({fact['material_family']}): {fact['value']:.4g} "
                          f"{fact['unit']} {fact.get('condition') or ''}; elements {','.join(fact['elements'])}; "
                          f"Africa score {fact['africa']['score']}; evidence \"{fact['evidence_span']}\"")
+
+
+def _context_tail(system, engine, africa_focus, lines):
     if system == "LLZO":
         table = dopant_effects(engine.facts)
         if not table.empty:
@@ -216,55 +273,87 @@ def build_context(goal_info: dict, engine: Engine, africa_focus: bool = True, ma
         lines.append("## African element supply (qualitative)")
         lines += [f"- {r.element}: {r.status} ({r.african_countries})" for r in table.itertuples()
                   if r.status != "ubiquitous"]
-    return "\n".join(lines), cited
+
+
+NON_ELECTRODE_FAMILIES = ("Other", "Unspecified", "Liquid electrolyte", "Lithium metal", "Zinc metal")
+
+
+def _usable_family(family: str, system: str | None) -> bool:
+    """Families a hypothesis can sensibly target (AHSC: electrode families, not electrolytes or metal foils)."""
+    if family in NON_ELECTRODE_FAMILIES:
+        return False
+    return not (system == "AHSC" and re.search(r"electrolyte|polymer", family, re.I))
+
+
+def _fits(fact: dict, goal_info: dict, matches) -> bool:
+    if set(goal_info.get("avoid") or []) & set(fact["elements"]):
+        return False
+    return matches is None or matches(fact["material"], fact["elements"])
 
 
 def _offline_hypotheses(goal: str, goal_info: dict, engine: Engine, n: int) -> list[dict]:
-    system, prop = goal_info["system"], goal_info["property"]
+    system = goal_info["system"]
+    props = [p for p in (goal_info.get("properties") or [goal_info["property"]]) if p][:2] or [None]
+    matches = material_filter(goal_info)
+    avoid = set(goal_info.get("avoid") or [])
+    named = material_label(goal_info)
     hypotheses = []
-    # (1) Domain priors that match the goal.
+    # (1) Domain priors that match a goal property and any named material / avoided element.
     for prior in DOMAIN_PRIORS:
-        if (system is None or system in prior["systems"]) and (prop is None or prior["property"] == prop):
-            support = [f["id"] for f in engine.facts if f["material_family"] == prior["family"] and is_reliable(f)
-                       and f["property"] == (prop if prop != "sintering_temperature" else "ionic_conductivity")][:6]
-            hypotheses.append({
-                "title": prior["title"], "proposed_material": prior["proposed_material"],
-                "composition_change": prior["composition_change"], "target_property": prior["property"],
-                "expected_change": f"{goal_info['direction'].capitalize()} {prior['property'].replace('_', ' ')} towards the goal",
-                "mechanistic_reasoning": prior["mechanism"] + " (Mechanism from established literature; knowledge-"
-                                         "graph facts cited are same-family context, not direct proof.)",
-                "supporting_fact_ids": support, "elements": prior["elements"],
-                "synthesis_route": "see validation experiment", "estimated_synthesis_temp_c": prior["temp"],
-                "applications": AFRICAN_CONSTRAINTS["applications"][:2], "confidence": 0.55,
-                "validation_experiment": prior["experiment"], "origin": "domain prior"})
-    # (2) Transfer the best Africa-compatible family for the target property.
-    stats_prop = prop if prop not in (None, "sintering_temperature") else None
-    if stats_prop:
-        stats = family_property_stats(engine.facts, stats_prop, system)
-        for row in stats.head(6).itertuples():
-            members = [f for f in engine.facts if f["material_family"] == row.material_family and f["property"] == stats_prop
-                       and is_reliable(f) and (system is None or f["system"] == system)]
-            if not members or row.material_family in ("Other", "Unspecified", "Liquid electrolyte"):
-                continue
-            compatible = [f for f in members if (f["africa"]["score"] or 0) >= 0.6] or members
-            compatible.sort(key=lambda f: -f["value"])
+        if not ((system is None or system in prior["systems"]) and (props == [None] or prior["property"] in props)):
+            continue
+        if avoid & set(prior["elements"]) or (matches and not matches(prior["proposed_material"] + " " + prior["title"],
+                                                                         prior["elements"])):
+            continue
+        support = [f["id"] for f in engine.facts if f["material_family"] == prior["family"] and is_reliable(f)
+                   and f["property"] in [p if p != "sintering_temperature" else "ionic_conductivity" for p in props]][:6]
+        hypotheses.append({
+            "title": prior["title"], "proposed_material": prior["proposed_material"],
+            "composition_change": prior["composition_change"], "target_property": prior["property"],
+            "expected_change": f"{goal_info['direction'].capitalize()} {prior['property'].replace('_', ' ')} towards the goal",
+            "mechanistic_reasoning": prior["mechanism"] + " (Mechanism from established literature; knowledge-"
+                                     "graph facts cited are same-family context, not direct proof.)",
+            "supporting_fact_ids": support, "elements": prior["elements"],
+            "synthesis_route": "see validation experiment", "estimated_synthesis_temp_c": prior["temp"],
+            "applications": AFRICAN_CONSTRAINTS["applications"][:2], "confidence": 0.55,
+            "validation_experiment": prior["experiment"], "origin": "domain prior"})
+
+    # (2) Best Africa-compatible family per property, restricted to the named material when there is one.
+    stats_props = [p for p in props if p not in (None, "sintering_temperature")]
+    per_family: dict[str, dict[str, list[dict]]] = {}
+    for stats_prop in stats_props:
+        pool = [f for f in engine.facts if f["property"] == stats_prop and is_reliable(f)
+                and (system is None or f["system"] == system) and _fits(f, goal_info, matches)
+                and _usable_family(f["material_family"], system)]
+        unit = max({f["unit"] for f in pool}, key=lambda u: sum(f["unit"] == u for f in pool)) if pool else ""
+        for fact in pool:
+            if fact["unit"] == unit:
+                per_family.setdefault(fact["material_family"], {}).setdefault(stats_prop, []).append(fact)
+        ranked = sorted(((fam, facts[stats_prop]) for fam, facts in per_family.items() if stats_prop in facts),
+                        key=lambda kv: -statistics.median(f["value"] for f in kv[1]))
+        for family, members in ranked[:4 if len(stats_props) > 1 else 6]:
+            compatible = sorted([f for f in members if (f["africa"]["score"] or 0) >= 0.6] or members,
+                                key=lambda f: -f["value"])
             lead = compatible[0]
-            beat = sum(f["value"] >= goal_info["target"] for f in members) if goal_info["target"] else None
             profile = africa_profile(lead["elements"])
             if profile["score"] is not None and profile["score"] < 0.6:
                 continue
+            values = [f["value"] for f in members]
+            beat = sum(v >= goal_info["target"] for v in values) if goal_info["target"] and stats_prop == props[0] else None
+            scope = f" ({named})" if named else ""
             hypotheses.append({
-                "title": f"Optimise {row.material_family} built from African-supplied elements",
+                "title": f"Optimise {family}{scope} built from African-supplied elements",
                 "proposed_material": lead["material"],
                 "composition_change": f"Use {lead['material']} as the baseline and tune morphology/loading",
                 "target_property": stats_prop,
-                "expected_change": f"Family median {row.median:.3g} {row.unit} (max {row.max:.3g}, n={row.count})"
-                                   + (f"; {beat}/{len(members)} reported values already meet the goal target"
-                                      if beat is not None else "")
+                "expected_change": f"Family median {statistics.median(values):.3g} {lead['unit']} (max {max(values):.3g}, "
+                                   f"n={len(values)})" + (f"; {beat}/{len(values)} reported values already meet the goal "
+                                                          f"target" if beat is not None else "")
                                    + f"; aim to exceed the median at Africa supply score {profile['score']}",
-                "mechanistic_reasoning": f"{row.material_family} ranks among the best families for {stats_prop.replace('_', ' ')} "
-                                         f"in the curated literature, and {lead['material']} uses elements with African "
-                                         f"supply ({', '.join(profile['african_supply']) or 'n/a'}).",
+                "mechanistic_reasoning": f"{family} ranks among the best families for {stats_prop.replace('_', ' ')} "
+                                         f"in the curated literature{' among ' + named + ' materials' if named else ''}, "
+                                         f"and {lead['material']} uses elements with African supply "
+                                         f"({', '.join(profile['african_supply']) or 'n/a'}).",
                 "supporting_fact_ids": [m["id"] for m in members[:6]], "elements": lead["elements"],
                 "synthesis_route": "follow the cited record's route; replace precursors with locally sourced equivalents",
                 "estimated_synthesis_temp_c": -1, "applications": AFRICAN_CONSTRAINTS["applications"][:3],
@@ -272,17 +361,63 @@ def _offline_hypotheses(goal: str, goal_info: dict, engine: Engine, n: int) -> l
                 "validation_experiment": "Reproduce the best cited record, then vary one parameter (loading, dopant level "
                                          "or annealing temperature) in a 3-level design; report the target property with "
                                          "error bars from 3 cells.", "origin": "graph: best family"})
-    # (3) Fill a knowledge-graph gap.
+
+    # (2b) Two properties named: families strong on both, scored by their median rank on each.
+    if len(stats_props) == 2:
+        both = {fam: d for fam, d in per_family.items() if all(len(d.get(p, [])) >= 2 for p in stats_props)}
+        if both:
+            rank = {p: pd.Series({fam: statistics.median(f["value"] for f in d[p]) for fam, d in both.items()})
+                    .rank(pct=True) for p in stats_props}
+            joint = sorted(both, key=lambda fam: -sum(rank[p][fam] for p in stats_props))
+            for family in joint[:2]:
+                d = both[family]
+                by_record: dict[str, dict] = {}
+                for p in stats_props:
+                    for f in d[p]:
+                        by_record.setdefault(f["record_id"], {})[p] = f
+                paired = [r for r in by_record.values() if len(r) == 2]
+                lead = max(paired, key=lambda r: sum(rank[p][family] for p in stats_props))[stats_props[0]] if paired \
+                    else max(d[stats_props[0]], key=lambda f: f["value"])
+                medians = "; ".join(f"{p.replace('_', ' ')} median {statistics.median(f['value'] for f in d[p]):.3g} "
+                                    f"{d[p][0]['unit']} (n={len(d[p])})" for p in stats_props)
+                hypotheses.append({
+                    "title": f"Optimise {family}{' (' + named + ')' if named else ''} for both "
+                             f"{stats_props[0].replace('_', ' ')} and {stats_props[1].replace('_', ' ')}",
+                    "proposed_material": lead["material"],
+                    "composition_change": f"Start from {lead['material']}; tune loading and morphology while tracking "
+                                          f"both properties",
+                    "target_property": stats_props[0], "target_properties": stats_props,
+                    "expected_change": f"{medians}; {len(paired)} records report both properties",
+                    "mechanistic_reasoning": f"{family} ranks in the top part of the corpus on both "
+                                             f"{stats_props[0].replace('_', ' ')} and {stats_props[1].replace('_', ' ')}, "
+                                             f"so it is a candidate for improving both without a trade-off.",
+                    "supporting_fact_ids": [f["id"] for p in stats_props for f in d[p][:4]],
+                    "elements": lead["elements"], "synthesis_route": "follow the cited records' route",
+                    "estimated_synthesis_temp_c": -1, "applications": AFRICAN_CONSTRAINTS["applications"][:3],
+                    "confidence": round(min(0.85, 0.4 + 0.04 * sum(len(d[p]) for p in stats_props)), 2),
+                    "validation_experiment": f"Make 3 cells of {lead['material']}; measure specific capacitance by GCD "
+                                             f"at 1 A/g and cycling retention over 10,000 cycles on the same cells.",
+                    "origin": "graph: joint family"})
+        # Joint candidates go first so they survive the cap below.
+        joint_first = [h for h in hypotheses if h["origin"] == "graph: joint family"]
+        hypotheses = joint_first + [h for h in hypotheses if h["origin"] != "graph: joint family"]
+
+    # (3) Fill a knowledge-graph gap, only for usable electrode families (and the named material, if any).
     gaps = gap_analysis(engine.facts)
     if not gaps.empty:
         sub = gaps[(gaps.system == system) if system else gaps.system.notna()]
-        if stats_prop:
-            sub = sub[sub.missing_property == stats_prop] if (sub.missing_property == stats_prop).any() else sub
-        for gap in sub.head(2).itertuples():
-            members = [f for f in engine.facts if f["material_family"] == gap.entity and f["system"] == gap.system]
+        sub = sub[sub.entity.map(lambda fam: _usable_family(fam, system))]
+        if stats_props:  # only gaps in the properties the goal asks about
+            sub = sub[sub.missing_property.isin(stats_props)]
+        added = 0
+        for gap in sub.itertuples():
+            members = [f for f in engine.facts if f["material_family"] == gap.entity and f["system"] == gap.system
+                       and _fits(f, goal_info, matches)]
+            if not members or (system == "AHSC" and members[0]["material_role"] != "electrode"):
+                continue
             hypotheses.append({
                 "title": f"Measure {gap.missing_property.replace('_', ' ')} for {gap.entity}",
-                "proposed_material": members[0]["material"] if members else gap.entity,
+                "proposed_material": members[0]["material"],
                 "composition_change": "No change: characterise an under-reported property",
                 "target_property": gap.missing_property,
                 "expected_change": "First data point for this family-property pair in the corpus",
@@ -296,7 +431,10 @@ def _offline_hypotheses(goal: str, goal_info: dict, engine: Engine, n: int) -> l
                 "applications": AFRICAN_CONSTRAINTS["applications"][:2], "confidence": 0.5,
                 "validation_experiment": f"Standard {gap.missing_property.replace('_', ' ')} measurement (EIS/GCD/CV as "
                                          f"appropriate) on 3 replicate cells.", "origin": "graph: gap"})
-    return hypotheses[: max(n, 1) + 3]
+            added += 1
+            if added == 2:
+                break
+    return hypotheses[: max(n, 1) + 8]
 
 
 def generate_hypotheses(goal: str, constraints: dict | None = None, n: int = 5, africa_focus: bool = True,
