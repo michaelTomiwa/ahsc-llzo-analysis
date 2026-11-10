@@ -117,7 +117,7 @@ def show_html(html: str, height: int) -> None:
         components.html(html, height=height, scrolling=False)
 
 
-st.set_page_config(page_title="African Battery Materials Knowledge Engine", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="TEMBO AI · AHSC Materials Discovery", page_icon="⚡", layout="wide")
 st.markdown("""<style>
 .stApp{background:#f7f8fc;color:#172038}[data-testid="stSidebar"]{background:linear-gradient(180deg,#0b1635,#13285c)}
 [data-testid="stSidebar"] *{color:#f4f7ff!important}.hero{background:linear-gradient(120deg,#081a3c,#1a4d9a 63%,#18a6a6);
@@ -147,7 +147,7 @@ with st.sidebar:
     st.markdown("---\nAdd **ANTHROPIC_API_KEY** (or **OPENAI_API_KEY**) as a Streamlit secret or in .env to turn on "
                 "the LLM for the Copilot, extraction, GraphRAG and hypotheses. Everything works offline without it.")
 
-st.markdown("""<div class="hero"><div class="kicker" style="color:#82f0df">Track 1 · Literature → Knowledge → Hypotheses</div>
+st.markdown("""<div class="hero"><div class="kicker" style="color:#82f0df">TEMBO AI · MaterialsGPT Africa Hackathon · Track 1</div>
 <h1>African Battery Materials Knowledge Engine</h1><p>Hybrid supercapacitor (AHSC) design from 369 curated literature
 records: evidence-grounded facts, a knowledge graph, models that beat simple baselines, an energy–power Pareto
 explorer and a Materials Copilot, all under African supply constraints.</p></div>""", unsafe_allow_html=True)
